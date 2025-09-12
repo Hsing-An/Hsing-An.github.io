@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>演奏作品 on Hsing-An&#39;s profile</title>
+    <link>http://localhost:1313/projects/performance/</link>
+    <description>Recent content in 演奏作品 on Hsing-An&#39;s profile</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sun, 01 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/projects/performance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Polygatari - 祭り(Matsuri)</title>
+      <link>http://localhost:1313/projects/performance/matsuri/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/performance/matsuri/</guid>
+      <description>&lt;p&gt;這裡是內文，可以放影片、照片、註解。&lt;/p&gt;&#xA;&lt;div style=&#34;max-width:900px; margin: 1.2rem 0;&#34;&gt;&#xA;  &lt;iframe width=&#34;100%&#34; height=&#34;500&#34; src=&#34;https://www.youtube.com/embed/XXX1&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>
