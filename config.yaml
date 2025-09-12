@@ -137,7 +137,7 @@ params:
     title: "李倖安 Hsing-An Lee"
     subtitle: "木笛演奏家/作曲家"
     content: "出生於台東，目前就讀清華大學音樂系（主修木笛、副修作曲）。演奏古樂與當代作品，同時創作跨界作品，結合電子、爵士與傳統元素。"
-    image: /images/your-photo.jpg
+    image: /images/your-photo.webp
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
