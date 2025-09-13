@@ -136,17 +136,17 @@ params:
     intro: "你好，我是"
     title: "李倖安 Hsing-An Lee"
     subtitle: "木笛演奏家/作曲家"
-    content: "出生於台東，目前就讀清華大學音樂系（主修木笛、副修作曲）。演奏古樂與當代作品，同時創作跨界作品，結合電子、爵士與傳統元素。"
+    content: "以木笛演奏古樂與當代作品，同時創作跨界作品，結合電子、爵士與傳統音樂元素。"
     image: /images/your-photo.webp
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
-    button:
-      enable: true
-      name: "Resume"
-      url: "#"
-      download: true
-      newPage: false
+    # button:
+    #  enable: true
+    #  name: "Resume"
+    #  url: "#"
+    #  download: true
+    #  newPage: false
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-x-twitter
@@ -163,7 +163,13 @@ params:
     content: |-
       李倖安(Hsing-An Lee) 木笛演奏家/作曲家
 
-      出生於台東，目前就讀清華大學音樂系主修木笛、副修作曲。師事陳孟亨（木笛）與陳欣蕾（作曲）。演奏與創作橫跨古樂、當代、爵士與電腦音樂，並參與國際比賽與音樂節。
+      出生於台東，目前就讀清華大學音樂系主修**木笛**、副修作曲。師事陳孟亨（木笛）與陳欣蕾（作曲）。
+      
+      木笛演奏主要專注在古樂(Early Music)以及當代音樂(Contemporary music)，[曾多次在國際賽事上獲獎](#achievements)，並持續在演奏的道路上精進自己，曾接受Walter van Hauwe、Erik Bosgraaf、Maurice Steger、Tom Beets、Joris van Goethem、Bart Spanhove、Jorge Issac、Daniël Brüggen、Inês d’Avena、Simon Borutzki等的個別指導。
+
+      作曲方面則融合了電子、爵士、當代、流行、傳統音樂等的影響，使得創作的語彙十分多元。不僅有譜寫給器樂的作品，也有以編曲軟體完成的編曲作品。[創作也在多項比賽中獲獎](#achievements)。
+
+      --- 
 
     skills:
       enable: true
@@ -172,7 +178,7 @@ params:
         - "巴洛克器樂作品演奏"
         - "晚期文藝復興器樂作品演奏"
         - "Consort(文藝復興合奏曲) 演奏"
-        - "個人電子/爵士作品創作及演奏"
+        - "電子/爵士Fusion作品創作及演奏"
         - "木笛樂團原創曲目"
         - "木笛樂團改編歌曲"
         - "管樂團原創作品創作"
@@ -183,7 +189,7 @@ params:
     enable: true
     title: "合作經驗"
     items:
-      - job: "團員、木笛合奏改編"
+      - job: "木笛合奏作品改編/創作、團員"
         company: "新竹木笛合奏團"
         companyUrl: "https://example.com"
         date: "2022 - 至今"
@@ -191,23 +197,10 @@ params:
           enable: true
           name: "View the project"
           url: "https://example.com"
-        content: "大學期間與 [新竹直笛合奏團](https://example.com) 合作，除了作為團員在團內演出外，也為樂團改編樂曲。"
-
-      - job: "團員"
-        company: "新竹爵士大樂團"
-        companyUrl: "https://example.com"
-        date: "Sep 2020 - Dec 2021"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
         info:
           enable: true
-          content: I worked as a software developer for more than one year in Amazon.
-        content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
+          content: 在內除了作為樂手演奏外，多次受委託改編/創作樂曲。
+        content: "大學期間與 [新竹直笛合奏團](https://www.facebook.com/hsinchurecorder/?locale=zh_TW) 合作，除了作為團員在團內演出外，也為樂團改編樂曲。"
 
       - job: "指揮、作曲家、團員"
         company: "台東高中管樂團"
@@ -231,6 +224,21 @@ params:
         featuredLink:
           enable: true
           url: "https://example.com"
+        content: |
+          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+
+          - Lead backend developer for a product.
+          - Created a frontend design for a product.
+      - job: "團員"
+        company: "新竹爵士大樂團"
+        companyUrl: "https://example.com"
+        date: "2023 - 至今"
+        featuredLink:
+          enable: true
+          url: "https://example.com"
+        info:
+          enable: true
+          content: 在內擔任中音薩克斯風手。
         content: |
           I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
 
@@ -287,9 +295,11 @@ params:
           url: "https://example.com"
 
   # Achievements
+  
   achievements:
     enable: true
     title: "獲獎經驗"
+    anchor: "achievements"
     items:
       - title: Google kickstart runner
         content: I solved all problems with optimal solution.
