@@ -159,15 +159,15 @@ params:
   about:
     enable: true
     title: "關於我"
-    image: "/images/me.jpg"
+    image: "/images/me.webp"
     content: |-
-      李倖安(Hsing-An Lee) 木笛演奏家/作曲家
+      ## 李倖安(Hsing-An Lee) 木笛演奏家/作曲家
 
       出生於台東，目前就讀清華大學音樂系主修**木笛**、副修作曲。師事陳孟亨（木笛）與陳欣蕾（作曲）。
       
-      木笛演奏主要專注在古樂(Early Music)以及當代音樂(Contemporary music)，[曾多次在國際賽事上獲獎](#achievements)，並持續在演奏的道路上精進自己，曾接受Walter van Hauwe、Erik Bosgraaf、Maurice Steger、Tom Beets、Joris van Goethem、Bart Spanhove、Jorge Issac、Daniël Brüggen、Inês d’Avena、Simon Borutzki等的個別指導。
+      **木笛演奏**主要專注在古樂(Early Music)以及當代音樂(Contemporary music)，[曾多次在國際賽事上獲獎](#achievements)，並持續在演奏的道路上精進自己，曾接受Walter van Hauwe、Erik Bosgraaf、Maurice Steger、Tom Beets、Joris van Goethem、Bart Spanhove、Jorge Issac、Daniël Brüggen、Inês d’Avena、Simon Borutzki等的個別指導。
 
-      作曲方面則融合了電子、爵士、當代、流行、傳統音樂等的影響，使得創作的語彙十分多元。不僅有譜寫給器樂的作品，也有以編曲軟體完成的編曲作品。[創作也在多項比賽中獲獎](#achievements)。
+      **作曲**方面則融合了電子、爵士、當代、流行、傳統音樂等的影響，使得創作的語彙十分多元。不僅有譜寫給器樂的作品，也有以編曲軟體完成的編曲作品。[創作也在多項比賽中獲獎](#achievements)。
 
       --- 
 
@@ -189,67 +189,80 @@ params:
     enable: true
     title: "合作經驗"
     items:
-      - job: "木笛合奏作品改編/創作、團員"
+      - job: "木笛樂手"
+        company: "Long Time Don‘t Jam 攏台東見"
+        companyUrl: "https://www.instagram.com/long_time_dont_jam/"
+        date: "2024 - 至今"
+        info:
+          enable: true
+          content: "除了作為團員外，同時也是樂團共同創辦人"
+        content: |
+          Long Time Don't Jam 是我與夥伴 [陳裕霖](https://www.instagram.com/rcyln_93/) 共同組成的雙人團體，主要編制為手指鼓(finger drumming)以及木笛。
+
+          曲風上，融合了電子舞曲、爵士、R&B等較現代的曲風，並以Live performance的形式搭配自行創作的樂曲進行演出。
+          
+          曾在 [臺灣國際直笛音樂節](https://www.facebook.com/twrecorderfestival/?locale=zh_TW)的Fringe concert演出 [初次jam面 First jam men](https://www.opentix.life/event/1815794800281317377?srsltid=AfmBOooHnWstInIf8t-YgFxm0kzsZUXOCyZZ1Pl4B0Juc1wKPpJcS4lL)。
+
+      - job: "改編者、團員"
         company: "新竹木笛合奏團"
         companyUrl: "https://example.com"
         date: "2022 - 至今"
-        featuredLink:
-          enable: true
-          name: "View the project"
-          url: "https://example.com"
+        #featuredLink:
+        #  enable: true
+        #  name: "View the project"
+        #  url: "https://example.com"
         info:
           enable: true
-          content: 在內除了作為樂手演奏外，多次受委託改編/創作樂曲。
-        content: "大學期間與 [新竹直笛合奏團](https://www.facebook.com/hsinchurecorder/?locale=zh_TW) 合作，除了作為團員在團內演出外，也為樂團改編樂曲。"
-
+          content: 在內除了作為木笛樂手演奏外，多次受委託改編/創作樂曲。
+        content: |
+          大學期間參與了 [新竹直笛合奏團](https://www.facebook.com/hsinchurecorder/?locale=zh_TW) ，多次以團員的身份跟著樂團一同演出。
+         
+          同時也會以改編者的角度，為樂團譜改編作品。
+          
+          曾參與的歷年演出：
+        
       - job: "指揮、作曲家、團員"
         company: "台東高中管樂團"
         companyUrl: "https://example.com"
-        date: "Jan 2020 - Aug 2020"
+        date: "2019 - 至今"
         info:
           enable: false
-        featuredLink:
-          enable: true
-          url: "https://example.com"
+          content: "高中畢業後從台東高中管樂團轉為台東高中校友管樂團"
+        #featuredLink:
+        #  enable: true
+        #  url: "https://example.com"
         content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+         在我的高中時期，我曾加入台東高中管樂團吹奏**單簧管**，也擔任了**學生指揮**的職務
 
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
+         畢業後，也多次參與[台東高中校友管樂團](https://www.tsawo2022.com)的演出，不僅以團員的身份一同演奏，也曾改編多首樂曲給樂團演奏。
 
-      - job: "合作演出者"
+         同時在2025年9月，我也受邀參與[日昇東中系列音樂會——川方之至](https://www.tsawo2022.com)，擔任指揮一職。
+      - job: "木笛合作演出者"
         company: "巴洛克獨奏家樂團"
-        companyUrl: "https://example.com"
-        date: "June 2017 - Nov 2019"
+        companyUrl: "https://www.baroque-camerata.org"
+        date: "2022 Aug"
         featuredLink:
           enable: true
-          url: "https://example.com"
+          name: "查看演出資訊"
+          url: "https://music.nttu.edu.tw/p/405-1027-125830,c4433.php?Lang=zh-tw"
         content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
+          2022年8月 參與巴洛克獨奏家樂團《印象．臺灣》 導聆音樂會臺東場 木笛合作演出者
       - job: "團員"
         company: "新竹爵士大樂團"
-        companyUrl: "https://example.com"
+        companyUrl: "https://www.facebook.com/p/HJO-新竹爵士大樂團-100066811428103/?locale=zh_TW"
         date: "2023 - 至今"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
+        #featuredLink:
+        #  enable: true
+        #  url: "https://example.com"
         info:
           enable: true
-          content: 在內擔任中音薩克斯風手。
+          content: 在內擔任中音薩克斯風手，2024年後從大樂團轉為青年團團員。
         content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+          上大學後開始學習爵士樂，同時加入新竹爵士大樂團擔任中音薩克斯風手。2024年後轉為HJO青年團團員。
 
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
+          曾多次與樂團一同演出。
 
-      - job: "Product Designer"
-        company: "Google"
-        companyUrl: "https://example.com"
-        date: "Feb 2016 - Mar 2017"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+      
 
   # Education
   education:
@@ -265,34 +278,33 @@ params:
         GPA: "3.92 out of 4.3"
         content: |-
           校內特殊經驗：
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-      - title: "Bachelor of Science in Computer Science"
-        school:
-          name: "Massachusetts Institute of Technology"
-          url: "https://example.org"
-        date: "2009 - 2013"
-        GPA: "3.9 out of 5.0"
-        content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
+            - 曾獲得112-2、113-1、113-2學期書卷獎
+      #- title: "Bachelor of Science in Computer Science"
+      #  school:
+      #    name: "Massachusetts Institute of Technology"
+      #    url: "https://example.org"
+      #  date: "2009 - 2013"
+      #  GPA: "3.9 out of 5.0"
+      #  content: |-
+      #    I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
+      #    - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
+      #    - Face mask detection using a single convolutional neural network.
 
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        featuredLink:
-          enable: true
-          name: "My academic record"
-          url: "https://example.com"
-      - title: "High School"
-        school:
-          name: "Thomas Jefferson High School for Science and Technology."
-          url: "https://example.org"
-        GPA: "4.2 out of 5.0"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
+      #    Extracurricular Activities
+      #      - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      #      - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+      #  featuredLink:
+      #    enable: true
+      #    name: "My academic record"
+      #    url: "https://example.com"
+      #- title: "High School"
+      #  school:
+      #    name: "Thomas Jefferson High School for Science and Technology."
+      #    url: "https://example.org"
+      #  GPA: "4.2 out of 5.0"
+      #  featuredLink:
+      #    enable: true
+      #    url: "https://example.com"
 
   # Achievements
   
@@ -301,17 +313,18 @@ params:
     title: "獲獎經驗"
     anchor: "achievements"
     items:
-      - title: Google kickstart runner
-        content: I solved all problems with optimal solution.
-        url: https://example.com
-        image: /images/achievement.jpg
-      - title: Facebook Hackathon Winner
-        content: Developed a product using Artificial Intelligence.
-        image: /images/achievement.jpg
-      - title: Hugo Profile
-        content: Developed a theme and getting 1K+ downloads per month.
-        url: "https://github.com/gurusabarish/hugo-profile"
-        image: /images/achievement.jpg
+      - title: 2023 ORDA 第二名、樂曲創作獎
+        content: 在國際知名的阿姆斯特丹木笛大賽Open Recorder Days Amsterdam上，以巴洛克、前衛音樂、電子自創音樂獲獎。
+        url: https://www.openrecorderdays.com/competition
+        image: /images/orda.webp
+      - title: 台中捷運進站音樂 水安宮站正選
+        url: https://www.tmrt.com.tw/tmrtsoundscape/station-music-tw/111-shui-an-temple/
+        content: 與夥伴陳裕霖共同參與台中捷運進站音樂的徵選，透過層層徵選後，獲選水安宮站正選。
+        image: /images/metro.webp
+      - title: 全國學生音樂比賽 多次特優第一
+        content: 曾在107、109、113屆全國學生音樂比賽木笛獨奏獲得特優第一
+        url: "https://web.arte.gov.tw/music/history/list_all.asp"
+        image: /images/competition.webp
       - title: Microsoft Imagine Runner
         content: We are developed a product which can help others.
       - title: Google Summer of Code
