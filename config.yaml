@@ -219,7 +219,7 @@ params:
          
           同時也會以改編者的角度，為樂團譜改編作品。
           
-          曾參與的歷年演出：
+        #  曾參與的歷年演出：
         
       - job: "指揮、作曲家、團員"
         company: "台東高中管樂團"
@@ -321,27 +321,28 @@ params:
         url: https://www.tmrt.com.tw/tmrtsoundscape/station-music-tw/111-shui-an-temple/
         content: 與夥伴陳裕霖共同參與台中捷運進站音樂的徵選，透過層層徵選後，獲選水安宮站正選。
         image: /images/metro.webp
-      - title: 全國學生音樂比賽 多次特優第一
+      - title: 全國學生音樂比賽 特優第一
         content: 曾在107、109、113屆全國學生音樂比賽木笛獨奏獲得特優第一
         url: "https://web.arte.gov.tw/music/history/list_all.asp"
-        image: /images/competition.webp
-      - title: Microsoft Imagine Runner
-        content: We are developed a product which can help others.
-      - title: Google Summer of Code
-        content: Contributed to a open source project.
-        url: https://example.com
+        image: /images/gleam.webp
 
   # projects
   projects:
-    enable: true
+    enable: false
     title: "作品"
     items:
       - title: "演奏"
-        content: "這裡放演奏作品的簡短介紹"
-        image: "/images/performance.jpg"
+        content: "作為木笛演奏者，經常在不同場合演出古樂、現代音樂，各片段截自於各大比賽以及演出。"
+        image: "/images/isr.webp"
         featured:
-          name: "觀看更多"
+          name: "觀看演出錄音"
           link: "/projects/performance"
+        badges:
+          - "古樂"
+          - "前衛音樂"
+       # links:
+       #   - icon: fab fa-github
+       #     url: https://github.com/gurusabarish/converter
       - title: Image Converter
         content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
         image: /images/projects/converter.jpg

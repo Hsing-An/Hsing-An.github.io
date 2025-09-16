@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/tags/%E6%BC%94%E5%87%BA/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Polygatari-Matsuri</title>
-      <link>http://localhost:1313/projects/polygatari-matsuri/</link>
+      <link>http://localhost:1313/projects/performance/polygatari-matsuri/</link>
       <pubDate>Sat, 01 Jul 2023 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/projects/polygatari-matsuri/</guid>
+      <guid>http://localhost:1313/projects/performance/polygatari-matsuri/</guid>
       <description>&lt;p&gt;融合木笛、電子、爵士與日本傳統元素，使用奇數拍、效果器與電腦處理的作品。此曲在 2023 Open Recorder Days Amsterdam 獲得第二名與最佳創作獎。&lt;/p&gt;&#xA;&lt;!-- 內嵌 YouTube：把 REPLACE_VIDEO_ID 換成實際的影片 ID --&gt;&#xA;&lt;div style=&#34;max-width:900px; margin: 1.2rem 0;&#34;&gt;&#xA;  &lt;iframe width=&#34;100%&#34; height=&#34;500&#34; src=&#34;https://www.youtube.com/embed/REPLACE_VIDEO_ID&#34; title=&#34;Polygatari-Matsuri&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;我的註解：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;創作理念：在古老旋律語彙中加入現代節奏與合成色彩，嘗試把木笛的延展技法與電子節奏融合。&lt;/li&gt;&#xA;&lt;li&gt;錄製資訊：現場與室內混合錄音；含即時電腦處理與效果器。&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>

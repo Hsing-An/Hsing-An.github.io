@@ -11,7 +11,10 @@
     <loc>http://localhost:1313/test/</loc>
     <lastmod>2025-08-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/time/</loc>
+    <loc>http://localhost:1313/projects/performance/</loc>
+    <lastmod>2025-08-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/performance/time/</loc>
     <lastmod>2025-08-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/bossa-nova/</loc>
@@ -32,10 +35,7 @@
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/performance/</loc>
-    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/polygatari-matsuri/</loc>
+    <loc>http://localhost:1313/projects/performance/polygatari-matsuri/</loc>
     <lastmod>2023-07-01T00:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%E4%BD%9C%E6%9B%B2/</loc>
