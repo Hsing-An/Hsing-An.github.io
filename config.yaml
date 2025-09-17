@@ -86,7 +86,7 @@ params:
 
   font:
     fontSize: 1rem # default: 1rem
-    fontWeight: 400 # default: 400
+    fontWeight: 380 # default: 400
     lineHeight: 1.5 # default: 1.5
     textAlign: left # default: left
 
@@ -148,13 +148,13 @@ params:
     #  download: true
     #  newPage: false
     socialLinks:
-      fontAwesomeIcons:
-        - icon: fab fa-x-twitter
-          url: https://example.com
       customIcons:
-        - icon: /fav.png
-          url: "https://example.com"
-
+        - icon: /images/facebook.webp
+          url: https://www.facebook.com/hsingan.lee
+        - icon: /images/ig.webp
+          url: https://www.instagram.com/recorder_shounen/
+        - icon: /images/youtube.webp
+          url: "https://www.youtube.com/@hsing-anlee3459"
   # About
   about:
     enable: true
@@ -374,15 +374,16 @@ params:
   contact:
     enable: true
     title: "與我聯絡"
-    content: 若有合作演出、作品委託、教學等需求，歡迎用下列各種方式與我聯絡！
+    content: 若有合作演出、作品委託、教學等需求，歡迎與我聯絡！
+    email: 930529antonio@gmail.com
     btnName: Mail me
-    btnLink: 930529antonio@gmail.com
-    # formspree:
-    #   enable: true # `contact.email` value will be ignored
-    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
-    #   emailCaption: "Enter your email address"
-    #   messageCaption: "Enter your message here"
-    #   messageRows: 5
+    btnLink: mailto:930529antonio@gmail.com
+    #formspree:
+       #enable: true # `contact.email` value will be ignored
+       #formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+       #emailCaption: "Enter your email address"
+       #messageCaption: "Enter your message here"
+       #messageRows: 5
 
   footer:
     recentPosts:
@@ -392,7 +393,7 @@ params:
       enable: true
       disableFeaturedImage: false
     socialNetworks:
-      github: https://github.com
+      github: https://github.com/Hsing-An
       instagram: https://www.instagram.com/recorder_shounen/
       facebook: https://www.facebook.com/hsingan.lee
 
