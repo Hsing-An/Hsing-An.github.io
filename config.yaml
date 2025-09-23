@@ -375,7 +375,16 @@ params:
   contact:
     enable: true
     title: "與我聯絡"
-    content: 若有合作演出、作品委託、教學等需求，歡迎與我聯絡！
+    content:  |
+      若有合作演出、作品委託、教學等需求，歡迎與我聯絡！  
+      Gmail: <span onclick="copyEmail()" style="cursor: pointer; color: blue; text-decoration: underline;">930529antonio@gmail.com</span>
+
+      <script>
+      function copyEmail() {
+          navigator.clipboard.writeText("930529antonio@gmail.com");
+          alert("已複製 Gmail 地址！");
+      }
+      </script>
     email: 930529antonio@gmail.com
     btnName: Mail me
     btnLink: mailto:930529antonio@gmail.com

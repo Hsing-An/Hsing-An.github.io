@@ -65,7 +65,7 @@
          
         --text-color-dark: #e4e6eb;
         --text-secondary-color-dark: #b0b3b8;
-        --text-link-color-dark: #ffffff;
+        --text-link-color-dark: #66b2ff;
         --background-color-dark: #18191a;
         --secondary-background-color-dark: #212529;
         --primary-color-dark: #ffffff;
@@ -1222,7 +1222,14 @@ Hsing-An&#39;s profile
             <div class="row justify-content-center px-md-5">
                 <div class="col-md-8 py-3">
                     <div class="text-center">
-                        若有合作演出、作品委託、教學等需求，歡迎與我聯絡！
+                        <p>若有合作演出、作品委託、教學等需求，歡迎與我聯絡！<br>
+Gmail: <span onclick="copyEmail()" style="cursor: pointer; color: blue; text-decoration: underline;"><a href="mailto:930529antonio@gmail.com">930529antonio@gmail.com</a></span></p>
+<script>
+function copyEmail() {
+    navigator.clipboard.writeText("930529antonio@gmail.com");
+    alert("已複製 Gmail 地址！");
+}
+</script>
                     </div>
                     
                     <div class="text-center pt-3">
