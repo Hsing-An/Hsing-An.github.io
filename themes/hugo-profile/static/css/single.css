@@ -1,6 +1,6 @@
 #single {
     padding: 60px 0;
-    line-height: 1.7em;
+    line-height: 2.0em;
     font-size: 17px;
 }
 
@@ -319,4 +319,7 @@
     transition: width .2s;
 }
 
-/* Singlepage scroll progress end */
+/* 單篇文章自動使用原始高度 */
+.single-page .youtube-embed iframe {
+    height: 500px; /* 單篇文章影片高度大 */
+}

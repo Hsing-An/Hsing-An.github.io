@@ -76,3 +76,9 @@
     background-color: var(--primary-color) !important;
     color: var(--secondary-color) !important;
 }
+
+/* 只在列表頁套用 */
+.list-page .youtube-embed iframe {
+    height: 250px; /* 卡片內影片高度小 */
+}
+

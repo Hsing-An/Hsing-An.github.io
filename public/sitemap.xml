@@ -2,8 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/projects/</loc>
-    <lastmod>2025-08-24T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/arrangement/%E6%BF%9B/</loc>
+    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/composition/matsuri/</loc>
+    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/performance/matsuri/</loc>
+    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/arrangement/artisan-nova/</loc>
+    <lastmod>2023-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/performance/tre-fontane/</loc>
+    <lastmod>2025-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/performance/music-for-a-bird/</loc>
+    <lastmod>2025-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogs/</loc>
+    <lastmod>2025-09-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-09-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%E4%BB%8B%E7%B4%B9/</loc>
+    <lastmod>2025-09-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogs/first-blog/</loc>
+    <lastmod>2025-09-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%E6%83%B3%E6%B3%95/</loc>
+    <lastmod>2025-09-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2025-08-24T00:00:00+00:00</lastmod>
@@ -11,38 +41,134 @@
     <loc>http://localhost:1313/test/</loc>
     <lastmod>2025-08-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/performance/</loc>
-    <lastmod>2025-08-24T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/avant-garde/</loc>
+    <lastmod>2025-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/performance/time/</loc>
-    <lastmod>2025-08-24T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/baroque/</loc>
+    <lastmod>2025-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/bossa-nova/</loc>
-    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/corelli/</loc>
+    <lastmod>2025-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/performance/ende/</loc>
+    <lastmod>2025-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/extended-techniques/</loc>
+    <lastmod>2025-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/hans-martin-linde/</loc>
+    <lastmod>2025-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/historical-informed-performance/</loc>
+    <lastmod>2025-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/louis-andriessen/</loc>
+    <lastmod>2025-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/philidor/</loc>
+    <lastmod>2025-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/performance/</loc>
+    <lastmod>2025-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/performance/quatri%C3%A8me-suite-in-a-minor-op.-1/</loc>
+    <lastmod>2025-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/performance/rv-443/</loc>
+    <lastmod>2025-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/performance/corelli/</loc>
+    <lastmod>2025-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/vivaldi/</loc>
+    <lastmod>2025-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/clarinet/</loc>
+    <lastmod>2025-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/composition/</loc>
+    <lastmod>2025-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/piano/</loc>
+    <lastmod>2025-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/trio/</loc>
+    <lastmod>2025-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/composition/atarayo/</loc>
+    <lastmod>2025-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/composition/2-25/</loc>
+    <lastmod>2025-01-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/folk-ish/</loc>
+    <lastmod>2025-01-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/quartet/</loc>
+    <lastmod>2025-01-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/recorder/</loc>
+    <lastmod>2025-01-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tonal-music/</loc>
+    <lastmod>2025-01-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/composition/dialog/</loc>
+    <lastmod>2024-08-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/duet/</loc>
+    <lastmod>2024-08-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/arrangement/</loc>
+    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/edm/</loc>
+    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/eletric/</loc>
-    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/songwirte/</loc>
+    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/agnes-dorwarth/</loc>
+    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/performance/articulator-i/</loc>
+    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/bossa-nova/</loc>
+    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/jazz/</loc>
-    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/math-rock/</loc>
-    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/performance/matsuri/</loc>
-    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/solo/</loc>
+    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/bossanova/</loc>
+    <lastmod>2023-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/performance/polygatari-matsuri/</loc>
-    <lastmod>2023-07-01T00:00:00+08:00</lastmod>
+    <loc>http://localhost:1313/tags/taiwan-traditional-music/</loc>
+    <lastmod>2023-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E4%BD%9C%E6%9B%B2/</loc>
-    <lastmod>2023-07-01T00:00:00+08:00</lastmod>
+    <loc>http://localhost:1313/tags/jpop/</loc>
+    <lastmod>2020-04-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E6%BC%94%E5%87%BA/</loc>
-    <lastmod>2023-07-01T00:00:00+08:00</lastmod>
+    <loc>http://localhost:1313/composition/gurenge/</loc>
+    <lastmod>2020-04-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/composition/tenko-no-ko/</loc>
+    <lastmod>2019-10-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/pop/</loc>
+    <lastmod>2019-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/composition/devotion/</loc>
+    <lastmod>2019-03-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url>

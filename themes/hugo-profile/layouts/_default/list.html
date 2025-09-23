@@ -10,6 +10,9 @@
 {{ define "main" }}
 <div class="container pt-5" id="list-page">
     <h2 class="text-center pb-2">{{.Title}}</h2>
+    <div class="section-content mb-4">
+        {{ .Content }}
+    </div>
     <div class="row">
         {{ range .Paginator.Pages }}
         <div class="col-lg-4 col-md-6 my-3">
@@ -22,12 +25,19 @@
                         </a>
                     </div>
                     {{ end }}
+                    {{ if .Params.youtubeID }}
+                    <iframe class="youtube-{{ .Params.youtubeSize }}"
+                        src="https://www.youtube.com/embed/{{ .Params.youtubeID }}"
+                        frameborder="0"
+                        allowfullscreen></iframe>
+                    {{ end }}
+
                     <div class="card-body bg-transparent p-4 shadow-sm">
                         <a href="{{ .RelPermalink }}" class="primary-font card-title">
                             <h5 class="card-title bg-transparent" title="{{ .Title }}">{{ .Title | truncate 25 }}</h5>
                         </a>
                         <div class="card-text secondary-font">
-                            <p>{{ .Summary | truncate 300}}</p>
+                            <p>{{ .Summary | truncate 100}}</p>
                         </div>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">

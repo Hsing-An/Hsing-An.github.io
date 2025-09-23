@@ -31,12 +31,12 @@ markup:
 Menus:
   main:
     - identifier: blog
-      name: Blog
+      name: 部落格
       title: Blog posts
       url: /blogs
       weight: 1
     - identifier: gallery
-      name: Gallery
+      name: 相簿
       title: Blog posts
       url: /gallery
       weight: 2
@@ -204,8 +204,8 @@ params:
           曾在 [臺灣國際直笛音樂節](https://www.facebook.com/twrecorderfestival/?locale=zh_TW)的Fringe concert演出 [初次jam面 First jam men](https://www.opentix.life/event/1815794800281317377?srsltid=AfmBOooHnWstInIf8t-YgFxm0kzsZUXOCyZZ1Pl4B0Juc1wKPpJcS4lL)。
 
       - job: "改編者、團員"
-        company: "新竹木笛合奏團"
-        companyUrl: "https://example.com"
+        company: "新竹直笛合奏團"
+        companyUrl: "https://www.facebook.com/hsinchurecorder/?locale=zh_TW"
         date: "2022 - 至今"
         #featuredLink:
         #  enable: true
@@ -223,7 +223,7 @@ params:
         
       - job: "指揮、作曲家、團員"
         company: "台東高中管樂團"
-        companyUrl: "https://example.com"
+        companyUrl: "https://www.tsawo2022.com"
         date: "2019 - 至今"
         info:
           enable: false
@@ -234,9 +234,9 @@ params:
         content: |
          在我的高中時期，我曾加入台東高中管樂團吹奏**單簧管**，也擔任了**學生指揮**的職務
 
-         畢業後，也多次參與[台東高中校友管樂團](https://www.tsawo2022.com)的演出，不僅以團員的身份一同演奏，也曾改編多首樂曲給樂團演奏。
+         畢業後，也多次參與[台東高中校友管樂團](https://www.tsawo2022.com/2025)的演出，不僅以團員的身份一同演奏，也曾改編多首樂曲給樂團演奏。
 
-         同時在2025年9月，我也受邀參與[日昇東中系列音樂會——川方之至](https://www.tsawo2022.com)，擔任指揮一職。
+         同時在2025年9月，我也受邀參與[日昇東中系列音樂會——川方之至](https://www.tsawo2022.com)，擔任指揮一職，同時演出我的創作作品〈Kyrie Ventorum〉。
       - job: "木笛合作演出者"
         company: "巴洛克獨奏家樂團"
         companyUrl: "https://www.baroque-camerata.org"
@@ -328,47 +328,48 @@ params:
 
   # projects
   projects:
-    enable: false
+    enable: true
     title: "作品"
     items:
       - title: "演奏"
         content: "作為木笛演奏者，經常在不同場合演出古樂、現代音樂，各片段截自於各大比賽以及演出。"
         image: "/images/isr.webp"
         featured:
-          name: "觀看演出錄音"
-          link: "/projects/performance"
+          name: "觀看更多"
+          link: "/performance"
         badges:
           - "古樂"
           - "前衛音樂"
-       # links:
-       #   - icon: fab fa-github
-       #     url: https://github.com/gurusabarish/converter
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
+        #links:
+        #  - icon: fab fa-github
+        #    url: "/projects/performance"
+      - title: "作曲/改編"
+        content: "以木笛作品開始，創作了許多不同風格的作品，甚至延伸到各種器樂、聲樂作品。同時也有改編給不同編制的作品。"
+        image: /images/compose.webp
         featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
+          name: "觀看更多"
+          link: "/composition"
         badges:
-          - "Django"
-          - "Bootstrap"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+          - "前衛音樂"
+          - "電子音樂"
+          - "非調性音樂"
+        #links:
+        #  - icon: fab fa-github
+        #    url: https://github.com/gurusabarish/converter
 
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
+      - title: "編曲"
+        content: "除了製作給樂器演奏的作品之外，我也在流行編曲上做過一些嘗試。"
+        image: /images/bass.webp
         featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
+          name: "觀看更多"
+          link: /arrangement
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+          - "電子音樂"
+          - "流行音樂"
+          - "獨立音樂"
+        #links:
+        #  - icon: fab fa-github
+        #    url: https://github.com/gurusabarish/HugoProfileV2
 
   #Contact
   contact:

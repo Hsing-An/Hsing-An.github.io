@@ -54,6 +54,12 @@
               </div>
           </aside>
           {{ end }}
+          {{ if .Params.youtubeID }}
+            <iframe class="youtube-{{ .Params.youtubeSize }}"
+              src="https://www.youtube.com/embed/{{ .Params.youtubeID }}"
+              frameborder="0"
+              allowfullscreen></iframe>
+          {{ end }}
 
           {{ if .Params.tags }}
           <aside class="tags">
