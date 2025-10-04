@@ -66,7 +66,7 @@ Menus:
 
 params:
   title: "Hsing-An's profile"
-  description: Text about my cool site
+  description: 李倖安(Hsing-An Lee) 木笛演奏家/作曲家的酷酷網站
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 
