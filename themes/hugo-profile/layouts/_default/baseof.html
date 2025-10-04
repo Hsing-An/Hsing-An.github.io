@@ -15,7 +15,7 @@
   </title>
 </head>
 
-<body class="light">
+<body class="light {{ if .IsPage }}single-page{{ else if .IsSection }}list-page{{ end }}">
   <!-- javascripts -->
   <!-- <script src="/js/jquery-3.6.0.min.js"></script> -->
 
