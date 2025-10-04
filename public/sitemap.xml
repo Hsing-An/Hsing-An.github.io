@@ -186,5 +186,7 @@
     <lastmod>2019-03-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/events/</loc>
   </url>
 </urlset>
