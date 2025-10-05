@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section id="events">
+  <h2>近期演出</h2>
+  <ul>
+  {{ range where .Pages "Date" "ge" now }}
+    <li>
+      <strong>{{ .Title }}</strong>  
+      <br>
+      日期：{{ .Date.Format "2006-01-02 15:04" }}  
+      <br>
+      地點：{{ .Params.location }}
+    </li>
+  {{ else }}
+    <p>目前沒有即將舉行的演出。</p>
+  {{ end }}
+  </ul>
+</section>
+{{ end }}
