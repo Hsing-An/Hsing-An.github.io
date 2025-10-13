@@ -45,13 +45,11 @@ jobs:
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
 
-      # ✅ 加這段讓 Hugo 明確知道使用 config.yaml，而非 config.toml
       - name: Confirm Hugo configuration
         run: |
           echo "Using config.yaml for Hugo build"
           ls -l config.*
 
-      # ✅ 這裡加上 debug 輸出以確保 unsafe: true 生效
       - name: Debug Goldmark config
         run: |
           echo "Checking markup.goldmark.renderer.unsafe setting..."
