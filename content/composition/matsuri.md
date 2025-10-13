@@ -20,6 +20,7 @@ description: "我的自我創作，融合爵士、電子與民俗音樂"
 
 這是我最具有代表性的作品。融合了爵士、電子以及日本民俗音樂的現代木笛作品。  
 此曲在 2023 Open Recorder Days Amsterdam 獲得第二名與最佳創作獎。
+ <!--more-->
 
 ---
 在這首曲子內，我使用了DAW(數位音樂工作站) [Reason](https://www.reasonstudios.com/?srsltid=AfmBOopOlDXSckGj6--NEWvOwjHG2pdTewFIFo40HpLlqW3qNLOWqujq) 作為我的創作工具，並且受到奇數拍音樂的啟發，試著使用不平均的7拍節奏進行創作。  

@@ -14,6 +14,6 @@ description: "試著挑戰聽眾對於”相對剝奪感“的感受"
   <iframe width="100%" height="250" src="https://www.youtube.com/embed/mwNRsrCOfXo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-
+ <!--more-->
 
 
