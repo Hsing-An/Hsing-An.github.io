@@ -41,7 +41,7 @@
       <link>http://localhost:1313/performance/tre-fontane/</link>
       <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/performance/tre-fontane/</guid>
-      <description>&lt;div class=&#34;youtube-embed&#34; style=&#34;max-width:900px; margin: 1.2rem 0;&#34;&gt;&#xA;  &lt;iframe width=&#34;100%&#34; height=&#34;250&#34; src=&#34;https://www.youtube.com/embed/_kn_3ya9jDA&#34; title=&#34;Polygatari-Matsuri&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
+      <description>&lt;p&gt;{{ with .Params.youtubeID }}&lt;/p&gt;&#xA;&lt;div class=&#34;youtube-embed mb-3&#34;&gt;&#xA;    &lt;iframe &#xA;        width=&#34;100%&#34; &#xA;        height=&#34;250&#34; &#xA;        src=&#34;https://www.youtube.com/embed/_kn_3ya9jDA{{ . }}&#34; &#xA;        title=&#34;YouTube video player&#34; &#xA;        frameborder=&#34;0&#34; &#xA;        allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; &#xA;        allowfullscreen&gt;&#xA;    &lt;/iframe&gt;&#xA;&lt;/div&gt;&#xA;{{ end }}&#xA;&lt;div class=&#34;youtube-embed&#34; style=&#34;max-width:900px; margin: 1.2rem 0;&#34;&gt;&#xA;  &lt;iframe width=&#34;100%&#34; height=&#34;250&#34; src=&#34;https://www.youtube.com/embed/_kn_3ya9jDA&#34; title=&#34;Polygatari-Matsuri&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Music for a Bird</title>
