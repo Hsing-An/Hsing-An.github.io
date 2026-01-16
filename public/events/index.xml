@@ -1,32 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>所有演出 on Hsing-An&#39;s profile</title>
-    <link>http://localhost:1313/events/</link>
-    <description>Recent content in 所有演出 on Hsing-An&#39;s profile</description>
+    <title>所有演出 on </title>
+    <link>//localhost:1313/events/</link>
+    <description>Recent content in 所有演出 on </description>
     <generator>Hugo</generator>
-    <language>zh-tw</language>
-    <lastBuildDate>Sat, 22 Nov 2025 14:30:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/events/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh</language>
+    <lastBuildDate>Wed, 24 Dec 2025 19:30:00 +0800</lastBuildDate>
+    <atom:link href="//localhost:1313/events/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>人文啟迪科技：清華木笛樂團音樂會</title>
+      <link>//localhost:1313/events/waves/</link>
+      <pubDate>Wed, 24 Dec 2025 19:30:00 +0800</pubDate>
+      <guid>//localhost:1313/events/waves/</guid>
+      <description>與清大木笛團一同演出，並且發表我的個人創作</description>
+    </item>
+    <item>
+      <title>TCC 2025沙龍音樂會系列《文藝聖誕畫人聲》</title>
+      <link>//localhost:1313/events/choir/</link>
+      <pubDate>Sat, 13 Dec 2025 19:30:00 +0800</pubDate>
+      <guid>//localhost:1313/events/choir/</guid>
+      <description>作為木笛獨奏樂手，與台中室內合唱團一同演出整場文藝復興曲目</description>
+    </item>
     <item>
       <title>沐然回首——木笛重奏音樂會 台中場</title>
-      <link>http://localhost:1313/events/muse_tc/</link>
+      <link>//localhost:1313/events/muse_tc/</link>
       <pubDate>Sat, 22 Nov 2025 14:30:00 +0800</pubDate>
-      <guid>http://localhost:1313/events/muse_tc/</guid>
+      <guid>//localhost:1313/events/muse_tc/</guid>
       <description>與沐聲木笛四重奏一同演出。</description>
     </item>
     <item>
       <title>關西戀曲──跨界客家音樂會</title>
-      <link>http://localhost:1313/events/hakka/</link>
+      <link>//localhost:1313/events/hakka/</link>
       <pubDate>Sat, 08 Nov 2025 15:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/events/hakka/</guid>
+      <guid>//localhost:1313/events/hakka/</guid>
       <description>與新竹直笛合奏團以及客家歌手黃子軒共同演出，並為樂團提供改編作品。</description>
     </item>
     <item>
       <title>2025 浪人祭</title>
-      <link>http://localhost:1313/events/vaga/</link>
+      <link>//localhost:1313/events/vaga/</link>
       <pubDate>Sat, 18 Oct 2025 19:30:00 +0800</pubDate>
-      <guid>http://localhost:1313/events/vaga/</guid>
+      <guid>//localhost:1313/events/vaga/</guid>
       <description>參與浪人祭，演出hip-hop, RnB, Bossa Nova等曲風的原創/Cover作品。</description>
     </item>
   </channel>

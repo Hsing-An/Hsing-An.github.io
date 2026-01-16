@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jazz on Hsing-An Lee 個人網站</title>
+    <link>http://localhost:1313/zh/tags/jazz/</link>
+    <description>Recent content in Jazz on Hsing-An Lee 個人網站</description>
+    <generator>Hugo</generator>
+    <language>zh</language>
+    <lastBuildDate>Sat, 01 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/zh/tags/jazz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Polygatari - 祭り(Matsuri)</title>
+      <link>http://localhost:1313/zh/composition/matsuri/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/composition/matsuri/</guid>
+      <description>&lt;div class=&#34;youtube-embed&#34; style=&#34;max-width:900px; margin: 1.2rem 0;&#34;&gt;&#xA;  &lt;iframe width=&#34;100%&#34; height=&#34;250&#34; src=&#34;https://www.youtube.com/embed/gMag4XdDU_A?&#34; title=&#34;Polygatari-Matsuri&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;這是我最具有代表性的作品。融合了爵士、電子以及日本民俗音樂的現代木笛作品。&lt;br&gt;&#xA;此曲在 2023 Open Recorder Days Amsterdam 獲得第二名與最佳創作獎。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Polygatari - 祭り(Matsuri)</title>
+      <link>http://localhost:1313/zh/performance/matsuri/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/performance/matsuri/</guid>
+      <description>&lt;div class=&#34;youtube-embed&#34; style=&#34;max-width:900px; margin: 1.2rem 0;&#34;&gt;&#xA;  &lt;iframe width=&#34;100%&#34; height=&#34;250&#34; src=&#34;https://www.youtube.com/embed/gMag4XdDU_A?&#34; title=&#34;Polygatari-Matsuri&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;這是我最具有代表性的作品。融合了爵士、電子以及日本民俗音樂的現代木笛作品。&lt;br&gt;&#xA;此曲在 2023 Open Recorder Days Amsterdam 獲得第二名與最佳創作獎。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

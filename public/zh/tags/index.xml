@@ -1,11 +1,243 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on 李倖安的個人網站</title>
+    <title>Tags on Hsing-An Lee 個人網站</title>
     <link>http://localhost:1313/zh/tags/</link>
-    <description>Recent content in Tags on 李倖安的個人網站</description>
+    <description>Recent content in Tags on Hsing-An Lee 個人網站</description>
     <generator>Hugo</generator>
     <language>zh</language>
+    <lastBuildDate>Tue, 30 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/zh/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>管樂團</title>
+      <link>http://localhost:1313/zh/tags/%E7%AE%A1%E6%A8%82%E5%9C%98/</link>
+      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/%E7%AE%A1%E6%A8%82%E5%9C%98/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>想法</title>
+      <link>http://localhost:1313/zh/tags/%E6%83%B3%E6%B3%95/</link>
+      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/%E6%83%B3%E6%B3%95/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>指揮</title>
+      <link>http://localhost:1313/zh/tags/%E6%8C%87%E6%8F%AE/</link>
+      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/%E6%8C%87%E6%8F%AE/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>介紹</title>
+      <link>http://localhost:1313/zh/tags/%E4%BB%8B%E7%B4%B9/</link>
+      <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/%E4%BB%8B%E7%B4%B9/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Avant-Garde</title>
+      <link>http://localhost:1313/zh/tags/avant-garde/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/avant-garde/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Baroque</title>
+      <link>http://localhost:1313/zh/tags/baroque/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/baroque/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Corelli</title>
+      <link>http://localhost:1313/zh/tags/corelli/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/corelli/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Extended Techniques</title>
+      <link>http://localhost:1313/zh/tags/extended-techniques/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/extended-techniques/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hans-Martin Linde</title>
+      <link>http://localhost:1313/zh/tags/hans-martin-linde/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/hans-martin-linde/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Historical Informed Performance</title>
+      <link>http://localhost:1313/zh/tags/historical-informed-performance/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/historical-informed-performance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Louis Andriessen</title>
+      <link>http://localhost:1313/zh/tags/louis-andriessen/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/louis-andriessen/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Philidor</title>
+      <link>http://localhost:1313/zh/tags/philidor/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/philidor/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vivaldi</title>
+      <link>http://localhost:1313/zh/tags/vivaldi/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/vivaldi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Clarinet</title>
+      <link>http://localhost:1313/zh/tags/clarinet/</link>
+      <pubDate>Tue, 20 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/clarinet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Piano</title>
+      <link>http://localhost:1313/zh/tags/piano/</link>
+      <pubDate>Tue, 20 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/piano/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Trio</title>
+      <link>http://localhost:1313/zh/tags/trio/</link>
+      <pubDate>Tue, 20 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/trio/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Folk-Ish</title>
+      <link>http://localhost:1313/zh/tags/folk-ish/</link>
+      <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/folk-ish/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quartet</title>
+      <link>http://localhost:1313/zh/tags/quartet/</link>
+      <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/quartet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Recorder</title>
+      <link>http://localhost:1313/zh/tags/recorder/</link>
+      <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/recorder/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tonal Music</title>
+      <link>http://localhost:1313/zh/tags/tonal-music/</link>
+      <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/tonal-music/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Duet</title>
+      <link>http://localhost:1313/zh/tags/duet/</link>
+      <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/duet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>EDM</title>
+      <link>http://localhost:1313/zh/tags/edm/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/edm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Eletric</title>
+      <link>http://localhost:1313/zh/tags/eletric/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/eletric/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Songwirte</title>
+      <link>http://localhost:1313/zh/tags/songwirte/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/songwirte/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Agnes Dorwarth</title>
+      <link>http://localhost:1313/zh/tags/agnes-dorwarth/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/agnes-dorwarth/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bossa Nova</title>
+      <link>http://localhost:1313/zh/tags/bossa-nova/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/bossa-nova/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jazz</title>
+      <link>http://localhost:1313/zh/tags/jazz/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/jazz/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Math Rock</title>
+      <link>http://localhost:1313/zh/tags/math-rock/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/math-rock/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Solo</title>
+      <link>http://localhost:1313/zh/tags/solo/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/solo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bossanova</title>
+      <link>http://localhost:1313/zh/tags/bossanova/</link>
+      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/bossanova/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Taiwan Traditional Music</title>
+      <link>http://localhost:1313/zh/tags/taiwan-traditional-music/</link>
+      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/taiwan-traditional-music/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>JPOP</title>
+      <link>http://localhost:1313/zh/tags/jpop/</link>
+      <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/jpop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>POP</title>
+      <link>http://localhost:1313/zh/tags/pop/</link>
+      <pubDate>Sat, 02 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/pop/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

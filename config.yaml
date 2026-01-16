@@ -1,7 +1,53 @@
-baseURL: "https://hsinganlee.com/"
-languageCode: "zh-tw"
-title: "Hsing-An's profile"
+defaultContentLanguage: "zh"
+defaultContentLanguageInSubdir: false
+languages:
+  zh:
+    languageName: "中文"
+    weight: 1
+    params:
+      navbar:
+        brandName: "Hsing-An's Profile"
+      hero:
+        enable: true
+        intro: "你好，我是"
+        title: "李倖安 Hsing-An Lee"
+        subtitle: "木笛演奏家/作曲家"
+        content: "以木笛演奏古樂與當代作品，同時創作跨界作品，結合電子、爵士與傳統音樂元素。"
+        image: /images/your-photo.webp
+        bottomImage:
+          enable: true
+  en:
+    languageName: "English"
+    weight: 2
+    params:
+      navbar:
+        brandName: "Hsing-An's Profile"
+      hero:
+        enable: true
+        intro: "Hi, I'm"
+        title: "Hsing-An Lee"
+        subtitle: "Recorder player / Composer"
+        content: "I play early and contemporary music on the recorder, composing cross-genre works that combine electronic, jazz, and traditional music elements."
+        image: /images/your-photo.webp
+        bottomImage:
+          enable: true
+  ja:
+    languageName: "日本語"
+    weight: 3
+    params:
+      navbar:
+        brandName: "李 倖安"
+      hero:
+        enable: true
+        intro: "こんにちは、私は"
+        title: "李倖安 (Hsing-An Lee)"
+        subtitle: "リコーダー奏者／作曲家"
+        content: "古楽と現代音楽のリコーダー演奏を行い、電子音楽やジャズなどを融合した作品を制作しています。"
+        image: /images/your-photo.webp
+        bottomImage:
+          enable: true
 theme: hugo-profile
+
 
 outputs:
   home:
@@ -27,6 +73,7 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
 
 Menus:
   main:
@@ -117,35 +164,35 @@ params:
        secondaryColor: "#212529"
 
   # If you want to customize the menu, you can change it here
-  navbar:
-    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+  #navbar:
+  #  align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
     # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
-    showBrandLogo: false # Show brand logo in nav bar | default is true
-    brandName: "Hsing-An's Profile" # Brand name for the brand | default is the title variable
-    disableSearch: false
+  #  showBrandLogo: false # Show brand logo in nav bar | default is true
+  #  brandName: "Hsing-An's Profile" # Brand name for the brand | default is the title variable
+  #  disableSearch: false
     # searchPlaceholder: "Search"
-    stickyNavBar:
-      enable : true
-      showOnScrollUp : true
-    enableSeparator: true
-    menus:
-      disableAbout: false
-      disableExperience: false
-      disableEducation: false
-      disableProjects: false
-      disableAchievements: false
-      disableContact: false
+  #  stickyNavBar:
+  #    enable : true
+  #    showOnScrollUp : true
+  #  enableSeparator: true
+  #  menus:
+  #    disableAbout: false
+  #    disableExperience: false
+  #    disableEducation: false
+  #    disableProjects: false
+  #    disableAchievements: false
+  #    disableContact: false
 
   # Hero
-  hero:
-    enable: true
-    intro: "你好，我是"
-    title: "李倖安 Hsing-An Lee"
-    subtitle: "木笛演奏家/作曲家"
-    content: "以木笛演奏古樂與當代作品，同時創作跨界作品，結合電子、爵士與傳統音樂元素。"
-    image: /images/your-photo.webp
-    bottomImage:
-      enable: true
+  #hero:
+  #  enable: true
+  #  intro: "你好，我是"
+  #  title: "李倖安 Hsing-An Lee"
+  #  subtitle: "木笛演奏家/作曲家"
+  #  content: "以木笛演奏古樂與當代作品，同時創作跨界作品，結合電子、爵士與傳統音樂元素。"
+   # image: /images/your-photo.webp
+   # bottomImage:
+   #   enable: true
     # roundImage: true # Make hero image circular | default false
     # button:
     #  enable: true
@@ -225,7 +272,42 @@ params:
          
           同時也會以改編者的角度，為樂團譜改編作品。
           
-        #  曾參與的歷年演出：
+          曾參與的歷年演出：
+          - 2022 11月《七世紀的永恆樂章》2022新竹直笛合奏團年度公演
+          - 2023 1月 新竹縣．新春opening 走春活動
+          - 2023 6月 《木笛交響詩》新竹直笛合奏團創團十週年系列音樂會
+          - 2023 7月 阿姆斯特丹的臺灣之聲/ Sound of Formosa in Amsterdam 音樂會
+          - 2024 5月 Sören Sieg ”The Secret of Secrets” 直播音樂會
+
+
+          曾參與的歷年比賽：
+          - 2023 7月 ORDA 阿姆斯特丹國際木笛節 合奏組第二名
+
+
+      - job: "作曲家、團員"
+        company: "清華大學木笛樂團"
+        companyUrl: "https://www.facebook.com/profile.php?id=100063718667029"
+        date: "2022 - 至今"
+        info:
+          enable: true
+          content: 在內除了作為木笛樂手演奏外，多次受委託改編/創作樂曲。
+        content: |
+          清華大學木笛樂團除了是大學期間必須修習的課程外，也常常跟著樂團進行不同的演出、比賽。
+          
+          並且也曾經以作曲者的身份為樂團創作原創作品。
+
+          曾參與的歷年演出：
+          - 2022 12月 以色列特拉維夫木笛音樂節 開幕式音樂會
+          - 2023 4月 音樂與空間 小型音樂展演 
+          - 2023 10月 台中捷運車廂音樂會 with 清大木笛四重奏（**全場改編曲目由本人負責**）
+          - 2024 5月 清華大學春之清華藝術節系列樂團快閃音樂會
+          - 2024 5月 《吾愛吾笛》 新竹直笛合奏團木笛重奏音樂會
+
+          曾參與的歷年比賽：
+          - 2022 12月 以色列特拉維夫木笛音樂節 16歲以上室內樂組第一名
+          
+
+
         
       - job: "指揮、作曲家、團員"
         company: "台東高中管樂團"
@@ -243,16 +325,7 @@ params:
          畢業後，也多次參與[台東高中校友管樂團](https://www.tsawo2022.com/2025)的演出，不僅以團員的身份一同演奏，也曾改編多首樂曲給樂團演奏。
 
          同時在2025年9月，我也受邀參與[日昇東中系列音樂會——川方之至](https://www.tsawo2022.com)，擔任指揮一職，同時演出我的創作作品〈Kyrie Ventorum〉。
-      - job: "木笛合作演出者"
-        company: "巴洛克獨奏家樂團"
-        companyUrl: "https://www.baroque-camerata.org"
-        date: "2022 Aug"
-        featuredLink:
-          enable: true
-          name: "查看演出資訊"
-          url: "https://music.nttu.edu.tw/p/405-1027-125830,c4433.php?Lang=zh-tw"
-        content: |
-          2022年8月 參與巴洛克獨奏家樂團《印象．臺灣》 導聆音樂會臺東場 木笛合作演出者
+      
       - job: "團員"
         company: "新竹爵士大樂團"
         companyUrl: "https://www.facebook.com/p/HJO-新竹爵士大樂團-100066811428103/?locale=zh_TW"
@@ -265,8 +338,40 @@ params:
           content: 在內擔任中音薩克斯風手，2024年後從大樂團轉為青年團團員。
         content: |
           上大學後開始學習爵士樂，同時加入新竹爵士大樂團擔任中音薩克斯風手。2024年後轉為HJO青年團團員。
+           
+          曾參與的歷年演出：
+          - 2023 4月 搖擺舞會xHJO新竹爵士大樂團
+          - 2023 9月 《今天，我想來點科技城》爵士樂音樂會
+          - 2024 1月 HJO青年團／劉勁男四重奏演出
+          - 2024 3月 HJO大樂團季度音樂會
+          
 
           曾多次與樂團一同演出。
+      - job: "薩克斯風手"
+        company: "烏梅爾醬 Fusion樂團"
+        date: "2023 - 2024" 
+        info:
+          enable: true
+          content: 在Fusion樂團內當薩克斯風手。
+        content: |
+          在樂團內擔任薩克斯風手，並以樂團的名義參加過幾次演出。
+
+          - 2023 6月 慕尼克音樂教室發表
+          - 2023 12月 慕尼克音樂教室發表
+      
+      - job: "木笛合作演出者"
+        company: "巴洛克獨奏家樂團"
+        companyUrl: "https://www.baroque-camerata.org"
+        date: "2022 Aug"
+        #featuredLink:
+          #enable: true
+          #name: "查看演出資訊"
+          #url: "https://music.nttu.edu.tw/p/405-1027-125830,c4433.php?Lang=zh-tw"
+        content: |
+          - 2022 8月 參與[巴洛克獨奏家樂團《印象．臺灣》 導聆音樂會臺東場](https://music.nttu.edu.tw/p/405-1027-125830,c4433.php?Lang=zh-tw)木笛合作演出者
+      - job: "薩克斯風手"
+        company: "清大AI樂團"
+
 
         
 

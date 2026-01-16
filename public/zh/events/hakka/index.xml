@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>關西戀曲──跨界客家音樂會 on Hsing-An Lee 個人網站</title>
+    <link>http://localhost:1313/zh/events/hakka/</link>
+    <description>Recent content in 關西戀曲──跨界客家音樂會 on Hsing-An Lee 個人網站</description>
+    <generator>Hugo</generator>
+    <language>zh</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/zh/events/hakka/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,11 +28,11 @@
 
 
 
-<meta property="og:url" content="http://localhost:1313/events/">
+<meta property="og:url" content="//localhost:1313/events/">
   <meta property="og:site_name" content="Hsing-An&#39;s profile">
   <meta property="og:title" content="所有演出">
   <meta property="og:description" content="以下是我所有演出的頁面，裡面也有所有演出的詳細訊息，歡迎逛逛！">
-  <meta property="og:locale" content="zh_tw">
+  <meta property="og:locale" content="zh">
   <meta property="og:type" content="website">
 
 
@@ -102,7 +102,7 @@
 
 
 
-<meta name="description" content="所有演出 of Hsing-An&#39;s profile">
+<meta name="description" content="所有演出 of ">
 <link rel="stylesheet" href="/css/list.css" media="all">
 
 
@@ -110,7 +110,7 @@
   
 
   <title>
-所有演出 | Hsing-An&#39;s profile
+所有演出 | 
 
   </title>
 </head>
@@ -140,37 +140,15 @@
 
 
 
-<script>
-    var prevScrollPos = window.pageYOffset;
-    window.addEventListener("scroll", function showHeaderOnScroll() {
-        let profileHeaderElem = document.getElementById("profileHeader");
-        let currentScrollPos = window.pageYOffset;
-        let resetHeaderStyle = false;
-        let showNavBarOnScrollUp =  true ;
-        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
-        if (showNavBar) {
-            profileHeaderElem.classList.add("showHeaderOnTop");
-        } else {
-            resetHeaderStyle = true;
-        }
-        if(currentScrollPos === 0) {
-            resetHeaderStyle = true;
-        }
-        if(resetHeaderStyle) {
-            profileHeaderElem.classList.remove("showHeaderOnTop");
-        }
-        prevScrollPos = currentScrollPos;
-    });
-</script>
-
-
 
 <header id="profileHeader">
     <nav class="pt-3 navbar navbar-expand-lg animate">
         <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
             
-            <a class="navbar-brand primary-font text-wrap" href="/">
+            <a class="navbar-brand primary-font text-wrap" href="//localhost:1313/">
                 
+                <img src="/fav.png" width="30" height="30"
+                    class="d-inline-block align-top">
                 Hsing-An&#39;s Profile
                 
             </a>
@@ -203,7 +181,7 @@
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/#about" aria-label="about">
+                        <a class="nav-link" href="//localhost:1313/#about" aria-label="about">
                             關於我
                         </a>
                     </li>
@@ -211,7 +189,7 @@
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/#experience"
+                        <a class="nav-link" href="//localhost:1313/#experience"
                             aria-label="experience">
                             合作經驗
                         </a>
@@ -220,7 +198,7 @@
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/#education"
+                        <a class="nav-link" href="//localhost:1313/#education"
                             aria-label="education">
                             學歷
                         </a>
@@ -229,7 +207,7 @@
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/#projects"
+                        <a class="nav-link" href="//localhost:1313/#projects"
                             aria-label="projects">
                             作品
                         </a>
@@ -238,7 +216,7 @@
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/#achievements"
+                        <a class="nav-link" href="//localhost:1313/#achievements"
                             aria-label="achievements">
                             獲獎經驗
                         </a>
@@ -247,16 +225,13 @@
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/#contact"
+                        <a class="nav-link" href="//localhost:1313/#contact"
                             aria-label="contact">
                             與我聯絡
                         </a>
                     </li>
                     
 
-                    
-                        <li class="nav-item navbar-text d-none d-lg-block d-xl-block"><div class="nav-link nav-link-sep"></div></li>
-                        <div class="dropdown-divider"></div>
                     
 
                     
@@ -333,7 +308,36 @@
                         </div>
                     </li>
                     
-
+                    
+                    <li class="nav-item navbar-text dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            中文
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                            
+                                
+                            
+                                
+                                    
+                                    
+                                        
+                                        
+                                    
+                                    <a class="dropdown-item" href="/en/">English</a>
+                                
+                            
+                                
+                                    
+                                    
+                                        
+                                        
+                                    
+                                    <a class="dropdown-item" href="/ja/">日本語</a>
+                                
+                            
+                        </div>
+                    </li>
                 </ul>
 
             </div>
@@ -348,6 +352,62 @@
 
     </div>
     <div class="row">
+        
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card-columns">
+                <div class="card h-100">
+                    
+                    <div class="card-header">
+                        <a href="/events/waves/">
+                            <img src="/images/wei.webp" class="card-img-top" alt="人文啟迪科技：清華木笛樂團音樂會">
+                        </a>
+                    </div>
+                    
+                    
+
+                    <div class="card-body bg-transparent p-4 shadow-sm">
+                        <a href="/events/waves/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="人文啟迪科技：清華木笛樂團音樂會">人文啟迪科技：清華木笛樂團音樂會</h5>
+                        </a>
+                        <div class="card-text secondary-font">
+                            <p>與清大木笛團一同演出，並且發表我的個人創作</p>
+                        </div>
+                    </div>
+                    <div class="mt-auto post-footer bg-transparent py-3">
+                        <span class="float-start bg-transparent">Dec 24, 2025</span>
+                        <a href="/events/waves/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card-columns">
+                <div class="card h-100">
+                    
+                    <div class="card-header">
+                        <a href="/events/choir/">
+                            <img src="/images/choir.webp" class="card-img-top" alt="TCC 2025沙龍音樂會系列《文藝聖誕畫人聲》">
+                        </a>
+                    </div>
+                    
+                    
+
+                    <div class="card-body bg-transparent p-4 shadow-sm">
+                        <a href="/events/choir/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="TCC 2025沙龍音樂會系列《文藝聖誕畫人聲》">TCC 2025沙龍音樂會系列《文藝聖誕畫人聲》</h5>
+                        </a>
+                        <div class="card-text secondary-font">
+                            <p>作為木笛獨奏樂手，與台中室內合唱團一同演出整場文藝復興曲目</p>
+                        </div>
+                    </div>
+                    <div class="mt-auto post-footer bg-transparent py-3">
+                        <span class="float-start bg-transparent">Dec 13, 2025</span>
+                        <a href="/events/choir/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <div class="col-lg-4 col-md-6 my-3">
             <div class="card-columns">
@@ -377,65 +437,29 @@
             </div>
         </div>
         
-        <div class="col-lg-4 col-md-6 my-3">
-            <div class="card-columns">
-                <div class="card h-100">
-                    
-                    <div class="card-header">
-                        <a href="/events/hakka/">
-                            <img src="/images/hakka.webp" class="card-img-top" alt="關西戀曲──跨界客家音樂會">
-                        </a>
-                    </div>
-                    
-                    
-
-                    <div class="card-body bg-transparent p-4 shadow-sm">
-                        <a href="/events/hakka/" class="primary-font card-title">
-                            <h5 class="card-title bg-transparent" title="關西戀曲──跨界客家音樂會">關西戀曲──跨界客家音樂會</h5>
-                        </a>
-                        <div class="card-text secondary-font">
-                            <p>與新竹直笛合奏團以及客家歌手黃子軒共同演出，並為樂團提供改編作品。</p>
-                        </div>
-                    </div>
-                    <div class="mt-auto post-footer bg-transparent py-3">
-                        <span class="float-start bg-transparent">Nov 8, 2025</span>
-                        <a href="/events/hakka/" class="float-end btn btn-outline-info btn-sm">Read</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 my-3">
-            <div class="card-columns">
-                <div class="card h-100">
-                    
-                    <div class="card-header">
-                        <a href="/events/vaga/">
-                            <img src="/images/vaga.webp" class="card-img-top" alt="2025 浪人祭">
-                        </a>
-                    </div>
-                    
-                    
-
-                    <div class="card-body bg-transparent p-4 shadow-sm">
-                        <a href="/events/vaga/" class="primary-font card-title">
-                            <h5 class="card-title bg-transparent" title="2025 浪人祭">2025 浪人祭</h5>
-                        </a>
-                        <div class="card-text secondary-font">
-                            <p>參與浪人祭，演出hip-hop, RnB, Bossa Nova等曲風的原創/Cover作品。</p>
-                        </div>
-                    </div>
-                    <div class="mt-auto post-footer bg-transparent py-3">
-                        <span class="float-start bg-transparent">Oct 18, 2025</span>
-                        <a href="/events/vaga/" class="float-end btn btn-outline-info btn-sm">Read</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
         <div class="row justify-content-center">
             <div class="col-auto m-3">
                 
+    <ul class="pagination pagination-default">
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
+      </li>
+      <li class="page-item">
+        <a href="/events/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
+      </li>
+      <li class="page-item">
+        <a href="/events/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/events/page/2/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul>
             </div>
         </div>
     </div>
@@ -452,6 +476,65 @@
         Recent Posts
     </div>
     <div class="row justify-content-center">
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/blogs/yoyuu/">
+                        <img src="/images/cond.webp" class="card-img-top" alt="余裕 Sprezzatura（以及一些浪人祭演出的心得）">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/yoyuu/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="余裕 Sprezzatura（以及一些浪人祭演出的心得）">余裕 Sprezzatura（以及一些浪人祭演出的 …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><p>昨天去看了鏈鋸人劇場版，實在是太令我驚艷了。</p>
+<p>說實在的，當初動漫我追到棄番，雖然主角個性是滿鮮明的（臭直男部分也讓我很有同感），但就好像沒有很touch到我（？<br>
+不過最近實在是被太多人推坑，為了去看看劇場版有多屌，我就跑去重看（順便換成看總集篇），<br>
+結果真的好好看喔，就是很單純的好看，該好笑的地方都 …</p></p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Oct 26, 2025</span>
+                    <a href="/blogs/yoyuu/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/blogs/flow/">
+                        <img src="/images/website.webp" class="card-img-top" alt="心象練習筆記">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/flow/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="心象練習筆記">心象練習筆記</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><h2 id="心裡韌性的七個特徵-7c">心裡韌性的七個特徵 7C</h2>
+<h4 id="競爭性-competitive">競爭性 Competitive</h4>
+<p>有競爭力的人想辦法贏，他們會扛下失敗，讓自己越挫越勇。</p>
+<h4 id="自信心-confident">自信心 Confident</h4>
+<p>相信自己能處理任何事。</p>
+<h4 id="控制力-control">控制力 Control</h4>
+<p>能夠控制自己的情緒與行為。</p>
+<h4 id="意志力-committed">意志力 Committed</h4>
+<p>把時間、精力集中在自己的目標與夢想上，屬於自我導向 …</p></p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Oct 22, 2025</span>
+                    <a href="/blogs/flow/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
         
         <div class="col-lg-4 col-md-6 pt-2">
             <div class="card h-100">
@@ -478,35 +561,6 @@
                 <div class="mt-auto card-footer">
                     <span class="float-start">Sep 30, 2025</span>
                     <a href="/blogs/windband2025/" class="float-end btn btn-outline-info btn-sm">Read</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/blogs/first-blog/">
-                        <img src="/images/website.webp" class="card-img-top" alt="個人網站開張！">
-                    </a>
-                </div>
-                
-                <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/first-blog/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="個人網站開張！">個人網站開張！</h5>
-                    </a>
-                    <div class="card-text secondary-font">
-                        <p><p>很開心可以跟大家分享我的新計劃：</p>
-<h2 id="我的個人網站開幕了">我的個人網站開幕了！</h2>
-<p>作為一個藝術創作者，能夠跟大家分享自己的作品、想法是件很開心且享受的事情；<br>
-但音樂作品的傳播往往受到時間、地域性的限制，<br>
-同時除了作品本身外，有許多與作品相關的想法也想與大家分享，<br>
-因此決定在創作上最不受限的媒介——網站與大家分享。 …</p></p>
-                    </div>
-                </div>
-                <div class="mt-auto card-footer">
-                    <span class="float-start">Sep 23, 2025</span>
-                    <a href="/blogs/first-blog/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
@@ -592,13 +646,13 @@
         <div class="col-md-4 text-center">
             
                 <div class="pb-2">
-                    <a href="http://localhost:1313/" title="Hsing-An&#39;s profile">
+                    <a href="//localhost:1313/" title="">
                         <img alt="Footer logo" src="/fav.png"
                             height="40px" width="40px">
                     </a>
                 </div>
             
-            &copy; 2025  All rights reserved
+            &copy; 2026  All rights reserved
             <div class="text-secondary">
                 Made with
                 <span class="text-danger">

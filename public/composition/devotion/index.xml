@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>碼頭姑娘(arrange for recorder quartet) on Hsing-An&#39;s profile</title>
-    <link>http://localhost:1313/composition/devotion/</link>
-    <description>Recent content in 碼頭姑娘(arrange for recorder quartet) on Hsing-An&#39;s profile</description>
+    <title>碼頭姑娘(arrange for recorder quartet) on </title>
+    <link>//localhost:1313/composition/devotion/</link>
+    <description>Recent content in 碼頭姑娘(arrange for recorder quartet) on </description>
     <generator>Hugo</generator>
-    <language>zh-tw</language>
+    <language>zh</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/composition/devotion/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/composition/devotion/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
