@@ -6,8 +6,43 @@
     <description>Recent content in Tags on Hsing-An&#39;s profile</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 30 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>基本功</title>
+      <link>http://localhost:1313/tags/%E5%9F%BA%E6%9C%AC%E5%8A%9F/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E5%9F%BA%E6%9C%AC%E5%8A%9F/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>書</title>
+      <link>http://localhost:1313/tags/%E6%9B%B8/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E6%9B%B8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>演奏</title>
+      <link>http://localhost:1313/tags/%E6%BC%94%E5%A5%8F/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E6%BC%94%E5%A5%8F/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>練習</title>
+      <link>http://localhost:1313/tags/%E7%B7%B4%E7%BF%92/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E7%B7%B4%E7%BF%92/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>練習法</title>
+      <link>http://localhost:1313/tags/%E7%B7%B4%E7%BF%92%E6%B3%95/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E7%B7%B4%E7%BF%92%E6%B3%95/</guid>
+      <description></description>
+    </item>
     <item>
       <title>想法</title>
       <link>http://localhost:1313/tags/%E6%83%B3%E6%B3%95/</link>
@@ -163,10 +198,10 @@
       <description></description>
     </item>
     <item>
-      <title>Eletric</title>
-      <link>http://localhost:1313/tags/eletric/</link>
+      <title>Electric</title>
+      <link>http://localhost:1313/tags/electric/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/eletric/</guid>
+      <guid>http://localhost:1313/tags/electric/</guid>
       <description></description>
     </item>
     <item>

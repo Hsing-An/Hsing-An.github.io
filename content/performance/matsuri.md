@@ -5,7 +5,7 @@ date: 2023-07-01
 author: "Hsing-An Lee"
 tags: 
   - Jazz
-  - Eletric
+  - Electric
   - Bossa Nova
   - Math Rock
 

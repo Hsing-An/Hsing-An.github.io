@@ -8,6 +8,9 @@ tags:
   - 介紹
 image: /images/website.webp
 description: "網站開幕"
+aliases:
+  - /blogs/first-blog/
+  - /blogs/essays/first-blog/
 ---
 
 很開心可以跟大家分享我的新計劃：

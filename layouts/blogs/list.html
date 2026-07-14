@@ -1,0 +1,135 @@
+{{ define "head" }}
+<meta name="description" content="{{ .Description | default (printf "%s of %s" .Title .Site.Title) }}">
+<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/list.css" media="all">
+<style>
+    #list-page.blog-home {
+        max-width: 1180px;
+    }
+
+    #list-page .blog-home-intro {
+        max-width: 680px;
+        margin: 0 auto 2rem;
+        color: var(--text-secondary-color);
+        text-align: center;
+        line-height: 1.8;
+    }
+
+    #list-page .blog-section-card {
+        min-height: 260px;
+        border: 1px solid rgba(15, 80, 100, 0.08);
+    }
+
+    #list-page .blog-section-card .card-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #list-page .blog-section-title {
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+
+    #list-page .blog-section-description {
+        flex: 1;
+        color: var(--text-secondary-color);
+        line-height: 1.75;
+    }
+
+    #list-page .blog-section-meta {
+        color: var(--text-secondary-color);
+        font-size: 0.95rem;
+        opacity: 0.9;
+    }
+</style>
+{{ end }}
+
+{{ define "title" }}
+{{ .Title }} | {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+{{ $isBlogHome := eq .RelPermalink "/blogs/" }}
+<div class="container pt-5{{ if $isBlogHome }} blog-home{{ end }}" id="list-page">
+    <h2 class="text-center pb-2">{{ .Title }}</h2>
+    <div class="{{ if $isBlogHome }}blog-home-intro{{ else }}section-content mb-4{{ end }}">
+        {{ .Content }}
+    </div>
+
+    {{ if gt (len .Sections) 0 }}
+    <div class="row justify-content-center mb-4">
+        {{ range .Sections.ByWeight }}
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card h-100{{ if $isBlogHome }} blog-section-card{{ end }}">
+                <div class="card-body bg-transparent p-4 shadow-sm">
+                    <a href="{{ .RelPermalink }}" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent{{ if $isBlogHome }} blog-section-title{{ end }}" title="{{ .Title }}">{{ .Title }}</h5>
+                    </a>
+                    <div class="card-text secondary-font{{ if $isBlogHome }} blog-section-description{{ end }}">
+                        <p>{{ .Description }}</p>
+                    </div>
+                    <div class="blog-section-meta bg-transparent mt-3">
+                        {{ len .RegularPagesRecursive }} 篇文章
+                    </div>
+                </div>
+                <div class="mt-auto post-footer bg-transparent py-3">
+                    <a href="{{ .RelPermalink }}" class="float-end btn btn-outline-info btn-sm">
+                        {{ if $isBlogHome }}進入分類{{ else }}{{ .Site.Params.terms.read | default "Read" }}{{ end }}
+                    </a>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+    {{ end }}
+
+    {{ $pages := .RegularPages.ByDate.Reverse }}
+    {{ if gt (len $pages) 0 }}
+    {{ $paginator := .Paginate $pages }}
+    <div class="row">
+        {{ range $paginator.Pages }}
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card-columns">
+                <div class="card h-100">
+                    {{ if and (not (.Site.Params.listPages.disableFeaturedImage | default false)) (.Params.image) }}
+                    <div class="card-header">
+                        <a href="{{ .RelPermalink }}">
+                            <img src="{{ .Params.image }}" class="card-img-top" alt="{{ .Title }}">
+                        </a>
+                    </div>
+                    {{ end }}
+                    {{ if .Params.youtubeID }}
+                    <iframe class="youtube-{{ .Params.youtubeSize }}"
+                        src="https://www.youtube.com/embed/{{ .Params.youtubeID }}"
+                        frameborder="0"
+                        allowfullscreen></iframe>
+                    {{ end }}
+
+                    <div class="card-body bg-transparent p-4 shadow-sm">
+                        <a href="{{ .RelPermalink }}" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="{{ .Title }}">{{ .Title | truncate 25 }}</h5>
+                        </a>
+                        <div class="card-text secondary-font">
+                            <p>{{ .Summary | truncate 100 }}</p>
+                        </div>
+                    </div>
+                    <div class="mt-auto post-footer bg-transparent py-3">
+                        <span class="float-start bg-transparent">{{ .Date.Format (.Site.Params.datesFormat.articleList | default "January 2, 2006") }}</span>
+                        <a href="{{ .RelPermalink }}" class="float-end btn btn-outline-info btn-sm">{{ .Site.Params.terms.read | default "Read" }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+        <div class="row justify-content-center">
+            <div class="col-auto m-3">
+                {{ template "_internal/pagination.html" . }}
+            </div>
+        </div>
+    </div>
+    {{ else if eq (len .Sections) 0 }}
+    <div class="text-center text-secondary py-5">
+        目前還沒有文章。
+    </div>
+    {{ end }}
+</div>
+{{ end }}

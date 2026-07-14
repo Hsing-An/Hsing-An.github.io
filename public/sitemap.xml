@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/blogs/posts/</loc>
+    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/arrangement/%E6%BF%9B/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -14,11 +17,54 @@
     <loc>http://localhost:1313/arrangement/artisan-nova/</loc>
     <lastmod>2023-05-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/blogs/notes/early-music/</loc>
+  </url><url>
+    <loc>http://localhost:1313/blogs/notes/</loc>
+    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/performance/tre-fontane/</loc>
     <lastmod>2025-05-28T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/blogs/notes/jazz/</loc>
+  </url><url>
+    <loc>http://localhost:1313/blogs/notes/others/</loc>
+    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogs/practice/</loc>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/performance/music-for-a-bird/</loc>
     <lastmod>2025-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogs/notes/others/peak/</loc>
+    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogs/posts/2026time/</loc>
+    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%E5%9F%BA%E6%9C%AC%E5%8A%9F/</loc>
+    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%E6%9B%B8/</loc>
+    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%E6%BC%94%E5%A5%8F/</loc>
+    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%E7%B7%B4%E7%BF%92/</loc>
+    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%E7%B7%B4%E7%BF%92%E6%B3%95/</loc>
+    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogs/</loc>
+    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogs/practice/202607prac/</loc>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/events/</loc>
     <lastmod>2025-11-22T14:30:00+08:00</lastmod>
@@ -32,19 +78,13 @@
     <loc>http://localhost:1313/events/vaga/</loc>
     <lastmod>2025-10-18T19:30:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/</loc>
-    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/%E6%83%B3%E6%B3%95/</loc>
     <lastmod>2025-09-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%E6%8C%87%E6%8F%AE/</loc>
     <lastmod>2025-09-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/windband2025/</loc>
+    <loc>http://localhost:1313/blogs/posts/windband2025/</loc>
     <lastmod>2025-09-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%E7%AE%A1%E6%A8%82%E5%9C%98/</loc>
@@ -53,7 +93,7 @@
     <loc>http://localhost:1313/tags/%E4%BB%8B%E7%B4%B9/</loc>
     <lastmod>2025-09-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/first-blog/</loc>
+    <loc>http://localhost:1313/blogs/posts/first-blog/</loc>
     <lastmod>2025-09-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/gallery/</loc>
@@ -152,7 +192,7 @@
     <loc>http://localhost:1313/tags/edm/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/eletric/</loc>
+    <loc>http://localhost:1313/tags/electric/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/songwirte/</loc>

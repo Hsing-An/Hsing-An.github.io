@@ -9,6 +9,9 @@ tags:
   - 指揮
 image: /images/cond.webp
 description: "管樂團指揮"
+aliases:
+  - /blogs/windband2025/
+  - /blogs/essays/windband2025/
 ---
 在前幾天(9/21)，我在台東文化中心以指揮的身份與台東高中校友管樂團一起演出。  
 比較正式的想法在[Facebook](https://www.facebook.com/share/p/17254K2yJ4/)與[IG](https://www.instagram.com/p/DPMmqfCEqyi/?img_index=1)已經發了，這裡就講一些比較貼近我內心的想法吧！
