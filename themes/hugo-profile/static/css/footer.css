@@ -108,6 +108,12 @@ footer #recent-posts .recent-post-card .card-summary .summary-heading {
     font-weight: 700 !important;
 }
 
+footer #recent-posts .recent-post-card .card-summary .summary-heading::before {
+    content: "# ";
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
 footer #recent-posts .recent-post-card .card-summary p {
     margin-bottom: 0.4rem !important;
 }

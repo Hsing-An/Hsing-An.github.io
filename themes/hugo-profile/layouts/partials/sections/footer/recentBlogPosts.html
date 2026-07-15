@@ -35,4 +35,52 @@
         {{ end }}
     </div>
 </div>
+<style>
+    footer #recent-posts .recent-post-col {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    footer #recent-posts .recent-post-card > .card-header .card-img-top {
+        height: 160px;
+    }
+
+    footer #recent-posts .recent-post-card h5.card-title {
+        font-size: 2rem;
+        line-height: 1.15;
+    }
+
+    footer #recent-posts .recent-post-card .card-summary {
+        font-size: 100%;
+        line-height: 1.6;
+    }
+
+    footer #recent-posts .recent-post-card .card-summary .summary-heading {
+        display: block;
+        font-size: 1.4em;
+        line-height: 1.35;
+        margin: 0.35rem 0;
+        font-weight: 700;
+    }
+
+    footer #recent-posts .recent-post-card .card-summary .summary-heading::before {
+        content: "# ";
+        color: var(--primary-color);
+        font-weight: 700;
+    }
+
+    @media (max-width: 991.98px) {
+        footer #recent-posts .recent-post-col {
+            flex: 0 0 41.666667%;
+            max-width: 41.666667%;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        footer #recent-posts .recent-post-col {
+            flex: 0 0 80%;
+            max-width: 80%;
+        }
+    }
+</style>
 {{ end }}

@@ -43,6 +43,12 @@
     font-weight: 700 !important;
 }
 
+#list-page .card-summary .summary-heading::before {
+    content: "# ";
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
 #list-page .card-summary p {
     margin-bottom: 0.4rem;
 }
