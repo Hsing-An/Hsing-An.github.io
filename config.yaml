@@ -41,8 +41,8 @@ Menus:
       url: /gallery
       weight: 2
     - identifier: events
-      name: 近期演出
-      title: Upcoming events
+      name: 所有演出
+      title: events
       url: /events/
       weight: 3
     #Dropdown menu
