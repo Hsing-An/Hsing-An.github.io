@@ -40,11 +40,16 @@ Menus:
       title: Blog posts
       url: /gallery
       weight: 2
+    - identifier: events
+      name: 近期演出
+      title: Upcoming events
+      url: /events/
+      weight: 3
     #Dropdown menu
     - identifier: dropdown
       title: 作品列表
       name: 作品列表
-      weight: 3
+      weight: 4
     - identifier: dropdown1
       title: 演奏
       name: 演奏
@@ -142,7 +147,7 @@ params:
     intro: "你好，我是"
     title: "李倖安 Hsing-An Lee"
     subtitle: "木笛演奏家/作曲家"
-    content: "以木笛演奏古樂與當代作品，同時創作跨界作品，結合電子、爵士與傳統音樂元素。"
+    content: "以演奏詮釋，以創作發聲——探索木笛在古樂、當代、爵士之間的可能。"
     image: /images/your-photo.webp
     bottomImage:
       enable: true
@@ -169,26 +174,26 @@ params:
     content: |-
       ## 李倖安(Hsing-An Lee) 木笛演奏家/作曲家
 
-      出生於台東，目前就讀清華大學音樂系主修**木笛**、副修作曲。師事陳孟亨（木笛）與陳欣蕾、周久渝（作曲）。
+      出生於台東，畢業於清華大學音樂系，主修**木笛**、副修**作曲**。師事陳孟亨（木笛）與陳欣蕾、周久渝（作曲）。
       
-      **木笛演奏**主要專注在古樂(Early Music)以及當代音樂(Contemporary music)，[曾多次在國際賽事上獲獎](#achievements)，並持續在演奏的道路上精進自己，曾接受Walter van Hauwe、Erik Bosgraaf、Maurice Steger、Tom Beets、Joris van Goethem、Bart Spanhove、Jorge Issac、Daniël Brüggen、Inês d’Avena、Simon Borutzki等的個別指導。
+      **木笛演奏**主要專注於古樂(Early Music)以及當代音樂(Contemporary Music)，目前也持續鑽研爵士樂(Jazz Music)。[曾多次在國際賽事上獲獎](#achievements)，並曾作為**獨奏家**在[**國家演奏廳**、**台中歌劇院**](#experience)演出。 
 
-      **作曲**方面則融合了電子、爵士、當代、流行、傳統音樂等的影響，使得創作的語彙十分多元。不僅有譜寫給器樂的作品，也有以編曲軟體完成的編曲作品。[創作也在多項比賽中獲獎](#achievements)。
+      **作曲**方面則融合了電子、爵士、當代、流行、傳統音樂等的影響，使得創作的語彙十分多元。不僅有譜寫給器樂的作品，也有以編曲軟體完成的編曲作品。[創作也在多項比賽中獲獎](#achievements)。作品曾在[衛武營發表](https://www.opentix.life/event/1985188449916014593)。
 
       --- 
 
     skills:
       enable: true
-      title: "目前正在學習中，演奏/創作過的種類"
+      title: "擅長的樂種："
       items:
         - "巴洛克器樂作品演奏"
-        - "晚期文藝復興器樂作品演奏"
-        - "Consort(文藝復興合奏曲) 演奏"
-        - "電子/爵士Fusion作品創作及演奏"
-        - "木笛樂團原創曲目"
-        - "木笛樂團改編歌曲"
-        - "管樂團原創作品創作"
-        - "弦樂室內樂原創作品創作"
+        - "文藝復興器樂作品演奏"
+        - "文藝復興合奏作品演奏"
+        - "爵士樂演奏"
+        - "融合爵士作品創作及演奏"
+        - "木笛樂團原創/改編曲目"
+        - "當代室內樂作品創作"
+        - "流行音樂作曲、編曲"
 
     # Experience
   experience:
@@ -208,7 +213,7 @@ params:
           曲風上，融合了電子舞曲、爵士、R&B等較現代的曲風，並以Live performance的形式搭配自行創作的樂曲進行演出。
           
           曾參與的歷年演出:
-          - 2024 8月 [臺灣國際直笛音樂節](https://www.facebook.com/twrecorderfestival/?locale=zh_TW) Fringe concert演出 [初次jam面 First jam men](https://www.opentix.life/event/1815794800281317377?srsltid=AfmBOooHnWstInIf8t-YgFxm0kzsZUXOCyZZ1Pl4B0Juc1wKPpJcS4lL)。
+          - 2024 8月 [臺灣國際直笛音樂節](https://www.facebook.com/twrecorderfestival/?locale=zh_TW) Fringe Concert 演出 [初次jam面 First jam men](https://www.opentix.life/event/1815794800281317377?srsltid=AfmBOooHnWstInIf8t-YgFxm0kzsZUXOCyZZ1Pl4B0Juc1wKPpJcS4lL)。
           - 2025 10月 [2025 浪人祭](events/vaga)
 
 
@@ -222,11 +227,11 @@ params:
         #  url: "https://example.com"
         info:
           enable: true
-          content: 在內除了作為木笛樂手演奏外，多次受委託改編/創作樂曲。
+          content: 在團內除了作為木笛樂手演奏外，多次受委託改編/創作樂曲。
         content: |
           大學期間參與了 [新竹直笛合奏團](https://www.facebook.com/hsinchurecorder/?locale=zh_TW) ，多次以團員的身份跟著樂團一同演出。
          
-          同時也會以改編者的角度，為樂團譜改編作品。
+          同時也會以改編者的角度，為樂團編寫改編作品。
           
           曾參與的歷年演出：
           - 2022 11月[《七世紀的永恆樂章》2022新竹直笛合奏團年度公演](https://www.opentix.life/event/1574602497174462466)
@@ -240,7 +245,7 @@ params:
           - 2024 11月 [山線交響時光](https://www.opentix.life/event/1848611202829516801)
           - 2025 8月 [《木笛交響新意象》](https://www.opentix.life/event/1930803510848225281)
           - 2025 11月 [《關西戀曲──跨界客家音樂會》](https://www.facebook.com/photo.php?fbid=1283919383746874&set=pb.100063864731676.-2207520000&type=3) ***本場包含本人改編作品**
-
+          - 2026 4月 [《木笛交響的浪漫詩篇》Raphael Benjamin Meyer 木笛作品專場音樂會](https://www.opentix.life/event/2008115201212325889?fbclid=IwY2xjawTEByVleHRuA2FlbQIxMABicmlkETFFSmZzNVZ5ZFVralpSOGo3c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHjjj27o5VPQTkee-3ebHf0nRVar09UfcQVzt22stDBwwe-gS69Xp0xMzrnqo_aem_ncnwm_TyuAe93OGvhhzsVg)
 
           曾參與的歷年比賽：
           - 2023 7月 [ORDA 阿姆斯特丹國際木笛節 合奏組第二名](https://art.ltn.com.tw/article/breakingnews/4360763)
@@ -269,6 +274,7 @@ params:
           - 2025 5月 [清華巴洛克音樂會II 《清華古樂奇想》](https://www.facebook.com/photo.php?fbid=1212134800920464&set=pb.100063718667029.-2207520000&type=3)
           - 2025 6月 [Boston Early Music Festival Fringe Concert](https://www.facebook.com/photo.php?fbid=1251004680366809&set=pb.100063718667029.-2207520000&type=3)
           - 2025 12月 [《人文啟迪科技：清華木笛樂團音樂會》](https://www.opentix.life/event/1985188449916014593) ***本場包涵本人委託創作《波 waves》世界首演**
+          - 2026 5月 [「卓越之聲，回響清華」Maurice Steger 木笛音樂會](https://www.facebook.com/share/p/17hEKqFywG/)
 
           曾參與的歷年比賽：
           - 2022 12月 [以色列特拉維夫木笛音樂節 16歲以上室內樂組第一名](https://www.cna.com.tw/news/acul/202212240018.aspx)
@@ -294,7 +300,7 @@ params:
          參與演出:
          - 2022 8月 [《日昇東中 • 共享樂音》 音樂會](https://www.facebook.com/101575002041367/photos/pb.100066549430349.-2207520000/404572345074963/?type=3)
          - 2023 8月 [《日昇東中 • 夏日傳奇》 音樂會](https://www.facebook.com/photo.php?fbid=628363906058585&set=pb.100066549430349.-2207520000&type=3)
-         - 2025 9月 [《日昇東中 • 川之方至》 音樂會](https://www.instagram.com/p/DNnjORLyqOl/) ***本場包涵本人委託創作《Kyrie Ventorum》世界首演，且以指揮身分參與演出。**
+         - 2025 9月 [《日昇東中 • 川之方至》 音樂會](https://www.instagram.com/p/DNnjORLyqOl/) ***本場包涵本人委託創作《Kyrie Ventorum》世界首演，且以指揮身分參與演出。
 
       - job: "木笛合作演出者"
         company: "台中室內合唱團"
@@ -306,7 +312,7 @@ params:
           #url: "https://music.nttu.edu.tw/p/405-1027-125830,c4433.php?Lang=zh-tw"
         content: |
           在2025年受到台中市內合唱團的邀請，以木笛合作演出者的身分參加他們的年度演出。
-          - 2025 12月 參與[《文藝聖誕畫人聲》](https://www.opentix.life/event/1979090497352003584) 木笛合作演出者
+          - 2025 12月 參與[《文藝聖誕畫人聲》](https://www.opentix.life/event/1979090497352003584) 擔任**木笛獨奏者**
 
       
       - job: "薩克斯風手"

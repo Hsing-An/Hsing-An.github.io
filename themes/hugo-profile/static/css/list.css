@@ -16,6 +16,12 @@
     color: var(--text-color) !important;
 }
 
+#list-page .card h5.card-title {
+    font-size: 2.2rem !important;
+    line-height: 1.25 !important;
+    font-weight: 700 !important;
+}
+
 #list-page .card:hover {
     transition: all 0.3s ease-out;
     transform: translateY(-7px);
@@ -23,6 +29,32 @@
 
 #list-page .card-text * {
     background-color: var(--secondary-color) !important;
+}
+
+#list-page .card-text {
+    line-height: 1.6;
+}
+
+#list-page .card-summary .summary-heading {
+    display: block;
+    font-size: 1.4em !important;
+    line-height: 1.35 !important;
+    margin: 0.35rem 0 !important;
+    font-weight: 700 !important;
+}
+
+#list-page .card-summary p {
+    margin-bottom: 0.4rem;
+}
+
+#list-page .card-summary strong,
+#list-page .card-summary b {
+    font-weight: 700;
+}
+
+#list-page .card-summary em,
+#list-page .card-summary i {
+    font-style: italic;
 }
 
 /* 卡片底部資訊 */

@@ -1,14 +1,14 @@
+{{ $events := where site.RegularPages "Type" "events" }}
+{{ $validEvents := where $events ".Date" "ne" nil }}
+{{ $upcoming := sort (where $validEvents ".Date" "ge" now) ".Date" }}
+
+{{ if gt (len $upcoming) 0 }}
 <section id="upcoming-events" class="section container mt-5 p-4">
   <h3 class="section-title text-center mb-4">
     近期演出
   </h3>
 
   <ul class="list-unstyled mt-3">
-    {{ $events := where site.RegularPages "Type" "events" }}
-    {{ $validEvents := where $events ".Date" "ne" nil }}
-    {{ $upcoming := sort (where $validEvents ".Date" "ge" now) ".Date" }}
-    
-    {{ if gt (len $upcoming) 0 }}
       {{ range first 5 $upcoming }}
         <li class="d-flex flex-column border-bottom pb-3 mb-3">
           <div class="d-flex align-items-center mb-2">
@@ -41,10 +41,6 @@
           查看全部演出
         </a>
       </div>
-
-    {{ else }}
-      <p class="text-muted text-center">目前沒有近期演出。</p>
-    {{ end }}
   </ul>
 </section>
 
@@ -85,3 +81,4 @@
     color: white; /* 深色模式標題白色 */
   }
 </style>
+{{ end }}

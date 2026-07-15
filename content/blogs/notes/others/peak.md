@@ -1,15 +1,15 @@
 ---
 title: "Peak 刻意練習"
-date: 2026-07-14
+date: 2026-07-03
 draft: flase
 author: "Hsing-An Lee"
 tags:
   - 練習法
   - 書
-image: /images/website.webp
+image: /images/peak.webp
 description: "Peak刻意練習筆記"
 ---
-
+>註記：這是讀書時做的筆記，沒有特別更改直接放上網站。目前尚未讀完。
 
  # 有目標的練習
  ### 學會與精通的差異是什麼?

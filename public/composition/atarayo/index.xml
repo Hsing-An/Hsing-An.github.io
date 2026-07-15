@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>あたらよ(Atarayo) on Hsing-An&#39;s profile</title>
-    <link>http://localhost:1313/composition/atarayo/</link>
+    <link>https://hsinganlee.com/composition/atarayo/</link>
     <description>Recent content in あたらよ(Atarayo) on Hsing-An&#39;s profile</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/composition/atarayo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hsinganlee.com/composition/atarayo/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

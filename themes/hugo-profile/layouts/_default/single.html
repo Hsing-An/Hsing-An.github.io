@@ -26,8 +26,11 @@
               {{ .Date.Format (.Site.Params.datesFormat.article | default "Jan 2, 2006") }}
 
               {{ if or (.Site.Params.singlePages.readTime.enable | default true) (.Params.enableReadingTime) }}
+              {{ $readChars := len (replaceRE "\\s+" "" .Plain) }}
+              {{ $readMinutes := math.Max 1 (math.Ceil (div $readChars 500.0)) }}
               <span id="readingTime">
-                {{ .Site.Params.singlePages.readTime.content | default "min read" }}
+                <small>|</small>
+                {{ $readMinutes }} {{ .Site.Params.singlePages.readTime.content | default "min read" }}
               </span>
               {{ end }}
             </div>
@@ -152,9 +155,5 @@
     stickySideBarElem.style.top = "50px";
   }
 </script>
-
-{{ if or (.Site.Params.singlePages.readTime.enable | default true) (.Params.enableReadingTime) }}
-<script src="{{.Site.Params.staticPath}}/js/readingTime.js"></script>
-{{end}}
 
 {{ end }}

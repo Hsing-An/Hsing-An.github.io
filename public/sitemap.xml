@@ -2,241 +2,259 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blogs/posts/</loc>
+    <loc>https://hsinganlee.com/blogs/posts/</loc>
     <lastmod>2026-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/arrangement/%E6%BF%9B/</loc>
+    <loc>https://hsinganlee.com/arrangement/%E6%BF%9B/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/composition/matsuri/</loc>
+    <loc>https://hsinganlee.com/composition/matsuri/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/performance/matsuri/</loc>
+    <loc>https://hsinganlee.com/performance/matsuri/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/arrangement/artisan-nova/</loc>
+    <loc>https://hsinganlee.com/arrangement/artisan-nova/</loc>
     <lastmod>2023-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/notes/early-music/</loc>
+    <loc>https://hsinganlee.com/blogs/notes/early-music/</loc>
   </url><url>
-    <loc>http://localhost:1313/blogs/notes/</loc>
-    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
+    <loc>https://hsinganlee.com/blogs/notes/</loc>
+    <lastmod>2026-07-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/performance/tre-fontane/</loc>
+    <loc>https://hsinganlee.com/performance/tre-fontane/</loc>
     <lastmod>2025-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/notes/jazz/</loc>
+    <loc>https://hsinganlee.com/blogs/notes/jazz/</loc>
   </url><url>
-    <loc>http://localhost:1313/blogs/notes/others/</loc>
-    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blogs/practice/</loc>
+    <loc>https://hsinganlee.com/blogs/practice/</loc>
     <lastmod>2026-07-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/performance/music-for-a-bird/</loc>
+    <loc>https://hsinganlee.com/blogs/notes/others/</loc>
+    <lastmod>2026-07-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hsinganlee.com/performance/music-for-a-bird/</loc>
     <lastmod>2025-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/notes/others/peak/</loc>
+    <loc>https://hsinganlee.com/tags/</loc>
     <lastmod>2026-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://hsinganlee.com/blogs/posts/2026time/</loc>
     <lastmod>2026-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/posts/2026time/</loc>
+    <loc>https://hsinganlee.com/tags/%E5%9F%BA%E6%9C%AC%E5%8A%9F/</loc>
     <lastmod>2026-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E5%9F%BA%E6%9C%AC%E5%8A%9F/</loc>
+    <loc>https://hsinganlee.com/tags/%E6%BC%94%E5%A5%8F/</loc>
     <lastmod>2026-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E6%9B%B8/</loc>
+    <loc>https://hsinganlee.com/tags/%E7%B7%B4%E7%BF%92/</loc>
     <lastmod>2026-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E6%BC%94%E5%A5%8F/</loc>
+    <loc>https://hsinganlee.com/blogs/</loc>
     <lastmod>2026-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E7%B7%B4%E7%BF%92/</loc>
-    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E7%B7%B4%E7%BF%92%E6%B3%95/</loc>
-    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blogs/</loc>
-    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blogs/practice/202607prac/</loc>
+    <loc>https://hsinganlee.com/blogs/practice/202607prac/</loc>
     <lastmod>2026-07-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/events/</loc>
+    <loc>https://hsinganlee.com/blogs/notes/others/20hours/</loc>
+    <lastmod>2026-07-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hsinganlee.com/tags/%E5%AD%B8%E7%BF%92/</loc>
+    <lastmod>2026-07-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hsinganlee.com/tags/%E5%BD%B1%E7%89%87/</loc>
+    <lastmod>2026-07-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hsinganlee.com/blogs/notes/others/peak/</loc>
+    <lastmod>2026-07-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hsinganlee.com/tags/%E6%9B%B8/</loc>
+    <lastmod>2026-07-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hsinganlee.com/tags/%E7%B7%B4%E7%BF%92%E6%B3%95/</loc>
+    <lastmod>2026-07-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hsinganlee.com/events/</loc>
     <lastmod>2025-11-22T14:30:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/events/muse_tc/</loc>
+    <loc>https://hsinganlee.com/events/muse_tc/</loc>
     <lastmod>2025-11-22T14:30:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/events/hakka/</loc>
+    <loc>https://hsinganlee.com/events/hakka/</loc>
     <lastmod>2025-11-08T15:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/events/vaga/</loc>
+    <loc>https://hsinganlee.com/events/vaga/</loc>
     <lastmod>2025-10-18T19:30:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E6%83%B3%E6%B3%95/</loc>
+    <loc>https://hsinganlee.com/tags/%E6%83%B3%E6%B3%95/</loc>
     <lastmod>2025-09-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E6%8C%87%E6%8F%AE/</loc>
+    <loc>https://hsinganlee.com/tags/%E6%8C%87%E6%8F%AE/</loc>
     <lastmod>2025-09-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/posts/windband2025/</loc>
+    <loc>https://hsinganlee.com/blogs/posts/windband2025/</loc>
     <lastmod>2025-09-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E7%AE%A1%E6%A8%82%E5%9C%98/</loc>
+    <loc>https://hsinganlee.com/tags/%E7%AE%A1%E6%A8%82%E5%9C%98/</loc>
     <lastmod>2025-09-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E4%BB%8B%E7%B4%B9/</loc>
+    <loc>https://hsinganlee.com/tags/%E4%BB%8B%E7%B4%B9/</loc>
     <lastmod>2025-09-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/posts/first-blog/</loc>
+    <loc>https://hsinganlee.com/blogs/posts/first-blog/</loc>
     <lastmod>2025-09-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/gallery/</loc>
+    <loc>https://hsinganlee.com/gallery/</loc>
     <lastmod>2025-09-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://hsinganlee.com/</loc>
     <lastmod>2025-08-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/test/</loc>
+    <loc>https://hsinganlee.com/test/</loc>
     <lastmod>2025-08-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/avant-garde/</loc>
+    <loc>https://hsinganlee.com/tags/avant-garde/</loc>
     <lastmod>2025-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/baroque/</loc>
+    <loc>https://hsinganlee.com/tags/baroque/</loc>
     <lastmod>2025-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/corelli/</loc>
+    <loc>https://hsinganlee.com/tags/corelli/</loc>
     <lastmod>2025-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/performance/ende/</loc>
+    <loc>https://hsinganlee.com/performance/ende/</loc>
     <lastmod>2025-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/extended-techniques/</loc>
+    <loc>https://hsinganlee.com/tags/extended-techniques/</loc>
     <lastmod>2025-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/hans-martin-linde/</loc>
+    <loc>https://hsinganlee.com/tags/hans-martin-linde/</loc>
     <lastmod>2025-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/historical-informed-performance/</loc>
+    <loc>https://hsinganlee.com/tags/historical-informed-performance/</loc>
     <lastmod>2025-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/louis-andriessen/</loc>
+    <loc>https://hsinganlee.com/tags/louis-andriessen/</loc>
     <lastmod>2025-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/philidor/</loc>
+    <loc>https://hsinganlee.com/tags/philidor/</loc>
     <lastmod>2025-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/performance/</loc>
+    <loc>https://hsinganlee.com/performance/</loc>
     <lastmod>2025-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/performance/quatri%C3%A8me-suite-in-a-minor-op.-1/</loc>
+    <loc>https://hsinganlee.com/performance/quatri%C3%A8me-suite-in-a-minor-op.-1/</loc>
     <lastmod>2025-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/performance/rv-443/</loc>
+    <loc>https://hsinganlee.com/performance/rv-443/</loc>
     <lastmod>2025-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/performance/corelli/</loc>
+    <loc>https://hsinganlee.com/performance/corelli/</loc>
     <lastmod>2025-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/vivaldi/</loc>
+    <loc>https://hsinganlee.com/tags/vivaldi/</loc>
     <lastmod>2025-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/clarinet/</loc>
+    <loc>https://hsinganlee.com/tags/clarinet/</loc>
     <lastmod>2025-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/composition/</loc>
+    <loc>https://hsinganlee.com/composition/</loc>
     <lastmod>2025-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/piano/</loc>
+    <loc>https://hsinganlee.com/tags/piano/</loc>
     <lastmod>2025-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/trio/</loc>
+    <loc>https://hsinganlee.com/tags/trio/</loc>
     <lastmod>2025-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/composition/atarayo/</loc>
+    <loc>https://hsinganlee.com/composition/atarayo/</loc>
     <lastmod>2025-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/composition/2-25/</loc>
+    <loc>https://hsinganlee.com/tags/%E4%B8%8A%E8%AA%B2/</loc>
+    <lastmod>2025-02-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hsinganlee.com/blogs/notes/others/aesthetics/</loc>
+    <lastmod>2025-02-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hsinganlee.com/tags/%E7%BE%8E%E5%AD%B8/</loc>
+    <lastmod>2025-02-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hsinganlee.com/composition/2-25/</loc>
     <lastmod>2025-01-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/folk-ish/</loc>
+    <loc>https://hsinganlee.com/tags/folk-ish/</loc>
     <lastmod>2025-01-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/quartet/</loc>
+    <loc>https://hsinganlee.com/tags/quartet/</loc>
     <lastmod>2025-01-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/recorder/</loc>
+    <loc>https://hsinganlee.com/tags/recorder/</loc>
     <lastmod>2025-01-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/tonal-music/</loc>
+    <loc>https://hsinganlee.com/tags/tonal-music/</loc>
     <lastmod>2025-01-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/composition/relative_deprivation/</loc>
+    <loc>https://hsinganlee.com/composition/relative_deprivation/</loc>
     <lastmod>2024-12-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/composition/dialog/</loc>
+    <loc>https://hsinganlee.com/composition/dialog/</loc>
     <lastmod>2024-08-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/duet/</loc>
+    <loc>https://hsinganlee.com/tags/duet/</loc>
     <lastmod>2024-08-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/arrangement/</loc>
+    <loc>https://hsinganlee.com/arrangement/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/edm/</loc>
+    <loc>https://hsinganlee.com/tags/edm/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/electric/</loc>
+    <loc>https://hsinganlee.com/tags/electric/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/songwirte/</loc>
+    <loc>https://hsinganlee.com/tags/songwirte/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/agnes-dorwarth/</loc>
+    <loc>https://hsinganlee.com/tags/agnes-dorwarth/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/performance/articulator-i/</loc>
+    <loc>https://hsinganlee.com/performance/articulator-i/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/bossa-nova/</loc>
+    <loc>https://hsinganlee.com/tags/bossa-nova/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/jazz/</loc>
+    <loc>https://hsinganlee.com/tags/jazz/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/math-rock/</loc>
+    <loc>https://hsinganlee.com/tags/math-rock/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/solo/</loc>
+    <loc>https://hsinganlee.com/tags/solo/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/bossanova/</loc>
+    <loc>https://hsinganlee.com/tags/bossanova/</loc>
     <lastmod>2023-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/taiwan-traditional-music/</loc>
+    <loc>https://hsinganlee.com/tags/taiwan-traditional-music/</loc>
     <lastmod>2023-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/jpop/</loc>
+    <loc>https://hsinganlee.com/tags/jpop/</loc>
     <lastmod>2020-04-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/composition/gurenge/</loc>
+    <loc>https://hsinganlee.com/composition/gurenge/</loc>
     <lastmod>2020-04-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/composition/tenko-no-ko/</loc>
+    <loc>https://hsinganlee.com/composition/tenko-no-ko/</loc>
     <lastmod>2019-10-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/pop/</loc>
+    <loc>https://hsinganlee.com/tags/pop/</loc>
     <lastmod>2019-03-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/composition/devotion/</loc>
+    <loc>https://hsinganlee.com/composition/devotion/</loc>
     <lastmod>2019-03-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://hsinganlee.com/categories/</loc>
   </url>
 </urlset>

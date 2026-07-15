@@ -2,276 +2,304 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Hsing-An&#39;s profile</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://hsinganlee.com/tags/</link>
     <description>Recent content in Tags on Hsing-An&#39;s profile</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
     <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hsinganlee.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>基本功</title>
-      <link>http://localhost:1313/tags/%E5%9F%BA%E6%9C%AC%E5%8A%9F/</link>
+      <link>https://hsinganlee.com/tags/%E5%9F%BA%E6%9C%AC%E5%8A%9F/</link>
       <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%E5%9F%BA%E6%9C%AC%E5%8A%9F/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>書</title>
-      <link>http://localhost:1313/tags/%E6%9B%B8/</link>
-      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%E6%9B%B8/</guid>
+      <guid>https://hsinganlee.com/tags/%E5%9F%BA%E6%9C%AC%E5%8A%9F/</guid>
       <description></description>
     </item>
     <item>
       <title>演奏</title>
-      <link>http://localhost:1313/tags/%E6%BC%94%E5%A5%8F/</link>
+      <link>https://hsinganlee.com/tags/%E6%BC%94%E5%A5%8F/</link>
       <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%E6%BC%94%E5%A5%8F/</guid>
+      <guid>https://hsinganlee.com/tags/%E6%BC%94%E5%A5%8F/</guid>
       <description></description>
     </item>
     <item>
       <title>練習</title>
-      <link>http://localhost:1313/tags/%E7%B7%B4%E7%BF%92/</link>
+      <link>https://hsinganlee.com/tags/%E7%B7%B4%E7%BF%92/</link>
       <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%E7%B7%B4%E7%BF%92/</guid>
+      <guid>https://hsinganlee.com/tags/%E7%B7%B4%E7%BF%92/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>學習</title>
+      <link>https://hsinganlee.com/tags/%E5%AD%B8%E7%BF%92/</link>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://hsinganlee.com/tags/%E5%AD%B8%E7%BF%92/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>影片</title>
+      <link>https://hsinganlee.com/tags/%E5%BD%B1%E7%89%87/</link>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://hsinganlee.com/tags/%E5%BD%B1%E7%89%87/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>書</title>
+      <link>https://hsinganlee.com/tags/%E6%9B%B8/</link>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://hsinganlee.com/tags/%E6%9B%B8/</guid>
       <description></description>
     </item>
     <item>
       <title>練習法</title>
-      <link>http://localhost:1313/tags/%E7%B7%B4%E7%BF%92%E6%B3%95/</link>
-      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%E7%B7%B4%E7%BF%92%E6%B3%95/</guid>
+      <link>https://hsinganlee.com/tags/%E7%B7%B4%E7%BF%92%E6%B3%95/</link>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://hsinganlee.com/tags/%E7%B7%B4%E7%BF%92%E6%B3%95/</guid>
       <description></description>
     </item>
     <item>
       <title>想法</title>
-      <link>http://localhost:1313/tags/%E6%83%B3%E6%B3%95/</link>
+      <link>https://hsinganlee.com/tags/%E6%83%B3%E6%B3%95/</link>
       <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%E6%83%B3%E6%B3%95/</guid>
+      <guid>https://hsinganlee.com/tags/%E6%83%B3%E6%B3%95/</guid>
       <description></description>
     </item>
     <item>
       <title>指揮</title>
-      <link>http://localhost:1313/tags/%E6%8C%87%E6%8F%AE/</link>
+      <link>https://hsinganlee.com/tags/%E6%8C%87%E6%8F%AE/</link>
       <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%E6%8C%87%E6%8F%AE/</guid>
+      <guid>https://hsinganlee.com/tags/%E6%8C%87%E6%8F%AE/</guid>
       <description></description>
     </item>
     <item>
       <title>管樂團</title>
-      <link>http://localhost:1313/tags/%E7%AE%A1%E6%A8%82%E5%9C%98/</link>
+      <link>https://hsinganlee.com/tags/%E7%AE%A1%E6%A8%82%E5%9C%98/</link>
       <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%E7%AE%A1%E6%A8%82%E5%9C%98/</guid>
+      <guid>https://hsinganlee.com/tags/%E7%AE%A1%E6%A8%82%E5%9C%98/</guid>
       <description></description>
     </item>
     <item>
       <title>介紹</title>
-      <link>http://localhost:1313/tags/%E4%BB%8B%E7%B4%B9/</link>
+      <link>https://hsinganlee.com/tags/%E4%BB%8B%E7%B4%B9/</link>
       <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%E4%BB%8B%E7%B4%B9/</guid>
+      <guid>https://hsinganlee.com/tags/%E4%BB%8B%E7%B4%B9/</guid>
       <description></description>
     </item>
     <item>
       <title>Avant-Garde</title>
-      <link>http://localhost:1313/tags/avant-garde/</link>
+      <link>https://hsinganlee.com/tags/avant-garde/</link>
       <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/avant-garde/</guid>
+      <guid>https://hsinganlee.com/tags/avant-garde/</guid>
       <description></description>
     </item>
     <item>
       <title>Baroque</title>
-      <link>http://localhost:1313/tags/baroque/</link>
+      <link>https://hsinganlee.com/tags/baroque/</link>
       <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/baroque/</guid>
+      <guid>https://hsinganlee.com/tags/baroque/</guid>
       <description></description>
     </item>
     <item>
       <title>Corelli</title>
-      <link>http://localhost:1313/tags/corelli/</link>
+      <link>https://hsinganlee.com/tags/corelli/</link>
       <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/corelli/</guid>
+      <guid>https://hsinganlee.com/tags/corelli/</guid>
       <description></description>
     </item>
     <item>
       <title>Extended Techniques</title>
-      <link>http://localhost:1313/tags/extended-techniques/</link>
+      <link>https://hsinganlee.com/tags/extended-techniques/</link>
       <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/extended-techniques/</guid>
+      <guid>https://hsinganlee.com/tags/extended-techniques/</guid>
       <description></description>
     </item>
     <item>
       <title>Hans-Martin Linde</title>
-      <link>http://localhost:1313/tags/hans-martin-linde/</link>
+      <link>https://hsinganlee.com/tags/hans-martin-linde/</link>
       <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/hans-martin-linde/</guid>
+      <guid>https://hsinganlee.com/tags/hans-martin-linde/</guid>
       <description></description>
     </item>
     <item>
       <title>Historical Informed Performance</title>
-      <link>http://localhost:1313/tags/historical-informed-performance/</link>
+      <link>https://hsinganlee.com/tags/historical-informed-performance/</link>
       <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/historical-informed-performance/</guid>
+      <guid>https://hsinganlee.com/tags/historical-informed-performance/</guid>
       <description></description>
     </item>
     <item>
       <title>Louis Andriessen</title>
-      <link>http://localhost:1313/tags/louis-andriessen/</link>
+      <link>https://hsinganlee.com/tags/louis-andriessen/</link>
       <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/louis-andriessen/</guid>
+      <guid>https://hsinganlee.com/tags/louis-andriessen/</guid>
       <description></description>
     </item>
     <item>
       <title>Philidor</title>
-      <link>http://localhost:1313/tags/philidor/</link>
+      <link>https://hsinganlee.com/tags/philidor/</link>
       <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/philidor/</guid>
+      <guid>https://hsinganlee.com/tags/philidor/</guid>
       <description></description>
     </item>
     <item>
       <title>Vivaldi</title>
-      <link>http://localhost:1313/tags/vivaldi/</link>
+      <link>https://hsinganlee.com/tags/vivaldi/</link>
       <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/vivaldi/</guid>
+      <guid>https://hsinganlee.com/tags/vivaldi/</guid>
       <description></description>
     </item>
     <item>
       <title>Clarinet</title>
-      <link>http://localhost:1313/tags/clarinet/</link>
+      <link>https://hsinganlee.com/tags/clarinet/</link>
       <pubDate>Tue, 20 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/clarinet/</guid>
+      <guid>https://hsinganlee.com/tags/clarinet/</guid>
       <description></description>
     </item>
     <item>
       <title>Piano</title>
-      <link>http://localhost:1313/tags/piano/</link>
+      <link>https://hsinganlee.com/tags/piano/</link>
       <pubDate>Tue, 20 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/piano/</guid>
+      <guid>https://hsinganlee.com/tags/piano/</guid>
       <description></description>
     </item>
     <item>
       <title>Trio</title>
-      <link>http://localhost:1313/tags/trio/</link>
+      <link>https://hsinganlee.com/tags/trio/</link>
       <pubDate>Tue, 20 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/trio/</guid>
+      <guid>https://hsinganlee.com/tags/trio/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>上課</title>
+      <link>https://hsinganlee.com/tags/%E4%B8%8A%E8%AA%B2/</link>
+      <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://hsinganlee.com/tags/%E4%B8%8A%E8%AA%B2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>美學</title>
+      <link>https://hsinganlee.com/tags/%E7%BE%8E%E5%AD%B8/</link>
+      <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://hsinganlee.com/tags/%E7%BE%8E%E5%AD%B8/</guid>
       <description></description>
     </item>
     <item>
       <title>Folk-Ish</title>
-      <link>http://localhost:1313/tags/folk-ish/</link>
+      <link>https://hsinganlee.com/tags/folk-ish/</link>
       <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/folk-ish/</guid>
+      <guid>https://hsinganlee.com/tags/folk-ish/</guid>
       <description></description>
     </item>
     <item>
       <title>Quartet</title>
-      <link>http://localhost:1313/tags/quartet/</link>
+      <link>https://hsinganlee.com/tags/quartet/</link>
       <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/quartet/</guid>
+      <guid>https://hsinganlee.com/tags/quartet/</guid>
       <description></description>
     </item>
     <item>
       <title>Recorder</title>
-      <link>http://localhost:1313/tags/recorder/</link>
+      <link>https://hsinganlee.com/tags/recorder/</link>
       <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/recorder/</guid>
+      <guid>https://hsinganlee.com/tags/recorder/</guid>
       <description></description>
     </item>
     <item>
       <title>Tonal Music</title>
-      <link>http://localhost:1313/tags/tonal-music/</link>
+      <link>https://hsinganlee.com/tags/tonal-music/</link>
       <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/tonal-music/</guid>
+      <guid>https://hsinganlee.com/tags/tonal-music/</guid>
       <description></description>
     </item>
     <item>
       <title>Duet</title>
-      <link>http://localhost:1313/tags/duet/</link>
+      <link>https://hsinganlee.com/tags/duet/</link>
       <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/duet/</guid>
+      <guid>https://hsinganlee.com/tags/duet/</guid>
       <description></description>
     </item>
     <item>
       <title>EDM</title>
-      <link>http://localhost:1313/tags/edm/</link>
+      <link>https://hsinganlee.com/tags/edm/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/edm/</guid>
+      <guid>https://hsinganlee.com/tags/edm/</guid>
       <description></description>
     </item>
     <item>
       <title>Electric</title>
-      <link>http://localhost:1313/tags/electric/</link>
+      <link>https://hsinganlee.com/tags/electric/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/electric/</guid>
+      <guid>https://hsinganlee.com/tags/electric/</guid>
       <description></description>
     </item>
     <item>
       <title>Songwirte</title>
-      <link>http://localhost:1313/tags/songwirte/</link>
+      <link>https://hsinganlee.com/tags/songwirte/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/songwirte/</guid>
+      <guid>https://hsinganlee.com/tags/songwirte/</guid>
       <description></description>
     </item>
     <item>
       <title>Agnes Dorwarth</title>
-      <link>http://localhost:1313/tags/agnes-dorwarth/</link>
+      <link>https://hsinganlee.com/tags/agnes-dorwarth/</link>
       <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/agnes-dorwarth/</guid>
+      <guid>https://hsinganlee.com/tags/agnes-dorwarth/</guid>
       <description></description>
     </item>
     <item>
       <title>Bossa Nova</title>
-      <link>http://localhost:1313/tags/bossa-nova/</link>
+      <link>https://hsinganlee.com/tags/bossa-nova/</link>
       <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/bossa-nova/</guid>
+      <guid>https://hsinganlee.com/tags/bossa-nova/</guid>
       <description></description>
     </item>
     <item>
       <title>Jazz</title>
-      <link>http://localhost:1313/tags/jazz/</link>
+      <link>https://hsinganlee.com/tags/jazz/</link>
       <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/jazz/</guid>
+      <guid>https://hsinganlee.com/tags/jazz/</guid>
       <description></description>
     </item>
     <item>
       <title>Math Rock</title>
-      <link>http://localhost:1313/tags/math-rock/</link>
+      <link>https://hsinganlee.com/tags/math-rock/</link>
       <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/math-rock/</guid>
+      <guid>https://hsinganlee.com/tags/math-rock/</guid>
       <description></description>
     </item>
     <item>
       <title>Solo</title>
-      <link>http://localhost:1313/tags/solo/</link>
+      <link>https://hsinganlee.com/tags/solo/</link>
       <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/solo/</guid>
+      <guid>https://hsinganlee.com/tags/solo/</guid>
       <description></description>
     </item>
     <item>
       <title>Bossanova</title>
-      <link>http://localhost:1313/tags/bossanova/</link>
+      <link>https://hsinganlee.com/tags/bossanova/</link>
       <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/bossanova/</guid>
+      <guid>https://hsinganlee.com/tags/bossanova/</guid>
       <description></description>
     </item>
     <item>
       <title>Taiwan Traditional Music</title>
-      <link>http://localhost:1313/tags/taiwan-traditional-music/</link>
+      <link>https://hsinganlee.com/tags/taiwan-traditional-music/</link>
       <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/taiwan-traditional-music/</guid>
+      <guid>https://hsinganlee.com/tags/taiwan-traditional-music/</guid>
       <description></description>
     </item>
     <item>
       <title>JPOP</title>
-      <link>http://localhost:1313/tags/jpop/</link>
+      <link>https://hsinganlee.com/tags/jpop/</link>
       <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/jpop/</guid>
+      <guid>https://hsinganlee.com/tags/jpop/</guid>
       <description></description>
     </item>
     <item>
       <title>POP</title>
-      <link>http://localhost:1313/tags/pop/</link>
+      <link>https://hsinganlee.com/tags/pop/</link>
       <pubDate>Sat, 02 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/pop/</guid>
+      <guid>https://hsinganlee.com/tags/pop/</guid>
       <description></description>
     </item>
   </channel>
