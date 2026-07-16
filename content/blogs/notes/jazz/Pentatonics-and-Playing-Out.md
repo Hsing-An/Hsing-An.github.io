@@ -7,5 +7,5 @@ tags:
   - 上課
   - 爵士
 image: /images/jazz.webp
-description: "爵士上課筆記"
+description: "爵士上課筆記!"
 ---
