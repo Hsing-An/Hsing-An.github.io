@@ -1,7 +1,7 @@
 ---
 title: "Pentatonics and Playing Out"
 date: 2026-07-16
-draft: false
+draft: True
 author: "Hsing-An Lee"
 tags:
   - 上課
