@@ -166,6 +166,11 @@ params:
           url: https://www.instagram.com/recorder_shounen/
         - icon: /images/youtube.webp
           url: "https://www.youtube.com/@hsing-anlee3459"
+
+  featuredVideo:
+    enable: true
+    youtubeId: gMag4XdDU_A
+    title: "Polygatari - Matsuri"
   # About
   about:
     enable: true

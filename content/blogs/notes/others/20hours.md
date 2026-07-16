@@ -1,7 +1,7 @@
 ---
 title: "如何在20小時內學會新事物?"
 date: 2026-07-05
-draft: flase
+draft: false
 author: "Hsing-An Lee"
 tags:
   - 影片

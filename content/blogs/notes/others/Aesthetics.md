@@ -1,7 +1,7 @@
 ---
 title: "美學"
 date: 2025-02-03
-draft: flase
+draft: false
 author: "Hsing-An Lee"
 tags:
   - 上課
