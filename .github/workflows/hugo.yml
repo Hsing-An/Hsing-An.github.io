@@ -65,6 +65,12 @@ jobs:
           HUGO_ENVIRONMENT: production
         run: hugo --config config.yaml --minify --buildFuture --baseURL "${{ steps.pages.outputs.base_url }}/"
 
+      - name: Prepare Pages artifact
+        run: |
+          test -f public/index.html
+          cp CNAME public/CNAME
+          touch public/.nojekyll
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
