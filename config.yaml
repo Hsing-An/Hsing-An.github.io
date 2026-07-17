@@ -3,6 +3,351 @@ languageCode: "zh-tw"
 title: "Hsing-An Lee"
 theme: hugo-profile
 
+defaultContentLanguage: zh-tw
+defaultContentLanguageInSubdir: false
+
+languages:
+  zh-tw:
+    languageCode: zh-tw
+    languageName: 中文
+    weight: 1
+    title: "Hsing-An Lee"
+  en:
+    languageCode: en-us
+    languageName: English
+    weight: 2
+    title: "Hsing-An Lee"
+    menus:
+      main:
+        - identifier: blog
+          name: Blog (Chinese)
+          title: Blog posts
+          url: /blogs
+          weight: 1
+        - identifier: gallery
+          name: Gallery
+          title: Gallery
+          url: /en/gallery
+          weight: 2
+        - identifier: events
+          name: Events
+          title: Events
+          url: /en/events
+          weight: 3
+        - identifier: dropdown
+          title: Works
+          name: Works
+          weight: 4
+        - identifier: performance
+          title: Performance
+          name: Performance
+          url: /en/performance
+          parent: dropdown
+          weight: 1
+        - identifier: composition
+          title: Composition
+          name: Composition
+          url: /en/composition
+          parent: dropdown
+          weight: 2
+        - identifier: arrangement
+          title: Arrangement
+          name: Arrangement
+          url: /en/arrangement
+          parent: dropdown
+          weight: 3
+    params:
+      description: Hsing-An Lee is a recorder player and composer.
+
+      hero:
+        enable: true
+        intro: ""
+        title: "Hsing-An Lee"
+        subtitle: "Recorder Player / Composer"
+        content: |-
+          Interpreting through performance and speaking through composition,  
+          exploring the recorder between early music, contemporary music, and jazz.
+        image: /images/your-photo.webp
+        bottomImage:
+          enable: true
+        socialLinks:
+          customIcons:
+            - icon: /images/facebook.webp
+              url: https://www.facebook.com/hsingan.lee
+            - icon: /images/ig.webp
+              url: https://www.instagram.com/recorder_shounen/
+            - icon: /images/youtube.webp
+              url: "https://www.youtube.com/@hsing-anlee3459"
+
+      about:
+        enable: true
+        title: "About"
+        image: "/images/me.webp"
+        content: |-
+          ## Hsing-An Lee: Recorder Player / Composer
+
+          Born in Taiwan, graduated from the Department of Music at National Tsing Hua University, majoring in **recorder** and minoring in **composition**. Studied recorder with Meng-Heng Chen and composition with Hsin-Lei Chen and Chiu-Yu Chou.
+
+          Focused on early music and contemporary music in recorder performance, while continuing to study jazz music.  
+          [Recipient of awards in international competitions](#achievements), with appearances as a **soloist** at the [**National Recital Hall** and the **National Taichung Theater**](#experience).
+
+          As a composer, drawing from electronic music, jazz music, contemporary music, popular music, and traditional music.  
+          Writing includes instrumental compositions as well as arrangements produced with music software. [Awarded compositions](#achievements) have also been [presented at Weiwuying](https://www.opentix.life/event/1985188449916014593).
+
+          ---
+
+        skills:
+          enable: true
+          title: "Current areas of performance and creation:"
+          items:
+            - "Baroque instrumental performance"
+            - "Renaissance instrumental performance"
+            - "Renaissance consort performance"
+            - "Jazz performance"
+            - "Fusion-jazz composition and performance"
+            - "Original and arranged works for recorder ensemble"
+            - "Contemporary chamber music composition"
+            - "Popular music composition and arrangement"
+
+      experience:
+        enable: true
+        title: "Experience"
+        items:
+          - job: "Recorder Player"
+            company: "Long Time Don't Jam"
+            companyUrl: "https://www.instagram.com/long_time_dont_jam/"
+            date: "2024 - Present"
+            info:
+              enable: true
+              content: "Co-founder and member"
+            content: |
+              Long Time Don't Jam is a duo co-founded with [Yu-Lin Chen](https://www.instagram.com/rcyln_93/), combining finger drumming and recorder.
+
+              The group blends electronic dance music, jazz, R&B, and live performance, presenting original works with recorder.
+
+              Selected performances:
+              - Aug. 2024 [Taiwan Recorder Festival](https://www.facebook.com/twrecorderfestival/?locale=zh_TW) Fringe Concert: [First jam men](https://www.opentix.life/event/1815794800281317377?srsltid=AfmBOooHnWstInIf8t-YgFxm0kzsZUXOCyZZ1Pl4B0Juc1wKPpJcS4lL).
+              - Oct. 2025 [2025 Vagabond Festival](events/vaga)
+
+          - job: "Arranger / Member"
+            company: "Hsin-Chu Recorder Orchestra"
+            companyUrl: "https://www.facebook.com/hsinchurecorder/?locale=zh_TW"
+            date: "2022 - Present"
+            info:
+              enable: true
+              content: "Performs as a recorder player and has been commissioned to arrange and compose works for the ensemble."
+            content: |
+              Joined [Hsin-Chu Recorder Orchestra](https://www.facebook.com/hsinchurecorder/?locale=zh_TW) during university and has performed with the ensemble in Taiwan and abroad.
+
+              Also contributes arrangements and original works for the ensemble.
+
+              Selected performances:
+              - Nov. 2022 [Seven Centuries of Eternal Music: 2022 Hsin-Chu Recorder Orchestra Annual Concert](https://www.opentix.life/event/1574602497174462466)
+              - Jan. 2023 [Hsinchu County New Year Opening Event](https://www.facebook.com/photo.php?fbid=583175693821250&set=pb.100063864731676.-2207520000&type=3)
+              - Jun. 2023 [Recorder Symphonic Poem: Hsin-Chu Recorder Orchestra 10th Anniversary Series](https://www.npac-weiwuying.org/programs/6420f38f653c730007b8b1b4)
+              - Jul. 2023 [Sound of Formosa in Amsterdam](https://www.facebook.com/hsinchurecorder/posts/84%E4%BA%94%E6%99%9A%E4%B8%8A%E6%96%B0%E7%AB%B9%E7%9B%B4%E7%AC%9B%E5%90%88%E5%A5%8F%E5%9C%98%E7%9A%84%E5%9C%98%E5%93%A1%E5%80%91%E5%B0%87%E6%8A%8A%E4%BB%8A%E5%B9%B4%E5%9C%A8orda%E5%A4%A7%E8%B3%BD%E8%88%9E%E5%8F%B0%E4%B8%8A%E7%B2%BE%E9%87%87%E7%9A%84%E8%A1%A8%E7%8F%BE%E8%88%87%E6%84%9F%E5%8B%95%E5%88%86%E4%BA%AB%E7%B5%A6%E5%8F%B0%E5%8C%97%E7%9A%84%E8%A7%80%E7%9C%BE%E5%80%91%E7%8D%A8%E5%A5%8F%E9%87%8D%E5%A5%8F%E5%90%88%E5%A5%8F%E6%AF%8F%E5%80%8B%E7%AF%80%E7%9B%AE%E9%83%BD%E7%8D%A8%E5%85%B7%E7%89%B9%E8%89%B2%E8%AE%93%E4%BA%BA%E5%8F%AF%E4%BB%A5%E6%84%9F%E5%8F%97%E5%88%B0%E8%A1%A8%E6%BC%94%E8%80%85%E5%B0%8D%E9%9F%B3%E6%A8%82%E7%9A%84%E6%83%85%E6%84%9F%E8%88%87%E6%95%85/717054970433321/)
+              - May 2024 [Soren Sieg, "The Secret of Secrets" livestream concert](https://www.facebook.com/photo/?fbid=903485655123584&set=a.429411365864351)
+              - Jun. 2024 [Genesis Concerto](https://www.opentix.life/event/1747439519120379905?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExdjVQVlFPREllNUJkZ0tyeXNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR6kSqt-ywV8SpB0AOObCSFYU9vQVhA-fD9lByomGHTteP2ZvQ4C9b9rYMZiKA_aem_8yFOH1QF8Qg8Zqaf3XZyYA)
+              - Aug. 2024 [Love of Recorder Symphony](https://www.opentix.life/event/1790257230482563073)
+              - Sept. 2024 [New Voices in Recorder Ensemble: Taiwanese Composers Series](https://www.opentix.life/event/1835668244337496065?fbclid=IwY2xjawPW-89leHRuA2FlbQIxMABicmlkETF2NVBWUU9ESWU1QmRnS3J5c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHn8EzJy2YXZqgdOBiaQddoNeIiv5B0oIL_QxNafGimvOYv2vAjU5R5g1Km9T_aem_HePFAJJsCvsOPuU2gBO-_A)
+              - Nov. 2024 [Mountain Line Symphonic Time](https://www.opentix.life/event/1848611202829516801)
+              - Aug. 2025 [New Images of Recorder Symphony](https://www.opentix.life/event/1930803510848225281)
+              - Nov. 2025 [Guanxi Love Song: Crossover Hakka Music Concert](https://www.facebook.com/photo.php?fbid=1283919383746874&set=pb.100063864731676.-2207520000&type=3) (includes my arrangement)
+              - Apr. 2026 [Romantic Poems of Recorder Symphony: Raphael Benjamin Meyer Recorder Works Concert](https://www.opentix.life/event/2008115201212325889?fbclid=IwY2xjawTEByVleHRuA2FlbQIxMABicmlkETFFSmZzNVZ5ZFVralpSOGo3c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHjjj27o5VPQTkee-3ebHf0nRVar09UfcQVzt22stDBwwe-gS69Xp0xMzrnqo_aem_ncnwm_TyuAe93OGvhhzsVg)
+
+              Selected competition:
+              - Jul. 2023 [Open Recorder Days Amsterdam, Second Prize in Ensemble Category](https://art.ltn.com.tw/article/breakingnews/4360763)
+
+          - job: "Composer / Member"
+            company: "Tsing-Hua University Recorder Consort"
+            companyUrl: "https://www.facebook.com/profile.php?id=100063718667029"
+            date: "2022 - Present"
+            info:
+              enable: true
+              content: "Performs with the ensemble and has been commissioned to arrange and compose works."
+            content: |
+              Tsing-Hua University Recorder Consort is both part of the university curriculum and an ensemble that regularly performs and competes.
+
+              Has also composed original works for the ensemble.
+
+              Selected performances:
+              - Dec. 2022 Opening concert of the Tel Aviv Recorder Festival
+              - Apr. 2023 [Music and Space: Small-Scale Music Exhibition](https://www.facebook.com/photo.php?fbid=662876339179649&set=pb.100063718667029.-2207520000&type=3)
+              - Oct. 2023 [Taichung MRT Carriage Concert with NTHU Recorder Quartet](https://www.facebook.com/share/v/1HXdfvCvcQ/) (all arrangements by me)
+              - May 2024 [National Tsing Hua University Spring Arts Festival Ensemble Flash Concert](https://www.facebook.com/photo.php?fbid=10161467437252864&set=pb.627652863.-2207520000&type=3)
+              - May 2024 [My Beloved Recorder: Hsin-Chu Recorder Orchestra Recorder Chamber Concert](https://www.opentix.life/event/1753334647532302337?srsltid=AfmBOopFNTSAIPKoSahQ--eFJd9Ffznio_L--rXjLVKiOaL76C_wZULQ)
+              - Dec. 2024 [Guanxi Dong'an Old Bridge Slow Living Festival](https://www.facebook.com/photo.php?fbid=1102500425217236&set=pb.100063718667029.-2207520000&type=3)
+              - Apr. 2025 [Baroque Masquerade](https://www.facebook.com/photo.php?fbid=1185641226903155&set=pb.100063718667029.-2207520000&type=3)
+              - May 2025 [NTHU Baroque Concert II: NTHU Early Music Fantasia](https://www.facebook.com/photo.php?fbid=1212134800920464&set=pb.100063718667029.-2207520000&type=3)
+              - Jun. 2025 [Boston Early Music Festival Fringe Concert](https://www.facebook.com/photo.php?fbid=1251004680366809&set=pb.100063718667029.-2207520000&type=3)
+              - Dec. 2025 [Humanities Inspiring Technology: Tsing-Hua University Recorder Consort Concert](https://www.opentix.life/event/1985188449916014593) (includes the world premiere of my commissioned work, Waves)
+              - May 2026 ["Voices of Excellence, Echoes of Tsing Hua" Maurice Steger Recorder Concert](https://www.facebook.com/share/p/17hEKqFywG/)
+
+              Selected competition:
+              - Dec. 2022 [Tel Aviv Recorder Festival, First Prize in Chamber Music Category, Age 16+](https://www.cna.com.tw/news/acul/202212240018.aspx)
+
+          - job: "Conductor / Composer / Member"
+            company: "Taitung Senior High School Wind Band"
+            companyUrl: "https://www.tsawo2022.com"
+            date: "2019 - Present"
+            info:
+              enable: false
+              content: "After graduation, continued with Taitung Senior High School Alumni Wind Orchestra."
+            content: |
+              Played **clarinet** in Taitung Senior High School Wind Band and served as **student conductor** during high school.
+
+              After graduation, continued performing with [Taitung Senior High School Alumni Wind Orchestra](https://www.tsawo2022.com/2025), both as a member and as an arranger.
+
+              In Sept. 2025, invited to conduct the [Sunrise East Concert Series: The River's Way](https://www.tsawo2022.com), also presenting the original work "Kyrie Ventorum."
+
+              Selected performances:
+              - Aug. 2022 ["Sunrise East: Shared Sounds" Concert](https://www.facebook.com/101575002041367/photos/pb.100066549430349.-2207520000/404572345074963/?type=3)
+              - Aug. 2023 ["Sunrise East: Summer Legend" Concert](https://www.facebook.com/photo.php?fbid=628363906058585&set=pb.100066549430349.-2207520000&type=3)
+              - Sept. 2025 ["Sunrise East: The River's Way" Concert](https://www.instagram.com/p/DNnjORLyqOl/) (includes the world premiere of my commissioned work "Kyrie Ventorum," with me also appearing as conductor)
+
+          - job: "Recorder Collaborator"
+            company: "Taichung Chamber Choir"
+            companyUrl: "https://taichungchamberchoir.org/"
+            date: "2025 Dec"
+            content: |
+              Invited by Taichung Chamber Choir as a recorder collaborator for its annual performance.
+
+              - Dec. 2025 Participated in ["A Renaissance Christmas in Human Voices"](https://www.opentix.life/event/1979090497352003584) as **recorder soloist**
+
+          - job: "Saxophonist"
+            company: "HJO Hsinchu Jazz Orchestra"
+            companyUrl: "https://www.facebook.com/p/HJO-新竹爵士大樂團-100066811428103/?locale=zh_TW"
+            date: "2023 - Present"
+            info:
+              enable: true
+              content: "Alto saxophonist; joined the youth ensemble after 2024."
+            content: |
+              Began studying jazz after entering university and joined HJO Hsinchu Jazz Orchestra as an alto saxophonist. After 2024, became a member of the HJO youth ensemble.
+
+              Selected performances:
+              - Apr. 2023 Swing Dance Party x HJO Hsinchu Jazz Orchestra
+              - Sept. 2023 "Today, I Feel Like Having Some Technology City" Jazz Concert
+              - Jan. 2024 HJO Youth Ensemble / Liu Chin-Nan Quartet
+              - Mar. 2024 HJO Big Band Seasonal Concert
+
+              Has performed with the ensemble on multiple occasions.
+
+          - job: "Saxophonist"
+            company: "Umuer Jam Fusion Band"
+            date: "2023 - 2024"
+            info:
+              enable: true
+              content: "Saxophonist in a fusion band."
+            content: |
+              Performed as saxophonist with the band in several appearances.
+
+              - Jun. 2023 Munich Music Studio recital
+              - Dec. 2023 Munich Music Studio recital
+
+          - job: "Recorder Collaborator"
+            company: "Baroque Camerata"
+            companyUrl: "https://www.baroque-camerata.org"
+            date: "2022 Aug"
+            content: |
+              - Aug. 2022 Performed as recorder collaborator with Baroque Camerata in the Taitung lecture concert ["Impression Taiwan"](https://music.nttu.edu.tw/p/405-1027-125830,c4433.php?Lang=zh-tw)
+
+      education:
+        enable: true
+        title: "Education"
+        index: false
+        items:
+          - title: "Bachelor of Music in Recorder Performance"
+            school:
+              name: "National Tsing Hua University"
+              url: "https://music.site.nthu.edu.tw"
+            date: "2022 - 2026"
+            GPA: "3.92 out of 4.3"
+
+      eventsSection:
+        title: "Upcoming Events"
+        rolePrefix: "As"
+        readMore: "Read more"
+        allEvents: "View all events"
+
+      achievements:
+        enable: true
+        title: "Awards"
+        anchor: "achievements"
+        items:
+          - title: "2023 ORDA Second Prize and Composition Award"
+            content: "Awarded at Open Recorder Days Amsterdam for performances spanning Baroque music, contemporary music, and original electronic work."
+            url: https://www.openrecorderdays.com/competition
+            image: /images/orda.webp
+          - title: "Taichung MRT Station Music Selection, Shui-an Temple Station"
+            url: https://www.tmrt.com.tw/tmrtsoundscape/station-music-tw/111-shui-an-temple/
+            content: "Selected with collaborator Yu-Lin Chen for Taichung MRT's station music program."
+            image: /images/metro.webp
+          - title: "National Student Music Competition, Excellent First Prize"
+            content: "Received Excellent First Prize in recorder solo at the 107th, 109th, and 113th National Student Music Competitions."
+            url: "https://web.arte.gov.tw/music/history/list_all.asp"
+            image: /images/gleam.webp
+
+      projects:
+        enable: true
+        title: "Works"
+        items:
+          - title: "Performance"
+            content: "Recorder performances across early music and contemporary music, including excerpts from competitions and concerts."
+            image: "/images/isr.webp"
+            featured:
+              name: "View more"
+              link: "/en/performance"
+            badges:
+              - "Early Music"
+              - "Contemporary Music"
+          - title: "Composition / Arrangement"
+            content: "Original works that began with recorder writing and expand into chamber, instrumental, vocal, and arranged music."
+            image: /images/compose.webp
+            featured:
+              name: "View more"
+              link: "/en/composition"
+            badges:
+              - "Contemporary Music"
+              - "Electronic Music"
+              - "Atonal Music"
+          - title: "Arrangement"
+            content: "Arrangements and production work for instruments, popular music, and software-based music."
+            image: /images/bass.webp
+            featured:
+              name: "View more"
+              link: /en/arrangement
+            badges:
+              - "Electronic Music"
+              - "Pop Music"
+              - "Indie Music"
+
+      contact:
+        enable: true
+        title: "Contact"
+        content: |
+          For performance collaborations, commissions, lessons, or other inquiries, feel free to contact me.  
+          Gmail: <span onclick="copyEmail()" style="cursor: pointer; color: blue; text-decoration: underline;">930529antonio@gmail.com</span>
+
+          <script>
+          function copyEmail() {
+              navigator.clipboard.writeText("930529antonio@gmail.com");
+              alert("Gmail address copied!");
+          }
+          </script>
+        email: 930529antonio@gmail.com
+        btnName: Mail me
+        btnLink: mailto:930529antonio@gmail.com
+
+      footer:
+        rssText: "Subscribe via RSS"
+
+      terms:
+        read: "Read"
+        toc: "Table Of Contents"
+        copyright: "All rights reserved"
+        pageNotFound: "Page not found"
+        emailText: "Check out this site"
+
 outputs:
   home:
     - "HTML"
@@ -201,7 +546,7 @@ params:
         - "文藝復興器樂作品演奏"
         - "文藝復興合奏作品演奏"
         - "爵士樂演奏"
-        - "融合爵士作品創作及演奏"
+        - "融合爵士樂作品創作及演奏"
         - "木笛樂團原創/改編曲目"
         - "當代室內樂作品創作"
         - "流行音樂作曲、編曲"
@@ -436,6 +781,12 @@ params:
         url: "https://web.arte.gov.tw/music/history/list_all.asp"
         image: /images/gleam.webp
 
+  eventsSection:
+    title: "近期演出"
+    rolePrefix: "作為"
+    readMore: "查看更多"
+    allEvents: "查看全部演出"
+
   # projects
   projects:
     enable: true
@@ -506,6 +857,7 @@ params:
        #messageRows: 5
 
   footer:
+    rssText: "歡迎訂閱我的RSS"
     recentPosts:
       path: "blogs"
       count: 3

@@ -1,0 +1,93 @@
+{{ $eventsLabels := .Site.Params.eventsSection }}
+{{ $sectionTitle := $eventsLabels.title | default "近期演出" }}
+{{ $rolePrefix := $eventsLabels.rolePrefix | default "作為" }}
+{{ $readMore := $eventsLabels.readMore | default "查看更多" }}
+{{ $allEvents := $eventsLabels.allEvents | default "查看全部演出" }}
+{{ $allEventsURL := $eventsLabels.allEventsURL | default "/events/" }}
+
+{{ $events := where .Site.RegularPages "Type" "events" }}
+{{ if and (eq (len $events) 0) (gt (len .Site.Sites) 0) }}
+  {{ $defaultSite := index .Site.Sites 0 }}
+  {{ $events = where $defaultSite.RegularPages "Type" "events" }}
+{{ end }}
+
+{{ $validEvents := where $events ".Date" "ne" nil }}
+{{ $upcoming := sort (where $validEvents ".Date" "ge" now) ".Date" }}
+
+{{ if gt (len $upcoming) 0 }}
+<section id="upcoming-events" class="section container mt-5 p-4">
+  <h3 class="section-title text-center mb-4">
+    {{ $sectionTitle }}
+  </h3>
+
+  <ul class="list-unstyled mt-3">
+      {{ range first 5 $upcoming }}
+        <li class="d-flex flex-column border-bottom pb-3 mb-3">
+          <div class="d-flex align-items-center mb-2">
+            <div class="me-3 text-center" style="min-width:80px;">
+              <div class="fs-4 fw-bold">{{ .Date.Format "01/02" }}</div>
+              <div class="text-muted small">{{ .Date.Format "Mon" }}</div>
+            </div>
+            <div>
+              <span class="fw-bold event-title">{{ .Title }}</span><br>
+              <span class="text-muted">📍 {{ .Params.location }}</span>
+              {{ with .Params.role }}
+                <span class="badge bg-light text-dark border ms-2">{{ $rolePrefix }} {{ . }}</span>
+              {{ end }}
+            </div>
+          </div>
+
+          {{ with .Params.summary }}
+            <p class="text-secondary mb-1">{{ . }}</p>
+          {{ end }}
+
+          <a href="{{ .RelPermalink }}" class="btn btn-sm btn-outline-primary rounded-pill mt-1 align-self-start">
+            {{ $readMore }}
+          </a>
+        </li>
+      {{ end }}
+
+      <div class="text-center mt-4">
+        <a href="{{ $allEventsURL | relURL }}" class="btn btn-primary rounded-pill px-4">
+          {{ $allEvents }}
+        </a>
+      </div>
+  </ul>
+</section>
+
+<style>
+  #upcoming-events {
+    background-color: #ffffff !important;
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.08);
+    border-radius: 1rem;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  #upcoming-events:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.12);
+    transform: translateY(-3px);
+  }
+
+  #upcoming-events h3.section-title {
+    color: black;
+  }
+
+  #upcoming-events .event-title {
+    color: black;
+    font-weight: bold;
+  }
+
+  body.dark #upcoming-events {
+    background-color: var(--secondary-background-color-dark) !important;
+  }
+
+  body.dark #upcoming-events h3.section-title {
+    color: white;
+  }
+
+  body.dark #upcoming-events .event-title {
+    color: white;
+  }
+</style>
+{{ end }}

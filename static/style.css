@@ -54,3 +54,8 @@
   border-radius: 0.18em;
   font-weight: 600;
 }
+
+#about ul {
+  grid-template-columns: repeat(2, minmax(180px, 260px));
+  column-gap: 80px;
+}

@@ -20,7 +20,7 @@
       </div>
       <div class="text-secondary mt-2">
         <a href="{{ "index.xml" | relURL }}" title="RSS">
-          歡迎訂閱我的RSS
+          {{ .Site.Params.footer.rssText | default "歡迎訂閱我的RSS" }}
         </a>
       </div>
     </div>
