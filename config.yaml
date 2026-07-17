@@ -547,5 +547,27 @@ params:
 
   customCSS: true
 
-  #customScripts: -| # You can add custom scripts which will be added before </body> tag
-  #  <script type="text/javascript"><!-- any script here --></script>
+  customScripts: |-
+    <script>
+      (() => {
+        const lightLogo = "/images/logo.webp";
+        const darkLogo = "/images/logo-white.webp";
+
+        const updateThemeAssets = () => {
+          const currentLogo = document.body.classList.contains("dark") ? darkLogo : lightLogo;
+          document
+            .querySelectorAll(".navbar-brand img, .footer-logo")
+            .forEach((logo) => {
+              logo.src = currentLogo;
+            });
+        };
+
+        document.addEventListener("DOMContentLoaded", () => {
+          updateThemeAssets();
+          new MutationObserver(updateThemeAssets).observe(document.body, {
+            attributes: true,
+            attributeFilter: ["class"]
+          });
+        });
+      })();
+    </script>

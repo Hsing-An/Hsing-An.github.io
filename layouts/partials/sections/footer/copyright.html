@@ -3,7 +3,7 @@
     <div class="col-md-4 text-center">
       <div class="pb-2">
         <a href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}">
-          <img alt="Footer logo" src="{{ "images/logo.webp" | relURL }}" height="56" width="56">
+          <img class="footer-logo" alt="Footer logo" src="{{ "images/logo.webp" | relURL }}" height="56" width="56">
         </a>
       </div>
       &copy; {{ now.Format "2006"}} {{ .Site.Params.copyright }} {{ .Site.Params.terms.copyright | default "All Rights Reserved" }}
