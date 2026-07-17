@@ -59,3 +59,28 @@
   grid-template-columns: repeat(2, minmax(180px, 260px));
   column-gap: 80px;
 }
+
+@media (max-width: 991.98px) {
+  #profileHeader .navbar-collapse.show,
+  #profileHeader .navbar-collapse.collapsing {
+    max-height: calc(100vh - 72px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #about ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 18px;
+    row-gap: 8px;
+    overflow: visible;
+    width: 100%;
+  }
+
+  #about ul li {
+    min-width: 0;
+    padding-left: 14px;
+    overflow-wrap: anywhere;
+  }
+}
