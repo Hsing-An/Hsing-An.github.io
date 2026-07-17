@@ -1,6 +1,6 @@
 baseURL: "https://hsinganlee.com/"
 languageCode: "zh-tw"
-title: "Hsing-An's profile"
+title: "Hsing-An Lee"
 theme: hugo-profile
 
 outputs:
@@ -25,6 +25,10 @@ pagination:
 
 markup:
   goldmark:
+    extensions:
+      extras:
+        mark:
+          enable: true
     renderer:
       unsafe: true
 
@@ -70,10 +74,10 @@ Menus:
       weight: 3
 
 params:
-  title: "Hsing-An's profile"
+  title: "Hsing-An Lee"
   description: 李倖安(Hsing-An Lee) 木笛演奏家/作曲家的酷酷網站
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/fav.png"
+  favicon: "/images/logo.webp"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -124,9 +128,9 @@ params:
   # If you want to customize the menu, you can change it here
   navbar:
     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
-    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
-    showBrandLogo: false # Show brand logo in nav bar | default is true
-    brandName: "Hsing-An's Profile" # Brand name for the brand | default is the title variable
+    brandLogo: "/images/logo.webp" # Logo for the brand | default is the favicon variable
+    showBrandLogo: True # Show brand logo in nav bar | default is true
+    brandName: "Hsing-An Lee" # Brand name for the brand | default is the title variable
     disableSearch: false
     # searchPlaceholder: "Search"
     stickyNavBar:
@@ -144,7 +148,7 @@ params:
   # Hero
   hero:
     enable: true
-    intro: "你好，我是"
+    intro: ""
     title: "李倖安 Hsing-An Lee"
     subtitle: "木笛演奏家/作曲家"
     content: "以演奏詮釋，以創作發聲——探索木笛在古樂、當代、爵士之間的可能。"
@@ -181,9 +185,11 @@ params:
 
       出生於台東，畢業於清華大學音樂系，主修**木笛**、副修**作曲**。師事陳孟亨（木笛）與陳欣蕾、周久渝（作曲）。
       
-      **木笛演奏**主要專注於古樂(Early Music)以及當代音樂(Contemporary Music)，目前也持續鑽研爵士樂(Jazz Music)。[曾多次在國際賽事上獲獎](#achievements)，並曾作為**獨奏家**在[**國家演奏廳**、**台中歌劇院**](#experience)演出。 
+      **木笛演奏**主要專注於古樂以及當代音樂，目前也持續鑽研爵士樂。  
+      [曾多次在國際賽事上獲獎](#achievements)，並曾作為**獨奏家**在[**國家演奏廳**、**台中歌劇院**](#experience)演出。 
 
-      **作曲**方面則融合了電子、爵士、當代、流行、傳統音樂等的影響，使得創作的語彙十分多元。不僅有譜寫給器樂的作品，也有以編曲軟體完成的編曲作品。[創作也在多項比賽中獲獎](#achievements)。作品曾在[衛武營發表](https://www.opentix.life/event/1985188449916014593)。
+      **作曲**方面則融合了電子、爵士、當代、流行、傳統音樂等的影響，使得創作的語彙十分多元。  
+      不僅有譜寫給器樂的作品，也有以編曲軟體完成的編曲作品。[創作也在多項比賽中獲獎](#achievements)。作品曾在[衛武營發表](https://www.opentix.life/event/1985188449916014593)。
 
       --- 
 
@@ -538,6 +544,8 @@ params:
     article: "Jan 2, 2006"
     articleList: "Jan 2, 2006"
     articleRecent: "Jan 2, 2006"
+
+  customCSS: true
 
   #customScripts: -| # You can add custom scripts which will be added before </body> tag
   #  <script type="text/javascript"><!-- any script here --></script>

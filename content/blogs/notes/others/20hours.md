@@ -22,7 +22,7 @@ description: "學習影片筆記"
 這價數字是引用的是心理學家K. Anders Ericsson的研究。
 在《異數：超凡與平凡的界線在哪裡？》內被廣泛流傳
 10000小時能夠達到的是**成為這個領域的專家**，而不是"學會"
-(其實也不完全是這樣，詳情可看[刻意練習](/content/blogs/notes/others/peak.md))
+(其實也不完全是這樣，詳情可看[刻意練習](/blogs/notes/others/peak.md))
 
 ## 學習曲線
 ![learning-curve](/images/learning-curve.webp "learning-curve")

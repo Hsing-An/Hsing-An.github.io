@@ -1,0 +1,56 @@
+#single .page-content ol,
+#single .page-content ul {
+  list-style-position: outside;
+  padding-left: 1.5em;
+}
+
+#single .page-content li {
+  padding-left: 0.25em;
+  margin-bottom: 0.65em;
+}
+
+#single .page-content li > p:first-child {
+  display: inline;
+  margin: 0;
+}
+
+#single .page-content li > p:not(:first-child) {
+  margin: 0.5em 0 0;
+}
+
+#single .page-content blockquote {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 15px 20px;
+  border-left-width: 5px !important;
+  font-size: 20px;
+}
+
+#single .page-content blockquote > p {
+  margin: 0;
+}
+
+#single .page-content h1,
+#single .page-content h2 {
+  border-bottom: 1px solid rgba(108, 117, 125, 0.28);
+  padding-bottom: 0.35em;
+  margin-top: 1.4em;
+}
+
+#single .page-content h3,
+#single .page-content h4,
+#single .page-content h5,
+#single .page-content h6 {
+  color: var(--text-color) !important;
+  font-weight: 600;
+}
+
+#single .page-content mark {
+  background-color: #fff176 !important;
+  color: inherit !important;
+  font-size: 1.3em;
+  padding: 0.05em 0.18em;
+  border-radius: 0.18em;
+  font-weight: 600;
+}

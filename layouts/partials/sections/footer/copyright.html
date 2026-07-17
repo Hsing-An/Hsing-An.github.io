@@ -1,0 +1,28 @@
+<div class="container py-4">
+  <div class="row justify-content-center">
+    <div class="col-md-4 text-center">
+      <div class="pb-2">
+        <a href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}">
+          <img alt="Footer logo" src="{{ "images/logo.webp" | relURL }}" height="56" width="56">
+        </a>
+      </div>
+      &copy; {{ now.Format "2006"}} {{ .Site.Params.copyright }} {{ .Site.Params.terms.copyright | default "All Rights Reserved" }}
+      <div class="text-secondary">
+        Made with
+        <span class="text-danger">
+          &#10084;
+        </span>
+        and
+        <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+          title="Designed and developed by gurusabarish">
+          Hugo Profile
+        </a>
+      </div>
+      <div class="text-secondary mt-2">
+        <a href="{{ "index.xml" | relURL }}" title="RSS">
+          歡迎訂閱我的RSS
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
