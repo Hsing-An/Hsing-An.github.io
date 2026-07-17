@@ -84,3 +84,8 @@
     overflow-wrap: anywhere;
   }
 }
+
+#featured-video {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
