@@ -60,6 +60,7 @@
         color: var(--primary-color);
         font-weight: 700;
     }
+
 </style>
 {{ end }}
 
@@ -129,7 +130,12 @@
                             <h5 class="card-title bg-transparent" title="{{ .Title }}">{{ .Title | truncate 25 }}</h5>
                         </a>
                         <div class="card-text secondary-font card-summary">
-                            {{ .Summary | truncate 100 | htmlUnescape | replaceRE "<h[1-6][^>]*>" "<span class=\"summary-heading\">" | replaceRE "</h[1-6]>" "</span>" | safeHTML }}
+                            {{ $cleanSummary := .Summary | replaceRE "(?s)<div class=\"youtube-embed\"[^>]*>.*?</div>" "" | replaceRE "(?s)<iframe[^>]*youtube\\.com/embed/.*?</iframe>" "" | plainify | htmlUnescape }}
+                            {{ $summaryText := $cleanSummary }}
+                            {{ with .Description }}
+                                {{ $summaryText = . }}
+                            {{ end }}
+                            {{ $summaryText | plainify | htmlUnescape | truncate 100 }}
                         </div>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
