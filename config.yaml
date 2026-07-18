@@ -186,6 +186,18 @@ languages:
               Selected competition:
               - Dec. 2022 [Tel Aviv Recorder Festival, First Prize in Chamber Music Category, Age 16+](https://www.cna.com.tw/news/acul/202212240018.aspx)
 
+          - job: "Member / Composer"
+            company: "Musesound Recorder Quartet"
+            companyUrl: "https://www.facebook.com/profile.php?id=61566565385076"
+            date: "Oct. 2023 - Present"
+            content: |
+              Performs as a member of the quartet and has composed original works for the ensemble.
+
+              Selected performances:
+              - Apr. 2024 Afternoon Salon Concert
+              - May 2024 Looking Back with Musesound: Musesound Recorder Quartet Concert
+              - Aug. 2024 Trees Listening to Music: Looking Back with Musesound: Musesound Recorder Quartet Concert, including the world premiere of my commissioned work **MournSound**
+
           - job: "Conductor / Composer / Member"
             company: "Taitung Senior High School Wind Band"
             companyUrl: "https://www.tsawo2022.com"
@@ -635,7 +647,16 @@ params:
           曾參與的歷年比賽：
           - 2022 12月 [以色列特拉維夫木笛音樂節 16歲以上室內樂組第一名](https://www.cna.com.tw/news/acul/202212240018.aspx)
           
+      - job: "團員、作曲家"
+        company: "沐聲木笛四重奏"
+        companyUrl: "https://www.facebook.com/profile.php?id=61566565385076"
+        date: "2023 Oct - 至今"
+        content: |
+          在樂團內擔團員，並曾為樂團創作原創作品。
 
+          - 2024 4月 《午後沙龍音樂會》
+          - 2024 5月 《沐然回首-沐聲木笛四重奏音樂會》
+          - 2024 8月 聽音樂的樹-《沐然回首-沐聲木笛四重奏音樂會》 **本場包涵本人委託創作《墓聲 MournSound》世界首演**
 
         
       - job: "指揮、作曲家、團員"
@@ -714,8 +735,7 @@ params:
           #url: "https://music.nttu.edu.tw/p/405-1027-125830,c4433.php?Lang=zh-tw"
         content: |
           - 2022 8月 參與[巴洛克獨奏家樂團《印象．臺灣》 導聆音樂會臺東場](https://music.nttu.edu.tw/p/405-1027-125830,c4433.php?Lang=zh-tw) 木笛合作演出者
-      #- job: "薩克斯風手"
-      #  company: "清大AI樂團"
+      
 
 
 
