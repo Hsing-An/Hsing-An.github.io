@@ -1,12 +1,426 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Hsing-An Lee on Hsing-An Lee&#34;s website</title>
-    <link>http://localhost:1313/en/</link>
-    <description>Recent content in Hsing-An Lee on Hsing-An Lee&#34;s website</description>
-    <generator>Hugo</generator>
-    <language>zh-tw</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
+    <title>Hsing-An Lee</title>
+    <link>https://hsinganlee.com/en/</link>
+    <description>Hsing-An Lee is a recorder player and composer.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+    <lastBuildDate>Sun, 24 Aug 2025 00:00:00 &#43;0000</lastBuildDate>
+    <atom:link href="https://hsinganlee.com/en/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+    <item>
+      <title>hazy</title>
+      <link>https://hsinganlee.com/en/arrangement/%E6%BF%9B/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 &#43;0000</pubDate>
+      <guid>https://hsinganlee.com/en/arrangement/%E6%BF%9B/</guid>
+      <description> This work was completed with classmates from a university elective course, using alternative electronic music as its stylistic direction.&amp;#xA;The piece takes a synth bass as its central motive, exploring the flow and suspension of the music.&amp;#xA;It describes the boundary between &amp;amp;ldquo;hazy&amp;amp;rdquo; and &amp;amp;ldquo;clear&amp;amp;rdquo; through sound.&amp;#xA;Credit: Lyrics: Pei-Yu Lin, He-Hsin Wu, Yu-An Liu Composer: Hsing-An Lee, Pei-Yu Lin, He-Hsin Wu Arrangement: Hsing-An Lee Vocals: Hsing-An Lee, Pei-Yu Lin, He-Hsin Wu </description>
+      <content:encoded><![CDATA[<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/GmB11i4YisY" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p>This work was completed with classmates from a university elective course, using <strong>alternative electronic music</strong> as its stylistic direction.<br>
+The piece takes a <strong>synth bass</strong> as its central motive, exploring the <strong>flow and suspension</strong> of the music.<br>
+It describes the boundary between &ldquo;<strong>hazy</strong>&rdquo; and &ldquo;<strong>clear</strong>&rdquo; through sound.</p>
+<pre tabindex="0"><code> Credit:
+ Lyrics: Pei-Yu Lin, He-Hsin Wu, Yu-An Liu
+ Composer: Hsing-An Lee, Pei-Yu Lin, He-Hsin Wu
+ Arrangement: Hsing-An Lee
+ Vocals: Hsing-An Lee, Pei-Yu Lin, He-Hsin Wu
+</code></pre>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Polygatari - 祭り(Matsuri)</title>
+      <link>https://hsinganlee.com/en/composition/matsuri/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 &#43;0000</pubDate>
+      <guid>https://hsinganlee.com/en/composition/matsuri/</guid>
+      <description>&amp;#xD;A contemporary recorder work blending jazz, electronic music, and Japanese folk-inspired elements. This is one of my most representative works.&amp;#xA;This work received Second Prize and the Best Composition Award at Open Recorder Days Amsterdam 2023.</description>
+      <content:encoded><![CDATA[<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/gMag4XdDU_A?" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p><strong>A contemporary recorder work blending jazz, electronic music, and Japanese folk-inspired elements.</strong> This is one of my most representative works.</p>
+<h3 id="this-work-received-second-prize-and-the-best-composition-award-at-open-recorder-days-amsterdam-2023">This work received <strong>Second Prize and the Best Composition Award</strong> at Open Recorder Days Amsterdam 2023.</h3>
+<hr>
+<p>In this piece, I used the DAW <a href="https://www.reasonstudios.com/?srsltid=AfmBOopOlDXSckGj6--NEWvOwjHG2pdTewFIFo40HpLlqW3qNLOWqujq">Reason</a> as my creative tool. Inspired by <strong>odd-meter music</strong>, I experimented with an <strong>uneven seven-beat rhythmic structure</strong>.<br>
+In live performance, the piece combines <strong>live looping</strong> with a pre-programmed track. The recorder sound is also routed into the computer, where effects open up a wider range of timbral possibilities.</p>
+<blockquote>
+<p>Polygatari - 祭り(Matsuri)
+Monogatari (物語) means &ldquo;story&rdquo; in Japanese. Just as monophony evolves into polyphony, I wanted my monogatari to evolve as well.<br>
+Matsuri (祭り) means festival.</p></blockquote>
+<blockquote>
+<p>As the third piece in the Polygatari series, this is probably a festival taking place under a full moon, somewhere below the castle. The people here move with a staggering yet light step; he wears a white amoeba-patterned shirt, he wears a haori, he is restrained, yet free.<br>
+And he is very handsome.</p></blockquote>
+<pre tabindex="0"><code> Open Recorder Days Amsterdam 2023 Competition
+ Recorder &amp; Electronic: Hsing-An Lee
+ Composer: Hsing-An Lee
+</code></pre>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Polygatari - 祭り(Matsuri)</title>
+      <link>https://hsinganlee.com/en/performance/matsuri/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 &#43;0000</pubDate>
+      <guid>https://hsinganlee.com/en/performance/matsuri/</guid>
+      <description>&amp;#xD;A contemporary recorder work blending jazz, electronic music, and Japanese folk-inspired elements. This is one of my most representative works.&amp;#xA;This work received Second Prize and the Best Composition Award at Open Recorder Days Amsterdam 2023.</description>
+      <content:encoded><![CDATA[<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/gMag4XdDU_A?" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p><strong>A contemporary recorder work blending jazz, electronic music, and Japanese folk-inspired elements.</strong> This is one of my most representative works.</p>
+<h3 id="this-work-received-second-prize-and-the-best-composition-award-at-open-recorder-days-amsterdam-2023">This work received <strong>Second Prize and the Best Composition Award</strong> at Open Recorder Days Amsterdam 2023.</h3>
+<hr>
+<p>In this piece, I used the DAW <a href="https://www.reasonstudios.com/?srsltid=AfmBOopOlDXSckGj6--NEWvOwjHG2pdTewFIFo40HpLlqW3qNLOWqujq">Reason</a> as my creative tool. Inspired by <strong>odd-meter music</strong>, I experimented with an <strong>uneven seven-beat rhythmic structure</strong>.<br>
+In live performance, the piece combines <strong>live looping</strong> with a pre-programmed track. The recorder sound is also routed into the computer, where effects open up a wider range of timbral possibilities.</p>
+<blockquote>
+<p>Polygatari - 祭り(Matsuri)
+Monogatari (物語) means &ldquo;story&rdquo; in Japanese. Just as monophony evolves into polyphony, I wanted my monogatari to evolve as well.<br>
+Matsuri (祭り) means festival.</p></blockquote>
+<blockquote>
+<p>As the third piece in the Polygatari series, this is probably a festival taking place under a full moon, somewhere below the castle. The people here move with a staggering yet light step; he wears a white amoeba-patterned shirt, he wears a haori, he is restrained, yet free.<br>
+And he is very handsome.</p></blockquote>
+<pre tabindex="0"><code> Open Recorder Days Amsterdam 2023 Competition
+ Recorder &amp; Electronic: Hsing-An Lee
+ Composer: Hsing-An Lee
+</code></pre>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Artisan Nova</title>
+      <link>https://hsinganlee.com/en/arrangement/artisan-nova/</link>
+      <pubDate>Mon, 01 May 2023 00:00:00 &#43;0000</pubDate>
+      <guid>https://hsinganlee.com/en/arrangement/artisan-nova/</guid>
+      <description> This work was selected as the official station-entry music for Taichung MRT Shui-an Temple Station. The station is connected to a Taiwanese Daoist temple; after leaving the platform, one can see red lanterns and the nearby Shui-an Temple. We decided to sample folk-like melodies from traditional bayin music, combining guzheng and suona-like timbres with a relaxed Bossa Nova accompaniment, adding a touch of temple culture to the modern urban setting.&amp;#xA;</description>
+      <content:encoded><![CDATA[<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/KVuSFsRum7M" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<h2 id="this-work-was-selected-as-the-official-station-entry-music-for-taichung-mrt-shui-an-temple-station">This work was selected as the official station-entry music for Taichung MRT Shui-an Temple Station.</h2>
+<p>The station is connected to a Taiwanese Daoist temple; after leaving the platform, one can see red lanterns and the nearby Shui-an Temple. We decided to sample folk-like melodies from <strong>traditional bayin music</strong>, combining guzheng and suona-like timbres with a relaxed <strong>Bossa Nova</strong> accompaniment, adding a touch of temple culture to the modern urban setting.</p>
+<p>The <strong>suona-like sound</strong> was sampled by us directly at a temple, which became one of the small details of the work.</p>
+<pre tabindex="0"><code> Composer: Hsing-An Lee, Yu-Lin Chen
+</code></pre>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Istanpitta “Tre Fontane”</title>
+      <link>https://hsinganlee.com/en/performance/tre-fontane/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 &#43;0000</pubDate>
+      <guid>https://hsinganlee.com/en/performance/tre-fontane/</guid>
+      <description> Istanpitta &amp;amp;ldquo;Tre Fontane&amp;amp;rdquo; is a medieval instrumental dance.&amp;#xA;It is preserved in the British Library manuscript Add MS 29987, an important fourteenth-century Italian source containing secular and sacred music. The manuscript also includes fifteen monophonic instrumental dances known as istanpitte, among which &amp;amp;ldquo;Tre Fontane&amp;amp;rdquo; appears.&amp;#xA;Tre Fontane means &amp;amp;ldquo;three fountains.&amp;amp;rdquo; What survives of the work is its title and original single-line melody, so modern performances often add various accompanying instruments, leaving performers considerable room for interpretation.&amp;#xA;</description>
+      <content:encoded><![CDATA[<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/_kn_3ya9jDA" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p><strong>Istanpitta &ldquo;Tre Fontane&rdquo; is a medieval instrumental dance.</strong><br>
+It is preserved in the <strong>British Library manuscript Add MS 29987</strong>, an important fourteenth-century Italian source containing secular and sacred music. The manuscript also includes <strong>fifteen monophonic instrumental dances</strong> known as istanpitte, among which &ldquo;Tre Fontane&rdquo; appears.</p>
+<p>Tre Fontane means <strong>&ldquo;three fountains.&rdquo;</strong> What survives of the work is its title and original single-line melody, so modern performances often add various accompanying instruments, leaving performers considerable room for interpretation.</p>
+<pre tabindex="0"><code> Recorder: Hsing-An Lee
+ Djembe: Kai-Cheng Wang
+</code></pre>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Music for a Bird</title>
+      <link>https://hsinganlee.com/en/performance/music-for-a-bird/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 &#43;0000</pubDate>
+      <guid>https://hsinganlee.com/en/performance/music-for-a-bird/</guid>
+      <description> Hans-Martin Linde&amp;amp;rsquo;s Music for a Bird is a contemporary recorder work, using Extended technique vocabulary and bird-like sound gestures. Rather than relying only on melody, the piece presents different bird calls through changes in timbre and ways of producing sound.&amp;#xA;Hsing-An Lee Recorder Recital in Hsinchu, Taiwan Recorder: Hsing-An Lee </description>
+      <content:encoded><![CDATA[<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/IgDLlU0JfPs" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p><strong>Hans-Martin Linde&rsquo;s <em>Music for a Bird</em> is a contemporary recorder work</strong>, using <strong>Extended technique vocabulary</strong> and bird-like sound gestures. Rather than relying only on melody, the piece presents different bird calls through changes in <strong>timbre</strong> and ways of producing sound.</p>
+<pre tabindex="0"><code> Hsing-An Lee Recorder Recital in Hsinchu, Taiwan
+ Recorder: Hsing-An Lee
+</code></pre>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Musesound Recorder Quartet Concert, Taichung</title>
+      <link>https://hsinganlee.com/en/events/muse_tc/</link>
+      <pubDate>Sat, 22 Nov 2025 14:30:00 &#43;0800</pubDate>
+      <guid>https://hsinganlee.com/en/events/muse_tc/</guid>
+      <description>Performing with Musesound Recorder Quartet.</description>
+      <content:encoded><![CDATA[<h1 id="musesound-is-heading-to-taichung">Musesound is heading to Taichung!</h1>
+<p>My chamber partners and I, <a href="https://www.facebook.com/p/%E6%B2%90%E8%81%B2%E6%9C%A8%E7%AC%9B%E5%9B%9B%E9%87%8D%E5%A5%8FMusesound-Recorder-Quartet-61566565385076/">Musesound Recorder Quartet</a>, will be giving a concert in Taichung.<br>
+Since the other three members are all from Taichung, this is almost a hometown concert for them, which should feel quite relaxed.<br>
+As the only member from Taitung, what I am most looking forward to is probably the celebratory barbecue afterward.</p>
+<p>Musesound has been one of the projects I have spent the most time on recently. Come listen if you are interested!</p>
+<blockquote>
+<p>📅 Date: 2025-11-22<br>
+⏰ Performance time: 14:30<br>
+📍 Venue: Under the Big Tree Music Studio (4F, No. 290, Section 2, Nantun Road, Nantun District, Taichung)<br>
+🎫 <a href="https://reurl.cc/Lnn4Ax?fbclid=IwY2xjawNV0jdleHRuA2FlbQIxMABicmlkETFhM0R4VFRhcnZqdVc5NkhjAR7-YQoeAOqGZHXK-TAzXwGJwCxu0OrfSPUUmskdp9V4HtKqe_dn9Nj63AWFsw_aem_SqDmEoayybzm6hra8gnrLA">Ticket link</a></p></blockquote>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Guanxi Love Song: Crossover Hakka Music Concert</title>
+      <link>https://hsinganlee.com/en/events/hakka/</link>
+      <pubDate>Sat, 08 Nov 2025 15:00:00 &#43;0800</pubDate>
+      <guid>https://hsinganlee.com/en/events/hakka/</guid>
+      <description>Performing with Hsin-Chu Recorder Orchestra and Golden Melody Award-winning Hakka singer Zi-Xuan Huang, and providing arrangements for the ensemble.</description>
+      <content:encoded><![CDATA[<h1 id="performing-with-golden-melody-award-winning-singer-zi-xuan-huang">Performing with Golden Melody Award-winning singer Zi-Xuan Huang</h1>
+<p>On Nov. 8, I will perform with <a href="https://www.facebook.com/hsinchurecorder/?locale=zh_TW">Hsin-Chu Recorder Orchestra</a> and Golden Melody Award-winning Hakka singer <a href="https://www.instagram.com/zixuan.hakka/">Zi-Xuan Huang</a>.<br>
+For this concert, I will not only perform as a recorder ensemble member, but also provide two arrangements for the program.</p>
+<p>Admission is free. Come by if you are interested!</p>
+<blockquote>
+<p>📅 Date: 2025-11-08<br>
+⏰ Performance time: 15:00<br>
+📍 Venue: 2F, Taihong Tea Culture Center (No. 73, Zhongshan Road, Guanxi Township, Hsinchu County)<br>
+🎫 Free admission</p></blockquote>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>2025 Vagabond Festival</title>
+      <link>https://hsinganlee.com/en/events/vaga/</link>
+      <pubDate>Sat, 18 Oct 2025 19:30:00 &#43;0800</pubDate>
+      <guid>https://hsinganlee.com/en/events/vaga/</guid>
+      <description>Performing original and cover works in hip-hop, R&amp;amp;amp;B, Bossa Nova, and other fusion styles at Vagabond Festival.</description>
+      <content:encoded><![CDATA[<h1 id="i-am-playing-at-a-music-festival">I am playing at a music festival!</h1>
+<p>I will be heading to Tainan with my band Long Time Don&rsquo;t Jam for <a href="https://www.vagabondfest.com">Vagabond Festival</a>!<br>
+We will perform several original works in fusion styles around hip-hop, R&amp;B, and Bossa Nova, along with a few covers and some fresh new material.</p>
+<p>This will be my first time performing on a music festival stage, so I am a little nervous.<br>
+I have two performances that day (Oct. 18):</p>
+<ul>
+<li>16:00 <a href="https://www.vagabondfest.com/pages/triggerman">Triggerman Beat Station</a></li>
+<li>21:10 <a href="https://www.vagabondfest.com/pages/triggerman">Xiaoximen Stage</a></li>
+</ul>
+<p>Come by if you are interested! <a href="https://www.vagabondfest.com/pages/tickets">Tickets are available here</a></p>
+<p><img src="/images/time.webp" alt="Schedule"></p>
+<blockquote>
+<p>📅 Date: 2025-10-18<br>
+⏰ Performance times: 16:00 / 21:10<br>
+📍 Venue: Grass field beside Anping Sunset Platform, Tainan<br>
+🎫 <a href="https://www.vagabondfest.com/pages/tickets">Ticket link</a></p></blockquote>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Gallery</title>
+      <link>https://hsinganlee.com/en/gallery/</link>
+      <pubDate>Mon, 22 Sep 2025 00:00:00 &#43;0000</pubDate>
+      <guid>https://hsinganlee.com/en/gallery/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>ENDE</title>
+      <link>https://hsinganlee.com/en/performance/ende/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 &#43;0000</pubDate>
+      <guid>https://hsinganlee.com/en/performance/ende/</guid>
+      <description> Louis Andriessen&amp;amp;rsquo;s ENDE is a contemporary work for recorder, with a direct and concentrated musical language. Its clear sense of rhythm focuses the music on even the smallest unstable changes.&amp;#xA;In performance, I focused on rhythmic stability and clarity of sound, keeping the articulation precise so that the tension of the piece can emerge naturally.&amp;#xA;Hsing-An Lee Recorder Recital in Hsinchu, Taiwan Recorder: Hsing-An Lee </description>
+      <content:encoded><![CDATA[<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/51jD6exiW1A" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p><strong>Louis Andriessen&rsquo;s <em>ENDE</em> is a contemporary work for recorder</strong>, with a direct and concentrated musical language. Its clear <strong>sense of rhythm</strong> focuses the music on even the smallest unstable changes.</p>
+<p>In performance, I focused on <strong>rhythmic stability</strong> and <strong>clarity of sound</strong>, keeping the articulation precise so that the tension of the piece can emerge naturally.</p>
+<pre tabindex="0"><code> Hsing-An Lee Recorder Recital in Hsinchu, Taiwan
+ Recorder: Hsing-An Lee
+</code></pre>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Quatrième suite in A minor, Op. 1 </title>
+      <link>https://hsinganlee.com/en/performance/quatri%C3%A8me-suite-in-a-minor-op.-1/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 &#43;0000</pubDate>
+      <guid>https://hsinganlee.com/en/performance/quatri%C3%A8me-suite-in-a-minor-op.-1/</guid>
+      <description>&amp;#xD;Philidor&amp;amp;rsquo;s Quatrième suite in A minor, Op. 1 is a French Baroque suite, centered on dance character and ornamented melodic writing. This version presents the distinct character and affect of each movement through the recorder.&amp;#xA;Hsing-An Lee Recorder Recital in Hsinchu, Taiwan Recorder: Hsing-An Lee Harpsichord: Machiko Suto </description>
+      <content:encoded><![CDATA[<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/xez9wLCKDAs" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/osO64OCkb_E" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p><strong>Philidor&rsquo;s <em>Quatrième suite in A minor, Op. 1</em> is a French Baroque suite</strong>, centered on <strong>dance character</strong> and <strong>ornamented melodic writing</strong>. This version presents the distinct character and affect of each movement through the recorder.</p>
+<pre tabindex="0"><code> Hsing-An Lee Recorder Recital in Hsinchu, Taiwan
+ Recorder: Hsing-An Lee
+ Harpsichord: Machiko Suto
+</code></pre>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Recorder Concerto in C major, Rv 443 </title>
+      <link>https://hsinganlee.com/en/performance/rv-443/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 &#43;0000</pubDate>
+      <guid>https://hsinganlee.com/en/performance/rv-443/</guid>
+      <description> Vivaldi&amp;amp;rsquo;s Recorder Concerto in C major, RV 443 is an important work in the recorder repertoire. Its memorable melodic writing and clear changes of character have allowed the piece to remain widely loved, while its technical demands also require a strong level of control from the performer.&amp;#xA;Hsing-An Lee Recorder Recital in Hsinchu, Taiwan Recorder: Hsing-An Lee Harpsichord: Machiko Suto </description>
+      <content:encoded><![CDATA[<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/TBQrRo2p5fg" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p><strong>Vivaldi&rsquo;s <em>Recorder Concerto in C major, RV 443</em> is an important work in the recorder repertoire.</strong> Its memorable melodic writing and clear changes of character have allowed the piece to remain widely loved, while its <strong>technical demands</strong> also require a strong level of control from the performer.</p>
+<pre tabindex="0"><code> Hsing-An Lee Recorder Recital in Hsinchu, Taiwan
+ Recorder: Hsing-An Lee
+ Harpsichord: Machiko Suto
+</code></pre>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Sonata op.5 no.7</title>
+      <link>https://hsinganlee.com/en/performance/corelli/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 &#43;0000</pubDate>
+      <guid>https://hsinganlee.com/en/performance/corelli/</guid>
+      <description>&amp;#xD;Corelli&amp;amp;rsquo;s Sonata op. 5 no. 7 is an Italian Baroque sonata. Corelli notated his taste in ornamentation in detail, making this work a representative example of Italian-style ornamentation.&amp;#xA;Open Recorder Days Amsterdam 2023 competition Recorder: Hsing-An Lee Harpsichord: Claudio Ribeiro </description>
+      <content:encoded><![CDATA[<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/2_15FXVelt4" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/8NaYSDNGELU" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p><strong>Corelli&rsquo;s <em>Sonata op. 5 no. 7</em> is an Italian Baroque sonata.</strong> Corelli notated his taste in ornamentation in detail, making this work a representative example of <strong>Italian-style ornamentation</strong>.</p>
+<pre tabindex="0"><code> Open Recorder Days Amsterdam 2023 competition
+ Recorder: Hsing-An Lee
+ Harpsichord: Claudio Ribeiro
+</code></pre>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>あたらよ(Atarayo)</title>
+      <link>https://hsinganlee.com/en/composition/atarayo/</link>
+      <pubDate>Tue, 20 May 2025 00:00:00 &#43;0000</pubDate>
+      <guid>https://hsinganlee.com/en/composition/atarayo/</guid>
+      <description> A trio for two clarinets and piano&amp;#xA;あたらよ (Atarayo) is a Japanese word for &amp;amp;ldquo;a night so beautiful that one feels reluctant to let it end.&amp;amp;rdquo;&amp;#xA;While studying composition, I often find myself drawn to many musical styles and theories. I consider myself fairly open to different kinds of artistic work; early music, folk music, classical music, jazz, contemporary music, and electronic music can all make me spend a great deal of time studying them.&amp;#xA;</description>
+      <content:encoded><![CDATA[<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/ebeWruZ1ozk" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p><strong>A trio for two clarinets and piano</strong></p>
+<blockquote>
+<p>あたらよ (Atarayo) is a Japanese word for &ldquo;a night so beautiful that one feels reluctant to let it end.&rdquo;</p></blockquote>
+<p>While studying composition, I often find myself drawn to many musical styles and theories. I consider myself fairly open to different kinds of artistic work; early music, folk music, classical music, jazz, contemporary music, and electronic music can all make me spend a great deal of time studying them.</p>
+<p>At the same time, this makes me think about what the music I &ldquo;<strong>like</strong>&rdquo; actually is, and what kinds of sounds feel beautiful to me. I tried to use more of the elements I am drawn to, including fourths, extended chords, and borrowed chords from more distant keys; these less obvious tonal shifts seem to interest me more.</p>
+<p><strong>Through music, this piece tries to record the atarayo that drew me into composition, while also using a more elusive sense of tonality to create a night one would be reluctant to see end.</strong></p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>2-25</title>
+      <link>https://hsinganlee.com/en/composition/2-25/</link>
+      <pubDate>Thu, 30 Jan 2025 00:00:00 &#43;0000</pubDate>
+      <guid>https://hsinganlee.com/en/composition/2-25/</guid>
+      <description>&amp;#xD;A short piece written for recorder quintet, imitating the lively and energetic atmosphere of Chinese New Year.&amp;#xA;Blending fantasy colors with folk-inspired musical language, the piece uses strong rhythmic patterns and non-functional harmony to create a sound world with a sense of Eastern mystery and celebration.&amp;#xA;Disconsonant Recorder Quartet: Hsing-An Lee Wen-Hong Jiang Kai-Li Chang Fu-Hong Liu Cheng-Yun Wang Composer: Hsing-An Lee </description>
+      <content:encoded><![CDATA[<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/avDgWoLj_Ao" title="2-25" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p><strong>A short piece written for recorder quintet</strong>, imitating the lively and energetic atmosphere of <strong>Chinese New Year</strong>.</p>
+<p>Blending <strong>fantasy colors</strong> with <strong>folk-inspired musical language</strong>, the piece uses strong rhythmic patterns and <strong>non-functional harmony</strong> to create a sound world with a sense of <strong>Eastern mystery</strong> and <strong>celebration</strong>.</p>
+<pre tabindex="0"><code> Disconsonant Recorder Quartet:
+ Hsing-An Lee
+ Wen-Hong Jiang
+ Kai-Li Chang
+ Fu-Hong Liu
+ Cheng-Yun Wang
+ Composer: Hsing-An Lee
+</code></pre>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Relative Deprivation</title>
+      <link>https://hsinganlee.com/en/composition/relative_deprivation/</link>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 &#43;0000</pubDate>
+      <guid>https://hsinganlee.com/en/composition/relative_deprivation/</guid>
+      <description> A trio for two clarinets and piano&amp;#xA;Relative deprivation is a subjective psychological phenomenon: after comparing oneself with others, or with one&amp;amp;rsquo;s own expectations, one feels deprived because reality falls short of the object of comparison.&amp;#xA;Like a carefully written essay missing its final period, the gradual indifference of a partner in a relationship, or the realization that one&amp;amp;rsquo;s hard-earned result still falls short of someone with extraordinary talent, people may only become more aware of what they truly want at the moment when an expectation is taken away.&amp;#xA;</description>
+      <content:encoded><![CDATA[<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/mwNRsrCOfXo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p><strong>A trio for two clarinets and piano</strong></p>
+<p><strong>Relative deprivation is a subjective psychological phenomenon: after comparing oneself with others, or with one&rsquo;s own expectations, one feels deprived because reality falls short of the object of comparison.</strong><br>
+Like a carefully written essay missing its final period, the gradual indifference of a partner in a relationship, or the realization that one&rsquo;s hard-earned result still falls short of someone with extraordinary talent, people may only become more aware of what they truly want at the moment when an expectation is taken away.</p>
+<p>In this piece, I tried to create <strong>expectation</strong> in different ways, then remove it just as it seems about to arrive. Through this process, I hoped listeners might become aware of the sound they were waiting for, and experience a kind of <strong>relative deprivation within the music itself</strong>.</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Dialog</title>
+      <link>https://hsinganlee.com/en/composition/dialog/</link>
+      <pubDate>Fri, 30 Aug 2024 00:00:00 &#43;0000</pubDate>
+      <guid>https://hsinganlee.com/en/composition/dialog/</guid>
+      <description> A duet for two recorders&amp;#xA;This work received Second Place with Distinction in the Professional Duo/Trio category of the Taiwan International Recorder Festival Competition. As both composer and performer, I often encounter the same problem: no matter how I try to avoid it, the music I make always carries a certain accent. Especially on an instrument I know well, the act of composing almost determines its way of speaking, as if that were the only possible &amp;amp;ldquo;authorial intention.&amp;amp;rdquo;&amp;#xA;</description>
+      <content:encoded><![CDATA[<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/fXnTvqZvXmY" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p><strong>A duet for two recorders</strong></p>
+<h3 id="this-work-received-second-place-with-distinction-in-the-professional-duotrio-category-of-the-taiwan-international-recorder-festival-competition">This work received Second Place with Distinction in the Professional Duo/Trio category of the Taiwan International Recorder Festival Competition.</h3>
+<p>As both <strong>composer and performer</strong>, I often encounter the same problem: no matter how I try to avoid it, the music I make always carries a certain accent. Especially on an instrument I know well, the act of composing almost determines its way of speaking, as if that were the only possible &ldquo;authorial intention.&rdquo;</p>
+<p>This becomes even more awkward in a piece centered on <strong>&ldquo;dialogue&rdquo;</strong>; I cannot make it sound as though I am simply talking to myself.</p>
+<p>Through my partner&rsquo;s interpretation, the piece gained another layer of meaning: understanding the author, understanding the music, and then speaking it with one&rsquo;s own accent. Through music, the idea of a <strong>&ldquo;dialogue&rdquo;</strong> becomes clearer.</p>
+<pre tabindex="0"><code> Taiwan Recorder Festival 2024 Competition
+ Recorder: Hsing-An Lee, I-Chen Lin
+ Composer: Hsing-An Lee
+</code></pre>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Articulator I</title>
+      <link>https://hsinganlee.com/en/performance/articulator-i/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 &#43;0000</pubDate>
+      <guid>https://hsinganlee.com/en/performance/articulator-i/</guid>
+      <description> Agnes Dorwarth&amp;amp;rsquo;s Articulator I is a contemporary work for recorder, focusing on changes in articulation and tonguing.&amp;#xA;The recorder becomes the primary sound material, with the contrast between one sound and the next placed at the center of the listening experience.&amp;#xA;In performance, the differences between articulations need to be handled clearly, allowing the rhythmic drive and layers of timbre to remain stable while leaving room for one&amp;amp;rsquo;s own interpretation of how the piece speaks.&amp;#xA;</description>
+      <content:encoded><![CDATA[<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/uH10__FPMIs" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p><strong>Agnes Dorwarth&rsquo;s <em>Articulator I</em> is a contemporary work for recorder</strong>, focusing on changes in <strong>articulation</strong> and <strong>tonguing</strong>.<br>
+The recorder becomes the primary sound material, with the <strong>contrast between one sound and the next</strong> placed at the center of the listening experience.</p>
+<p>In performance, the differences between articulations need to be handled clearly, allowing the <strong>rhythmic drive</strong> and <strong>layers of timbre</strong> to remain stable while leaving room for one&rsquo;s own interpretation of how the piece speaks.</p>
+<pre tabindex="0"><code> Open Recorder Days Amsterdam 2023 competition
+ Recorder: Hsing-An Lee
+</code></pre>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Gurenge (arranged for recorder quartet)</title>
+      <link>https://hsinganlee.com/en/composition/gurenge/</link>
+      <pubDate>Fri, 03 Apr 2020 00:00:00 &#43;0000</pubDate>
+      <guid>https://hsinganlee.com/en/composition/gurenge/</guid>
+      <description> LiSA&amp;amp;rsquo;s &amp;amp;ldquo;Gurenge&amp;amp;rdquo; is the opening theme song of the anime Demon Slayer. This version is arranged for recorder quartet.&amp;#xA;While keeping the original song&amp;amp;rsquo;s clear melodic profile and forward drive, the arrangement redistributes the melody, accompaniment, and rhythmic functions across the ensemble.&amp;#xA;The arrangement makes use of the recorder ensemble&amp;amp;rsquo;s clear layers of sound and agile articulation, aiming to present the original song&amp;amp;rsquo;s strong rhythmic character and dramatic tension.&amp;#xA;</description>
+      <content:encoded><![CDATA[<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/_9IUzfO2Tac" title="gurenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p><strong>LiSA&rsquo;s &ldquo;Gurenge&rdquo; is the opening theme song of the anime <em>Demon Slayer</em>. This version is arranged for recorder quartet.</strong></p>
+<p>While keeping the original song&rsquo;s <strong>clear melodic profile</strong> and <strong>forward drive</strong>, the arrangement redistributes the melody, accompaniment, and rhythmic functions across the ensemble.</p>
+<p>The arrangement makes use of the recorder ensemble&rsquo;s <strong>clear layers of sound</strong> and <strong>agile articulation</strong>, aiming to present the original song&rsquo;s strong <strong>rhythmic character</strong> and <strong>dramatic tension</strong>.</p>
+<pre tabindex="0"><code> Recorder: Hsing-An Lee
+ Composer: Hsing-An Lee
+</code></pre>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Is There Still Anything That Love Can Do? (arranged for recorder quartet)</title>
+      <link>https://hsinganlee.com/en/composition/tenko-no-ko/</link>
+      <pubDate>Sun, 06 Oct 2019 00:00:00 &#43;0000</pubDate>
+      <guid>https://hsinganlee.com/en/composition/tenko-no-ko/</guid>
+      <description> RADWIMPS&amp;amp;rsquo; &amp;amp;ldquo;Is There Still Anything That Love Can Do?&amp;amp;rdquo; is one of the theme songs from the animated film Weathering with You. This version is arranged for recorder quartet.&amp;#xA;The arrangement preserves the original song&amp;amp;rsquo;s long, narrative melodic line while reworking the harmonic and accompaniment layers among the four parts.&amp;#xA;In arranging the piece, I focused on the recorder&amp;amp;rsquo;s transparency and singing quality, hoping to present the original song&amp;amp;rsquo;s gradually building emotional tension and sense of hope within a more compact ensemble setting.&amp;#xA;</description>
+      <content:encoded><![CDATA[<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/tmuQNh9m2mA" title="gurenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p><strong>RADWIMPS&rsquo; &ldquo;Is There Still Anything That Love Can Do?&rdquo; is one of the theme songs from the animated film <em>Weathering with You</em>. This version is arranged for recorder quartet.</strong></p>
+<p>The arrangement preserves the original song&rsquo;s <strong>long, narrative melodic line</strong> while reworking the harmonic and accompaniment layers among the four parts.</p>
+<p>In arranging the piece, I focused on the recorder&rsquo;s <strong>transparency</strong> and <strong>singing quality</strong>, hoping to present the original song&rsquo;s gradually building <strong>emotional tension</strong> and sense of hope within a more compact ensemble setting.</p>
+<pre tabindex="0"><code> Disconsonant Recorder Quartet:
+ Hsing-An Lee
+ Wen-Hong Jiang
+ Chih-Yu Su
+ Cheng-Yun Wang
+ Composer: RADWIMPS
+ Arrangement: Hsing-An Lee
+</code></pre>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Lady of the Pier (arranged for recorder quartet)</title>
+      <link>https://hsinganlee.com/en/composition/devotion/</link>
+      <pubDate>Sat, 02 Mar 2019 00:00:00 &#43;0000</pubDate>
+      <guid>https://hsinganlee.com/en/composition/devotion/</guid>
+      <description> &amp;amp;ldquo;Lady of the Pier&amp;amp;rdquo; is a song from the game Devotion, arranged here for recorder quartet.&amp;#xA;With its strong retro popular-song character and dramatic atmosphere, this version keeps the original melody and nostalgic tone while redistributing the harmony and rhythmic functions among the four recorder parts.&amp;#xA;In the arrangement, I focused on the recorder&amp;amp;rsquo;s plain, singing quality, hoping to use a relatively pure recorder ensemble texture to present the tenderness and slight melancholy of the original song.&amp;#xA;</description>
+      <content:encoded><![CDATA[<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/OvK7NOY7FsE" title="gurenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p><strong>&ldquo;Lady of the Pier&rdquo; is a song from the game <em>Devotion</em>, arranged here for recorder quartet.</strong></p>
+<p>With its strong <strong>retro popular-song character</strong> and dramatic atmosphere, this version keeps the <strong>original melody</strong> and <strong>nostalgic tone</strong> while redistributing the harmony and rhythmic functions among the four recorder parts.</p>
+<p>In the arrangement, I focused on the recorder&rsquo;s plain, <strong>singing quality</strong>, hoping to use a relatively pure recorder ensemble texture to present the tenderness and slight melancholy of the original song.</p>
+<pre tabindex="0"><code> Recorder: Hsing-An Lee
+ Composer: Hsing-An Lee
+</code></pre>]]></content:encoded>
+    </item>
+    
   </channel>
 </rss>

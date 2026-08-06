@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
 
 <head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
-<link rel="icon" href=/fav.png type="image/gif">
+<link rel="icon" href=/images/logo.webp type="image/gif">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,7 +43,7 @@
         }
       </script>
 <meta property="og:url" content="https://hsinganlee.com/blogs/notes/others/aesthetics/">
-  <meta property="og:site_name" content="Hsing-An&#39;s profile">
+  <meta property="og:site_name" content="Hsing-An Lee">
   <meta property="og:title" content="美學">
   <meta property="og:description" content="美學上課筆記">
   <meta property="og:locale" content="zh_tw">
@@ -130,9 +130,11 @@
 
   
   
+    <link rel="stylesheet" href="/style.css">
+  
 
   <title>
-美學 | Hsing-An&#39;s profile
+美學 | Hsing-An Lee
 
   </title>
 </head>
@@ -166,9 +168,18 @@
     var prevScrollPos = window.pageYOffset;
     window.addEventListener("scroll", function showHeaderOnScroll() {
         let profileHeaderElem = document.getElementById("profileHeader");
+        let navbarContentElem = document.getElementById("navbarContent");
         let currentScrollPos = window.pageYOffset;
         let resetHeaderStyle = false;
         let showNavBarOnScrollUp =  true ;
+        let mobileMenuIsOpen = navbarContentElem && navbarContentElem.classList.contains("show");
+
+        if (mobileMenuIsOpen) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+            prevScrollPos = currentScrollPos;
+            return;
+        }
+
         let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
         if (showNavBar) {
             profileHeaderElem.classList.add("showHeaderOnTop");
@@ -183,7 +194,31 @@
         }
         prevScrollPos = currentScrollPos;
     });
+
+    window.addEventListener("DOMContentLoaded", function keepMobileMenuVisible() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let navbarContentElem = document.getElementById("navbarContent");
+        if (!profileHeaderElem || !navbarContentElem) {
+            return;
+        }
+
+        navbarContentElem.addEventListener("show.bs.collapse", function () {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        });
+
+        navbarContentElem.addEventListener("shown.bs.collapse", function () {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        });
+
+        navbarContentElem.addEventListener("hidden.bs.collapse", function () {
+            if (window.pageYOffset === 0) {
+                profileHeaderElem.classList.remove("showHeaderOnTop");
+            }
+        });
+    });
 </script>
+
+
 
 
 
@@ -193,7 +228,9 @@
             
             <a class="navbar-brand primary-font text-wrap" href="/">
                 
-                Hsing-An&#39;s Profile
+                <img src="/images/logo.webp" width="30" height="30"
+                    class="d-inline-block align-top">
+                Hsing-An Lee
                 
             </a>
 
@@ -305,6 +342,16 @@
                     
                     
                     
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/events/" title="events">
+                            
+                            所有演出
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
                     <li class="nav-item navbar-text dropdown">
                         <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="作品列表">
@@ -331,6 +378,56 @@
                     </li>
                     
                     
+
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        
+                        
+                        
+                            
+                            
+                        
+                        <a class="nav-link" href="/en/" title="English"
+                            data-language-switch data-current-permalink="/blogs/notes/others/aesthetics/">
+                            English
+                        </a>
+                        
+                    </li>
+
+                    <script>
+                        (function preserveLanguageSwitchPagination() {
+                            const languageSwitch = document.querySelector("[data-language-switch]");
+                            if (!languageSwitch || languageSwitch.dataset.preservePagination !== "true") {
+                                return;
+                            }
+
+                            const pageMatch = window.location.pathname.match(/\/page\/([0-9]+)\/?$/);
+                            if (!pageMatch || pageMatch[1] === "1") {
+                                return;
+                            }
+
+                            const currentBase = languageSwitch.dataset.currentPermalink || "/";
+                            const currentPath = window.location.pathname.endsWith("/")
+                                ? window.location.pathname
+                                : `${window.location.pathname}/`;
+
+                            if (!currentPath.startsWith(currentBase)) {
+                                return;
+                            }
+
+                            const pageSuffix = `page/${pageMatch[1]}/`;
+                            if (currentPath.slice(currentBase.length) !== pageSuffix) {
+                                return;
+                            }
+
+                            const target = new URL(languageSwitch.getAttribute("href"), window.location.origin);
+                            const targetBase = target.pathname.endsWith("/") ? target.pathname : `${target.pathname}/`;
+                            target.pathname = `${targetBase}${pageSuffix}`;
+                            languageSwitch.setAttribute("href", `${target.pathname}${target.search}${target.hash}`);
+                        })();
+                    </script>
 
                     
                     <li class="nav-item navbar-text">
@@ -378,15 +475,18 @@
               Feb 3, 2025
 
               
+              
+              
               <span id="readingTime">
-                min read
+                <small>|</small>
+                102 min read
               </span>
               
             </div>
           </div>
           
           <div class="featured-image">
-            <img class="img-fluid mx-auto d-block" src="/images/kant.webp" alt="美學">
+            <img class="img-fluid mx-auto d-block" src="/images/Kant.webp" alt="美學">
           </div>
           
           <article class="page-content  p-2">
@@ -439,7 +539,7 @@
 <h3 id="柏拉圖plato模仿的批判">柏拉圖(Plato)：模仿的批判</h3>
 <p>柏拉圖在 <em>《理想國》(Bk. X)</em> 中提出，藝術的本質是「<strong>模仿</strong>」，現實世界只是理念的影像。
 藝術是對真實的「三重範本」，遠離真理。</p>
-<p>==藝術是在模仿“事物的概念”，是一種copy of copy==</p>
+<p><mark>藝術是在模仿“事物的概念”，是一種copy of copy</mark></p>
 <ul>
 <li>模仿迎合情感而非理性;呈現影像、外觀，而非理性真相。</li>
 <li>詩歌和戲劇強化靈魂中非理性部分，藝術培養錯誤的情緒習慣，削弱理性統治。</li>
@@ -486,7 +586,7 @@
 <li>攝影技術的發展，使純粹再現性的藝術失去必要性。</li>
 <li>這些藝術新趨勢的出現，也促使我回顧檢討模仿理論過往的「排他性」(exclusiveness)，洞察到它無法解釋而只是不當排斥了非再現性藝術的價值。模仿論由此成為僅僅歷史性遺產而失去普遍說服力。</li>
 </ul>
-<p>==18世紀前怎麼定義音樂是不是藝術？==</p>
+<p><mark>18世紀前怎麼定義音樂是不是藝術？</mark></p>
 <h2 id="模仿兩意表徵與假象">模仿兩意：表徵與假象</h2>
 <p>藝術性模仿是表徵，與製造假象並非同一類，我們可以分開:</p>
 <ul>
@@ -596,7 +696,7 @@
 <h2 id="模仿的結構分析與藝術分類學">模仿的結構分析與藝術分類學</h2>
 <p>亞里士多德把模仿拆解為「媒介」(medium)、「對象」 (object)、「方式」(mode) 三個環節，並以此釐定各類藝術的差別。</p>
 <p>《詩學》開頭:
-==「史詩和悲劇、喜劇和酒神頌，以及大部份的雙管簫樂和竪琴樂──這一切實際上都是模仿，只是有三點的差別:即模仿所用的媒介不同、所取的對象不同，所採的 方式不同。」==</p>
+<mark>「史詩和悲劇、喜劇和酒神頌，以及大部份的雙管簫樂和竪琴樂──這一切實際上都是模仿，只是有三點的差別:即模仿所用的媒介不同、所取的對象不同，所採的 方式不同。」</mark></p>
 <p>繪畫用顏色、音樂用聲音、舞蹈用動作之節奏，是為<strong>媒介不同</strong>;
 喜劇模仿比我們壞的人，悲劇模仿比我們好人，是為<strong>對象不同</strong>;
 史詩用敘事，戲劇用的行動表演，是為<strong>方式不同</strong>。</p>
@@ -699,8 +799,8 @@ judgement
 <p>基本論旨：
 辨識對象的審美特徵是依靠一獨立的、別於五官外感的感識能力(Faculty of sense)，稱為「<strong>品味</strong>」 (Taste)。
 審美判斷即品味的表述，即品味判斷 (Judgment of Taste)。</p>
-<p>==何謂品味? ── 品味機能的哲學心理學分析。==
-==品味判斷的客觀性問題── 休姆 (David Hume)== 〔其議題被康德 (Kant) 繼承〕</p>
+<p><mark>何謂品味? ── 品味機能的哲學心理學分析。</mark>
+<mark>品味判斷的客觀性問題── 休姆 (David Hume)</mark> 〔其議題被康德 (Kant) 繼承〕</p>
 <h2 id="品味概念的興起及其蘊含的哲學議題">品味概念的興起及其蘊含的哲學議題</h2>
 <h3 id="品味概念-concept-of-teast">品味概念 （concept of teast）</h3>
 <p>品味的歧異：</p>
@@ -809,8 +909,8 @@ experience)
 </ul>
 <blockquote>
 <p>“Strong sense, united to delicate sentiment, improved by practice, perfected by comparison, and cleared of all prejudice, can alone entitle critics to this valuable character”</p></blockquote>
-<p>==批評家們的意見都相同嗎？如果不是，那Hume只是把問題推到評論家身上而已？==
-==品味跟喜好有關連嗎？==</p>
+<p><mark>批評家們的意見都相同嗎？如果不是，那Hume只是把問題推到評論家身上而已？</mark>
+<mark>品味跟喜好有關連嗎？</mark></p>
 <h3 id="品味標準之侷限">「品味標準」之侷限</h3>
 <p>某些品味差異可以透過品味標準得以消解，有些則不能。休姆提到兩類無法消融的品味差異:</p>
 <ol>
@@ -897,7 +997,7 @@ experience)
 <li>記憶(Imaginative)</li>
 <li>辨識(Recognition)</li>
 </ol>
-<p>==大概吧 自己看PPT==</p>
+<p><mark>大概吧 自己看PPT</mark></p>
 <h2 id="康德美學之三審美的類型學">康德美學之三：審美的類型學</h2>
 <h3 id="自由美純粹美與依存美pure-beautyfree-beauty-and-dependent-beauty">自由美/純粹美與依存美(pure beauty/free beauty and dependent beauty)</h3>
 <p>自由美/純粹美是不依賴任何概念、目的或功用的形式美感，相關的審美判斷是純粹的、不帶任何知性判斷的先入之見。反之，則屬「依存美」。</p>
@@ -942,7 +1042,7 @@ experience)
 美感雖然是感受，但卻不是取決經驗意義的各人的生理狀況，而是基於人的先驗理智結構。康德認為，我們可以分析審美判斷的邏輯性格為引線，闡明其中的「主觀性」與「客觀性」間的關係。</p>
 <h2 id="判斷力的核心從特殊到普遍">判斷力的核心：從特殊到普遍</h2>
 <p>康德對美的分析是從人的一般的認知機能入手，焦點是放在判斷力（Urteilskraft）之上。判斷力是人類心智的一種特殊理智能力，它不同於形成概念知性（Verstand）和產生所謂理念的理性（Vernunft）。</p>
-<p>==簡單來說，判斷力是將「特殊」（particular）納入「普遍」（universal）之下的能力。==</p>
+<p><mark>簡單來說，判斷力是將「特殊」（particular）納入「普遍」（universal）之下的能力。</mark></p>
 <p>「人是哺乳動物」、 「這朶蘑菇是可以吃的」 、 「這道法令違憲。」都是判斷的例子，它們都將某種特殊事物或事態納入某個普遍之下；在最外在的邏輯格式來說，表達審美的語句如「這棵巨木很美」也同樣是個判斷，我們也是將某個特殊事物納入到某個普遍之下(「是美的」)。要理解在審美判斷中，這種隸歸與連結於普遍是如何運作，則須透過進一步的邏輯分析。</p>
 <hr>
 <p>古典判斷邏輯常常會從四個方面談論一個判斷的邏輯形式，分別是</p>
@@ -980,9 +1080,9 @@ experience)
 <h2 id="格爾的辯證邏輯與藝術三段式">⿊格爾的辯證邏輯與藝術三段式</h2>
 <p>理念的感性表達在藝術歷史上有三段式辯證發展：</p>
 <ol>
-<li>符號式藝術(symbolic art)：理念尚未充分掌握其感性形式 ==形式壓倒理念==</li>
-<li>古典式藝術(classical art)：理念與形式達成和諧 ==最完美的結合（如希臘雕刻）==</li>
-<li>浪漫式藝術(romantic art): 理念超越形式==感性形式無法承載精神的深度，藝術轉向內在性（如基督教藝術、詩歌）==</li>
+<li>符號式藝術(symbolic art)：理念尚未充分掌握其感性形式 <mark>形式壓倒理念</mark></li>
+<li>古典式藝術(classical art)：理念與形式達成和諧 <mark>最完美的結合（如希臘雕刻）</mark></li>
+<li>浪漫式藝術(romantic art): 理念超越形式<mark>感性形式無法承載精神的深度，藝術轉向內在性（如基督教藝術、詩歌）</mark></li>
 </ol>
 <h2 id="符號式藝術symbolic-art">符號式藝術(symbolic art)</h2>
 <p>在符號式藝術中，理念尚未能掌握⾃⼰的真正內容，更談不上找到與之適配的感性形式來表達⾃⼰。換⾔之：理念在這個階段還是抽象、外在、模糊的，它無法清楚地回答「我是什麼︖」，因此在表達上也不可能準確清晰。</p>
@@ -1421,10 +1521,6 @@ that branch.” (WAMR, III, 175).</p></blockquote>
 </script>
 
 
-<script src="/js/readingTime.js"></script>
-
-
-
   </div><footer>
     
  
@@ -1437,93 +1533,119 @@ that branch.” (WAMR, III, 175).</p></blockquote>
     </div>
     <div class="row justify-content-center">
         
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/blogs/posts/2026time/">
-                        <img src="/images/shawn.webp" class="card-img-top" alt="Time的重要性">
-                    </a>
-                </div>
+        <div class="col-lg-3 col-md-5 col-sm-8 pt-2 recent-post-col">
+            <div class="card h-100 recent-post-card">
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/posts/2026time/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Time的重要性">Time的重要性</h5>
+                    <a href="/blogs/notes/others/breath/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="3.3秒呼吸的奧秘">3.3秒呼吸的奧秘</h5>
                     </a>
-                    <div class="card-text secondary-font">
-                        <p><p>我學習爵士其實已經一段時間了，但是我其實總是覺得我的即興一直不太行，
-<strong>直到最近我發現了一個秘密––</strong></p>
-<h2 id="原來我的問題出在time">原來我的問題出在Time!</h2>
-<p>其實一直以來我就有發現我的Time(節奏感)不是很好，之前也<a href="https://soelir.com/blog/notes/rythmn-stable/">跟好友討論過類似的問題</a>，不過大致上的討論也僅止於此，我也沒有找到好的<a href="/content/blogs/notes/others/peak.md">練習方法</a>，因此就這樣不了了之。</p>
-<p>雖然在大部分 …</p></p>
+                    <div class="card-text secondary-font card-summary">
+                        
+                        《3.3秒呼吸的奧秘》讀書筆記
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Jul 14, 2026</span>
-                    <a href="/blogs/posts/2026time/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    <span class="float-start">Aug 4, 2026</span>
+                    <a href="/blogs/notes/others/breath/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
         
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/blogs/practice/202607prac/">
-                        <img src="/images/202607prac.webp" class="card-img-top" alt="2026七月練習分享">
-                    </a>
-                </div>
+        <div class="col-lg-3 col-md-5 col-sm-8 pt-2 recent-post-col">
+            <div class="card h-100 recent-post-card">
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/practice/202607prac/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="2026七月練習分享">2026七月練習分享</h5>
+                    <a href="/blogs/notes/others/denkens/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="思考的藝術">思考的藝術</h5>
                     </a>
-                    <div class="card-text secondary-font">
-                        <p><h1 id="畢業後終於有重大突破">畢業後終於有重大突破!</h1>
-<p>這個月終於結束了我的大學生涯，下個月就要入伍了，在這中間的期間沒有什麼壓力，終於有時間好好重新審視自己的演奏了!</p>
-<p>此外，我也看了幾本不同的書，其中<a href="/content/blogs/notes/others/peak.md">刻意練習</a>也幫助了我許多，雖然比較少提到<a href="https://www.youtube.com/watch?v=CJd1Qiz8QDQ">興趣</a>的重要性，但還是有很多我覺得值得參考的事情的。<br>
-它也改良了很多我的練習方式。</p>
-<h2 id="time的練習"><a href="/content/blogs/posts/2026time.md">Time的 …</a></h2></p>
+                    <div class="card-text secondary-font card-summary">
+                        
+                        《思考的藝術》讀書筆記
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Jul 7, 2026</span>
-                    <a href="/blogs/practice/202607prac/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    <span class="float-start">Aug 1, 2026</span>
+                    <a href="/blogs/notes/others/denkens/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
         
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
+        <div class="col-lg-3 col-md-5 col-sm-8 pt-2 recent-post-col">
+            <div class="card h-100 recent-post-card">
                 
                 <div class="card-header">
-                    <a href="/blogs/notes/others/20hours/">
-                        <img src="/images/learning.webp" class="card-img-top" alt="如何在20小時內學會新事物?">
+                    <a href="/blogs/notes/jazz/secret_forest/">
+                        <img src="/images/secret_forest.webp" class="card-img-top" alt="Chrono Trigger - Secret of the Forest 分析">
                     </a>
                 </div>
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/notes/others/20hours/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="如何在20小時內學會新事物?">如何在20小時內學會新事物?</h5>
+                    <a href="/blogs/notes/jazz/secret_forest/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Chrono Trigger - Secret of the Forest 分析">Chrono Trigger - Secret …</h5>
                     </a>
-                    <div class="card-text secondary-font">
-                        <p><h1 id="如何在20小時內學會新事物"><a href="https://www.youtube.com/watch?v=5MgBikgcWnY">如何在20小時內學會新事物?</a></h1>
-<h2 id="10000小時法則">10000小時法則?</h2>
-<p>很多人會引用這個概念來說明「學會一件事需要的時間」，而10000小時大約是一份全職工作5年。</p>
-<p><strong>但在我們的經驗中似乎不需要這麼久?</strong></p>
-<p>這價數字是引用的是心理學家K. Anders Ericsson的研究。
-在《異數：超凡與平凡的界線在哪裡？》內被廣泛流 …</p></p>
+                    <div class="card-text secondary-font card-summary">
+                        
+                        Secret of the Forest 分析筆記
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Jul 5, 2026</span>
-                    <a href="/blogs/notes/others/20hours/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    <span class="float-start">Jul 16, 2026</span>
+                    <a href="/blogs/notes/jazz/secret_forest/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
         
     </div>
 </div>
+<style>
+    footer #recent-posts .recent-post-col {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    footer #recent-posts .recent-post-card > .card-header .card-img-top {
+        height: 160px;
+    }
+
+    footer #recent-posts .recent-post-card h5.card-title {
+        font-size: 2rem;
+        line-height: 1.15;
+    }
+
+    footer #recent-posts .recent-post-card .card-summary {
+        font-size: 100%;
+        line-height: 1.6;
+    }
+
+    footer #recent-posts .recent-post-card .card-summary .summary-heading {
+        display: block;
+        font-size: 1.4em;
+        line-height: 1.35;
+        margin: 0.35rem 0;
+        font-weight: 700;
+    }
+
+    footer #recent-posts .recent-post-card .card-summary .summary-heading::before {
+        content: "# ";
+        color: var(--primary-color);
+        font-weight: 700;
+    }
+
+    @media (max-width: 991.98px) {
+        footer #recent-posts .recent-post-col {
+            flex: 0 0 41.666667%;
+            max-width: 41.666667%;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        footer #recent-posts .recent-post-col {
+            flex: 0 0 80%;
+            max-width: 80%;
+        }
+    }
+</style>
 
 <div class="text-center pt-2">
     
@@ -1599,30 +1721,32 @@ that branch.” (WAMR, III, 175).</p></blockquote>
     </a>
     
 </div><div class="container py-4">
-    <div class="row justify-content-center">
-        <div class="col-md-4 text-center">
-            
-                <div class="pb-2">
-                    <a href="https://hsinganlee.com/" title="Hsing-An&#39;s profile">
-                        <img alt="Footer logo" src="/fav.png"
-                            height="40px" width="40px">
-                    </a>
-                </div>
-            
-            &copy; 2026  All rights reserved
-            <div class="text-secondary">
-                Made with
-                <span class="text-danger">
-                    &#10084;
-                </span>
-                and
-                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
-                    title="Designed and developed by gurusabarish">
-                    Hugo Profile
-                </a>
-            </div>
-        </div>
+  <div class="row justify-content-center">
+    <div class="col-md-4 text-center">
+      <div class="pb-2">
+        <a href="https://hsinganlee.com/" title="Hsing-An Lee">
+          <img class="footer-logo" alt="Footer logo" src="/images/logo.webp" height="56" width="56">
+        </a>
+      </div>
+      &copy; 2026  All rights reserved
+      <div class="text-secondary">
+        Made with
+        <span class="text-danger">
+          &#10084;
+        </span>
+        and
+        <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+          title="Designed and developed by gurusabarish">
+          Hugo Profile
+        </a>
+      </div>
+      <div class="text-secondary mt-2">
+        <a href="/index.xml" title="RSS">
+          歡迎訂閱我的RSS
+        </a>
+      </div>
     </div>
+  </div>
 </div>
 </footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script>
@@ -1664,6 +1788,30 @@ that branch.” (WAMR, III, 175).</p></blockquote>
 
 
 
+
+<script>
+  (() => {
+    const lightLogo = "/images/logo.webp";
+    const darkLogo = "/images/logo-white.webp";
+
+    const updateThemeAssets = () => {
+      const currentLogo = document.body.classList.contains("dark") ? darkLogo : lightLogo;
+      document
+        .querySelectorAll(".navbar-brand img, .footer-logo")
+        .forEach((logo) => {
+          logo.src = currentLogo;
+        });
+    };
+
+    document.addEventListener("DOMContentLoaded", () => {
+      updateThemeAssets();
+      new MutationObserver(updateThemeAssets).observe(document.body, {
+        attributes: true,
+        attributeFilter: ["class"]
+      });
+    });
+  })();
+</script>
 
 
   <section id="search-content" class="py-2">

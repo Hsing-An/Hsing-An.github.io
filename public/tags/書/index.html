@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
 
 <head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
-<link rel="icon" href=/fav.png type="image/gif">
+<link rel="icon" href=/images/logo.webp type="image/gif">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,16 +43,16 @@
         }
       </script>
 <meta property="og:url" content="https://hsinganlee.com/tags/%E6%9B%B8/">
-  <meta property="og:site_name" content="Hsing-An&#39;s profile">
+  <meta property="og:site_name" content="Hsing-An Lee">
   <meta property="og:title" content="書">
-  <meta property="og:description" content="李倖安(Hsing-An Lee) 木笛演奏家/作曲家的酷酷網站!">
+  <meta property="og:description" content="李倖安(Hsing-An Lee) 木笛演奏家/作曲家的酷酷網站">
   <meta property="og:locale" content="zh_tw">
   <meta property="og:type" content="website">
 
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="書">
-  <meta name="twitter:description" content="李倖安(Hsing-An Lee) 木笛演奏家/作曲家的酷酷網站!">
+  <meta name="twitter:description" content="李倖安(Hsing-An Lee) 木笛演奏家/作曲家的酷酷網站">
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -116,15 +116,55 @@
 
 
 
-<meta name="description" content="書 of Hsing-An&#39;s profile">
+<meta name="description" content="書 of Hsing-An Lee">
 <link rel="stylesheet" href="/css/list.css" media="all">
+<style>
+    #list-page .card-header.youtube-card-header {
+        padding: 0;
+        border-bottom: 0;
+        background: transparent;
+    }
+
+    #list-page .youtube-card-header .youtube-embed {
+        max-width: none !important;
+        margin: 0 !important;
+    }
+
+    #list-page .youtube-card-header iframe {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        border: 0;
+    }
+
+    #list-page .card-summary {
+        max-height: 7.2em;
+        overflow: hidden;
+        line-height: 1.8;
+    }
+
+    #list-page .card-summary p {
+        margin-bottom: 0.45rem;
+    }
+
+    #list-page .card-summary .summary-heading {
+        display: block;
+        font-size: 1.05em;
+        line-height: 1.45;
+        margin: 0.3rem 0;
+        font-weight: 700;
+    }
+</style>
 
 
   
+  
+    <link rel="stylesheet" href="/style.css">
   
 
   <title>
-書 | Hsing-An&#39;s profile
+書 | Hsing-An Lee
 
   </title>
 </head>
@@ -158,9 +198,18 @@
     var prevScrollPos = window.pageYOffset;
     window.addEventListener("scroll", function showHeaderOnScroll() {
         let profileHeaderElem = document.getElementById("profileHeader");
+        let navbarContentElem = document.getElementById("navbarContent");
         let currentScrollPos = window.pageYOffset;
         let resetHeaderStyle = false;
         let showNavBarOnScrollUp =  true ;
+        let mobileMenuIsOpen = navbarContentElem && navbarContentElem.classList.contains("show");
+
+        if (mobileMenuIsOpen) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+            prevScrollPos = currentScrollPos;
+            return;
+        }
+
         let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
         if (showNavBar) {
             profileHeaderElem.classList.add("showHeaderOnTop");
@@ -175,7 +224,31 @@
         }
         prevScrollPos = currentScrollPos;
     });
+
+    window.addEventListener("DOMContentLoaded", function keepMobileMenuVisible() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let navbarContentElem = document.getElementById("navbarContent");
+        if (!profileHeaderElem || !navbarContentElem) {
+            return;
+        }
+
+        navbarContentElem.addEventListener("show.bs.collapse", function () {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        });
+
+        navbarContentElem.addEventListener("shown.bs.collapse", function () {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        });
+
+        navbarContentElem.addEventListener("hidden.bs.collapse", function () {
+            if (window.pageYOffset === 0) {
+                profileHeaderElem.classList.remove("showHeaderOnTop");
+            }
+        });
+    });
 </script>
+
+
 
 
 
@@ -185,7 +258,9 @@
             
             <a class="navbar-brand primary-font text-wrap" href="/">
                 
-                Hsing-An&#39;s Profile
+                <img src="/images/logo.webp" width="30" height="30"
+                    class="d-inline-block align-top">
+                Hsing-An Lee
                 
             </a>
 
@@ -297,6 +372,16 @@
                     
                     
                     
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/events/" title="events">
+                            
+                            所有演出
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
                     <li class="nav-item navbar-text dropdown">
                         <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="作品列表">
@@ -323,6 +408,56 @@
                     </li>
                     
                     
+
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        
+                        
+                        
+                            
+                            
+                        
+                        <a class="nav-link" href="/en/" title="English"
+                            data-language-switch data-current-permalink="/tags/%E6%9B%B8/">
+                            English
+                        </a>
+                        
+                    </li>
+
+                    <script>
+                        (function preserveLanguageSwitchPagination() {
+                            const languageSwitch = document.querySelector("[data-language-switch]");
+                            if (!languageSwitch || languageSwitch.dataset.preservePagination !== "true") {
+                                return;
+                            }
+
+                            const pageMatch = window.location.pathname.match(/\/page\/([0-9]+)\/?$/);
+                            if (!pageMatch || pageMatch[1] === "1") {
+                                return;
+                            }
+
+                            const currentBase = languageSwitch.dataset.currentPermalink || "/";
+                            const currentPath = window.location.pathname.endsWith("/")
+                                ? window.location.pathname
+                                : `${window.location.pathname}/`;
+
+                            if (!currentPath.startsWith(currentBase)) {
+                                return;
+                            }
+
+                            const pageSuffix = `page/${pageMatch[1]}/`;
+                            if (currentPath.slice(currentBase.length) !== pageSuffix) {
+                                return;
+                            }
+
+                            const target = new URL(languageSwitch.getAttribute("href"), window.location.origin);
+                            const targetBase = target.pathname.endsWith("/") ? target.pathname : `${target.pathname}/`;
+                            target.pathname = `${targetBase}${pageSuffix}`;
+                            languageSwitch.setAttribute("href", `${target.pathname}${target.search}${target.hash}`);
+                        })();
+                    </script>
 
                     
                     <li class="nav-item navbar-text">
@@ -366,6 +501,144 @@
             <div class="card-columns">
                 <div class="card h-100">
                     
+                    
+                    
+
+                    <div class="card-body bg-transparent p-4 shadow-sm">
+                        <a href="/blogs/notes/others/breath/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="3.3秒呼吸的奧秘">3.3秒呼吸的奧秘</h5>
+                        </a>
+                        <div class="card-text secondary-font card-summary">
+                            
+                        </div>
+                    </div>
+                    <div class="mt-auto post-footer bg-transparent py-3">
+                        <span class="float-start bg-transparent">Aug 4, 2026</span>
+                        <a href="/blogs/notes/others/breath/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card-columns">
+                <div class="card h-100">
+                    
+                    
+                    
+
+                    <div class="card-body bg-transparent p-4 shadow-sm">
+                        <a href="/blogs/notes/others/denkens/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="思考的藝術">思考的藝術</h5>
+                        </a>
+                        <div class="card-text secondary-font card-summary">
+                            <blockquote>
+<p>註記：這是讀《思考的藝術》時做的筆記，目前尚未整理完成。</p></blockquote>
+<span class="summary-heading">思考的藝術</span>
+<span class="summary-heading">可以先注意的問題</span>
+<ul>
+<li>這本書所說的「思考」比較接近邏輯訓練、判斷能力，還是生活中的自我反省？</li>
+<li>作者認為好的思考需要哪些條件？</li>
+<li>書中有沒有把「聰明」、「知識很多」和「會思考」區分開來？</li>
+<li>有哪些段落可以直接連回音樂練習、創作、演奏判斷或教學？</li>
+</ul>
+<span class="summary-heading">第一層：思考是什麼？</span>
+<span class="summary-heading">思考與反應的差異</span>
+<ul>
+<li>直覺、情緒、習慣反應，和真正的思考有什麼不同？</li>
+<li>什麼時候我們以為自己在思考，其實只是在替既有立場找理由？</li>
+<li>思考是否一定要慢？快速判斷又在什麼情況下可靠？</li>
+</ul>
+<span class="summary-heading">思考與語言</span>
+<ul>
+<li>語言如何幫助我們整理概念？</li>
+<li>語言是否也可能限制思考？</li>
+<li>書中是否提到定義、命名、分類的重要性？</li>
+</ul>
+<span class="summary-heading">第二層：錯誤的思考</span>
+<span class="summary-heading">常見的判斷偏誤</span>
+<ul>
+<li>過度簡化問題</li>
+<li>只尋找支持自己想法的證據</li>
+<li>把相關誤認為因果</li>
+<li>被情緒或立場牽著走</li>
+</ul>
+<span class="summary-heading">自我欺騙</span>
+<ul>
+<li>我們如何合理化自己的選擇？</li>
+<li>哪些想法其實是恐懼、懶惰、面子或習慣包裝出來的？</li>
+<li>思考的困難是否不只是智力問題，也包含誠實面對自己的能力？</li>
+</ul>
+<span class="summary-heading">第三層：好的思考方法</span>
+<span class="summary-heading">概念釐清</span>
+<ul>
+<li>這件事真正的問題是什麼？</li>
+<li>我使用的關鍵詞是否清楚？</li>
+<li>這個概念有沒有被我偷換意思？</li>
+</ul>
+<span class="summary-heading">提問</span>
+<ul>
+<li>這個說法的根據是什麼？</li>
+<li>有沒有反例？</li>
+<li>如果反過來想，是否仍然成立？</li>
+<li>這個問題有沒有被問錯？</li>
+</ul>
+<span class="summary-heading">判斷與證據</span>
+<ul>
+<li>什麼算是足夠的證據？</li>
+<li>哪些證據只是看起來有說服力？</li>
+<li>我是否把個人經驗放得太大？</li>
+</ul>
+<span class="summary-heading">第四層：思考與生活</span>
+<span class="summary-heading">思考與學習</span>
+<ul>
+<li>好的學習是否需要先知道自己不知道什麼？</li>
+<li>思考如何幫助練習變得更有效率？</li>
+<li>在學音樂時，哪些問題不能只靠重複練習解決？</li>
+</ul>
+<span class="summary-heading">思考與創作</span>
+<ul>
+<li>創作中的判斷從哪裡來？</li>
+<li>什麼時候需要分析，什麼時候需要讓直覺先走？</li>
+<li>思考會不會破壞靈感？還是它其實能讓靈感更清楚？</li>
+</ul>
+<span class="summary-heading">思考與演奏</span>
+<ul>
+<li>詮釋一首作品時，我真正根據的是什麼？</li>
+<li>我如何分辨「自己的想法」和「只是習慣性的演奏方式」？</li>
+<li>在慢速練習、分句、音色選擇中，思考扮演什麼角色？</li>
+</ul>
+<span class="summary-heading">可以整理成自己的觀點</span>
+<span class="summary-heading">對我有用的句子</span>
+<blockquote>
+<p>之後可以把書中重要句子放在這裡。</p></blockquote>
+<span class="summary-heading">我不同意或想保留的地方</span>
+<ul>
+<li>哪些說法太理想化？</li>
+<li>哪些地方和我的經驗不完全相符？</li>
+<li>作者是否忽略了情感、身體經驗或藝術實踐中的直覺？</li>
+</ul>
+<span class="summary-heading">可以延伸寫成文章的題目</span>
+<ul>
+<li>「會練習」其實是一種思考能力</li>
+<li>音樂中的直覺是否需要被訓練？</li>
+<li>為什麼知道很多不等於想得清楚？</li>
+<li>思考會不會讓創作變得不自由？</li>
+</ul>
+                        </div>
+                    </div>
+                    <div class="mt-auto post-footer bg-transparent py-3">
+                        <span class="float-start bg-transparent">Aug 1, 2026</span>
+                        <a href="/blogs/notes/others/denkens/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card-columns">
+                <div class="card h-100">
+                    
                     <div class="card-header">
                         <a href="/blogs/notes/others/peak/">
                             <img src="/images/peak.webp" class="card-img-top" alt="Peak 刻意練習">
@@ -373,17 +646,87 @@
                     </div>
                     
                     
+                    
 
                     <div class="card-body bg-transparent p-4 shadow-sm">
                         <a href="/blogs/notes/others/peak/" class="primary-font card-title">
                             <h5 class="card-title bg-transparent" title="Peak 刻意練習">Peak 刻意練習</h5>
                         </a>
-                        <div class="card-text secondary-font">
-                            <p><blockquote>
+                        <div class="card-text secondary-font card-summary">
+                            <blockquote>
 <p>註記：這是讀書時做的筆記，沒有特別更改直接放上網站。目前尚未讀完。</p></blockquote>
-<h1 id="有目標的練習">有目標的練習</h1>
-<h3 id="學會與精通的差異是什麼">學會與精通的差異是什麼?</h3>
-<p>很多人在學習一件事情的時候，如打網球，首先會先讓每個動作都達成「像樣的」樣子——能夠不假思 …</p></p>
+<span class="summary-heading">有目標的練習</span>
+<span class="summary-heading">學會與精通的差異是什麼?</span>
+<p>很多人在學習一件事情的時候，如打網球，首先會先讓每個動作都達成「像樣的」樣子——能夠不假思索地完成打球的每個動作，可以跟朋友隨時都開始打上一場。</p>
+<p><strong>但從這個時候開始，即使再投入更多的時間，也無法獲得相對應的回報。</strong>
+研究顯示，當一個人的表現到達了「可接受」的地步時，動作開始自動化，程度反而可能退化。</p>
+<span class="summary-heading">目標練習法</span>
+<p>不同於前面的「<strong>天真練習法</strong>」——就一直打球/一直彈琴，目標練習法會具備幾種特質：</p>
+<span class="summary-heading">有定義明確的具體目標</span>
+<p>可以分成「長程目標」以及「短程目標」。</p>
+<p><strong>長程目標</strong>：雖然是長程的，但也必須具體。
+例如：要把節奏感練好</p>
+<p><strong>短程目標</strong>：更具體，更可以馬上行動的目標。
+例如：找一首standard一邊數小拍一邊彈、找老師矯正問題。</p>
+<span class="summary-heading">需要十分專注</span>
+<p>如題。</p>
+<span class="summary-heading">需要意見回饋</span>
+<p>需要有人給回饋，才能知道自己的方向是否正確</p>
+<span class="summary-heading">跨出舒適圈</span>
+<p>我們容易只想做自己熟悉、熟練的事，但唯有跨越這些才能進步。</p>
+<span class="summary-heading">如何突破瓶頸?</span>
+<blockquote>
+<p>克服障礙最理想的方法，就是<strong>以不同方式應對</strong>。</p></blockquote>
+<p><strong>有時候障礙只是心理層面</strong>，例如：
+一位學生曾經向老師請教如何把琴拉得快，老師只是叫他每次都稍微提高一些速度，在不知不覺間他也已經超越他原本的目標速度了。</p>
+<p>又或是在記憶數字的挑戰中，一度碰到瓶頸的測試者在調整了念數字的速度後，反而又提升了記憶的數量，證明了<strong>問題不在數量，而在記憶的速度</strong>，因此能夠往另一個方向突破。</p>
+<span class="summary-heading">目標練習法的極限?</span>
+<p>雖然人能夠透過這些練習法進步到某個程度，但想成功僅僅這樣是不夠的。
+這樣充其量是<strong>有目標的硬練</strong>，還是有極限存在。</p>
+<span class="summary-heading">身體、大腦與練習的關係</span>
+<p>研究顯示，<strong>大腦會因為密集訓練而產生實際上的成長、變化</strong>。</p>
+<p>身體會傾向維持一種<strong>恆定性</strong>，因此要改變大腦必須不斷挑戰極限，好讓身體一直發生代償性變化；但如果把自己逼得太遠，又可能造成傷害。
+因此，當大腦再被逼出舒適圈，但不是太遠的時候，改變最快。</p>
+<p>大腦訓練的三個特點：</p>
+<ol>
+<li>訓練對大腦的影響與<strong>年齡</strong>相關：越早開始訓練能夠有更好的效果。</li>
+<li>過度開發某區域也許會有<strong>副作用</strong>：多項實例指出，一個既能發展到極致時，另一個領域往往會<strong>倒退</strong></li>
+<li>大腦的訓練也<strong>需要維持</strong>：停止對大腦的訓練一樣會退步</li>
+</ol>
+<span class="summary-heading">心智表徵</span>
+<p>西洋棋棋手之所以能夠同時下多場盲棋，是因為他們背下了多種對局，將每個棋局儲存成一個個「模式塊」。
+他們甚至不全然是記下所有棋子的位置，而是記得相對關係，能夠更有效率的登錄訊息。</p>
+<span class="summary-heading">什麼是心智表徵?</span>
+<p>在提到一個概念/字詞的時候，所聯想到與他相關的資訊、具體或抽象的概念。
+例如提到「狗」時，腦內對於這種物種的資訊。</p>
+<p><mark>刻意練習講求的正是發展出更有效率的<strong>心智表徵</strong></mark><br>
+讓每個肌肉控制都變成自動的心智表徵。</p>
+<p>心智表徵的一項重要特色是「領域限定性」，因此沒有所謂「<strong>通用技能</strong>」，無法訓練成為「運動員」，而是要訓練成為特定的項目的運動能力。</p>
+<span class="summary-heading">由於短期記憶有限制，人需要運用心智表徵快速處理大量資訊。</span>
+<p>在日常生活中，有太多必須同時處理的資訊：如開車、走路、說話。每個都牽扯到許多身體不同區域的協調。因此<strong>必須得透過心智表徵才能正常活動</strong>。</p>
+<p>即便心智表徵人人都有，但高手與常人的分野在於<strong>心智表徵的質與量</strong>。</p>
+<blockquote>
+<p>例如職棒選手並沒有更好的視力與反射動作，而是透過長年的訓練，在<strong>瞬間決定</strong>是否揮棒、揮棒的力道、方向。
+他們不需要有意識的知道面對的是快速球、曲球還是滑球，他們能夠在瞬間反應該如何應對。
+<strong>是將心智表徵發揮至極致的一種表現</strong>。</p></blockquote>
+<p><mark><strong>刻意練習能夠造成腦中神經迴路改變，發展出高度特化的心智表徵</strong></mark></p>
+<span class="summary-heading">心智表徵的幾項特質</span>
+<span class="summary-heading">心智表徵有助於認出模式，迅速回應</span>
+<p>專家的其中一項特質為：<strong>普通人認為是隨機、混亂的一堆事物，專家能看出其模式</strong>。</p>
+<blockquote>
+<p>好的運動員能夠瞬間判斷賽局的情勢；好的攀岩手能夠瞬間將把手點(無意識的)分類，如同我們辨認一群動物的「貓」與「狗」的分類。</p></blockquote>
+<span class="summary-heading">心智表徵有助於理解資訊</span>
+<p><strong>閱讀</strong>本身就是一件需要高度心智表徵發展的事，<strong>但理解與吸收內容的程度仍取決於心智表徵發展的程度</strong>。
+在某個主題上投注的心力越多，心智表徵就越精細，理解、消化資訊的能力就越強。</p>
+<blockquote>
+<p>西洋棋大師有辦法看懂棋譜，音樂家有辦法讀譜就聽到聲音。</p></blockquote>
+<span class="summary-heading">心智表徵有助於找出正確答案</span>
+<p>專家最重要的優勢是已經建立精細的心智表徵，<strong>可以同時吸收、考量更多資訊</strong>。能將獨立的資訊視作<strong>大模式的一環</strong>。</p>
+<blockquote>
+<p>醫生能夠透過每個症狀整合出病症的原因。</p></blockquote>
+<span class="summary-heading">心智表徵有助於制定計畫</span>
+<p>專家會透過想像<strong>達成目標的諸多方式，思考何者最理想</strong>。
+甚至<strong>在監控與評估自身表現時，調整心智表徵以提升其效能</strong>。</p>
                         </div>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
@@ -414,93 +757,119 @@
     </div>
     <div class="row justify-content-center">
         
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/blogs/posts/2026time/">
-                        <img src="/images/shawn.webp" class="card-img-top" alt="Time的重要性">
-                    </a>
-                </div>
+        <div class="col-lg-3 col-md-5 col-sm-8 pt-2 recent-post-col">
+            <div class="card h-100 recent-post-card">
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/posts/2026time/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Time的重要性">Time的重要性</h5>
+                    <a href="/blogs/notes/others/breath/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="3.3秒呼吸的奧秘">3.3秒呼吸的奧秘</h5>
                     </a>
-                    <div class="card-text secondary-font">
-                        <p><p>我學習爵士其實已經一段時間了，但是我其實總是覺得我的即興一直不太行，
-<strong>直到最近我發現了一個秘密––</strong></p>
-<h2 id="原來我的問題出在time">原來我的問題出在Time!</h2>
-<p>其實一直以來我就有發現我的Time(節奏感)不是很好，之前也<a href="https://soelir.com/blog/notes/rythmn-stable/">跟好友討論過類似的問題</a>，不過大致上的討論也僅止於此，我也沒有找到好的<a href="/content/blogs/notes/others/peak.md">練習方法</a>，因此就這樣不了了之。</p>
-<p>雖然在大部分 …</p></p>
+                    <div class="card-text secondary-font card-summary">
+                        
+                        《3.3秒呼吸的奧秘》讀書筆記
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Jul 14, 2026</span>
-                    <a href="/blogs/posts/2026time/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    <span class="float-start">Aug 4, 2026</span>
+                    <a href="/blogs/notes/others/breath/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
         
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/blogs/practice/202607prac/">
-                        <img src="/images/202607prac.webp" class="card-img-top" alt="2026七月練習分享">
-                    </a>
-                </div>
+        <div class="col-lg-3 col-md-5 col-sm-8 pt-2 recent-post-col">
+            <div class="card h-100 recent-post-card">
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/practice/202607prac/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="2026七月練習分享">2026七月練習分享</h5>
+                    <a href="/blogs/notes/others/denkens/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="思考的藝術">思考的藝術</h5>
                     </a>
-                    <div class="card-text secondary-font">
-                        <p><h1 id="畢業後終於有重大突破">畢業後終於有重大突破!</h1>
-<p>這個月終於結束了我的大學生涯，下個月就要入伍了，在這中間的期間沒有什麼壓力，終於有時間好好重新審視自己的演奏了!</p>
-<p>此外，我也看了幾本不同的書，其中<a href="/content/blogs/notes/others/peak.md">刻意練習</a>也幫助了我許多，雖然比較少提到<a href="https://www.youtube.com/watch?v=CJd1Qiz8QDQ">興趣</a>的重要性，但還是有很多我覺得值得參考的事情的。<br>
-它也改良了很多我的練習方式。</p>
-<h2 id="time的練習"><a href="/content/blogs/posts/2026time.md">Time的 …</a></h2></p>
+                    <div class="card-text secondary-font card-summary">
+                        
+                        《思考的藝術》讀書筆記
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Jul 7, 2026</span>
-                    <a href="/blogs/practice/202607prac/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    <span class="float-start">Aug 1, 2026</span>
+                    <a href="/blogs/notes/others/denkens/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
         
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
+        <div class="col-lg-3 col-md-5 col-sm-8 pt-2 recent-post-col">
+            <div class="card h-100 recent-post-card">
                 
                 <div class="card-header">
-                    <a href="/blogs/notes/others/20hours/">
-                        <img src="/images/learning.webp" class="card-img-top" alt="如何在20小時內學會新事物?">
+                    <a href="/blogs/notes/jazz/secret_forest/">
+                        <img src="/images/secret_forest.webp" class="card-img-top" alt="Chrono Trigger - Secret of the Forest 分析">
                     </a>
                 </div>
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/notes/others/20hours/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="如何在20小時內學會新事物?">如何在20小時內學會新事物?</h5>
+                    <a href="/blogs/notes/jazz/secret_forest/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Chrono Trigger - Secret of the Forest 分析">Chrono Trigger - Secret …</h5>
                     </a>
-                    <div class="card-text secondary-font">
-                        <p><h1 id="如何在20小時內學會新事物"><a href="https://www.youtube.com/watch?v=5MgBikgcWnY">如何在20小時內學會新事物?</a></h1>
-<h2 id="10000小時法則">10000小時法則?</h2>
-<p>很多人會引用這個概念來說明「學會一件事需要的時間」，而10000小時大約是一份全職工作5年。</p>
-<p><strong>但在我們的經驗中似乎不需要這麼久?</strong></p>
-<p>這價數字是引用的是心理學家K. Anders Ericsson的研究。
-在《異數：超凡與平凡的界線在哪裡？》內被廣泛流 …</p></p>
+                    <div class="card-text secondary-font card-summary">
+                        
+                        Secret of the Forest 分析筆記
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Jul 5, 2026</span>
-                    <a href="/blogs/notes/others/20hours/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    <span class="float-start">Jul 16, 2026</span>
+                    <a href="/blogs/notes/jazz/secret_forest/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
         
     </div>
 </div>
+<style>
+    footer #recent-posts .recent-post-col {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    footer #recent-posts .recent-post-card > .card-header .card-img-top {
+        height: 160px;
+    }
+
+    footer #recent-posts .recent-post-card h5.card-title {
+        font-size: 2rem;
+        line-height: 1.15;
+    }
+
+    footer #recent-posts .recent-post-card .card-summary {
+        font-size: 100%;
+        line-height: 1.6;
+    }
+
+    footer #recent-posts .recent-post-card .card-summary .summary-heading {
+        display: block;
+        font-size: 1.4em;
+        line-height: 1.35;
+        margin: 0.35rem 0;
+        font-weight: 700;
+    }
+
+    footer #recent-posts .recent-post-card .card-summary .summary-heading::before {
+        content: "# ";
+        color: var(--primary-color);
+        font-weight: 700;
+    }
+
+    @media (max-width: 991.98px) {
+        footer #recent-posts .recent-post-col {
+            flex: 0 0 41.666667%;
+            max-width: 41.666667%;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        footer #recent-posts .recent-post-col {
+            flex: 0 0 80%;
+            max-width: 80%;
+        }
+    }
+</style>
 
 <div class="text-center pt-2">
     
@@ -576,30 +945,32 @@
     </a>
     
 </div><div class="container py-4">
-    <div class="row justify-content-center">
-        <div class="col-md-4 text-center">
-            
-                <div class="pb-2">
-                    <a href="https://hsinganlee.com/" title="Hsing-An&#39;s profile">
-                        <img alt="Footer logo" src="/fav.png"
-                            height="40px" width="40px">
-                    </a>
-                </div>
-            
-            &copy; 2026  All rights reserved
-            <div class="text-secondary">
-                Made with
-                <span class="text-danger">
-                    &#10084;
-                </span>
-                and
-                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
-                    title="Designed and developed by gurusabarish">
-                    Hugo Profile
-                </a>
-            </div>
-        </div>
+  <div class="row justify-content-center">
+    <div class="col-md-4 text-center">
+      <div class="pb-2">
+        <a href="https://hsinganlee.com/" title="Hsing-An Lee">
+          <img class="footer-logo" alt="Footer logo" src="/images/logo.webp" height="56" width="56">
+        </a>
+      </div>
+      &copy; 2026  All rights reserved
+      <div class="text-secondary">
+        Made with
+        <span class="text-danger">
+          &#10084;
+        </span>
+        and
+        <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+          title="Designed and developed by gurusabarish">
+          Hugo Profile
+        </a>
+      </div>
+      <div class="text-secondary mt-2">
+        <a href="/index.xml" title="RSS">
+          歡迎訂閱我的RSS
+        </a>
+      </div>
     </div>
+  </div>
 </div>
 </footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script>
@@ -641,6 +1012,30 @@
 
 
 
+
+<script>
+  (() => {
+    const lightLogo = "/images/logo.webp";
+    const darkLogo = "/images/logo-white.webp";
+
+    const updateThemeAssets = () => {
+      const currentLogo = document.body.classList.contains("dark") ? darkLogo : lightLogo;
+      document
+        .querySelectorAll(".navbar-brand img, .footer-logo")
+        .forEach((logo) => {
+          logo.src = currentLogo;
+        });
+    };
+
+    document.addEventListener("DOMContentLoaded", () => {
+      updateThemeAssets();
+      new MutationObserver(updateThemeAssets).observe(document.body, {
+        attributes: true,
+        attributeFilter: ["class"]
+      });
+    });
+  })();
+</script>
 
 
   <section id="search-content" class="py-2">

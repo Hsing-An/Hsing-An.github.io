@@ -1,19 +1,53 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>巴洛克 on Hsing-An&#39;s profile</title>
-    <link>http://localhost:1313/tags/%E5%B7%B4%E6%B4%9B%E5%85%8B/</link>
-    <description>Recent content in 巴洛克 on Hsing-An&#39;s profile</description>
-    <generator>Hugo</generator>
+    <title>巴洛克 on Hsing-An Lee</title>
+    <link>https://hsinganlee.com/tags/%E5%B7%B4%E6%B4%9B%E5%85%8B/</link>
+    <description>李倖安(Hsing-An Lee) 木笛演奏家/作曲家的酷酷網站</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 01 Jul 2023 00:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E5%B7%B4%E6%B4%9B%E5%85%8B/index.xml" rel="self" type="application/rss+xml" />
+    
+    <lastBuildDate>Wed, 28 May 2025 00:00:00 &#43;0000</lastBuildDate>
+    <atom:link href="https://hsinganlee.com/tags/%E5%B7%B4%E6%B4%9B%E5%85%8B/index.xml" rel="self" type="application/rss&#43;xml" />
+    
     <item>
-      <title>A. Vivaldi : Rv 443</title>
-      <link>http://localhost:1313/performance/rv-443/</link>
-      <pubDate>Sat, 01 Jul 2023 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/performance/rv-443/</guid>
-      <description>&lt;p&gt;融合木笛、電子、爵士與日本傳統元素，使用奇數拍、效果器與電腦處理的作品。&lt;/p&gt;&#xA;&lt;div class=&#34;youtube-embed&#34; style=&#34;max-width:900px; margin: 1.2rem 0;&#34;&gt;&#xA;  &lt;iframe width=&#34;100%&#34; height=&#34;250&#34; src=&#34;https://youtu.be/TBQrRo2p5fg&#34; title=&#34;Polygatari-Matsuri&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;我的註解：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;創作理念：在古老旋律語彙中加入現代節奏與合成色彩，嘗試把木笛的延展技法與電子節奏融合。&lt;/li&gt;&#xA;&lt;li&gt;錄製資訊：現場與室內混合錄音；含即時電腦處理與效果器。&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <title>Quatrième suite in A minor, Op. 1 </title>
+      <link>https://hsinganlee.com/performance/quatri%C3%A8me-suite-in-a-minor-op.-1/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 &#43;0000</pubDate>
+      <guid>https://hsinganlee.com/performance/quatri%C3%A8me-suite-in-a-minor-op.-1/</guid>
+      <description>&amp;#xD;Philidor《Quatrième suite in A minor, Op. 1》是法國巴洛克風格的組曲，以舞曲性格與裝飾性的旋律線條為核心。這個版本以木笛呈現各樂章不同的舞曲性質與情緒。&amp;#xA;Hsing-An Lee Recorder Recital in Hsinchu, Taiwan&amp;#xD;木笛： Hsing-An Lee&amp;#xD;大鍵琴： Machiko Suto </description>
+      <content:encoded><![CDATA[<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/xez9wLCKDAs" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/osO64OCkb_E" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p><strong>Philidor《Quatrième suite in A minor, Op. 1》是法國巴洛克風格的組曲</strong>，以舞曲性格與裝飾性的旋律線條為核心。這個版本以木笛呈現各樂章不同的舞曲性質與情緒。</p>
+<pre tabindex="0"><code> Hsing-An Lee Recorder Recital in Hsinchu, Taiwan
+ 木笛： Hsing-An Lee
+ 大鍵琴： Machiko Suto
+</code></pre>]]></content:encoded>
     </item>
+    
+    <item>
+      <title>Sonata op.5 no.7</title>
+      <link>https://hsinganlee.com/performance/corelli/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 &#43;0000</pubDate>
+      <guid>https://hsinganlee.com/performance/corelli/</guid>
+      <description>&amp;#xD;Corelli《Sonata op.5 no.7》是義式的巴洛克奏鳴曲，並且Corelli詳細的將他對於裝飾音的品味展現在了作品當中，也是義式風格裝飾音其中一個非常具有代表性的例子。&amp;#xA;Open Recorder Days Amsterdam 2023 competition&amp;#xD;木笛： Hsing-An Lee&amp;#xD;大鍵琴： Claudio Ribeiro </description>
+      <content:encoded><![CDATA[<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/2_15FXVelt4" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/8NaYSDNGELU" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p><strong>Corelli《Sonata op.5 no.7》是義式的巴洛克奏鳴曲</strong>，並且Corelli詳細的將他對於裝飾音的品味展現在了作品當中，也是<strong>義式風格裝飾音</strong>其中一個非常具有代表性的例子。</p>
+<pre tabindex="0"><code> Open Recorder Days Amsterdam 2023 competition
+ 木笛： Hsing-An Lee
+ 大鍵琴： Claudio Ribeiro
+</code></pre>]]></content:encoded>
+    </item>
+    
   </channel>
 </rss>

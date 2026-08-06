@@ -57,16 +57,14 @@ languages:
           parent: dropdown
           weight: 3
     params:
-      description: Hsing-An Lee is a recorder player and composer.
+      description: Hsing-An Lee's portfolio as a recorder player and composer.
 
       hero:
         enable: true
         intro: ""
         title: "Hsing-An Lee"
         subtitle: "Recorder Player / Composer"
-        content: |-
-          Interpreting through performance and speaking through composition,  
-          exploring the recorder between early music, contemporary music, and jazz.
+        content: "Interpreting through performance, speaking through composition -- exploring the recorder between early music, contemporary music, and jazz."
         image: /images/your-photo.webp
         bottomImage:
           enable: true
@@ -79,6 +77,11 @@ languages:
             - icon: /images/youtube.webp
               url: "https://www.youtube.com/@hsing-anlee3459"
 
+      featuredVideo:
+        enable: true
+        youtubeId: gMag4XdDU_A
+        title: "Polygatari - Matsuri"
+
       about:
         enable: true
         title: "About"
@@ -86,19 +89,31 @@ languages:
         content: |-
           ## Hsing-An Lee: Recorder Player / Composer
 
-          Born in Taiwan, graduated from the Department of Music at National Tsing Hua University, majoring in **recorder** and minoring in **composition**. Studied recorder with Meng-Heng Chen and composition with Hsin-Lei Chen and Chiu-Yu Chou.
+          Born in Taitung, Taiwan, and graduated from the Department of Music at National Tsing Hua University, majoring in **recorder** and minoring in **composition**. Studied recorder with Meng-Heng Chen, and composition with Hsin-Lei Chen and Chiu-Yu Chou.
 
-          Focused on early music and contemporary music in recorder performance, while continuing to study jazz music.  
-          [Recipient of awards in international competitions](#achievements), with appearances as a **soloist** at the [**National Recital Hall** and the **National Taichung Theater**](#experience).
+          In **recorder performance**, I mainly focus on early music and contemporary music, while continuing to study jazz.  
+          I have [received multiple awards in international competitions](#achievements), and have appeared as a **soloist** at the [**National Recital Hall** and the **National Taichung Theater**](#experience).
 
-          As a composer, drawing from electronic music, jazz music, contemporary music, popular music, and traditional music.  
-          Writing includes instrumental compositions as well as arrangements produced with music software. [Awarded compositions](#achievements) have also been [presented at Weiwuying](https://www.opentix.life/event/1985188449916014593).
+          In **composition**, my work draws from electronic music, jazz, contemporary music, popular music, and traditional music, resulting in a broad and flexible musical language.  
+          My output includes instrumental works as well as arrangements produced with music software. [My compositions have also received awards](#achievements), and one of my works was [presented at Weiwuying](https://www.opentix.life/event/1985188449916014593).
+
+          ---
+
+          [2025 "A Renaissance Christmas in Human Voices" -- recorder soloist at the National Concert Hall and the National Taichung Theater](https://www.youtube.com/watch?v=rI50mxgr_D4)  
+
+          [2025 "Humanities Inspiring Technology" -- premiere of my work *Waves* for recorder orchestra and electronics at Weiwuying](https://youtu.be/rNmbftx2zj0)  
+
+          [2025 Vagabond Festival, Xiaoximen Stage performance](https://www.youtube.com/watch?v=P2o2ynEtwXc)  
+
+          [2023 Open Recorder Days Amsterdam, Second Prize in the Age 16+ category and Best Composition Award](https://youtu.be/gMag4XdDU_A?)  
+
+          [Selected for Taichung MRT Station Music: Shui-an Temple Station](https://www.tmrt.com.tw/tmrtsoundscape/station-music-tw/111-shui-an-temple/)  
 
           ---
 
         skills:
           enable: true
-          title: "Current areas of performance and creation:"
+          title: "Genres and areas I work in:"
           items:
             - "Baroque instrumental performance"
             - "Renaissance instrumental performance"
@@ -121,9 +136,9 @@ languages:
               enable: true
               content: "Co-founder and member"
             content: |
-              Long Time Don't Jam is a duo co-founded with [Yu-Lin Chen](https://www.instagram.com/rcyln_93/), combining finger drumming and recorder.
+              Long Time Don't Jam is a duo co-founded with [Yu-Lin Chen](https://www.instagram.com/rcyln_93/), built around finger drumming and recorder.
 
-              The group blends electronic dance music, jazz, R&B, and live performance, presenting original works with recorder.
+              The group blends electronic dance music, jazz, R&B, and other contemporary styles, presenting original works in a live performance format.
 
               Selected performances:
               - Aug. 2024 [Taiwan Recorder Festival](https://www.facebook.com/twrecorderfestival/?locale=zh_TW) Fringe Concert: [First jam men](https://www.opentix.life/event/1815794800281317377?srsltid=AfmBOooHnWstInIf8t-YgFxm0kzsZUXOCyZZ1Pl4B0Juc1wKPpJcS4lL).
@@ -137,9 +152,9 @@ languages:
               enable: true
               content: "Performs as a recorder player and has been commissioned to arrange and compose works for the ensemble."
             content: |
-              Joined [Hsin-Chu Recorder Orchestra](https://www.facebook.com/hsinchurecorder/?locale=zh_TW) during university and has performed with the ensemble in Taiwan and abroad.
+              Joined [Hsin-Chu Recorder Orchestra](https://www.facebook.com/hsinchurecorder/?locale=zh_TW) during university and has performed with the ensemble on many occasions.
 
-              Also contributes arrangements and original works for the ensemble.
+              I also contribute to the ensemble as an arranger, writing arranged works for the group.
 
               Selected performances:
               - Nov. 2022 [Seven Centuries of Eternal Music: 2022 Hsin-Chu Recorder Orchestra Annual Concert](https://www.opentix.life/event/1574602497174462466)
@@ -166,9 +181,9 @@ languages:
               enable: true
               content: "Performs with the ensemble and has been commissioned to arrange and compose works."
             content: |
-              Tsing-Hua University Recorder Consort is both part of the university curriculum and an ensemble that regularly performs and competes.
+              Tsing-Hua University Recorder Consort is both a required university ensemble course and an ensemble that regularly performs and competes.
 
-              Has also composed original works for the ensemble.
+              I have also created original works for the ensemble as a composer.
 
               Selected performances:
               - Dec. 2022 Opening concert of the Tel Aviv Recorder Festival
@@ -206,23 +221,23 @@ languages:
               enable: false
               content: "After graduation, continued with Taitung Senior High School Alumni Wind Orchestra."
             content: |
-              Played **clarinet** in Taitung Senior High School Wind Band and served as **student conductor** during high school.
+              During high school, I played **clarinet** in Taitung Senior High School Wind Band and served as **student conductor**.
 
-              After graduation, continued performing with [Taitung Senior High School Alumni Wind Orchestra](https://www.tsawo2022.com/2025), both as a member and as an arranger.
+              After graduation, I continued performing with [Taitung Senior High School Alumni Wind Orchestra](https://www.tsawo2022.com/2025), not only as an ensemble member, but also as an arranger for several works.
 
-              In Sept. 2025, invited to conduct the [Sunrise East Concert Series: The River's Way](https://www.tsawo2022.com), also presenting the original work "Kyrie Ventorum."
+              In Sept. 2025, I was invited to conduct the [Sunrise East Concert Series: The River's Way](https://www.tsawo2022.com), where my original work "Kyrie Ventorum" was also performed.
 
               Selected performances:
               - Aug. 2022 ["Sunrise East: Shared Sounds" Concert](https://www.facebook.com/101575002041367/photos/pb.100066549430349.-2207520000/404572345074963/?type=3)
               - Aug. 2023 ["Sunrise East: Summer Legend" Concert](https://www.facebook.com/photo.php?fbid=628363906058585&set=pb.100066549430349.-2207520000&type=3)
-              - Sept. 2025 ["Sunrise East: The River's Way" Concert](https://www.instagram.com/p/DNnjORLyqOl/) (includes the world premiere of my commissioned work "Kyrie Ventorum," with me also appearing as conductor)
+              - Sept. 2025 ["Sunrise East: The River's Way" Concert](https://www.instagram.com/p/DNnjORLyqOl/) (including the world premiere of my commissioned work "Kyrie Ventorum," with me also appearing as conductor)
 
           - job: "Recorder Collaborator"
             company: "Taichung Chamber Choir"
             companyUrl: "https://taichungchamberchoir.org/"
             date: "2025 Dec"
             content: |
-              Invited by Taichung Chamber Choir as a recorder collaborator for its annual performance.
+              Invited by Taichung Chamber Choir to participate in its annual performance as a recorder collaborator.
 
               - Dec. 2025 Participated in ["A Renaissance Christmas in Human Voices"](https://www.opentix.life/event/1979090497352003584) as **recorder soloist**
 
@@ -287,12 +302,12 @@ languages:
         anchor: "achievements"
         items:
           - title: "2023 ORDA Second Prize and Composition Award"
-            content: "Awarded at Open Recorder Days Amsterdam for performances spanning Baroque music, contemporary music, and original electronic work."
+            content: "Awarded at the internationally renowned Open Recorder Days Amsterdam for performances spanning Baroque music, avant-garde music, and an original electronic work."
             url: https://www.openrecorderdays.com/competition
             image: /images/orda.webp
           - title: "Taichung MRT Station Music Selection, Shui-an Temple Station"
             url: https://www.tmrt.com.tw/tmrtsoundscape/station-music-tw/111-shui-an-temple/
-            content: "Selected with collaborator Yu-Lin Chen for Taichung MRT's station music program."
+            content: "Selected with collaborator Yu-Lin Chen for Taichung MRT's station music program after multiple rounds of review."
             image: /images/metro.webp
           - title: "National Student Music Competition, Excellent First Prize"
             content: "Received Excellent First Prize in recorder solo at the 107th, 109th, and 113th National Student Music Competitions."
@@ -304,16 +319,16 @@ languages:
         title: "Works"
         items:
           - title: "Performance"
-            content: "Recorder performances across early music and contemporary music, including excerpts from competitions and concerts."
+            content: "As a recorder player, I often perform early music and contemporary music in different settings. These excerpts come from competitions and concerts."
             image: "/images/isr.webp"
             featured:
               name: "View more"
               link: "/en/performance"
             badges:
               - "Early Music"
-              - "Contemporary Music"
+              - "Avant-garde Music"
           - title: "Composition / Arrangement"
-            content: "Original works that began with recorder writing and expand into chamber, instrumental, vocal, and arranged music."
+            content: "Starting from recorder works, I have created pieces in a range of styles, extending into instrumental and vocal music. I also arrange works for different instrumentations."
             image: /images/compose.webp
             featured:
               name: "View more"
@@ -323,7 +338,7 @@ languages:
               - "Electronic Music"
               - "Atonal Music"
           - title: "Arrangement"
-            content: "Arrangements and production work for instruments, popular music, and software-based music."
+            content: "Beyond works written for instrumental performance, I have also made some attempts in popular music arrangement."
             image: /images/bass.webp
             featured:
               name: "View more"
@@ -386,6 +401,10 @@ markup:
       extras:
         mark:
           enable: true
+    parser:
+      attribute:
+        block: true
+        title: true
     renderer:
       unsafe: true
 
@@ -549,6 +568,20 @@ params:
       不僅有譜寫給器樂的作品，也有以編曲軟體完成的編曲作品。[創作也在多項比賽中獲獎](#achievements)。作品曾在[衛武營發表](https://www.opentix.life/event/1985188449916014593)。
 
       --- 
+
+      [2025 《文藝聖誕畫人聲》音樂會擔任木笛獨奏 於國家音樂廳與台中歌劇院演出](https://www.youtube.com/watch?v=rI50mxgr_D4)  
+
+      [2025《人文啟迪科技》音樂會發表個人作品 木笛樂團與電聲作品《波 Waves》 於衛武營演出](https://youtu.be/rNmbftx2zj0)  
+
+      [2025 浪人祭 小嘻門舞台演出](https://www.youtube.com/watch?v=P2o2ynEtwXc)  
+
+      [2023 Open Recorder Days Amsterdam 16歲以上組第二名、最佳樂曲創作獎](https://youtu.be/gMag4XdDU_A?)  
+      
+      [台中捷運進站音樂 水安宮站正選](https://www.tmrt.com.tw/tmrtsoundscape/station-music-tw/111-shui-an-temple/)  
+
+      ---
+
+
 
     skills:
       enable: true

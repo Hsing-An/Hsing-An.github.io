@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
 
 <head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
-<link rel="icon" href=/fav.png type="image/gif">
+<link rel="icon" href=/images/logo.webp type="image/gif">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,7 +43,7 @@
         }
       </script>
 <meta property="og:url" content="https://hsinganlee.com/performance/">
-  <meta property="og:site_name" content="Hsing-An&#39;s profile">
+  <meta property="og:site_name" content="Hsing-An Lee">
   <meta property="og:title" content="Playing">
   <meta property="og:description" content="我的演奏作品清單">
   <meta property="og:locale" content="zh_tw">
@@ -116,15 +116,55 @@
 
 
 
-<meta name="description" content="Playing of Hsing-An&#39;s profile">
+<meta name="description" content="Playing of Hsing-An Lee">
 <link rel="stylesheet" href="/css/list.css" media="all">
+<style>
+    #list-page .card-header.youtube-card-header {
+        padding: 0;
+        border-bottom: 0;
+        background: transparent;
+    }
+
+    #list-page .youtube-card-header .youtube-embed {
+        max-width: none !important;
+        margin: 0 !important;
+    }
+
+    #list-page .youtube-card-header iframe {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        border: 0;
+    }
+
+    #list-page .card-summary {
+        max-height: 7.2em;
+        overflow: hidden;
+        line-height: 1.8;
+    }
+
+    #list-page .card-summary p {
+        margin-bottom: 0.45rem;
+    }
+
+    #list-page .card-summary .summary-heading {
+        display: block;
+        font-size: 1.05em;
+        line-height: 1.45;
+        margin: 0.3rem 0;
+        font-weight: 700;
+    }
+</style>
 
 
   
+  
+    <link rel="stylesheet" href="/style.css">
   
 
   <title>
-Playing | Hsing-An&#39;s profile
+Playing | Hsing-An Lee
 
   </title>
 </head>
@@ -158,9 +198,18 @@ Playing | Hsing-An&#39;s profile
     var prevScrollPos = window.pageYOffset;
     window.addEventListener("scroll", function showHeaderOnScroll() {
         let profileHeaderElem = document.getElementById("profileHeader");
+        let navbarContentElem = document.getElementById("navbarContent");
         let currentScrollPos = window.pageYOffset;
         let resetHeaderStyle = false;
         let showNavBarOnScrollUp =  true ;
+        let mobileMenuIsOpen = navbarContentElem && navbarContentElem.classList.contains("show");
+
+        if (mobileMenuIsOpen) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+            prevScrollPos = currentScrollPos;
+            return;
+        }
+
         let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
         if (showNavBar) {
             profileHeaderElem.classList.add("showHeaderOnTop");
@@ -175,7 +224,31 @@ Playing | Hsing-An&#39;s profile
         }
         prevScrollPos = currentScrollPos;
     });
+
+    window.addEventListener("DOMContentLoaded", function keepMobileMenuVisible() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let navbarContentElem = document.getElementById("navbarContent");
+        if (!profileHeaderElem || !navbarContentElem) {
+            return;
+        }
+
+        navbarContentElem.addEventListener("show.bs.collapse", function () {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        });
+
+        navbarContentElem.addEventListener("shown.bs.collapse", function () {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        });
+
+        navbarContentElem.addEventListener("hidden.bs.collapse", function () {
+            if (window.pageYOffset === 0) {
+                profileHeaderElem.classList.remove("showHeaderOnTop");
+            }
+        });
+    });
 </script>
+
+
 
 
 
@@ -185,7 +258,9 @@ Playing | Hsing-An&#39;s profile
             
             <a class="navbar-brand primary-font text-wrap" href="/">
                 
-                Hsing-An&#39;s Profile
+                <img src="/images/logo.webp" width="30" height="30"
+                    class="d-inline-block align-top">
+                Hsing-An Lee
                 
             </a>
 
@@ -297,6 +372,16 @@ Playing | Hsing-An&#39;s profile
                     
                     
                     
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/events/" title="events">
+                            
+                            所有演出
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
                     <li class="nav-item navbar-text dropdown">
                         <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="作品列表">
@@ -323,6 +408,52 @@ Playing | Hsing-An&#39;s profile
                     </li>
                     
                     
+
+                    
+                    
+                        
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        <a class="nav-link" href="/en/performance/" title="English"
+                            data-language-switch data-current-permalink="/performance/" data-preserve-pagination="true">
+                            English
+                        </a>
+                        
+                    </li>
+
+                    <script>
+                        (function preserveLanguageSwitchPagination() {
+                            const languageSwitch = document.querySelector("[data-language-switch]");
+                            if (!languageSwitch || languageSwitch.dataset.preservePagination !== "true") {
+                                return;
+                            }
+
+                            const pageMatch = window.location.pathname.match(/\/page\/([0-9]+)\/?$/);
+                            if (!pageMatch || pageMatch[1] === "1") {
+                                return;
+                            }
+
+                            const currentBase = languageSwitch.dataset.currentPermalink || "/";
+                            const currentPath = window.location.pathname.endsWith("/")
+                                ? window.location.pathname
+                                : `${window.location.pathname}/`;
+
+                            if (!currentPath.startsWith(currentBase)) {
+                                return;
+                            }
+
+                            const pageSuffix = `page/${pageMatch[1]}/`;
+                            if (currentPath.slice(currentBase.length) !== pageSuffix) {
+                                return;
+                            }
+
+                            const target = new URL(languageSwitch.getAttribute("href"), window.location.origin);
+                            const targetBase = target.pathname.endsWith("/") ? target.pathname : `${target.pathname}/`;
+                            target.pathname = `${targetBase}${pageSuffix}`;
+                            languageSwitch.setAttribute("href", `${target.pathname}${target.search}${target.hash}`);
+                        })();
+                    </script>
 
                     
                     <li class="nav-item navbar-text">
@@ -370,17 +501,32 @@ Playing | Hsing-An&#39;s profile
                 <div class="card h-100">
                     
                     
+                    
+                    <div class="card-header youtube-card-header">
+                        <div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/gMag4XdDU_A?" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+                    </div>
+                    
 
                     <div class="card-body bg-transparent p-4 shadow-sm">
                         <a href="/performance/matsuri/" class="primary-font card-title">
                             <h5 class="card-title bg-transparent" title="Polygatari - 祭り(Matsuri)">Polygatari - 祭り(Matsuri)</h5>
                         </a>
-                        <div class="card-text secondary-font">
-                            <p><div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
-  <iframe width="100%" height="250" src="https://www.youtube.com/embed/gMag4XdDU_A?" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<p>這是我最具有代表性的作品。融合了爵士、電子以及日本民俗音樂的現代木笛作品。<br>
-此曲在 2023 Open Recorder Days Amsterdam 獲得第二名與最佳創作獎。</p></p>
+                        <div class="card-text secondary-font card-summary">
+                            
+<p><strong>融合了爵士、電子以及日本民俗音樂的現代木笛作品</strong>。也是我最具有代表性的作品。</p>
+<span class="summary-heading">此曲在 2023 Open Recorder Days Amsterdam 獲得<strong>第二名與最佳創作獎</strong>。</span>
+<hr>
+<p>在這首曲子內，我使用了DAW(數位音樂工作站) <a href="https://www.reasonstudios.com/?srsltid=AfmBOopOlDXSckGj6--NEWvOwjHG2pdTewFIFo40HpLlqW3qNLOWqujq">Reason</a> 作為我的創作工具，並且受到奇數拍音樂的啟發，試著使用不平均的7拍節奏進行創作。<br>
+在現場的演出上，除了使用現場的live looping以外，同時也與做好的program配合，並將直笛的聲音輸入進電腦內，在音色的選擇上藉由效果器又多了更多可能。</p>
+<blockquote>
+<p>Polygatari - 祭り(Matsuri)
+Monogatari（物語）是日文的”故事”，如同monophony進化（？）成polyphony一樣，我也想讓我的monogatari進化。<br>
+Matsuri（祭り）則是慶典。</p>
+<p>Polygatari系列的第三作，大概就是發生在滿月的城下的祭典了吧，這裡的人步履蹣跚，卻又同時輕巧，他穿著白色變形蟲襯衫，他穿著羽織，他被拘束著，卻又自由。<br>
+而且他很帥！</p></blockquote>
+
                         </div>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
@@ -396,15 +542,25 @@ Playing | Hsing-An&#39;s profile
                 <div class="card h-100">
                     
                     
+                    
+                    <div class="card-header youtube-card-header">
+                        <div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/_kn_3ya9jDA" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+                    </div>
+                    
 
                     <div class="card-body bg-transparent p-4 shadow-sm">
                         <a href="/performance/tre-fontane/" class="primary-font card-title">
-                            <h5 class="card-title bg-transparent" title="Istanpitta “Tre Fontane&#34;">Istanpitta “Tre Fontane&#34;</h5>
+                            <h5 class="card-title bg-transparent" title="Istanpitta “Tre Fontane”">Istanpitta “Tre Fontane”</h5>
                         </a>
-                        <div class="card-text secondary-font">
-                            <p><div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
-  <iframe width="100%" height="250" src="https://www.youtube.com/embed/_kn_3ya9jDA" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div></p>
+                        <div class="card-text secondary-font card-summary">
+                            
+<p><strong>《Istanpitta “Tre Fontane”》為中世紀器樂舞曲</strong>。
+收錄於英國大英圖書館中世紀手抄本Add MS 29987之中，此手抄本包含了許多14世紀的世俗、宗教音樂作品，為十四世紀義大利的重要音樂文獻之一。 其中也包含了15首的單聲部器樂舞曲Istanpitta，此作品”Tre fontane”便是出自此處。</p>
+<p>Tre fontane，意指「三座噴泉」，而整部作品只留下了此標題，以及原始的單音旋律。
+以至於在現代的演出中，通常加入許多不同的樂器作為伴奏，留給演奏家更多詮釋的空間。</p>
+
                         </div>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
@@ -420,15 +576,22 @@ Playing | Hsing-An&#39;s profile
                 <div class="card h-100">
                     
                     
+                    
+                    <div class="card-header youtube-card-header">
+                        <div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/IgDLlU0JfPs" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+                    </div>
+                    
 
                     <div class="card-body bg-transparent p-4 shadow-sm">
                         <a href="/performance/music-for-a-bird/" class="primary-font card-title">
                             <h5 class="card-title bg-transparent" title="Music for a Bird">Music for a Bird</h5>
                         </a>
-                        <div class="card-text secondary-font">
-                            <p><div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
-  <iframe width="100%" height="250" src="https://www.youtube.com/embed/IgDLlU0JfPs" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div></p>
+                        <div class="card-text secondary-font card-summary">
+                            
+<p><strong>Hans-Martin Linde《Music for a Bird》是當代木笛作品</strong>，運用了較多延伸技巧與鳥鳴般的聲響語彙。不只透過旋律，也在音色與發聲方式的變化展現了各種鳥類所發出的聲響。</p>
+
                         </div>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
@@ -482,93 +645,119 @@ Playing | Hsing-An&#39;s profile
     </div>
     <div class="row justify-content-center">
         
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/blogs/posts/2026time/">
-                        <img src="/images/shawn.webp" class="card-img-top" alt="Time的重要性">
-                    </a>
-                </div>
+        <div class="col-lg-3 col-md-5 col-sm-8 pt-2 recent-post-col">
+            <div class="card h-100 recent-post-card">
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/posts/2026time/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Time的重要性">Time的重要性</h5>
+                    <a href="/blogs/notes/others/breath/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="3.3秒呼吸的奧秘">3.3秒呼吸的奧秘</h5>
                     </a>
-                    <div class="card-text secondary-font">
-                        <p><p>我學習爵士其實已經一段時間了，但是我其實總是覺得我的即興一直不太行，
-<strong>直到最近我發現了一個秘密––</strong></p>
-<h2 id="原來我的問題出在time">原來我的問題出在Time!</h2>
-<p>其實一直以來我就有發現我的Time(節奏感)不是很好，之前也<a href="https://soelir.com/blog/notes/rythmn-stable/">跟好友討論過類似的問題</a>，不過大致上的討論也僅止於此，我也沒有找到好的<a href="/content/blogs/notes/others/peak.md">練習方法</a>，因此就這樣不了了之。</p>
-<p>雖然在大部分 …</p></p>
+                    <div class="card-text secondary-font card-summary">
+                        
+                        《3.3秒呼吸的奧秘》讀書筆記
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Jul 14, 2026</span>
-                    <a href="/blogs/posts/2026time/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    <span class="float-start">Aug 4, 2026</span>
+                    <a href="/blogs/notes/others/breath/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
         
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/blogs/practice/202607prac/">
-                        <img src="/images/202607prac.webp" class="card-img-top" alt="2026七月練習分享">
-                    </a>
-                </div>
+        <div class="col-lg-3 col-md-5 col-sm-8 pt-2 recent-post-col">
+            <div class="card h-100 recent-post-card">
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/practice/202607prac/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="2026七月練習分享">2026七月練習分享</h5>
+                    <a href="/blogs/notes/others/denkens/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="思考的藝術">思考的藝術</h5>
                     </a>
-                    <div class="card-text secondary-font">
-                        <p><h1 id="畢業後終於有重大突破">畢業後終於有重大突破!</h1>
-<p>這個月終於結束了我的大學生涯，下個月就要入伍了，在這中間的期間沒有什麼壓力，終於有時間好好重新審視自己的演奏了!</p>
-<p>此外，我也看了幾本不同的書，其中<a href="/content/blogs/notes/others/peak.md">刻意練習</a>也幫助了我許多，雖然比較少提到<a href="https://www.youtube.com/watch?v=CJd1Qiz8QDQ">興趣</a>的重要性，但還是有很多我覺得值得參考的事情的。<br>
-它也改良了很多我的練習方式。</p>
-<h2 id="time的練習"><a href="/content/blogs/posts/2026time.md">Time的 …</a></h2></p>
+                    <div class="card-text secondary-font card-summary">
+                        
+                        《思考的藝術》讀書筆記
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Jul 7, 2026</span>
-                    <a href="/blogs/practice/202607prac/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    <span class="float-start">Aug 1, 2026</span>
+                    <a href="/blogs/notes/others/denkens/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
         
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
+        <div class="col-lg-3 col-md-5 col-sm-8 pt-2 recent-post-col">
+            <div class="card h-100 recent-post-card">
                 
                 <div class="card-header">
-                    <a href="/blogs/notes/others/20hours/">
-                        <img src="/images/learning.webp" class="card-img-top" alt="如何在20小時內學會新事物?">
+                    <a href="/blogs/notes/jazz/secret_forest/">
+                        <img src="/images/secret_forest.webp" class="card-img-top" alt="Chrono Trigger - Secret of the Forest 分析">
                     </a>
                 </div>
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/notes/others/20hours/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="如何在20小時內學會新事物?">如何在20小時內學會新事物?</h5>
+                    <a href="/blogs/notes/jazz/secret_forest/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Chrono Trigger - Secret of the Forest 分析">Chrono Trigger - Secret …</h5>
                     </a>
-                    <div class="card-text secondary-font">
-                        <p><h1 id="如何在20小時內學會新事物"><a href="https://www.youtube.com/watch?v=5MgBikgcWnY">如何在20小時內學會新事物?</a></h1>
-<h2 id="10000小時法則">10000小時法則?</h2>
-<p>很多人會引用這個概念來說明「學會一件事需要的時間」，而10000小時大約是一份全職工作5年。</p>
-<p><strong>但在我們的經驗中似乎不需要這麼久?</strong></p>
-<p>這價數字是引用的是心理學家K. Anders Ericsson的研究。
-在《異數：超凡與平凡的界線在哪裡？》內被廣泛流 …</p></p>
+                    <div class="card-text secondary-font card-summary">
+                        
+                        Secret of the Forest 分析筆記
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Jul 5, 2026</span>
-                    <a href="/blogs/notes/others/20hours/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    <span class="float-start">Jul 16, 2026</span>
+                    <a href="/blogs/notes/jazz/secret_forest/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
         
     </div>
 </div>
+<style>
+    footer #recent-posts .recent-post-col {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    footer #recent-posts .recent-post-card > .card-header .card-img-top {
+        height: 160px;
+    }
+
+    footer #recent-posts .recent-post-card h5.card-title {
+        font-size: 2rem;
+        line-height: 1.15;
+    }
+
+    footer #recent-posts .recent-post-card .card-summary {
+        font-size: 100%;
+        line-height: 1.6;
+    }
+
+    footer #recent-posts .recent-post-card .card-summary .summary-heading {
+        display: block;
+        font-size: 1.4em;
+        line-height: 1.35;
+        margin: 0.35rem 0;
+        font-weight: 700;
+    }
+
+    footer #recent-posts .recent-post-card .card-summary .summary-heading::before {
+        content: "# ";
+        color: var(--primary-color);
+        font-weight: 700;
+    }
+
+    @media (max-width: 991.98px) {
+        footer #recent-posts .recent-post-col {
+            flex: 0 0 41.666667%;
+            max-width: 41.666667%;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        footer #recent-posts .recent-post-col {
+            flex: 0 0 80%;
+            max-width: 80%;
+        }
+    }
+</style>
 
 <div class="text-center pt-2">
     
@@ -644,30 +833,32 @@ Playing | Hsing-An&#39;s profile
     </a>
     
 </div><div class="container py-4">
-    <div class="row justify-content-center">
-        <div class="col-md-4 text-center">
-            
-                <div class="pb-2">
-                    <a href="https://hsinganlee.com/" title="Hsing-An&#39;s profile">
-                        <img alt="Footer logo" src="/fav.png"
-                            height="40px" width="40px">
-                    </a>
-                </div>
-            
-            &copy; 2026  All rights reserved
-            <div class="text-secondary">
-                Made with
-                <span class="text-danger">
-                    &#10084;
-                </span>
-                and
-                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
-                    title="Designed and developed by gurusabarish">
-                    Hugo Profile
-                </a>
-            </div>
-        </div>
+  <div class="row justify-content-center">
+    <div class="col-md-4 text-center">
+      <div class="pb-2">
+        <a href="https://hsinganlee.com/" title="Hsing-An Lee">
+          <img class="footer-logo" alt="Footer logo" src="/images/logo.webp" height="56" width="56">
+        </a>
+      </div>
+      &copy; 2026  All rights reserved
+      <div class="text-secondary">
+        Made with
+        <span class="text-danger">
+          &#10084;
+        </span>
+        and
+        <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+          title="Designed and developed by gurusabarish">
+          Hugo Profile
+        </a>
+      </div>
+      <div class="text-secondary mt-2">
+        <a href="/index.xml" title="RSS">
+          歡迎訂閱我的RSS
+        </a>
+      </div>
     </div>
+  </div>
 </div>
 </footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script>
@@ -709,6 +900,30 @@ Playing | Hsing-An&#39;s profile
 
 
 
+
+<script>
+  (() => {
+    const lightLogo = "/images/logo.webp";
+    const darkLogo = "/images/logo-white.webp";
+
+    const updateThemeAssets = () => {
+      const currentLogo = document.body.classList.contains("dark") ? darkLogo : lightLogo;
+      document
+        .querySelectorAll(".navbar-brand img, .footer-logo")
+        .forEach((logo) => {
+          logo.src = currentLogo;
+        });
+    };
+
+    document.addEventListener("DOMContentLoaded", () => {
+      updateThemeAssets();
+      new MutationObserver(updateThemeAssets).observe(document.body, {
+        attributes: true,
+        attributeFilter: ["class"]
+      });
+    });
+  })();
+</script>
 
 
   <section id="search-content" class="py-2">

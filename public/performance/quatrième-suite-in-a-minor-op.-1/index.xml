@@ -1,12 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Quatrième suite in A minor, Op. 1  on Hsing-An&#39;s profile</title>
+    <title>Quatrième suite in A minor, Op. 1  on Hsing-An Lee</title>
     <link>https://hsinganlee.com/performance/quatri%C3%A8me-suite-in-a-minor-op.-1/</link>
-    <description>Recent content in Quatrième suite in A minor, Op. 1  on Hsing-An&#39;s profile</description>
-    <generator>Hugo</generator>
+    <description>李倖安(Hsing-An Lee) 木笛演奏家/作曲家的酷酷網站</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://hsinganlee.com/performance/quatri%C3%A8me-suite-in-a-minor-op.-1/index.xml" rel="self" type="application/rss+xml" />
+    
+    <lastBuildDate>Wed, 28 May 2025 00:00:00 &#43;0000</lastBuildDate>
+    <atom:link href="https://hsinganlee.com/performance/quatri%C3%A8me-suite-in-a-minor-op.-1/index.xml" rel="self" type="application/rss&#43;xml" />
+    
   </channel>
 </rss>

@@ -52,8 +52,9 @@
 }
 
 #single .page-content h1, #single .page-content h2, #single .page-content h3, #single .page-content h4, #single .page-content h5, #single .page-content h6 {
-    color: var(--text-link-color) !important;
-    margin-bottom: 0.7em;
+    color: var(--text-link-color) ;
+    margin-top: 1.0em;
+    margin-bottom: 1.0em;
     opacity: 0.9;
 }
 

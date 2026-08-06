@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>呼吸 on Hsing-An Lee</title>
+    <link>https://hsinganlee.com/tags/%E5%91%BC%E5%90%B8/</link>
+    <description>李倖安(Hsing-An Lee) 木笛演奏家/作曲家的酷酷網站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    
+    <lastBuildDate>Tue, 04 Aug 2026 00:00:00 &#43;0000</lastBuildDate>
+    <atom:link href="https://hsinganlee.com/tags/%E5%91%BC%E5%90%B8/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+    <item>
+      <title>3.3秒呼吸的奧秘</title>
+      <link>https://hsinganlee.com/blogs/notes/others/breath/</link>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 &#43;0000</pubDate>
+      <guid>https://hsinganlee.com/blogs/notes/others/breath/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

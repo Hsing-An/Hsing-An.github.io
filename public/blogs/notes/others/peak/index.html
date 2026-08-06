@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
 
 <head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
-<link rel="icon" href=/fav.png type="image/gif">
+<link rel="icon" href=/images/logo.webp type="image/gif">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,7 +43,7 @@
         }
       </script>
 <meta property="og:url" content="https://hsinganlee.com/blogs/notes/others/peak/">
-  <meta property="og:site_name" content="Hsing-An&#39;s profile">
+  <meta property="og:site_name" content="Hsing-An Lee">
   <meta property="og:title" content="Peak 刻意練習">
   <meta property="og:description" content="Peak刻意練習筆記">
   <meta property="og:locale" content="zh_tw">
@@ -130,9 +130,11 @@
 
   
   
+    <link rel="stylesheet" href="/style.css">
+  
 
   <title>
-Peak 刻意練習 | Hsing-An&#39;s profile
+Peak 刻意練習 | Hsing-An Lee
 
   </title>
 </head>
@@ -166,9 +168,18 @@ Peak 刻意練習 | Hsing-An&#39;s profile
     var prevScrollPos = window.pageYOffset;
     window.addEventListener("scroll", function showHeaderOnScroll() {
         let profileHeaderElem = document.getElementById("profileHeader");
+        let navbarContentElem = document.getElementById("navbarContent");
         let currentScrollPos = window.pageYOffset;
         let resetHeaderStyle = false;
         let showNavBarOnScrollUp =  true ;
+        let mobileMenuIsOpen = navbarContentElem && navbarContentElem.classList.contains("show");
+
+        if (mobileMenuIsOpen) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+            prevScrollPos = currentScrollPos;
+            return;
+        }
+
         let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
         if (showNavBar) {
             profileHeaderElem.classList.add("showHeaderOnTop");
@@ -183,7 +194,31 @@ Peak 刻意練習 | Hsing-An&#39;s profile
         }
         prevScrollPos = currentScrollPos;
     });
+
+    window.addEventListener("DOMContentLoaded", function keepMobileMenuVisible() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let navbarContentElem = document.getElementById("navbarContent");
+        if (!profileHeaderElem || !navbarContentElem) {
+            return;
+        }
+
+        navbarContentElem.addEventListener("show.bs.collapse", function () {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        });
+
+        navbarContentElem.addEventListener("shown.bs.collapse", function () {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        });
+
+        navbarContentElem.addEventListener("hidden.bs.collapse", function () {
+            if (window.pageYOffset === 0) {
+                profileHeaderElem.classList.remove("showHeaderOnTop");
+            }
+        });
+    });
 </script>
+
+
 
 
 
@@ -193,7 +228,9 @@ Peak 刻意練習 | Hsing-An&#39;s profile
             
             <a class="navbar-brand primary-font text-wrap" href="/">
                 
-                Hsing-An&#39;s Profile
+                <img src="/images/logo.webp" width="30" height="30"
+                    class="d-inline-block align-top">
+                Hsing-An Lee
                 
             </a>
 
@@ -305,6 +342,16 @@ Peak 刻意練習 | Hsing-An&#39;s profile
                     
                     
                     
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/events/" title="events">
+                            
+                            所有演出
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
                     <li class="nav-item navbar-text dropdown">
                         <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="作品列表">
@@ -331,6 +378,56 @@ Peak 刻意練習 | Hsing-An&#39;s profile
                     </li>
                     
                     
+
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        
+                        
+                        
+                            
+                            
+                        
+                        <a class="nav-link" href="/en/" title="English"
+                            data-language-switch data-current-permalink="/blogs/notes/others/peak/">
+                            English
+                        </a>
+                        
+                    </li>
+
+                    <script>
+                        (function preserveLanguageSwitchPagination() {
+                            const languageSwitch = document.querySelector("[data-language-switch]");
+                            if (!languageSwitch || languageSwitch.dataset.preservePagination !== "true") {
+                                return;
+                            }
+
+                            const pageMatch = window.location.pathname.match(/\/page\/([0-9]+)\/?$/);
+                            if (!pageMatch || pageMatch[1] === "1") {
+                                return;
+                            }
+
+                            const currentBase = languageSwitch.dataset.currentPermalink || "/";
+                            const currentPath = window.location.pathname.endsWith("/")
+                                ? window.location.pathname
+                                : `${window.location.pathname}/`;
+
+                            if (!currentPath.startsWith(currentBase)) {
+                                return;
+                            }
+
+                            const pageSuffix = `page/${pageMatch[1]}/`;
+                            if (currentPath.slice(currentBase.length) !== pageSuffix) {
+                                return;
+                            }
+
+                            const target = new URL(languageSwitch.getAttribute("href"), window.location.origin);
+                            const targetBase = target.pathname.endsWith("/") ? target.pathname : `${target.pathname}/`;
+                            target.pathname = `${targetBase}${pageSuffix}`;
+                            languageSwitch.setAttribute("href", `${target.pathname}${target.search}${target.hash}`);
+                        })();
+                    </script>
 
                     
                     <li class="nav-item navbar-text">
@@ -378,8 +475,11 @@ Peak 刻意練習 | Hsing-An&#39;s profile
               Jul 3, 2026
 
               
+              
+              
               <span id="readingTime">
-                min read
+                <small>|</small>
+                33 min read
               </span>
               
             </div>
@@ -436,7 +536,7 @@ Peak 刻意練習 | Hsing-An&#39;s profile
 <h2 id="什麼是心智表徵">什麼是心智表徵?</h2>
 <p>在提到一個概念/字詞的時候，所聯想到與他相關的資訊、具體或抽象的概念。
 例如提到「狗」時，腦內對於這種物種的資訊。</p>
-<p>==刻意練習講求的正是發展出更有效率的<strong>心智表徵</strong>==
+<p><mark>刻意練習講求的正是發展出更有效率的<strong>心智表徵</strong></mark><br>
 讓每個肌肉控制都變成自動的心智表徵。</p>
 <p>心智表徵的一項重要特色是「領域限定性」，因此沒有所謂「<strong>通用技能</strong>」，無法訓練成為「運動員」，而是要訓練成為特定的項目的運動能力。</p>
 <h3 id="由於短期記憶有限制人需要運用心智表徵快速處理大量資訊">由於短期記憶有限制，人需要運用心智表徵快速處理大量資訊。</h3>
@@ -446,7 +546,7 @@ Peak 刻意練習 | Hsing-An&#39;s profile
 <p>例如職棒選手並沒有更好的視力與反射動作，而是透過長年的訓練，在<strong>瞬間決定</strong>是否揮棒、揮棒的力道、方向。
 他們不需要有意識的知道面對的是快速球、曲球還是滑球，他們能夠在瞬間反應該如何應對。
 <strong>是將心智表徵發揮至極致的一種表現</strong>。</p></blockquote>
-<p>==<strong>刻意練習能夠造成腦中神經迴路改變，發展出高度特化的心智表徵</strong>==</p>
+<p><mark><strong>刻意練習能夠造成腦中神經迴路改變，發展出高度特化的心智表徵</strong></mark></p>
 <h2 id="心智表徵的幾項特質">心智表徵的幾項特質</h2>
 <h3 id="心智表徵有助於認出模式迅速回應">心智表徵有助於認出模式，迅速回應</h3>
 <p>專家的其中一項特質為：<strong>普通人認為是隨機、混亂的一堆事物，專家能看出其模式</strong>。</p>
@@ -487,25 +587,25 @@ Peak 刻意練習 | Hsing-An&#39;s profile
 <p>前者<strong>費盡心力鞭策自己進步</strong>，後者除了有目標外，還<strong>掌握資訊，尤其能將轉化專家的知識，了解如何達成</strong>，</p>
 <hr>
 <p>刻意練習有以下特色：</p>
-<h3 id="刻意練習培養的技能已經有成效顯著的練習法">刻意練習培養的技能已經有成效顯著的練習法</h3>
+<h4 id="刻意練習培養的技能已經有成效顯著的練習法">刻意練習培養的技能已經有成效顯著的練習法</h4>
 <p>設計練習方法的老師應該熟悉頂尖專家的能力，並了解該如何以最好的方法培養技能。</p>
-<h3 id="刻意練習只在跨出舒適圈時奏效需要學生不斷突破現階段的技能水準">刻意練習只在跨出舒適圈時奏效，需要學生不斷突破現階段的技能水準</h3>
+<h4 id="刻意練習只在跨出舒適圈時奏效需要學生不斷突破現階段的技能水準">刻意練習只在跨出舒適圈時奏效，需要學生不斷突破現階段的技能水準</h4>
 <p>同時表示得傾盡全力，往往不會太有趣。</p>
-<h3 id="刻意練習必須有定義明確的目標">刻意練習必須有定義明確的目標</h3>
+<h4 id="刻意練習必須有定義明確的目標">刻意練習必須有定義明確的目標</h4>
 <p>整體的大方向目標確定後，必須有細項的具體小目標，改善特定的表現。
 透過小面向的改變累積成大方向的進步。</p>
-<h3 id="刻意練習必須全神貫注且有意識的行動">刻意練習必須全神貫注，且有意識的行動</h3>
+<h4 id="刻意練習必須全神貫注且有意識的行動">刻意練習必須全神貫注，且有意識的行動</h4>
 <p>光是遵從老師的指導是不夠的，還得專注於自身的具體目標，適時調整以掌控練習過程。</p>
-<h3 id="刻意練習包含意見回饋並依此調整">刻意練習包含意見回饋，並依此調整</h3>
+<h4 id="刻意練習包含意見回饋並依此調整">刻意練習包含意見回饋，並依此調整</h4>
 <p>訓練初期會透過老師點出問題並提出解決方法，但學生也得學會自我覺察錯誤，並自我調整。</p>
-<h3 id="刻意練習能產生有效的心智表徵也仰賴心智表徵運作">刻意練習能產生有效的心智表徵，也仰賴心智表徵運作</h3>
+<h4 id="刻意練習能產生有效的心智表徵也仰賴心智表徵運作">刻意練習能產生有效的心智表徵，也仰賴心智表徵運作</h4>
 <p>技能的提升能使心智表徵更精細，心智表徵更精細就更能自我調整，技能也會因此更進步。</p>
-<h3 id="刻意練習是調整習得的技能面向特定面向改善並藉此達成專家級的表現">刻意練習是調整習得的技能，面向特定面向改善，並藉此達成專家級的表現</h3>
+<h4 id="刻意練習是調整習得的技能面向特定面向改善並藉此達成專家級的表現">刻意練習是調整習得的技能，面向特定面向改善，並藉此達成專家級的表現</h4>
 <p>由於新技能是以既有技能為基礎，因此<strong>基本功十分重要</strong>。</p>
 <hr>
 <h2 id="運用刻意練習原則的方法">運用刻意練習原則的方法</h2>
 <p>在高度發展的領域中較為容易，但即便是非高度發展的領域依然能透過其中的概念發展出好的練習法。</p>
-<p>==發展練習法最重要的步驟是<strong>找出頂尖專家，並弄清楚他們做了甚麼，再發展出讓自己能做到那些事情的技巧</strong>。==</p>
+<p><mark>發展練習法最重要的步驟是<strong>找出頂尖專家，並弄清楚他們做了甚麼，再發展出讓自己能做到那些事情的技巧</strong>。</mark></p>
 <blockquote>
 <p>要注意的是選定的「專家」得盡量客觀，標準可以始終一致的辨認出高手與普通人。</p></blockquote>
 <p>找出專家後便開始了解他們為何強過其他人?並且是以怎樣的訓練方法達成的?</p>
@@ -520,7 +620,7 @@ Peak 刻意練習 | Hsing-An&#39;s profile
 </ul>
 <p>但其中唯一對的一點是<strong>要有卓越表現必須得投入極大量的精力</strong>。
 不過只要<strong>訓練方式正確</strong>，人人都有能力改善自身表現。</p>
-<h1 id="實踐的方式">實踐的方式</h1>
+<h1 id="如何了解專家">如何了解專家</h1>
 <p>傳統的學習方式側重在<strong>知識本身</strong>，即便追求的是某種技能，傳統還是強調提供足夠的知識。
 而刻意練習則聚焦於<strong>技能表現</strong>與<strong>如何精進</strong>。</p>
 <blockquote>
@@ -532,13 +632,99 @@ Peak 刻意練習 | Hsing-An&#39;s profile
 認為古典音樂家演奏即興很輕鬆，因為演奏知識夠豐富而不需要實作的練習。</p>
 <h2 id="步驟一-尋找專家">步驟一 尋找專家</h2>
 <p>以醫生為例子，諸多數據顯示經驗豐富的外科醫師在癌細胞切除手術，成功後癌症的復發率會下降。
-而這個主要原因來自於手術結束後可以直接看到切下的癌性組織是否被健康組織圍繞，<strong>透過直接的反饋，獲得更有用的訓練</strong>，因此外科醫師的經驗與技術通常更有關連(相較其他醫生)</p>
-<h2 id="步驟二-找出他為什麼是專家">步驟二 找出他「為什麼是專家」</h2>
+而這個主要原因來自於手術結束後可以直接看到切下的癌性組織是否被健康組織圍繞，<strong>透過直接的反饋，獲得更有用的訓練</strong>，因此外科醫師的經驗與技術通常更有關連(相較其他醫生)。</p>
+<h2 id="步驟二-找出他為什麼是專家">步驟二 找出他「為什麼是專家」。</h2>
 <p>了解醫師在<strong>手術中的決策</strong>，甚至遇到<strong>突發狀況時如何應對</strong>。</p>
 <p>經驗豐富的醫生在察覺到<strong>手術發展與預期不同</strong>時，便開始尋找替代方案。
 這便是頂尖醫生發展出的<strong>有效心智表徵</strong>。</p>
 <h2 id="步驟三-弄清楚心智表徵">步驟三 弄清楚心智表徵</h2>
 <p>通常會請專家在工作途中暫停，並請他描述<strong>當下的情況、之前發生的事、即將發生的事</strong>，或是在工作前後分別詢問<strong>工作時的思考過程</strong>。</p>
+<h1 id="實踐的方式">實踐的方式</h1>
+<h2 id="找一個好老師">找一個好老師</h2>
+<ul>
+<li>要盡可能的問老師「如何練習」「要注意的部分」「自己常犯的錯誤」，因為<strong>大部分的時間會花在獨自練習</strong>、<strong>完成老師的任務</strong>，老師的任務是幫助學生<strong>發展心智表徵</strong>，學生才能<strong>自我修正</strong></li>
+<li>視個人的狀況<strong>更換老師</strong>，如果發現這個老師的訓練方式已經不適合妳了，就換老師，<strong>持續進步才是重點</strong>。</li>
+<li>個別課比團體課有用多了，<strong>隨時有人在旁協助你才能更快建立心智表徵</strong>。</li>
+</ul>
+<h2 id="投入心力練習">投入心力「練習」</h2>
+<ul>
+<li>要專注在練習上，<strong>有意識的更正才能進步</strong>；在練習時如果感受到<strong>分心</strong>或是<strong>輕鬆好玩</strong>時，大概就代表<strong>沒有進步</strong>。</li>
+<li>「專注」是件累人的事，在<strong>剛開始時可以將時間拉短，然後逐漸拉長</strong>。</li>
+<li><strong>訓練時間短，目標明確</strong>的練習能夠快速地培養技能。</li>
+</ul>
+<h2 id="沒有好老師的情況">沒有好老師的情況</h2>
+<p>由於老師的目標是<strong>針對學習內容設計出練習</strong>，因此在沒有好老師的情況下就得<strong>自己設計練習</strong>。<br>
+而設計練習的幾個要點：</p>
+<ul>
+<li>重複相同動作的重點在<strong>發現自己的弱點，並嘗試改善它</strong>，而非漫無目的地重複。</li>
+<li>三大重點：<strong>專注投入、意見回饋、解決問題</strong>。</li>
+</ul>
+<h2 id="訓練的高原期">訓練的高原期</h2>
+<p>在學習到了一個程度後，往往都會抵達瓶頸，而<strong>突破瓶頸的最佳方式，就是以新的方式挑戰自己</strong>。</p>
+<p>而其中一個方式是「<strong>比平常更逼迫自己，找出問題出在哪?為什麼?</strong>」</p>
+<blockquote>
+<p>以背數字的例子來說，當速度提快了，查覺到<strong>在哪裡犯錯、為什麼</strong>，便會發現突破瓶頸的關鍵。</p></blockquote>
+<h2 id="動機與意志力">動機與意志力</h2>
+<p>我們很長將一個人的努力歸功於他天生有很強的<strong>意志力</strong>，但目前<strong>無法證明有影響意志力的基因</strong>，並且<strong>將一件事假設為天生的，等於告訴自己對此束手無策</strong>。</p>
+<p>而討論到<strong>動機</strong>就有幫助多了，我們可以從<strong>持續的理由</strong>與<strong>停止的理由</strong>切入。</p>
+<h3 id="減弱停止的理由">減弱停止的理由</h3>
+<ul>
+<li>設定固定練習時間，並<strong>排除會分心的事</strong>。</li>
+<li>不要在不清醒的時間練習。</li>
+<li>照顧身體，<strong>睡飽</strong>、<strong>保持身體健康</strong>。</li>
+<li>將練習時間<strong>控制在一定的時間內</strong>，集中注意力很累，因此要多休息。</li>
+</ul>
+<p>經過研究，練習的<strong>痛苦不會轉化成快樂</strong>，但是會漸漸變得<strong>中性</strong>，使得練習比較容易持續。</p>
+<h3 id="增加持續的理由">增加持續的理由</h3>
+<p>最初的原因一定是<strong>希望自己所練的技能能進步</strong>，但這並不總是能夠維持。</p>
+<blockquote>
+<p>技能進步到能看見成果後，<strong>表現得好本身就能成為動機</strong></p></blockquote>
+<p>不僅是身邊的人們會帶來稱讚，自我認同也會改變。</p>
+<blockquote>
+<p>相信自己能夠成功，這種信念甚至能強大到蓋過事實。</p></blockquote>
+<p>即使實際上的程度沒有特別好，但只要相信自己很好，這份信念能夠轉化成動機，使得自己最後真的變厲害。<br>
+小秘密是<strong>讓學生覺得自己很厲害，就能夠讓他很有自信有動機</strong><br>
+(我覺得我有被這樣對待XP)</p>
+<p>另一個小秘密是當學生中斷一陣子，回歸時技巧變爛的想放棄的時候，<strong>請他先練習到恢復之前的水準再放棄，這時通常就不會放棄了</strong>。</p>
+<h4 id="信念很重要">信念很重要</h4>
+<blockquote>
+<p>社會動機是最重要的動機之一</p></blockquote>
+<p>身邊的人覺得很厲害、受到身邊的人肯定等等。  要維持這種動機最好的方法就是<strong>身邊圍繞著在你努力時會給予鼓勵、支持和挑戰的人</strong>。</p>
+<h4 id="建立或是加入同好會很重要">建立或是加入同好會很重要</h4>
+<p>除了有一群人能夠互相<strong>分享練習秘訣</strong>、<strong>相互取得情感安慰</strong>以外，<br>
+一群有相同愛好，且<strong>抱持著同樣的精進目標</strong>的人相聚，可以<strong>將夥伴情誼與共同目標</strong>轉化成額外的動機。</p>
+<blockquote>
+<p>維持長期的動機：將目標分成一連串的小目標，一次專注一項。</p></blockquote>
+<p>每一個階段任務的達成都會獲得<strong>成就感</strong>，因而轉化成為持續的動力。同時也能夠<strong>聚焦在具體的目標</strong>，使得<strong>進步更具體</strong></p>
+<h1 id="培養專家的路徑">培養專家的路徑</h1>
+<ol>
+<li>
+<p>培養興趣
+許多專家在孩童時期都有「<strong>對技能產生興趣</strong>」的時期。<br>
+在這時期的孩子之所以產生興趣是出自於<strong>與生俱來的好奇心</strong>，而這時<strong>父母扮演了重要的角色</strong>，<strong>讚美</strong>會成為重要的動機之一；發展出技能所獲得的<strong>滿足感</strong>也是個有效的動機。</p>
+</li>
+<li>
+<p>變得認真
+在產生興趣後，下一步便是開始<strong>尋找老師進行正規的訓練</strong>，這個階段的重點是<strong>培養技能與習慣的同時，也維持興趣與動機</strong>。<br>
+而父母這時的任務則<strong>協助孩子建立作息</strong>並<strong>給予支持與鼓勵</strong>，在孩子嚐到足夠辛苦練習帶來的結果後，就能夠<strong>逐漸變得可以自我激勵</strong>。</p>
+</li>
+</ol>
+<p>父母重要的是<strong>協助孩子找到喜歡的相關活動，以維持長時間的動力</strong>。</p>
+<ol start="3">
+<li>
+<p>全心投入
+這個階段通常在青春期初期或中期，開始就要尋求<strong>夠好的專家</strong>給予<strong>足夠好的練習</strong>。<br>
+除了學生本人要付出足夠時間外，父母更得<strong>在資金上面援助孩子</strong>。</p>
+</li>
+<li>
+<p>開闢新路
+而當學生投入夠多成為專家後，便能踏入最後階段<strong>超越自身領域的既有知識，做出有創意的獨特貢獻</strong>。 <br>
+不要忘記這裡的前提是<strong>能力上必須得是佼佼者</strong>，才能<strong>在既有的規則上打破常規</strong>。</p>
+</li>
+</ol>
+<p>這時的學生已經超越了自己的老師，而他們的老師帶給他們最珍貴的東西便是<strong>自我精進的能力</strong>。</p>
+<p>此外，<strong>創造力與下苦功及長時間維持專注的能力相輔相成，這正是造就他們專家及能力的「刻意練習」的要素</strong>。</p>
+<h1 id="天賦真的存在嗎">天賦真的存在嗎?</h1>
 
           </article>
         </div>
@@ -592,13 +778,6 @@ Peak 刻意練習 | Hsing-An&#39;s profile
     <li>
       <ul>
         <li><a href="#有目標的練習與刻意練習的差異">有目標的練習與刻意練習的差異</a></li>
-        <li><a href="#刻意練習培養的技能已經有成效顯著的練習法">刻意練習培養的技能已經有成效顯著的練習法</a></li>
-        <li><a href="#刻意練習只在跨出舒適圈時奏效需要學生不斷突破現階段的技能水準">刻意練習只在跨出舒適圈時奏效，需要學生不斷突破現階段的技能水準</a></li>
-        <li><a href="#刻意練習必須有定義明確的目標">刻意練習必須有定義明確的目標</a></li>
-        <li><a href="#刻意練習必須全神貫注且有意識的行動">刻意練習必須全神貫注，且有意識的行動</a></li>
-        <li><a href="#刻意練習包含意見回饋並依此調整">刻意練習包含意見回饋，並依此調整</a></li>
-        <li><a href="#刻意練習能產生有效的心智表徵也仰賴心智表徵運作">刻意練習能產生有效的心智表徵，也仰賴心智表徵運作</a></li>
-        <li><a href="#刻意練習是調整習得的技能面向特定面向改善並藉此達成專家級的表現">刻意練習是調整習得的技能，面向特定面向改善，並藉此達成專家級的表現</a></li>
       </ul>
     </li>
     <li><a href="#運用刻意練習原則的方法">運用刻意練習原則的方法</a></li>
@@ -607,8 +786,21 @@ Peak 刻意練習 | Hsing-An&#39;s profile
 
   <ul>
     <li><a href="#步驟一-尋找專家">步驟一 尋找專家</a></li>
-    <li><a href="#步驟二-找出他為什麼是專家">步驟二 找出他「為什麼是專家」</a></li>
+    <li><a href="#步驟二-找出他為什麼是專家">步驟二 找出他「為什麼是專家」。</a></li>
     <li><a href="#步驟三-弄清楚心智表徵">步驟三 弄清楚心智表徵</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#找一個好老師">找一個好老師</a></li>
+    <li><a href="#投入心力練習">投入心力「練習」</a></li>
+    <li><a href="#沒有好老師的情況">沒有好老師的情況</a></li>
+    <li><a href="#訓練的高原期">訓練的高原期</a></li>
+    <li><a href="#動機與意志力">動機與意志力</a>
+      <ul>
+        <li><a href="#減弱停止的理由">減弱停止的理由</a></li>
+        <li><a href="#增加持續的理由">增加持續的理由</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
               </div>
@@ -713,10 +905,6 @@ Peak 刻意練習 | Hsing-An&#39;s profile
 </script>
 
 
-<script src="/js/readingTime.js"></script>
-
-
-
   </div><footer>
     
  
@@ -729,93 +917,119 @@ Peak 刻意練習 | Hsing-An&#39;s profile
     </div>
     <div class="row justify-content-center">
         
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/blogs/posts/2026time/">
-                        <img src="/images/shawn.webp" class="card-img-top" alt="Time的重要性">
-                    </a>
-                </div>
+        <div class="col-lg-3 col-md-5 col-sm-8 pt-2 recent-post-col">
+            <div class="card h-100 recent-post-card">
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/posts/2026time/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Time的重要性">Time的重要性</h5>
+                    <a href="/blogs/notes/others/breath/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="3.3秒呼吸的奧秘">3.3秒呼吸的奧秘</h5>
                     </a>
-                    <div class="card-text secondary-font">
-                        <p><p>我學習爵士其實已經一段時間了，但是我其實總是覺得我的即興一直不太行，
-<strong>直到最近我發現了一個秘密––</strong></p>
-<h2 id="原來我的問題出在time">原來我的問題出在Time!</h2>
-<p>其實一直以來我就有發現我的Time(節奏感)不是很好，之前也<a href="https://soelir.com/blog/notes/rythmn-stable/">跟好友討論過類似的問題</a>，不過大致上的討論也僅止於此，我也沒有找到好的<a href="/content/blogs/notes/others/peak.md">練習方法</a>，因此就這樣不了了之。</p>
-<p>雖然在大部分 …</p></p>
+                    <div class="card-text secondary-font card-summary">
+                        
+                        《3.3秒呼吸的奧秘》讀書筆記
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Jul 14, 2026</span>
-                    <a href="/blogs/posts/2026time/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    <span class="float-start">Aug 4, 2026</span>
+                    <a href="/blogs/notes/others/breath/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
         
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/blogs/practice/202607prac/">
-                        <img src="/images/202607prac.webp" class="card-img-top" alt="2026七月練習分享">
-                    </a>
-                </div>
+        <div class="col-lg-3 col-md-5 col-sm-8 pt-2 recent-post-col">
+            <div class="card h-100 recent-post-card">
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/practice/202607prac/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="2026七月練習分享">2026七月練習分享</h5>
+                    <a href="/blogs/notes/others/denkens/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="思考的藝術">思考的藝術</h5>
                     </a>
-                    <div class="card-text secondary-font">
-                        <p><h1 id="畢業後終於有重大突破">畢業後終於有重大突破!</h1>
-<p>這個月終於結束了我的大學生涯，下個月就要入伍了，在這中間的期間沒有什麼壓力，終於有時間好好重新審視自己的演奏了!</p>
-<p>此外，我也看了幾本不同的書，其中<a href="/content/blogs/notes/others/peak.md">刻意練習</a>也幫助了我許多，雖然比較少提到<a href="https://www.youtube.com/watch?v=CJd1Qiz8QDQ">興趣</a>的重要性，但還是有很多我覺得值得參考的事情的。<br>
-它也改良了很多我的練習方式。</p>
-<h2 id="time的練習"><a href="/content/blogs/posts/2026time.md">Time的 …</a></h2></p>
+                    <div class="card-text secondary-font card-summary">
+                        
+                        《思考的藝術》讀書筆記
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Jul 7, 2026</span>
-                    <a href="/blogs/practice/202607prac/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    <span class="float-start">Aug 1, 2026</span>
+                    <a href="/blogs/notes/others/denkens/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
         
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
+        <div class="col-lg-3 col-md-5 col-sm-8 pt-2 recent-post-col">
+            <div class="card h-100 recent-post-card">
                 
                 <div class="card-header">
-                    <a href="/blogs/notes/others/20hours/">
-                        <img src="/images/learning.webp" class="card-img-top" alt="如何在20小時內學會新事物?">
+                    <a href="/blogs/notes/jazz/secret_forest/">
+                        <img src="/images/secret_forest.webp" class="card-img-top" alt="Chrono Trigger - Secret of the Forest 分析">
                     </a>
                 </div>
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/notes/others/20hours/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="如何在20小時內學會新事物?">如何在20小時內學會新事物?</h5>
+                    <a href="/blogs/notes/jazz/secret_forest/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Chrono Trigger - Secret of the Forest 分析">Chrono Trigger - Secret …</h5>
                     </a>
-                    <div class="card-text secondary-font">
-                        <p><h1 id="如何在20小時內學會新事物"><a href="https://www.youtube.com/watch?v=5MgBikgcWnY">如何在20小時內學會新事物?</a></h1>
-<h2 id="10000小時法則">10000小時法則?</h2>
-<p>很多人會引用這個概念來說明「學會一件事需要的時間」，而10000小時大約是一份全職工作5年。</p>
-<p><strong>但在我們的經驗中似乎不需要這麼久?</strong></p>
-<p>這價數字是引用的是心理學家K. Anders Ericsson的研究。
-在《異數：超凡與平凡的界線在哪裡？》內被廣泛流 …</p></p>
+                    <div class="card-text secondary-font card-summary">
+                        
+                        Secret of the Forest 分析筆記
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Jul 5, 2026</span>
-                    <a href="/blogs/notes/others/20hours/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    <span class="float-start">Jul 16, 2026</span>
+                    <a href="/blogs/notes/jazz/secret_forest/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
         
     </div>
 </div>
+<style>
+    footer #recent-posts .recent-post-col {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    footer #recent-posts .recent-post-card > .card-header .card-img-top {
+        height: 160px;
+    }
+
+    footer #recent-posts .recent-post-card h5.card-title {
+        font-size: 2rem;
+        line-height: 1.15;
+    }
+
+    footer #recent-posts .recent-post-card .card-summary {
+        font-size: 100%;
+        line-height: 1.6;
+    }
+
+    footer #recent-posts .recent-post-card .card-summary .summary-heading {
+        display: block;
+        font-size: 1.4em;
+        line-height: 1.35;
+        margin: 0.35rem 0;
+        font-weight: 700;
+    }
+
+    footer #recent-posts .recent-post-card .card-summary .summary-heading::before {
+        content: "# ";
+        color: var(--primary-color);
+        font-weight: 700;
+    }
+
+    @media (max-width: 991.98px) {
+        footer #recent-posts .recent-post-col {
+            flex: 0 0 41.666667%;
+            max-width: 41.666667%;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        footer #recent-posts .recent-post-col {
+            flex: 0 0 80%;
+            max-width: 80%;
+        }
+    }
+</style>
 
 <div class="text-center pt-2">
     
@@ -891,30 +1105,32 @@ Peak 刻意練習 | Hsing-An&#39;s profile
     </a>
     
 </div><div class="container py-4">
-    <div class="row justify-content-center">
-        <div class="col-md-4 text-center">
-            
-                <div class="pb-2">
-                    <a href="https://hsinganlee.com/" title="Hsing-An&#39;s profile">
-                        <img alt="Footer logo" src="/fav.png"
-                            height="40px" width="40px">
-                    </a>
-                </div>
-            
-            &copy; 2026  All rights reserved
-            <div class="text-secondary">
-                Made with
-                <span class="text-danger">
-                    &#10084;
-                </span>
-                and
-                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
-                    title="Designed and developed by gurusabarish">
-                    Hugo Profile
-                </a>
-            </div>
-        </div>
+  <div class="row justify-content-center">
+    <div class="col-md-4 text-center">
+      <div class="pb-2">
+        <a href="https://hsinganlee.com/" title="Hsing-An Lee">
+          <img class="footer-logo" alt="Footer logo" src="/images/logo.webp" height="56" width="56">
+        </a>
+      </div>
+      &copy; 2026  All rights reserved
+      <div class="text-secondary">
+        Made with
+        <span class="text-danger">
+          &#10084;
+        </span>
+        and
+        <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+          title="Designed and developed by gurusabarish">
+          Hugo Profile
+        </a>
+      </div>
+      <div class="text-secondary mt-2">
+        <a href="/index.xml" title="RSS">
+          歡迎訂閱我的RSS
+        </a>
+      </div>
     </div>
+  </div>
 </div>
 </footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script>
@@ -956,6 +1172,30 @@ Peak 刻意練習 | Hsing-An&#39;s profile
 
 
 
+
+<script>
+  (() => {
+    const lightLogo = "/images/logo.webp";
+    const darkLogo = "/images/logo-white.webp";
+
+    const updateThemeAssets = () => {
+      const currentLogo = document.body.classList.contains("dark") ? darkLogo : lightLogo;
+      document
+        .querySelectorAll(".navbar-brand img, .footer-logo")
+        .forEach((logo) => {
+          logo.src = currentLogo;
+        });
+    };
+
+    document.addEventListener("DOMContentLoaded", () => {
+      updateThemeAssets();
+      new MutationObserver(updateThemeAssets).observe(document.body, {
+        attributes: true,
+        attributeFilter: ["class"]
+      });
+    });
+  })();
+</script>
 
 
   <section id="search-content" class="py-2">

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
 
 <head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
-<link rel="icon" href=/fav.png type="image/gif">
+<link rel="icon" href=/images/logo.webp type="image/gif">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,16 +43,16 @@
         }
       </script>
 <meta property="og:url" content="https://hsinganlee.com/tags/bossanova/">
-  <meta property="og:site_name" content="Hsing-An&#39;s profile">
+  <meta property="og:site_name" content="Hsing-An Lee">
   <meta property="og:title" content="Bossanova">
-  <meta property="og:description" content="李倖安(Hsing-An Lee) 木笛演奏家/作曲家的酷酷網站!">
+  <meta property="og:description" content="李倖安(Hsing-An Lee) 木笛演奏家/作曲家的酷酷網站">
   <meta property="og:locale" content="zh_tw">
   <meta property="og:type" content="website">
 
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Bossanova">
-  <meta name="twitter:description" content="李倖安(Hsing-An Lee) 木笛演奏家/作曲家的酷酷網站!">
+  <meta name="twitter:description" content="李倖安(Hsing-An Lee) 木笛演奏家/作曲家的酷酷網站">
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -116,15 +116,55 @@
 
 
 
-<meta name="description" content="Bossanova of Hsing-An&#39;s profile">
+<meta name="description" content="Bossanova of Hsing-An Lee">
 <link rel="stylesheet" href="/css/list.css" media="all">
+<style>
+    #list-page .card-header.youtube-card-header {
+        padding: 0;
+        border-bottom: 0;
+        background: transparent;
+    }
+
+    #list-page .youtube-card-header .youtube-embed {
+        max-width: none !important;
+        margin: 0 !important;
+    }
+
+    #list-page .youtube-card-header iframe {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        border: 0;
+    }
+
+    #list-page .card-summary {
+        max-height: 7.2em;
+        overflow: hidden;
+        line-height: 1.8;
+    }
+
+    #list-page .card-summary p {
+        margin-bottom: 0.45rem;
+    }
+
+    #list-page .card-summary .summary-heading {
+        display: block;
+        font-size: 1.05em;
+        line-height: 1.45;
+        margin: 0.3rem 0;
+        font-weight: 700;
+    }
+</style>
 
 
   
+  
+    <link rel="stylesheet" href="/style.css">
   
 
   <title>
-Bossanova | Hsing-An&#39;s profile
+Bossanova | Hsing-An Lee
 
   </title>
 </head>
@@ -158,9 +198,18 @@ Bossanova | Hsing-An&#39;s profile
     var prevScrollPos = window.pageYOffset;
     window.addEventListener("scroll", function showHeaderOnScroll() {
         let profileHeaderElem = document.getElementById("profileHeader");
+        let navbarContentElem = document.getElementById("navbarContent");
         let currentScrollPos = window.pageYOffset;
         let resetHeaderStyle = false;
         let showNavBarOnScrollUp =  true ;
+        let mobileMenuIsOpen = navbarContentElem && navbarContentElem.classList.contains("show");
+
+        if (mobileMenuIsOpen) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+            prevScrollPos = currentScrollPos;
+            return;
+        }
+
         let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
         if (showNavBar) {
             profileHeaderElem.classList.add("showHeaderOnTop");
@@ -175,7 +224,31 @@ Bossanova | Hsing-An&#39;s profile
         }
         prevScrollPos = currentScrollPos;
     });
+
+    window.addEventListener("DOMContentLoaded", function keepMobileMenuVisible() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let navbarContentElem = document.getElementById("navbarContent");
+        if (!profileHeaderElem || !navbarContentElem) {
+            return;
+        }
+
+        navbarContentElem.addEventListener("show.bs.collapse", function () {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        });
+
+        navbarContentElem.addEventListener("shown.bs.collapse", function () {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        });
+
+        navbarContentElem.addEventListener("hidden.bs.collapse", function () {
+            if (window.pageYOffset === 0) {
+                profileHeaderElem.classList.remove("showHeaderOnTop");
+            }
+        });
+    });
 </script>
+
+
 
 
 
@@ -185,7 +258,9 @@ Bossanova | Hsing-An&#39;s profile
             
             <a class="navbar-brand primary-font text-wrap" href="/">
                 
-                Hsing-An&#39;s Profile
+                <img src="/images/logo.webp" width="30" height="30"
+                    class="d-inline-block align-top">
+                Hsing-An Lee
                 
             </a>
 
@@ -297,6 +372,16 @@ Bossanova | Hsing-An&#39;s profile
                     
                     
                     
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/events/" title="events">
+                            
+                            所有演出
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
                     <li class="nav-item navbar-text dropdown">
                         <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="作品列表">
@@ -323,6 +408,56 @@ Bossanova | Hsing-An&#39;s profile
                     </li>
                     
                     
+
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        
+                        
+                        
+                            
+                            
+                        
+                        <a class="nav-link" href="/en/" title="English"
+                            data-language-switch data-current-permalink="/tags/bossanova/">
+                            English
+                        </a>
+                        
+                    </li>
+
+                    <script>
+                        (function preserveLanguageSwitchPagination() {
+                            const languageSwitch = document.querySelector("[data-language-switch]");
+                            if (!languageSwitch || languageSwitch.dataset.preservePagination !== "true") {
+                                return;
+                            }
+
+                            const pageMatch = window.location.pathname.match(/\/page\/([0-9]+)\/?$/);
+                            if (!pageMatch || pageMatch[1] === "1") {
+                                return;
+                            }
+
+                            const currentBase = languageSwitch.dataset.currentPermalink || "/";
+                            const currentPath = window.location.pathname.endsWith("/")
+                                ? window.location.pathname
+                                : `${window.location.pathname}/`;
+
+                            if (!currentPath.startsWith(currentBase)) {
+                                return;
+                            }
+
+                            const pageSuffix = `page/${pageMatch[1]}/`;
+                            if (currentPath.slice(currentBase.length) !== pageSuffix) {
+                                return;
+                            }
+
+                            const target = new URL(languageSwitch.getAttribute("href"), window.location.origin);
+                            const targetBase = target.pathname.endsWith("/") ? target.pathname : `${target.pathname}/`;
+                            target.pathname = `${targetBase}${pageSuffix}`;
+                            languageSwitch.setAttribute("href", `${target.pathname}${target.search}${target.hash}`);
+                        })();
+                    </script>
 
                     
                     <li class="nav-item navbar-text">
@@ -367,15 +502,24 @@ Bossanova | Hsing-An&#39;s profile
                 <div class="card h-100">
                     
                     
+                    
+                    <div class="card-header youtube-card-header">
+                        <div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/KVuSFsRum7M" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+                    </div>
+                    
 
                     <div class="card-body bg-transparent p-4 shadow-sm">
                         <a href="/arrangement/artisan-nova/" class="primary-font card-title">
                             <h5 class="card-title bg-transparent" title="藝 nova">藝 nova</h5>
                         </a>
-                        <div class="card-text secondary-font">
-                            <p><div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
-  <iframe width="100%" height="250" src="https://www.youtube.com/embed/KVuSFsRum7M" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div></p>
+                        <div class="card-text secondary-font card-summary">
+                            
+<span class="summary-heading">此首作品獲選為台中捷運水安宮站 進站音樂正選</span>
+<p>此站的景點為台灣道教廟宇，走出月台就可以看見紅色燈籠和相鄰的水安宮，我們決定取樣傳統八音帶有民俗風味的旋律，並用古箏與哨角的音色搭配上輕鬆愉快的 Bossa Nova 伴奏，在繁華的現代城市當中多了一點廟宇傳統文化氣息。</p>
+<p>其中哨角的音色為我們實際到廟宇進行取樣，也是我們作品的小小巧思之一。</p>
+
                         </div>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
@@ -406,93 +550,119 @@ Bossanova | Hsing-An&#39;s profile
     </div>
     <div class="row justify-content-center">
         
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/blogs/posts/2026time/">
-                        <img src="/images/shawn.webp" class="card-img-top" alt="Time的重要性">
-                    </a>
-                </div>
+        <div class="col-lg-3 col-md-5 col-sm-8 pt-2 recent-post-col">
+            <div class="card h-100 recent-post-card">
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/posts/2026time/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Time的重要性">Time的重要性</h5>
+                    <a href="/blogs/notes/others/breath/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="3.3秒呼吸的奧秘">3.3秒呼吸的奧秘</h5>
                     </a>
-                    <div class="card-text secondary-font">
-                        <p><p>我學習爵士其實已經一段時間了，但是我其實總是覺得我的即興一直不太行，
-<strong>直到最近我發現了一個秘密––</strong></p>
-<h2 id="原來我的問題出在time">原來我的問題出在Time!</h2>
-<p>其實一直以來我就有發現我的Time(節奏感)不是很好，之前也<a href="https://soelir.com/blog/notes/rythmn-stable/">跟好友討論過類似的問題</a>，不過大致上的討論也僅止於此，我也沒有找到好的<a href="/content/blogs/notes/others/peak.md">練習方法</a>，因此就這樣不了了之。</p>
-<p>雖然在大部分 …</p></p>
+                    <div class="card-text secondary-font card-summary">
+                        
+                        《3.3秒呼吸的奧秘》讀書筆記
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Jul 14, 2026</span>
-                    <a href="/blogs/posts/2026time/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    <span class="float-start">Aug 4, 2026</span>
+                    <a href="/blogs/notes/others/breath/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
         
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/blogs/practice/202607prac/">
-                        <img src="/images/202607prac.webp" class="card-img-top" alt="2026七月練習分享">
-                    </a>
-                </div>
+        <div class="col-lg-3 col-md-5 col-sm-8 pt-2 recent-post-col">
+            <div class="card h-100 recent-post-card">
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/practice/202607prac/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="2026七月練習分享">2026七月練習分享</h5>
+                    <a href="/blogs/notes/others/denkens/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="思考的藝術">思考的藝術</h5>
                     </a>
-                    <div class="card-text secondary-font">
-                        <p><h1 id="畢業後終於有重大突破">畢業後終於有重大突破!</h1>
-<p>這個月終於結束了我的大學生涯，下個月就要入伍了，在這中間的期間沒有什麼壓力，終於有時間好好重新審視自己的演奏了!</p>
-<p>此外，我也看了幾本不同的書，其中<a href="/content/blogs/notes/others/peak.md">刻意練習</a>也幫助了我許多，雖然比較少提到<a href="https://www.youtube.com/watch?v=CJd1Qiz8QDQ">興趣</a>的重要性，但還是有很多我覺得值得參考的事情的。<br>
-它也改良了很多我的練習方式。</p>
-<h2 id="time的練習"><a href="/content/blogs/posts/2026time.md">Time的 …</a></h2></p>
+                    <div class="card-text secondary-font card-summary">
+                        
+                        《思考的藝術》讀書筆記
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Jul 7, 2026</span>
-                    <a href="/blogs/practice/202607prac/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    <span class="float-start">Aug 1, 2026</span>
+                    <a href="/blogs/notes/others/denkens/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
         
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
+        <div class="col-lg-3 col-md-5 col-sm-8 pt-2 recent-post-col">
+            <div class="card h-100 recent-post-card">
                 
                 <div class="card-header">
-                    <a href="/blogs/notes/others/20hours/">
-                        <img src="/images/learning.webp" class="card-img-top" alt="如何在20小時內學會新事物?">
+                    <a href="/blogs/notes/jazz/secret_forest/">
+                        <img src="/images/secret_forest.webp" class="card-img-top" alt="Chrono Trigger - Secret of the Forest 分析">
                     </a>
                 </div>
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/notes/others/20hours/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="如何在20小時內學會新事物?">如何在20小時內學會新事物?</h5>
+                    <a href="/blogs/notes/jazz/secret_forest/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Chrono Trigger - Secret of the Forest 分析">Chrono Trigger - Secret …</h5>
                     </a>
-                    <div class="card-text secondary-font">
-                        <p><h1 id="如何在20小時內學會新事物"><a href="https://www.youtube.com/watch?v=5MgBikgcWnY">如何在20小時內學會新事物?</a></h1>
-<h2 id="10000小時法則">10000小時法則?</h2>
-<p>很多人會引用這個概念來說明「學會一件事需要的時間」，而10000小時大約是一份全職工作5年。</p>
-<p><strong>但在我們的經驗中似乎不需要這麼久?</strong></p>
-<p>這價數字是引用的是心理學家K. Anders Ericsson的研究。
-在《異數：超凡與平凡的界線在哪裡？》內被廣泛流 …</p></p>
+                    <div class="card-text secondary-font card-summary">
+                        
+                        Secret of the Forest 分析筆記
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Jul 5, 2026</span>
-                    <a href="/blogs/notes/others/20hours/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    <span class="float-start">Jul 16, 2026</span>
+                    <a href="/blogs/notes/jazz/secret_forest/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
         
     </div>
 </div>
+<style>
+    footer #recent-posts .recent-post-col {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    footer #recent-posts .recent-post-card > .card-header .card-img-top {
+        height: 160px;
+    }
+
+    footer #recent-posts .recent-post-card h5.card-title {
+        font-size: 2rem;
+        line-height: 1.15;
+    }
+
+    footer #recent-posts .recent-post-card .card-summary {
+        font-size: 100%;
+        line-height: 1.6;
+    }
+
+    footer #recent-posts .recent-post-card .card-summary .summary-heading {
+        display: block;
+        font-size: 1.4em;
+        line-height: 1.35;
+        margin: 0.35rem 0;
+        font-weight: 700;
+    }
+
+    footer #recent-posts .recent-post-card .card-summary .summary-heading::before {
+        content: "# ";
+        color: var(--primary-color);
+        font-weight: 700;
+    }
+
+    @media (max-width: 991.98px) {
+        footer #recent-posts .recent-post-col {
+            flex: 0 0 41.666667%;
+            max-width: 41.666667%;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        footer #recent-posts .recent-post-col {
+            flex: 0 0 80%;
+            max-width: 80%;
+        }
+    }
+</style>
 
 <div class="text-center pt-2">
     
@@ -568,30 +738,32 @@ Bossanova | Hsing-An&#39;s profile
     </a>
     
 </div><div class="container py-4">
-    <div class="row justify-content-center">
-        <div class="col-md-4 text-center">
-            
-                <div class="pb-2">
-                    <a href="https://hsinganlee.com/" title="Hsing-An&#39;s profile">
-                        <img alt="Footer logo" src="/fav.png"
-                            height="40px" width="40px">
-                    </a>
-                </div>
-            
-            &copy; 2026  All rights reserved
-            <div class="text-secondary">
-                Made with
-                <span class="text-danger">
-                    &#10084;
-                </span>
-                and
-                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
-                    title="Designed and developed by gurusabarish">
-                    Hugo Profile
-                </a>
-            </div>
-        </div>
+  <div class="row justify-content-center">
+    <div class="col-md-4 text-center">
+      <div class="pb-2">
+        <a href="https://hsinganlee.com/" title="Hsing-An Lee">
+          <img class="footer-logo" alt="Footer logo" src="/images/logo.webp" height="56" width="56">
+        </a>
+      </div>
+      &copy; 2026  All rights reserved
+      <div class="text-secondary">
+        Made with
+        <span class="text-danger">
+          &#10084;
+        </span>
+        and
+        <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+          title="Designed and developed by gurusabarish">
+          Hugo Profile
+        </a>
+      </div>
+      <div class="text-secondary mt-2">
+        <a href="/index.xml" title="RSS">
+          歡迎訂閱我的RSS
+        </a>
+      </div>
     </div>
+  </div>
 </div>
 </footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script>
@@ -633,6 +805,30 @@ Bossanova | Hsing-An&#39;s profile
 
 
 
+
+<script>
+  (() => {
+    const lightLogo = "/images/logo.webp";
+    const darkLogo = "/images/logo-white.webp";
+
+    const updateThemeAssets = () => {
+      const currentLogo = document.body.classList.contains("dark") ? darkLogo : lightLogo;
+      document
+        .querySelectorAll(".navbar-brand img, .footer-logo")
+        .forEach((logo) => {
+          logo.src = currentLogo;
+        });
+    };
+
+    document.addEventListener("DOMContentLoaded", () => {
+      updateThemeAssets();
+      new MutationObserver(updateThemeAssets).observe(document.body, {
+        attributes: true,
+        attributeFilter: ["class"]
+      });
+    });
+  })();
+</script>
 
 
   <section id="search-content" class="py-2">

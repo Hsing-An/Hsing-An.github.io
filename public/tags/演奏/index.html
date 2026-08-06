@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
 
 <head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
-<link rel="icon" href=/fav.png type="image/gif">
+<link rel="icon" href=/images/logo.webp type="image/gif">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,16 +43,16 @@
         }
       </script>
 <meta property="og:url" content="https://hsinganlee.com/tags/%E6%BC%94%E5%A5%8F/">
-  <meta property="og:site_name" content="Hsing-An&#39;s profile">
+  <meta property="og:site_name" content="Hsing-An Lee">
   <meta property="og:title" content="演奏">
-  <meta property="og:description" content="李倖安(Hsing-An Lee) 木笛演奏家/作曲家的酷酷網站!">
+  <meta property="og:description" content="李倖安(Hsing-An Lee) 木笛演奏家/作曲家的酷酷網站">
   <meta property="og:locale" content="zh_tw">
   <meta property="og:type" content="website">
 
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="演奏">
-  <meta name="twitter:description" content="李倖安(Hsing-An Lee) 木笛演奏家/作曲家的酷酷網站!">
+  <meta name="twitter:description" content="李倖安(Hsing-An Lee) 木笛演奏家/作曲家的酷酷網站">
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -116,15 +116,55 @@
 
 
 
-<meta name="description" content="演奏 of Hsing-An&#39;s profile">
+<meta name="description" content="演奏 of Hsing-An Lee">
 <link rel="stylesheet" href="/css/list.css" media="all">
+<style>
+    #list-page .card-header.youtube-card-header {
+        padding: 0;
+        border-bottom: 0;
+        background: transparent;
+    }
+
+    #list-page .youtube-card-header .youtube-embed {
+        max-width: none !important;
+        margin: 0 !important;
+    }
+
+    #list-page .youtube-card-header iframe {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        border: 0;
+    }
+
+    #list-page .card-summary {
+        max-height: 7.2em;
+        overflow: hidden;
+        line-height: 1.8;
+    }
+
+    #list-page .card-summary p {
+        margin-bottom: 0.45rem;
+    }
+
+    #list-page .card-summary .summary-heading {
+        display: block;
+        font-size: 1.05em;
+        line-height: 1.45;
+        margin: 0.3rem 0;
+        font-weight: 700;
+    }
+</style>
 
 
   
+  
+    <link rel="stylesheet" href="/style.css">
   
 
   <title>
-演奏 | Hsing-An&#39;s profile
+演奏 | Hsing-An Lee
 
   </title>
 </head>
@@ -158,9 +198,18 @@
     var prevScrollPos = window.pageYOffset;
     window.addEventListener("scroll", function showHeaderOnScroll() {
         let profileHeaderElem = document.getElementById("profileHeader");
+        let navbarContentElem = document.getElementById("navbarContent");
         let currentScrollPos = window.pageYOffset;
         let resetHeaderStyle = false;
         let showNavBarOnScrollUp =  true ;
+        let mobileMenuIsOpen = navbarContentElem && navbarContentElem.classList.contains("show");
+
+        if (mobileMenuIsOpen) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+            prevScrollPos = currentScrollPos;
+            return;
+        }
+
         let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
         if (showNavBar) {
             profileHeaderElem.classList.add("showHeaderOnTop");
@@ -175,7 +224,31 @@
         }
         prevScrollPos = currentScrollPos;
     });
+
+    window.addEventListener("DOMContentLoaded", function keepMobileMenuVisible() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let navbarContentElem = document.getElementById("navbarContent");
+        if (!profileHeaderElem || !navbarContentElem) {
+            return;
+        }
+
+        navbarContentElem.addEventListener("show.bs.collapse", function () {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        });
+
+        navbarContentElem.addEventListener("shown.bs.collapse", function () {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        });
+
+        navbarContentElem.addEventListener("hidden.bs.collapse", function () {
+            if (window.pageYOffset === 0) {
+                profileHeaderElem.classList.remove("showHeaderOnTop");
+            }
+        });
+    });
 </script>
+
+
 
 
 
@@ -185,7 +258,9 @@
             
             <a class="navbar-brand primary-font text-wrap" href="/">
                 
-                Hsing-An&#39;s Profile
+                <img src="/images/logo.webp" width="30" height="30"
+                    class="d-inline-block align-top">
+                Hsing-An Lee
                 
             </a>
 
@@ -297,6 +372,16 @@
                     
                     
                     
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/events/" title="events">
+                            
+                            所有演出
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
                     <li class="nav-item navbar-text dropdown">
                         <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="作品列表">
@@ -323,6 +408,56 @@
                     </li>
                     
                     
+
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        
+                        
+                        
+                            
+                            
+                        
+                        <a class="nav-link" href="/en/" title="English"
+                            data-language-switch data-current-permalink="/tags/%E6%BC%94%E5%A5%8F/">
+                            English
+                        </a>
+                        
+                    </li>
+
+                    <script>
+                        (function preserveLanguageSwitchPagination() {
+                            const languageSwitch = document.querySelector("[data-language-switch]");
+                            if (!languageSwitch || languageSwitch.dataset.preservePagination !== "true") {
+                                return;
+                            }
+
+                            const pageMatch = window.location.pathname.match(/\/page\/([0-9]+)\/?$/);
+                            if (!pageMatch || pageMatch[1] === "1") {
+                                return;
+                            }
+
+                            const currentBase = languageSwitch.dataset.currentPermalink || "/";
+                            const currentPath = window.location.pathname.endsWith("/")
+                                ? window.location.pathname
+                                : `${window.location.pathname}/`;
+
+                            if (!currentPath.startsWith(currentBase)) {
+                                return;
+                            }
+
+                            const pageSuffix = `page/${pageMatch[1]}/`;
+                            if (currentPath.slice(currentBase.length) !== pageSuffix) {
+                                return;
+                            }
+
+                            const target = new URL(languageSwitch.getAttribute("href"), window.location.origin);
+                            const targetBase = target.pathname.endsWith("/") ? target.pathname : `${target.pathname}/`;
+                            target.pathname = `${targetBase}${pageSuffix}`;
+                            languageSwitch.setAttribute("href", `${target.pathname}${target.search}${target.hash}`);
+                        })();
+                    </script>
 
                     
                     <li class="nav-item navbar-text">
@@ -373,16 +508,51 @@
                     </div>
                     
                     
+                    
+                    <div class="card-header youtube-card-header">
+                        <div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/Aun3-bKojnM" title="2-25" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+                    </div>
+                    
 
                     <div class="card-body bg-transparent p-4 shadow-sm">
                         <a href="/blogs/posts/2026time/" class="primary-font card-title">
                             <h5 class="card-title bg-transparent" title="Time的重要性">Time的重要性</h5>
                         </a>
-                        <div class="card-text secondary-font">
-                            <p><p>我學習爵士其實已經一段時間了，但是我其實總是覺得我的即興一直不太行，
+                        <div class="card-text secondary-font card-summary">
+                            <p>我學習爵士其實已經一段時間了，但是我其實總是覺得我的即興一直不太行，
 <strong>直到最近我發現了一個秘密––</strong></p>
-<h2 id="原來我的問題出在time">原來我的問題出在Time!</h2>
-<p>其實一直以來我就有發現我的Time(節奏感)不是很好，之前也<a href="https://soelir.com/blog/notes/rythmn-stable/">跟好友討論過 …</a></p></p>
+<span class="summary-heading">原來我的問題出在Time!</span>
+<p>其實一直以來我就有發現我的Time(節奏感)不是很好，之前也<a href="https://soelir.com/blog/notes/rythmn-stable/">跟好友討論過類似的問題</a>，不過大致上的討論也僅止於此，我也沒有找到好的<a href="/content/blogs/notes/others/peak.md">練習方法</a>，因此就這樣不了了之。</p>
+<p>雖然在大部分演古典的時候不太會出問題，但偶爾需要給拍子、<a href="/content/blogs/posts/windband2025.md">指揮</a>、很慢的慢板的時候，還是會發現拍子不太穩。</p>
+<p>不過在爵士上，問題就變得很嚴重了&hellip;<br>
+抓不到Time不僅僅是偶爾會落掉拍子這麼簡單，<strong>是會完全無法演奏想演的東西</strong>的程度。</p>
+<span class="summary-heading">我的救世主––Shawn Crowder</span>
+
+<p>前陣子跟一個很強的Bass手合作的時候，我也有偷問他怎麼練Time的。<br>
+他回答我「你知道Shawn Crowder嗎? 他說要<strong>一邊演一邊大聲的數拍子</strong>，我覺得很有用。」<br>
+後來我認真的研究了一下<a href="https://www.youtube.com/watch?v=Aun3-bKojnM">他的影片</a>，整理出了以下幾點：</p>
+<span class="summary-heading">如何成為好的Time-keeper?</span>
+<p>在演奏樂器時，我們想要成為一個&quot;<strong>Great Time-keeper</strong>&quot;<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>。為了做到這件事情，我們必須有良好的<strong>Internal timing</strong><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<p>那要怎麼成為一個Great Time-keeper呢? Shawn提出了幾個概念。</p>
+<span class="summary-heading">主動節奏維持者 Active Time-keepers</span>
+<p>翻成中文有點繞口，但他主要提到的概念，是將樂手分為<strong>Passive Time-keepers</strong>與<strong>Active Time-keepers</strong></p>
+<ul>
+<li><strong>Passive Time-keepers</strong>指的是<strong>跟著樂團的節奏、節拍器的節奏，用聽的跟隨節奏</strong>的樂手。這也是我們大部分人預設所使用的方式，在很多情況下也很OK。</li>
+<li><strong>Active Time-keepers</strong>則指的是<strong>主動產生穩定的速度，不隨波逐流</strong>的樂手。通常他們都有良好的Internal timing。</li>
+</ul>
+<p>當然，很多時候我們能夠跟著整個樂團的速度是件好事，但最好的情況是<strong>能夠有能力自己產生穩定的速度</strong>。</p>
+<span class="summary-heading">內在節奏感 Internal Timing</span>
+<p>提到Active Time-keepers會跟著自己的Internal Timing，那就得好好討論<strong>Internal Timing是什麼</strong>，且<strong>如何訓練</strong>了。</p>
+<p>Internal timing通常指的是<strong>內在的節奏感</strong>，而其實許多人是在演奏的同時，<strong>內心有個想像的節拍器聲音</strong>，而他們的演奏會<strong>跟隨他們心中的節拍器</strong>；</p>
+<p>但深究的話還不止於此，最重要的是<strong>協調內在節拍器與肢體運動</strong>：
+很多人會數拍，也會演奏複雜的節奏，但重要的是<strong>演奏的時候內心能夠聽到節拍器</strong>，而如何穩定的協調<strong>Internal timing</strong>與<strong>樂器操作</strong>便是重點了。</p>
+<blockquote>
+<p>It&rsquo;s not simply a matter of <strong>counting</strong>. It&rsquo;s a matter of <strong>coordination</strong><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.<br>
+重點不僅僅是<strong>算拍子</strong>，而是在於<strong>協調</strong></p></blockquote>
+<span class="summary-heading">Counting!</span>
+<p>那要如何產生良好的Internal timing呢?</p>
                         </div>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
@@ -404,15 +574,24 @@
                     </div>
                     
                     
+                    
 
                     <div class="card-body bg-transparent p-4 shadow-sm">
                         <a href="/blogs/practice/202607prac/" class="primary-font card-title">
                             <h5 class="card-title bg-transparent" title="2026七月練習分享">2026七月練習分享</h5>
                         </a>
-                        <div class="card-text secondary-font">
-                            <p><h1 id="畢業後終於有重大突破">畢業後終於有重大突破!</h1>
+                        <div class="card-text secondary-font card-summary">
+                            <span class="summary-heading">畢業後終於有重大突破!</span>
 <p>這個月終於結束了我的大學生涯，下個月就要入伍了，在這中間的期間沒有什麼壓力，終於有時間好好重新審視自己的演奏了!</p>
-<p>此外，我也看了幾本不同的書，其中<a href="/content/blogs/notes/others/peak.md">刻意練習</a>也幫助了我許多，雖然比 …</p></p>
+<p>此外，我也看了幾本不同的書，其中<a href="/content/blogs/notes/others/peak.md">刻意練習</a>也幫助了我許多，雖然比較少提到<a href="https://www.youtube.com/watch?v=CJd1Qiz8QDQ">興趣</a>的重要性，但還是有很多我覺得值得參考的事情的。<br>
+它也改良了很多我的練習方式。</p>
+<span class="summary-heading"><a href="/content/blogs/posts/2026time.md">Time的練習</a></span>
+<p>這絕對是我近年來幫助最大的練習! 在<a href="/content/blogs/posts/2026time.md">這篇文章</a>內詳細說明了我的練習，歡迎過去看看!</p>
+<p>除了看<a href="https://www.youtube.com/watch?v=Aun3-bKojnM">Shawn的影片</a>以外，我也看了<a href="https://www.openstudiojazz.com/">Open Studio</a>的Locking In這一套課程，主要也是在訓練Time的穩定度。</p>
+<span class="summary-heading"><a href="https://www.youtube.com/watch?v=PJCsin_Wo5E">Lick套用進曲子</a></span>
+<p>最近也發現很多練好的東西沒辦法放進即興用，就憤而找到了這部影片(?<br>
+蠻不錯的耶，也滿符合<a href="/content/blogs/notes/others/peak.md">刻意練習</a>提到的「提升技能本身，而不僅是知識」。</p>
+<span class="summary-heading"><a href="https://www.openstudiojazz.com/">五聲音階跟+1和弦</a> Pentatonics and Playing Out</span>
                         </div>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
@@ -443,93 +622,119 @@
     </div>
     <div class="row justify-content-center">
         
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/blogs/posts/2026time/">
-                        <img src="/images/shawn.webp" class="card-img-top" alt="Time的重要性">
-                    </a>
-                </div>
+        <div class="col-lg-3 col-md-5 col-sm-8 pt-2 recent-post-col">
+            <div class="card h-100 recent-post-card">
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/posts/2026time/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Time的重要性">Time的重要性</h5>
+                    <a href="/blogs/notes/others/breath/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="3.3秒呼吸的奧秘">3.3秒呼吸的奧秘</h5>
                     </a>
-                    <div class="card-text secondary-font">
-                        <p><p>我學習爵士其實已經一段時間了，但是我其實總是覺得我的即興一直不太行，
-<strong>直到最近我發現了一個秘密––</strong></p>
-<h2 id="原來我的問題出在time">原來我的問題出在Time!</h2>
-<p>其實一直以來我就有發現我的Time(節奏感)不是很好，之前也<a href="https://soelir.com/blog/notes/rythmn-stable/">跟好友討論過類似的問題</a>，不過大致上的討論也僅止於此，我也沒有找到好的<a href="/content/blogs/notes/others/peak.md">練習方法</a>，因此就這樣不了了之。</p>
-<p>雖然在大部分 …</p></p>
+                    <div class="card-text secondary-font card-summary">
+                        
+                        《3.3秒呼吸的奧秘》讀書筆記
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Jul 14, 2026</span>
-                    <a href="/blogs/posts/2026time/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    <span class="float-start">Aug 4, 2026</span>
+                    <a href="/blogs/notes/others/breath/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
         
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/blogs/practice/202607prac/">
-                        <img src="/images/202607prac.webp" class="card-img-top" alt="2026七月練習分享">
-                    </a>
-                </div>
+        <div class="col-lg-3 col-md-5 col-sm-8 pt-2 recent-post-col">
+            <div class="card h-100 recent-post-card">
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/practice/202607prac/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="2026七月練習分享">2026七月練習分享</h5>
+                    <a href="/blogs/notes/others/denkens/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="思考的藝術">思考的藝術</h5>
                     </a>
-                    <div class="card-text secondary-font">
-                        <p><h1 id="畢業後終於有重大突破">畢業後終於有重大突破!</h1>
-<p>這個月終於結束了我的大學生涯，下個月就要入伍了，在這中間的期間沒有什麼壓力，終於有時間好好重新審視自己的演奏了!</p>
-<p>此外，我也看了幾本不同的書，其中<a href="/content/blogs/notes/others/peak.md">刻意練習</a>也幫助了我許多，雖然比較少提到<a href="https://www.youtube.com/watch?v=CJd1Qiz8QDQ">興趣</a>的重要性，但還是有很多我覺得值得參考的事情的。<br>
-它也改良了很多我的練習方式。</p>
-<h2 id="time的練習"><a href="/content/blogs/posts/2026time.md">Time的 …</a></h2></p>
+                    <div class="card-text secondary-font card-summary">
+                        
+                        《思考的藝術》讀書筆記
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Jul 7, 2026</span>
-                    <a href="/blogs/practice/202607prac/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    <span class="float-start">Aug 1, 2026</span>
+                    <a href="/blogs/notes/others/denkens/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
         
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
+        <div class="col-lg-3 col-md-5 col-sm-8 pt-2 recent-post-col">
+            <div class="card h-100 recent-post-card">
                 
                 <div class="card-header">
-                    <a href="/blogs/notes/others/20hours/">
-                        <img src="/images/learning.webp" class="card-img-top" alt="如何在20小時內學會新事物?">
+                    <a href="/blogs/notes/jazz/secret_forest/">
+                        <img src="/images/secret_forest.webp" class="card-img-top" alt="Chrono Trigger - Secret of the Forest 分析">
                     </a>
                 </div>
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/notes/others/20hours/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="如何在20小時內學會新事物?">如何在20小時內學會新事物?</h5>
+                    <a href="/blogs/notes/jazz/secret_forest/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Chrono Trigger - Secret of the Forest 分析">Chrono Trigger - Secret …</h5>
                     </a>
-                    <div class="card-text secondary-font">
-                        <p><h1 id="如何在20小時內學會新事物"><a href="https://www.youtube.com/watch?v=5MgBikgcWnY">如何在20小時內學會新事物?</a></h1>
-<h2 id="10000小時法則">10000小時法則?</h2>
-<p>很多人會引用這個概念來說明「學會一件事需要的時間」，而10000小時大約是一份全職工作5年。</p>
-<p><strong>但在我們的經驗中似乎不需要這麼久?</strong></p>
-<p>這價數字是引用的是心理學家K. Anders Ericsson的研究。
-在《異數：超凡與平凡的界線在哪裡？》內被廣泛流 …</p></p>
+                    <div class="card-text secondary-font card-summary">
+                        
+                        Secret of the Forest 分析筆記
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Jul 5, 2026</span>
-                    <a href="/blogs/notes/others/20hours/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    <span class="float-start">Jul 16, 2026</span>
+                    <a href="/blogs/notes/jazz/secret_forest/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
         
     </div>
 </div>
+<style>
+    footer #recent-posts .recent-post-col {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    footer #recent-posts .recent-post-card > .card-header .card-img-top {
+        height: 160px;
+    }
+
+    footer #recent-posts .recent-post-card h5.card-title {
+        font-size: 2rem;
+        line-height: 1.15;
+    }
+
+    footer #recent-posts .recent-post-card .card-summary {
+        font-size: 100%;
+        line-height: 1.6;
+    }
+
+    footer #recent-posts .recent-post-card .card-summary .summary-heading {
+        display: block;
+        font-size: 1.4em;
+        line-height: 1.35;
+        margin: 0.35rem 0;
+        font-weight: 700;
+    }
+
+    footer #recent-posts .recent-post-card .card-summary .summary-heading::before {
+        content: "# ";
+        color: var(--primary-color);
+        font-weight: 700;
+    }
+
+    @media (max-width: 991.98px) {
+        footer #recent-posts .recent-post-col {
+            flex: 0 0 41.666667%;
+            max-width: 41.666667%;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        footer #recent-posts .recent-post-col {
+            flex: 0 0 80%;
+            max-width: 80%;
+        }
+    }
+</style>
 
 <div class="text-center pt-2">
     
@@ -605,30 +810,32 @@
     </a>
     
 </div><div class="container py-4">
-    <div class="row justify-content-center">
-        <div class="col-md-4 text-center">
-            
-                <div class="pb-2">
-                    <a href="https://hsinganlee.com/" title="Hsing-An&#39;s profile">
-                        <img alt="Footer logo" src="/fav.png"
-                            height="40px" width="40px">
-                    </a>
-                </div>
-            
-            &copy; 2026  All rights reserved
-            <div class="text-secondary">
-                Made with
-                <span class="text-danger">
-                    &#10084;
-                </span>
-                and
-                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
-                    title="Designed and developed by gurusabarish">
-                    Hugo Profile
-                </a>
-            </div>
-        </div>
+  <div class="row justify-content-center">
+    <div class="col-md-4 text-center">
+      <div class="pb-2">
+        <a href="https://hsinganlee.com/" title="Hsing-An Lee">
+          <img class="footer-logo" alt="Footer logo" src="/images/logo.webp" height="56" width="56">
+        </a>
+      </div>
+      &copy; 2026  All rights reserved
+      <div class="text-secondary">
+        Made with
+        <span class="text-danger">
+          &#10084;
+        </span>
+        and
+        <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+          title="Designed and developed by gurusabarish">
+          Hugo Profile
+        </a>
+      </div>
+      <div class="text-secondary mt-2">
+        <a href="/index.xml" title="RSS">
+          歡迎訂閱我的RSS
+        </a>
+      </div>
     </div>
+  </div>
 </div>
 </footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script>
@@ -670,6 +877,30 @@
 
 
 
+
+<script>
+  (() => {
+    const lightLogo = "/images/logo.webp";
+    const darkLogo = "/images/logo-white.webp";
+
+    const updateThemeAssets = () => {
+      const currentLogo = document.body.classList.contains("dark") ? darkLogo : lightLogo;
+      document
+        .querySelectorAll(".navbar-brand img, .footer-logo")
+        .forEach((logo) => {
+          logo.src = currentLogo;
+        });
+    };
+
+    document.addEventListener("DOMContentLoaded", () => {
+      updateThemeAssets();
+      new MutationObserver(updateThemeAssets).observe(document.body, {
+        attributes: true,
+        attributeFilter: ["class"]
+      });
+    });
+  })();
+</script>
 
 
   <section id="search-content" class="py-2">

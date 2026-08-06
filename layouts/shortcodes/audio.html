@@ -1,0 +1,15 @@
+{{- $src := .Get "src" -}}
+{{- if not $src -}}
+  {{- errorf "audio shortcode requires a src parameter. Usage: {{< audio src=\"/audio/example.mp3\" >}}. Page: %s" .Page.Path -}}
+{{- end -}}
+{{- $caption := .Get "caption" -}}
+
+<figure class="audio-shortcode">
+  <audio class="audio-shortcode__player" controls preload="metadata">
+    <source src="{{ $src | safeURL }}">
+    Your browser does not support the audio element.
+  </audio>
+  {{- with $caption }}
+    <figcaption class="audio-shortcode__caption">{{ . }}</figcaption>
+  {{- end }}
+</figure>

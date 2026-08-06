@@ -1,12 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>碼頭姑娘(arrange for recorder quartet) on Hsing-An&#39;s profile</title>
+    <title>碼頭姑娘(arrange for recorder quartet) on Hsing-An Lee</title>
     <link>https://hsinganlee.com/composition/devotion/</link>
-    <description>Recent content in 碼頭姑娘(arrange for recorder quartet) on Hsing-An&#39;s profile</description>
-    <generator>Hugo</generator>
+    <description>李倖安(Hsing-An Lee) 木笛演奏家/作曲家的酷酷網站</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://hsinganlee.com/composition/devotion/index.xml" rel="self" type="application/rss+xml" />
+    
+    <lastBuildDate>Sat, 02 Mar 2019 00:00:00 &#43;0000</lastBuildDate>
+    <atom:link href="https://hsinganlee.com/composition/devotion/index.xml" rel="self" type="application/rss&#43;xml" />
+    
   </channel>
 </rss>

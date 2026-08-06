@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>EDM on Hsing-An Lee</title>
+    <link>https://hsinganlee.com/en/tags/edm/</link>
+    <description>Hsing-An Lee is a recorder player and composer.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+    <lastBuildDate>Thu, 01 Feb 2024 00:00:00 &#43;0000</lastBuildDate>
+    <atom:link href="https://hsinganlee.com/en/tags/edm/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+    <item>
+      <title>hazy</title>
+      <link>https://hsinganlee.com/en/arrangement/%E6%BF%9B/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 &#43;0000</pubDate>
+      <guid>https://hsinganlee.com/en/arrangement/%E6%BF%9B/</guid>
+      <description> This work was completed with classmates from a university elective course, using alternative electronic music as its stylistic direction.&amp;#xA;The piece takes a synth bass as its central motive, exploring the flow and suspension of the music.&amp;#xA;It describes the boundary between &amp;amp;ldquo;hazy&amp;amp;rdquo; and &amp;amp;ldquo;clear&amp;amp;rdquo; through sound.&amp;#xA;Credit: Lyrics: Pei-Yu Lin, He-Hsin Wu, Yu-An Liu Composer: Hsing-An Lee, Pei-Yu Lin, He-Hsin Wu Arrangement: Hsing-An Lee Vocals: Hsing-An Lee, Pei-Yu Lin, He-Hsin Wu </description>
+      <content:encoded><![CDATA[<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/GmB11i4YisY" title="Polygatari-Matsuri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p>This work was completed with classmates from a university elective course, using <strong>alternative electronic music</strong> as its stylistic direction.<br>
+The piece takes a <strong>synth bass</strong> as its central motive, exploring the <strong>flow and suspension</strong> of the music.<br>
+It describes the boundary between &ldquo;<strong>hazy</strong>&rdquo; and &ldquo;<strong>clear</strong>&rdquo; through sound.</p>
+<pre tabindex="0"><code> Credit:
+ Lyrics: Pei-Yu Lin, He-Hsin Wu, Yu-An Liu
+ Composer: Hsing-An Lee, Pei-Yu Lin, He-Hsin Wu
+ Arrangement: Hsing-An Lee
+ Vocals: Hsing-An Lee, Pei-Yu Lin, He-Hsin Wu
+</code></pre>]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

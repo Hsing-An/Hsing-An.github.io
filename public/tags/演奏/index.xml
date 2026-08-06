@@ -1,26 +1,151 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>演奏 on Hsing-An&#39;s profile</title>
+    <title>演奏 on Hsing-An Lee</title>
     <link>https://hsinganlee.com/tags/%E6%BC%94%E5%A5%8F/</link>
-    <description>Recent content in 演奏 on Hsing-An&#39;s profile</description>
-    <generator>Hugo</generator>
+    <description>李倖安(Hsing-An Lee) 木笛演奏家/作曲家的酷酷網站</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hsinganlee.com/tags/%E6%BC%94%E5%A5%8F/index.xml" rel="self" type="application/rss+xml" />
+    
+    <lastBuildDate>Tue, 14 Jul 2026 00:00:00 &#43;0000</lastBuildDate>
+    <atom:link href="https://hsinganlee.com/tags/%E6%BC%94%E5%A5%8F/index.xml" rel="self" type="application/rss&#43;xml" />
+    
     <item>
       <title>Time的重要性</title>
       <link>https://hsinganlee.com/blogs/posts/2026time/</link>
-      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://hsinganlee.com/blogs/posts/2026time/</guid>
-      <description>&lt;p&gt;我學習爵士其實已經一段時間了，但是我其實總是覺得我的即興一直不太行，&#xA;&lt;strong&gt;直到最近我發現了一個秘密––&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;原來我的問題出在time&#34;&gt;原來我的問題出在Time!&lt;/h2&gt;&#xA;&lt;p&gt;其實一直以來我就有發現我的Time(節奏感)不是很好，之前也&lt;a href=&#34;https://soelir.com/blog/notes/rythmn-stable/&#34;&gt;跟好友討論過類似的問題&lt;/a&gt;，不過大致上的討論也僅止於此，我也沒有找到好的&lt;a href=&#34;https://hsinganlee.com/content/blogs/notes/others/peak.md&#34;&gt;練習方法&lt;/a&gt;，因此就這樣不了了之。&lt;/p&gt;&#xA;&lt;p&gt;雖然在大部分演古典的時候不太會出問題，但偶爾需要給拍子、&lt;a href=&#34;https://hsinganlee.com/content/blogs/posts/windband2025.md&#34;&gt;指揮&lt;/a&gt;、很慢的慢板的時候，還是會發現拍子不太穩。&lt;/p&gt;&#xA;&lt;p&gt;不過在爵士上，問題就變得很嚴重了&amp;hellip;&lt;br&gt;&#xA;抓不到Time不僅僅是偶爾會落掉拍子這麼簡單，&lt;strong&gt;是會完全無法演奏想演的東西&lt;/strong&gt;的程度。&lt;/p&gt;&#xA;&lt;h2 id=&#34;我的救世主shawn-crowder&#34;&gt;我的救世主––Shawn Crowder&lt;/h2&gt;&#xA;&lt;div class=&#34;youtube-embed&#34; style=&#34;max-width:900px; margin: 1.2rem 0;&#34;&gt;&#xD;&#xA;  &lt;iframe width=&#34;100%&#34; height=&#34;250&#34; src=&#34;https://www.youtube.com/embed/Aun3-bKojnM&#34; title=&#34;2-25&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;p&gt;前陣子跟一個很強的Bass手合作的時候，我也有偷問他怎麼練Time的。&lt;br&gt;&#xA;他回答我「你知道Shawn Crowder嗎? 他說要&lt;strong&gt;一邊演一邊大聲的數拍子&lt;/strong&gt;，我覺得很有用。」&lt;br&gt;&#xA;後來我認真的研究了一下&lt;a href=&#34;https://www.youtube.com/watch?v=Aun3-bKojnM&#34;&gt;他的影片&lt;/a&gt;，整理出了以下幾點：&lt;/p&gt;&#xA;&lt;h1 id=&#34;如何成為好的time-keeper&#34;&gt;如何成為好的Time-keeper?&lt;/h1&gt;&#xA;&lt;p&gt;在演奏樂器時，我們想要成為一個&amp;quot;&lt;strong&gt;Great Time-keeper&lt;/strong&gt;&amp;quot;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;。為了做到這件事情，我們必須有良好的&lt;strong&gt;Internal timing&lt;/strong&gt;&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;&#xA;&lt;p&gt;那要怎麼成為一個Great Time-keeper呢? Shawn提出了幾個概念。&lt;/p&gt;&#xA;&lt;h2 id=&#34;主動節奏維持者-active-time-keepers&#34;&gt;主動節奏維持者 Active Time-keepers&lt;/h2&gt;&#xA;&lt;p&gt;翻成中文有點繞口，但他主要提到的概念，是將樂手分為&lt;strong&gt;Passive Time-keepers&lt;/strong&gt;與&lt;strong&gt;Active Time-keepers&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Passive Time-keepers&lt;/strong&gt;指的是&lt;strong&gt;跟著樂團的節奏、節拍器的節奏，用聽的跟隨節奏&lt;/strong&gt;的樂手。這也是我們大部分人預設所使用的方式，在很多情況下也很OK。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Active Time-keepers&lt;/strong&gt;則指的是&lt;strong&gt;主動產生穩定的速度，不隨波逐流&lt;/strong&gt;的樂手。通常他們都有良好的Internal timing。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;當然，很多時候我們能夠跟著整個樂團的速度是件好事，但最好的情況是&lt;strong&gt;能夠有能力自己產生穩定的速度&lt;/strong&gt;。&lt;/p&gt;&#xA;&lt;h2 id=&#34;內在節奏感-internal-timing&#34;&gt;內在節奏感 Internal Timing&lt;/h2&gt;&#xA;&lt;p&gt;提到Active Time-keepers會跟著自己的Internal Timing，那就得好好討論&lt;strong&gt;Internal Timing是什麼&lt;/strong&gt;，且&lt;strong&gt;如何訓練&lt;/strong&gt;了。&lt;/p&gt;&#xA;&lt;p&gt;Internal timing通常指的是&lt;strong&gt;內在的節奏感&lt;/strong&gt;，而其實許多人是在演奏的同時，&lt;strong&gt;內心有個想像的節拍器聲音&lt;/strong&gt;，而他們的演奏會&lt;strong&gt;跟隨他們心中的節拍器&lt;/strong&gt;；&lt;/p&gt;&#xA;&lt;p&gt;但深究的話還不止於此，最重要的是&lt;strong&gt;協調內在節拍器與肢體運動&lt;/strong&gt;：&#xA;很多人會數拍，也會演奏複雜的節奏，但重要的是&lt;strong&gt;演奏的時候內心能夠聽到節拍器&lt;/strong&gt;，而如何穩定的協調&lt;strong&gt;Internal timing&lt;/strong&gt;與&lt;strong&gt;樂器操作&lt;/strong&gt;便是重點了。&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;It&amp;rsquo;s not simply a matter of &lt;strong&gt;counting&lt;/strong&gt;. It&amp;rsquo;s a matter of &lt;strong&gt;coordination&lt;/strong&gt;&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;br&gt;&#xA;重點不僅僅是&lt;strong&gt;算拍子&lt;/strong&gt;，而是在於&lt;strong&gt;協調&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;counting&#34;&gt;Counting!&lt;/h2&gt;&#xA;&lt;p&gt;那要如何產生良好的Internal timing呢?&lt;/p&gt;</description>
+      <description>我學習爵士其實已經一段時間了，但是我其實總是覺得我的即興一直不太行， 直到最近我發現了一個秘密––&amp;#xA;原來我的問題出在Time! 其實一直以來我就有發現我的Time(節奏感)不是很好，之前也跟好友討論過類似的問題，不過大致上的討論也僅止於此，我也沒有找到好的練習方法，因此就這樣不了了之。&amp;#xA;雖然在大部分演古典的時候不太會出問題，但偶爾需要給拍子、指揮、很慢的慢板的時候，還是會發現拍子不太穩。&amp;#xA;不過在爵士上，問題就變得很嚴重了&amp;amp;hellip;&amp;#xA;抓不到Time不僅僅是偶爾會落掉拍子這麼簡單，是會完全無法演奏想演的東西的程度。&amp;#xA;我的救世主––Shawn Crowder 前陣子跟一個很強的Bass手合作的時候，我也有偷問他怎麼練Time的。&amp;#xA;他回答我「你知道Shawn Crowder嗎? 他說要一邊演一邊大聲的數拍子，我覺得很有用。」&amp;#xA;後來我認真的研究了一下他的影片，整理出了以下幾點：&amp;#xA;如何成為好的Time-keeper? 在演奏樂器時，我們想要成為一個&amp;amp;quot;Great Time-keeper&amp;amp;quot;1。為了做到這件事情，我們必須有良好的Internal timing2&amp;#xA;那要怎麼成為一個Great Time-keeper呢? Shawn提出了幾個概念。&amp;#xA;主動節奏維持者 Active Time-keepers 翻成中文有點繞口，但他主要提到的概念，是將樂手分為Passive Time-keepers與Active Time-keepers&amp;#xA;Passive Time-keepers指的是跟著樂團的節奏、節拍器的節奏，用聽的跟隨節奏的樂手。這也是我們大部分人預設所使用的方式，在很多情況下也很OK。 Active Time-keepers則指的是主動產生穩定的速度，不隨波逐流的樂手。通常他們都有良好的Internal timing。 當然，很多時候我們能夠跟著整個樂團的速度是件好事，但最好的情況是能夠有能力自己產生穩定的速度。&amp;#xA;內在節奏感 Internal Timing 提到Active Time-keepers會跟著自己的Internal Timing，那就得好好討論Internal Timing是什麼，且如何訓練了。&amp;#xA;Internal timing通常指的是內在的節奏感，而其實許多人是在演奏的同時，內心有個想像的節拍器聲音，而他們的演奏會跟隨他們心中的節拍器；&amp;#xA;但深究的話還不止於此，最重要的是協調內在節拍器與肢體運動： 很多人會數拍，也會演奏複雜的節奏，但重要的是演奏的時候內心能夠聽到節拍器，而如何穩定的協調Internal timing與樂器操作便是重點了。&amp;#xA;It&amp;amp;rsquo;s not simply a matter of counting. It&amp;amp;rsquo;s a matter of coordination3.&amp;#xA;重點不僅僅是算拍子，而是在於協調&amp;#xA;Counting! 那要如何產生良好的Internal timing呢?&amp;#xA;</description>
+      <content:encoded><![CDATA[<p>我學習爵士其實已經一段時間了，但是我其實總是覺得我的即興一直不太行，
+<strong>直到最近我發現了一個秘密––</strong></p>
+<h2 id="原來我的問題出在time">原來我的問題出在Time!</h2>
+<p>其實一直以來我就有發現我的Time(節奏感)不是很好，之前也<a href="https://soelir.com/blog/notes/rythmn-stable/">跟好友討論過類似的問題</a>，不過大致上的討論也僅止於此，我也沒有找到好的<a href="/content/blogs/notes/others/peak.md">練習方法</a>，因此就這樣不了了之。</p>
+<p>雖然在大部分演古典的時候不太會出問題，但偶爾需要給拍子、<a href="/content/blogs/posts/windband2025.md">指揮</a>、很慢的慢板的時候，還是會發現拍子不太穩。</p>
+<p>不過在爵士上，問題就變得很嚴重了&hellip;<br>
+抓不到Time不僅僅是偶爾會落掉拍子這麼簡單，<strong>是會完全無法演奏想演的東西</strong>的程度。</p>
+<h2 id="我的救世主shawn-crowder">我的救世主––Shawn Crowder</h2>
+<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/Aun3-bKojnM" title="2-25" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p>前陣子跟一個很強的Bass手合作的時候，我也有偷問他怎麼練Time的。<br>
+他回答我「你知道Shawn Crowder嗎? 他說要<strong>一邊演一邊大聲的數拍子</strong>，我覺得很有用。」<br>
+後來我認真的研究了一下<a href="https://www.youtube.com/watch?v=Aun3-bKojnM">他的影片</a>，整理出了以下幾點：</p>
+<h1 id="如何成為好的time-keeper">如何成為好的Time-keeper?</h1>
+<p>在演奏樂器時，我們想要成為一個&quot;<strong>Great Time-keeper</strong>&quot;<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>。為了做到這件事情，我們必須有良好的<strong>Internal timing</strong><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<p>那要怎麼成為一個Great Time-keeper呢? Shawn提出了幾個概念。</p>
+<h2 id="主動節奏維持者-active-time-keepers">主動節奏維持者 Active Time-keepers</h2>
+<p>翻成中文有點繞口，但他主要提到的概念，是將樂手分為<strong>Passive Time-keepers</strong>與<strong>Active Time-keepers</strong></p>
+<ul>
+<li><strong>Passive Time-keepers</strong>指的是<strong>跟著樂團的節奏、節拍器的節奏，用聽的跟隨節奏</strong>的樂手。這也是我們大部分人預設所使用的方式，在很多情況下也很OK。</li>
+<li><strong>Active Time-keepers</strong>則指的是<strong>主動產生穩定的速度，不隨波逐流</strong>的樂手。通常他們都有良好的Internal timing。</li>
+</ul>
+<p>當然，很多時候我們能夠跟著整個樂團的速度是件好事，但最好的情況是<strong>能夠有能力自己產生穩定的速度</strong>。</p>
+<h2 id="內在節奏感-internal-timing">內在節奏感 Internal Timing</h2>
+<p>提到Active Time-keepers會跟著自己的Internal Timing，那就得好好討論<strong>Internal Timing是什麼</strong>，且<strong>如何訓練</strong>了。</p>
+<p>Internal timing通常指的是<strong>內在的節奏感</strong>，而其實許多人是在演奏的同時，<strong>內心有個想像的節拍器聲音</strong>，而他們的演奏會<strong>跟隨他們心中的節拍器</strong>；</p>
+<p>但深究的話還不止於此，最重要的是<strong>協調內在節拍器與肢體運動</strong>：
+很多人會數拍，也會演奏複雜的節奏，但重要的是<strong>演奏的時候內心能夠聽到節拍器</strong>，而如何穩定的協調<strong>Internal timing</strong>與<strong>樂器操作</strong>便是重點了。</p>
+<blockquote>
+<p>It&rsquo;s not simply a matter of <strong>counting</strong>. It&rsquo;s a matter of <strong>coordination</strong><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.<br>
+重點不僅僅是<strong>算拍子</strong>，而是在於<strong>協調</strong></p></blockquote>
+<h2 id="counting">Counting!</h2>
+<p>那要如何產生良好的Internal timing呢?</p>
+<h4 id="沒錯-大聲的數拍吧">沒錯! 大聲的數拍吧!</h4>
+<p>在演奏的同時一邊數拍，會強迫你把<strong>內心的節奏</strong>與<strong>樂器操控</strong>協調在一起。</p>
+<p>當然，這會讓一切變得很難，但就如Shawn提到的：「<strong>如果你需要慢下來，那你可能就已經練太快了。</strong>」</p>
+<p>同時，慢下來也可以讓很多好事發生：</p>
+<ul>
+<li>
+<p>在慢速下得<strong>專注在所有技巧的細節</strong>，將所有好的聲音印入腦子。</p>
+</li>
+<li>
+<p><strong>強迫自己了解「演奏的節奏」與「節拍器」的關聯</strong>，更深刻的感受到怎麼數節奏。</p>
+</li>
+<li>
+<p>在困難的「數拍練習」下如果都能演奏得好，那在普通的演奏時<strong>更能使用100%的專注力演奏得更好</strong>。</p>
+</li>
+</ul>
+<p>Shawn甚至建議不用<strong>特別做數拍練習</strong>，而是<strong>把所有練習都加上數拍</strong>。</p>
+<h2 id="練習的小技巧">練習的小技巧</h2>
+<p>影片內有提到的技巧包含各種<a href="https://youtu.be/Aun3-bKojnM?&amp;t=422">小拍的算法</a>(1e&amp;a 2e&amp;a&hellip;)，不過文字會比較難敘述因此就不多提。</p>
+<p>而對我而言更重要的是：<strong>我的樂器不能邊吹邊數阿&hellip;</strong></p>
+<p>對此，Shawn在<a href="https://youtu.be/4Bhj-qrB6Ao?&amp;t=80">其他影片</a>有提出解法，<br>
+由於我們的目標是<strong>建立Internal timing</strong>，因此不見得需要「數」出來，可以使用其他方法<strong>內化</strong>節奏：</p>
+<ul>
+<li>使用其他肢體幫助，例如手勢、身體、彈手指</li>
+<li>真的都不行的話，只好用節拍器</li>
+</ul>
+<p>有趣的是，Shawn表示他<strong>不完全推薦用腳算拍子</strong>，因為有時候腳不一定準確，如果你根據這個的話反而會更糟糕。<br>
+不過針對這點，我稍後會提到其他觀點。</p>
+<hr>
+<p>而我也分享一下我自己摸索出的另一個解法：</p>
+<h4 id="用articulation或是vibrato算小拍">用Articulation或是Vibrato算小拍</h4>
+<p>我自己覺得很好用欸! 雖然各自都有點小缺點(Articulation容易跟譜上原有的Articulation衝突；Vibrato如果最後演奏的時候沒有去除乾淨會聽起來呆呆的，聽得出來在算拍子)，但是在多試幾次後，我的腦子裡的確出現了很多的小拍XD</p>
+<p>這是我在<a href="https://www.openstudiojazz.com/">Open studio</a>上的另一個節奏課程––<strong>Locking In</strong>，裡面所附的教材(當然也是超級有用的課程，可惜是付費的)，以它作為例子：</p>
+<p><img src="/images/Locking-in-1.png" alt="Locking-in1" title="Locking-in1"></p>
+<p>我在練習的時候，算小拍是這樣算的：</p>
+<p><img src="/images/Locking-in-2.png" alt="Locking-in2" title="Locking-in2"></p>
+<p>這樣就能在一邊吹長音的時候，一邊<strong>透過運舌</strong>一邊算小拍了，<br>
+多練幾次之後我就會把所有的小拍<strong>換成用Vibrato</strong>算，等到拍子比較穩定之後再慢慢拿掉Vibrato，<br>
+慢慢把內心的小拍建立起來後，即使<strong>吹長音都能夠聽見內心的小拍</strong>了!</p>
+<p>雖然這個練習看起來簡單，但其實最難的是要以Bpm = 20，當作全音符，並算整個小節的小拍，真的是發了瘋的難XD<br>
+目前還在工作中，希望這個課程看完後我會變成小拍大師</p>
+<h4 id="最終大絕用鋼琴練">最終大絕：用鋼琴練</h4>
+<p>即使我的鋼琴程度不是很好，但作為數拍的練習，能夠實際<strong>邊數拍邊演奏</strong>我覺得也滿有幫助的。<br>
+我自己也花了好幾個小時才慢慢的把Anthropology邊算邊彈完(速度大概只有一半吧&hellip;)</p>
+<p><img src="/images/anthropology.webp" alt="anthropology" title="anthropology"></p>
+<h3 id="用腳數拍的訣竅">用腳數拍的訣竅</h3>
+<p>除了Shawn以外，前陣子遇到一位<a href="https://www.facebook.com/howard.yh.yang">Saxophone學長</a>，也是在聊天的時候聊到<strong>怎麼練Time</strong><br>
+他只淡淡地說了一句：</p>
+<blockquote>
+<p>你去聽<a href="https://open.spotify.com/album/03M3VID0s2wANlxJIJBWKb?si=zE3wK6lVQ4mREePg6t9_bw">這張專輯</a>，邊聽邊用腳踩拍子，要像鼓手那樣<strong>四拍都踩</strong>，但只有<strong>2、4拍加重</strong>，<br>
+然後去看幾個小時的漫畫，邊看邊踩，兩個禮拜後你就會進步了。</p></blockquote>
+<p>練了一下之後，我只想說&hellip;</p>
+<h4 id="什麼兩個禮拜我兩天就進步超多了">什麼兩個禮拜，我兩天就進步超多了!</h4>
+<p>十分有效的練習，強力推薦XD</p>
+<h2 id="一些自己的感想">一些自己的感想</h2>
+<p>最後Shawn提到「我國中在樂團時老師有叫我們邊數拍邊演奏，我明明就會數拍了為什麼我要做這種簡單的練習= =」<br>
+我自己有完全一樣的經歷XD 在我大一的音樂基礎訓練時，我們也有邊打節奏邊數拍的練習，我實在非常的弱。我就<strong>憤而不數拍直接練習</strong>，果然考試的時候GG了ㄏㄏ</p>
+<p>最近滿深刻體悟到「<strong>越是在樂器上有所成就，越拉不下臉承認基本功不足</strong>」，幸虧各種因緣際會讓我重新低下頭來審視我自己，<br>
+但光是花一點時間把Time修正好，就已經能感受到即興開始像個正常人了XD</p>
+<p>這個暑假到當兵之前都沒甚麼壓力，可以這樣無憂無慮的練琴真爽。</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>良好的速度維持者：能夠穩穩的保持速度演奏的人。&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>內在節奏感：在內心中對於節奏的感受。&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>協調。我是為了寫這篇才學到這個單字的，英語小教室我們下次見。&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>2026七月練習分享</title>
       <link>https://hsinganlee.com/blogs/practice/202607prac/</link>
-      <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 07 Jul 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://hsinganlee.com/blogs/practice/202607prac/</guid>
-      <description>&lt;h1 id=&#34;畢業後終於有重大突破&#34;&gt;畢業後終於有重大突破!&lt;/h1&gt;&#xA;&lt;p&gt;這個月終於結束了我的大學生涯，下個月就要入伍了，在這中間的期間沒有什麼壓力，終於有時間好好重新審視自己的演奏了!&lt;/p&gt;&#xA;&lt;p&gt;此外，我也看了幾本不同的書，其中&lt;a href=&#34;https://hsinganlee.com/content/blogs/notes/others/peak.md&#34;&gt;刻意練習&lt;/a&gt;也幫助了我許多，雖然比較少提到&lt;a href=&#34;https://www.youtube.com/watch?v=CJd1Qiz8QDQ&#34;&gt;興趣&lt;/a&gt;的重要性，但還是有很多我覺得值得參考的事情的。&lt;br&gt;&#xA;它也改良了很多我的練習方式。&lt;/p&gt;&#xA;&lt;h2 id=&#34;time的練習&#34;&gt;&lt;a href=&#34;https://hsinganlee.com/content/blogs/posts/2026time.md&#34;&gt;Time的練習&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;這絕對是我近年來幫助最大的練習! 在&lt;a href=&#34;https://hsinganlee.com/content/blogs/posts/2026time.md&#34;&gt;這篇文章&lt;/a&gt;內詳細說明了我的練習，歡迎過去看看!&lt;/p&gt;&#xA;&lt;p&gt;除了看&lt;a href=&#34;https://www.youtube.com/watch?v=Aun3-bKojnM&#34;&gt;Shawn的影片&lt;/a&gt;以外，我也看了&lt;a href=&#34;https://www.openstudiojazz.com/&#34;&gt;Open Studio&lt;/a&gt;的Locking In這一套課程，主要也是在訓練Time的穩定度。&lt;/p&gt;&#xA;&lt;h2 id=&#34;lick套用進曲子&#34;&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=PJCsin_Wo5E&#34;&gt;Lick套用進曲子&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;最近也發現很多練好的東西沒辦法放進即興用，就憤而找到了這部影片(?&lt;br&gt;&#xA;蠻不錯的耶，也滿符合&lt;a href=&#34;https://hsinganlee.com/content/blogs/notes/others/peak.md&#34;&gt;刻意練習&lt;/a&gt;提到的「提升技能本身，而不僅是知識」。&lt;/p&gt;&#xA;&lt;h2 id=&#34;五聲音階跟1和弦-pentatonics-and-playing-out&#34;&gt;&lt;a href=&#34;https://www.openstudiojazz.com/&#34;&gt;五聲音階跟+1和弦&lt;/a&gt; Pentatonics and Playing Out&lt;/h2&gt;</description>
+      <description>畢業後終於有重大突破! 這個月終於結束了我的大學生涯，下個月就要入伍了，在這中間的期間沒有什麼壓力，終於有時間好好重新審視自己的演奏了!&amp;#xA;此外，我也看了幾本不同的書，其中刻意練習也幫助了我許多，雖然比較少提到興趣的重要性，但還是有很多我覺得值得參考的事情的。&amp;#xA;它也改良了很多我的練習方式。&amp;#xA;Time的練習 這絕對是我近年來幫助最大的練習! 在這篇文章內詳細說明了我的練習，歡迎過去看看!&amp;#xA;除了看Shawn的影片以外，我也看了Open Studio的Locking In這一套課程，主要也是在訓練Time的穩定度。&amp;#xA;Lick套用進曲子 最近也發現很多練好的東西沒辦法放進即興用，就憤而找到了這部影片(?&amp;#xA;蠻不錯的耶，也滿符合刻意練習提到的「提升技能本身，而不僅是知識」。&amp;#xA;五聲音階跟&#43;1和弦 Pentatonics and Playing Out</description>
+      <content:encoded><![CDATA[<h1 id="畢業後終於有重大突破">畢業後終於有重大突破!</h1>
+<p>這個月終於結束了我的大學生涯，下個月就要入伍了，在這中間的期間沒有什麼壓力，終於有時間好好重新審視自己的演奏了!</p>
+<p>此外，我也看了幾本不同的書，其中<a href="/content/blogs/notes/others/peak.md">刻意練習</a>也幫助了我許多，雖然比較少提到<a href="https://www.youtube.com/watch?v=CJd1Qiz8QDQ">興趣</a>的重要性，但還是有很多我覺得值得參考的事情的。<br>
+它也改良了很多我的練習方式。</p>
+<h2 id="time的練習"><a href="/content/blogs/posts/2026time.md">Time的練習</a></h2>
+<p>這絕對是我近年來幫助最大的練習! 在<a href="/content/blogs/posts/2026time.md">這篇文章</a>內詳細說明了我的練習，歡迎過去看看!</p>
+<p>除了看<a href="https://www.youtube.com/watch?v=Aun3-bKojnM">Shawn的影片</a>以外，我也看了<a href="https://www.openstudiojazz.com/">Open Studio</a>的Locking In這一套課程，主要也是在訓練Time的穩定度。</p>
+<h2 id="lick套用進曲子"><a href="https://www.youtube.com/watch?v=PJCsin_Wo5E">Lick套用進曲子</a></h2>
+<p>最近也發現很多練好的東西沒辦法放進即興用，就憤而找到了這部影片(?<br>
+蠻不錯的耶，也滿符合<a href="/content/blogs/notes/others/peak.md">刻意練習</a>提到的「提升技能本身，而不僅是知識」。</p>
+<h2 id="五聲音階跟1和弦-pentatonics-and-playing-out"><a href="https://www.openstudiojazz.com/">五聲音階跟+1和弦</a> Pentatonics and Playing Out</h2>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

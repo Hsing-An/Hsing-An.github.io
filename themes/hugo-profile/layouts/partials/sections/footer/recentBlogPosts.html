@@ -23,7 +23,8 @@
                         <h5 class="card-title bg-transparent" title="{{ .Title }}">{{ .Title | truncate 25 }}</h5>
                     </a>
                     <div class="card-text secondary-font card-summary">
-                        {{ .Summary | replaceRE "(?s)<div class=\"youtube-embed[^>]*>.*?</div>" "" | replaceRE "(?s)<iframe[^>]*youtube\\.com/embed/.*?</iframe>" "" | truncate 75 | htmlUnescape | replaceRE "<h[1-6][^>]*>" "<span class=\"summary-heading\">" | replaceRE "</h[1-6]>" "</span>" | safeHTML }}
+                        {{ $summary := .Params.description | default (.Summary | plainify) }}
+                        {{ $summary | plainify | htmlUnescape | truncate 75 }}
                     </div>
                 </div>
                 <div class="mt-auto card-footer">

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
 
 <head>
 	<meta name="generator" content="Hugo 0.148.2"><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
-<link rel="icon" href=/fav.png type="image/gif">
+<link rel="icon" href=/images/logo.webp type="image/gif">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,20 +44,16 @@
         }
       </script>
 <meta property="og:url" content="https://hsinganlee.com/">
-  <meta property="og:site_name" content="Hsing-An&#39;s profile">
+  <meta property="og:site_name" content="Hsing-An Lee">
   <meta property="og:title" content="李倖安">
-  <meta property="og:description" content="出生於台東，目前就讀清華大學音樂系主修木笛、副修作曲。
-木笛啟蒙於陳育致老師，目前師事陳孟亨老師，主要學習古樂相關知識理論以及前衛音樂作品詮釋，並曾多次參與國內外之古樂活動、競賽，並在其中獲得許多佳績。
-曾參加過多場木笛大師課以及個別課，受到 Walter van Hauwe、Erik Bosgraaf、Maurice Steger 等指導。 !">
+  <meta property="og:description" content="李倖安(Hsing-An Lee) 木笛演奏家/作曲家的酷酷網站">
   <meta property="og:locale" content="zh_tw">
   <meta property="og:type" content="website">
 
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="李倖安">
-  <meta name="twitter:description" content="出生於台東，目前就讀清華大學音樂系主修木笛、副修作曲。
-木笛啟蒙於陳育致老師，目前師事陳孟亨老師，主要學習古樂相關知識理論以及前衛音樂作品詮釋，並曾多次參與國內外之古樂活動、競賽，並在其中獲得許多佳績。
-曾參加過多場木笛大師課以及個別課，受到 Walter van Hauwe、Erik Bosgraaf、Maurice Steger 等指導。 !">
+  <meta name="twitter:description" content="李倖安(Hsing-An Lee) 木笛演奏家/作曲家的酷酷網站">
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -121,9 +117,20 @@
 
 
 
-<meta name="description" content="李倖安(Hsing-An Lee) 木笛演奏家/作曲家的酷酷網站!">
+<meta name="description" content="李倖安(Hsing-An Lee) 木笛演奏家/作曲家的酷酷網站">
 <link rel="stylesheet" href="/css/index.css" media="all">
 <link rel="stylesheet" href="/css/projects.css" media="all">
+<style>
+  #hero {
+    min-height: auto;
+    padding-bottom: 2rem !important;
+  }
+
+  #featured-video {
+    padding-top: 1rem !important;
+    padding-bottom: 2rem !important;
+  }
+</style>
 
 
 <script defer src="/fontawesome-6/all-6.4.2.js"></script>
@@ -131,9 +138,11 @@
 
   
   
+    <link rel="stylesheet" href="/style.css">
+  
 
   <title>
-Hsing-An&#39;s profile
+Hsing-An Lee
 
   </title>
 </head>
@@ -167,9 +176,18 @@ Hsing-An&#39;s profile
     var prevScrollPos = window.pageYOffset;
     window.addEventListener("scroll", function showHeaderOnScroll() {
         let profileHeaderElem = document.getElementById("profileHeader");
+        let navbarContentElem = document.getElementById("navbarContent");
         let currentScrollPos = window.pageYOffset;
         let resetHeaderStyle = false;
         let showNavBarOnScrollUp =  true ;
+        let mobileMenuIsOpen = navbarContentElem && navbarContentElem.classList.contains("show");
+
+        if (mobileMenuIsOpen) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+            prevScrollPos = currentScrollPos;
+            return;
+        }
+
         let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
         if (showNavBar) {
             profileHeaderElem.classList.add("showHeaderOnTop");
@@ -184,7 +202,31 @@ Hsing-An&#39;s profile
         }
         prevScrollPos = currentScrollPos;
     });
+
+    window.addEventListener("DOMContentLoaded", function keepMobileMenuVisible() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let navbarContentElem = document.getElementById("navbarContent");
+        if (!profileHeaderElem || !navbarContentElem) {
+            return;
+        }
+
+        navbarContentElem.addEventListener("show.bs.collapse", function () {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        });
+
+        navbarContentElem.addEventListener("shown.bs.collapse", function () {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        });
+
+        navbarContentElem.addEventListener("hidden.bs.collapse", function () {
+            if (window.pageYOffset === 0) {
+                profileHeaderElem.classList.remove("showHeaderOnTop");
+            }
+        });
+    });
 </script>
+
+
 
 
 
@@ -194,7 +236,9 @@ Hsing-An&#39;s profile
             
             <a class="navbar-brand primary-font text-wrap" href="/">
                 
-                Hsing-An&#39;s Profile
+                <img src="/images/logo.webp" width="30" height="30"
+                    class="d-inline-block align-top">
+                Hsing-An Lee
                 
             </a>
 
@@ -306,6 +350,16 @@ Hsing-An&#39;s profile
                     
                     
                     
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/events/" title="events">
+                            
+                            所有演出
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
                     <li class="nav-item navbar-text dropdown">
                         <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="作品列表">
@@ -332,6 +386,52 @@ Hsing-An&#39;s profile
                     </li>
                     
                     
+
+                    
+                    
+                        
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        <a class="nav-link" href="/en/" title="English"
+                            data-language-switch data-current-permalink="/" data-preserve-pagination="true">
+                            English
+                        </a>
+                        
+                    </li>
+
+                    <script>
+                        (function preserveLanguageSwitchPagination() {
+                            const languageSwitch = document.querySelector("[data-language-switch]");
+                            if (!languageSwitch || languageSwitch.dataset.preservePagination !== "true") {
+                                return;
+                            }
+
+                            const pageMatch = window.location.pathname.match(/\/page\/([0-9]+)\/?$/);
+                            if (!pageMatch || pageMatch[1] === "1") {
+                                return;
+                            }
+
+                            const currentBase = languageSwitch.dataset.currentPermalink || "/";
+                            const currentPath = window.location.pathname.endsWith("/")
+                                ? window.location.pathname
+                                : `${window.location.pathname}/`;
+
+                            if (!currentPath.startsWith(currentBase)) {
+                                return;
+                            }
+
+                            const pageSuffix = `page/${pageMatch[1]}/`;
+                            if (currentPath.slice(currentBase.length) !== pageSuffix) {
+                                return;
+                            }
+
+                            const target = new URL(languageSwitch.getAttribute("href"), window.location.origin);
+                            const targetBase = target.pathname.endsWith("/") ? target.pathname : `${target.pathname}/`;
+                            target.pathname = `${targetBase}${pageSuffix}`;
+                            languageSwitch.setAttribute("href", `${target.pathname}${target.search}${target.hash}`);
+                        })();
+                    </script>
 
                     
                     <li class="nav-item navbar-text">
@@ -369,7 +469,7 @@ Hsing-An&#39;s profile
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-8 content animate" id="primary-font">
                 <span class="subtitle">
-                    你好，我是
+                    
                 </span>
                 <h1>
                     李倖安 Hsing-An Lee
@@ -378,7 +478,7 @@ Hsing-An&#39;s profile
                     木笛演奏家/作曲家
                 </h2>
                 <p class="hero-content">
-                    以木笛演奏古樂與當代作品，同時創作跨界作品，結合電子、爵士與傳統音樂元素。
+                    以演奏詮釋，以創作發聲——探索木笛在古樂、當代、爵士之間的可能。
                 </p>
                 <div class="row">
                     <div class="col-auto h-100">
@@ -697,6 +797,22 @@ Hsing-An&#39;s profile
     
 </section>
 
+
+<section id="featured-video" class="py-4 py-sm-5">
+  <div class="container px-3 px-sm-5">
+    <div class="ratio ratio-16x9 mx-auto" style="max-width: 960px;">
+      <iframe
+        src="https://www.youtube.com/embed/gMag4XdDU_A"
+        title="Polygatari - Matsuri"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+
 <section id="about" class="py-0 py-sm-5">
     <div class="container bg-transparent">
         <h3 class="text-center bg-transparent">關於我</h3>
@@ -710,9 +826,17 @@ Hsing-An&#39;s profile
             
             <div class="col-sm-12 col-md-12 col-lg-8 content">
                 <h2 id="李倖安hsing-an-lee-木笛演奏家作曲家">李倖安(Hsing-An Lee) 木笛演奏家/作曲家</h2>
-<p>出生於台東，目前就讀清華大學音樂系主修<strong>木笛</strong>、副修<strong>作曲</strong>。師事陳孟亨（木笛）與陳欣蕾、周久渝（作曲）。</p>
-<p><strong>木笛演奏</strong>主要專注在古樂(Early Music)以及當代音樂(Contemporary music)，並以爵士樂作為興趣鑽研中。<a href="#achievements">曾多次在國際賽事上獲獎</a>，並曾作為<strong>獨奏家</strong>在<strong>國家演奏廳</strong>、<strong>台中歌劇院</strong>演出。</p>
-<p><strong>作曲</strong>方面則融合了電子、爵士、當代、流行、傳統音樂等的影響，使得創作的語彙十分多元。不僅有譜寫給器樂的作品，也有以編曲軟體完成的編曲作品。<a href="#achievements">創作也在多項比賽中獲獎</a>。作品曾在<a href="">衛武營發表</a></p>
+<p>出生於台東，畢業於清華大學音樂系，主修<strong>木笛</strong>、副修<strong>作曲</strong>。師事陳孟亨（木笛）與陳欣蕾、周久渝（作曲）。</p>
+<p><strong>木笛演奏</strong>主要專注於古樂以及當代音樂，目前也持續鑽研爵士樂。<br>
+<a href="/#achievements">曾多次在國際賽事上獲獎</a>，並曾作為<strong>獨奏家</strong>在<a href="/#experience"><strong>國家演奏廳</strong>、<strong>台中歌劇院</strong></a>演出。</p>
+<p><strong>作曲</strong>方面則融合了電子、爵士、當代、流行、傳統音樂等的影響，使得創作的語彙十分多元。<br>
+不僅有譜寫給器樂的作品，也有以編曲軟體完成的編曲作品。<a href="/#achievements">創作也在多項比賽中獲獎</a>。作品曾在<a href="https://www.opentix.life/event/1985188449916014593">衛武營發表</a>。</p>
+<hr>
+<p><a href="https://www.youtube.com/watch?v=rI50mxgr_D4">2025 《文藝聖誕畫人聲》音樂會擔任木笛獨奏 於國家音樂廳與台中歌劇院演出</a></p>
+<p><a href="https://youtu.be/rNmbftx2zj0">2025《人文啟迪科技》音樂會發表個人作品 木笛樂團與電聲作品《波 Waves》 於衛武營演出</a></p>
+<p><a href="https://www.youtube.com/watch?v=P2o2ynEtwXc">2025 浪人祭 小嘻門舞台演出</a></p>
+<p><a href="https://youtu.be/gMag4XdDU_A?">2023 Open Recorder Days Amsterdam 16歲以上組第二名、最佳樂曲創作獎</a></p>
+<p><a href="https://www.tmrt.com.tw/tmrtsoundscape/station-music-tw/111-shui-an-temple/">台中捷運進站音樂 水安宮站正選</a></p>
 <hr>
 
 
@@ -722,17 +846,17 @@ Hsing-An&#39;s profile
                     
                     <li>巴洛克器樂作品演奏</li>
                     
-                    <li>晚期文藝復興器樂作品演奏</li>
+                    <li>文藝復興器樂作品演奏</li>
                     
-                    <li>Consort(文藝復興合奏曲) 演奏</li>
+                    <li>文藝復興合奏作品演奏</li>
                     
                     <li>爵士樂演奏</li>
                     
-                    <li>電子/爵士Fusion作品創作及演奏</li>
+                    <li>融合爵士樂作品創作及演奏</li>
                     
                     <li>木笛樂團原創/改編曲目</li>
                     
-                    <li>當代器樂作品創作</li>
+                    <li>當代室內樂作品創作</li>
                     
                     <li>流行音樂作曲、編曲</li>
                     
@@ -753,141 +877,148 @@ Hsing-An&#39;s profile
                         
                         
                         <li class="nav-item px-1 bg-transparent" role="presentation">
-                            <div 
-                                class="nav-link active bg-transparent" 
-                                aria-selected="true" 
-                                role="tab" 
+                            <div
+                                class="nav-link active bg-transparent"
+                                aria-selected="true"
+                                role="tab"
                                 data-bs-toggle="pill"
-                                id='Long-Time-Don‘t-Jam-攏台東見-2024---至今-tab'
-                                data-bs-target='#pills-Long-Time-Don‘t-Jam-攏台東見-2024---至今'
-                                aria-controls='Long-Time-Don‘t-Jam-攏台東見-2024---至今' 
+                                id="experience-0-tab"
+                                data-bs-target="#experience-0"
+                                aria-controls="experience-0"
                             >
                                 Long Time Don‘t Jam 攏台東見
                             </div>
                         </li>
                         
                         
-                        
                         <li class="nav-item px-1 bg-transparent" role="presentation">
-                            <div 
-                                class="nav-link bg-transparent" 
-                                aria-selected="true" 
-                                role="tab" 
+                            <div
+                                class="nav-link bg-transparent"
+                                aria-selected="false"
+                                role="tab"
                                 data-bs-toggle="pill"
-                                id='新竹直笛合奏團-2022---至今-tab'
-                                data-bs-target='#pills-新竹直笛合奏團-2022---至今' 
-                                aria-controls='新竹直笛合奏團-2022---至今'
+                                id="experience-1-tab"
+                                data-bs-target="#experience-1"
+                                aria-controls="experience-1"
                             >
                                 新竹直笛合奏團
                             </div>
                         </li>
                         
                         
-                        
                         <li class="nav-item px-1 bg-transparent" role="presentation">
-                            <div 
-                                class="nav-link bg-transparent" 
-                                aria-selected="true" 
-                                role="tab" 
+                            <div
+                                class="nav-link bg-transparent"
+                                aria-selected="false"
+                                role="tab"
                                 data-bs-toggle="pill"
-                                id='清華大學木笛樂團-2022---至今-tab'
-                                data-bs-target='#pills-清華大學木笛樂團-2022---至今' 
-                                aria-controls='清華大學木笛樂團-2022---至今'
+                                id="experience-2-tab"
+                                data-bs-target="#experience-2"
+                                aria-controls="experience-2"
                             >
                                 清華大學木笛樂團
                             </div>
                         </li>
                         
                         
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div
+                                class="nav-link bg-transparent"
+                                aria-selected="false"
+                                role="tab"
+                                data-bs-toggle="pill"
+                                id="experience-3-tab"
+                                data-bs-target="#experience-3"
+                                aria-controls="experience-3"
+                            >
+                                沐聲木笛四重奏
+                            </div>
+                        </li>
+                        
                         
                         <li class="nav-item px-1 bg-transparent" role="presentation">
-                            <div 
-                                class="nav-link bg-transparent" 
-                                aria-selected="true" 
-                                role="tab" 
+                            <div
+                                class="nav-link bg-transparent"
+                                aria-selected="false"
+                                role="tab"
                                 data-bs-toggle="pill"
-                                id='台東高中管樂團-2019---至今-tab'
-                                data-bs-target='#pills-台東高中管樂團-2019---至今' 
-                                aria-controls='台東高中管樂團-2019---至今'
+                                id="experience-4-tab"
+                                data-bs-target="#experience-4"
+                                aria-controls="experience-4"
                             >
                                 台東高中管樂團
                             </div>
                         </li>
                         
                         
-                        
                         <li class="nav-item px-1 bg-transparent" role="presentation">
-                            <div 
-                                class="nav-link bg-transparent" 
-                                aria-selected="true" 
-                                role="tab" 
+                            <div
+                                class="nav-link bg-transparent"
+                                aria-selected="false"
+                                role="tab"
                                 data-bs-toggle="pill"
-                                id='台中室內合唱團-2025-Dec-tab'
-                                data-bs-target='#pills-台中室內合唱團-2025-Dec' 
-                                aria-controls='台中室內合唱團-2025-Dec'
+                                id="experience-5-tab"
+                                data-bs-target="#experience-5"
+                                aria-controls="experience-5"
                             >
                                 台中室內合唱團
                             </div>
                         </li>
                         
                         
-                        
                         <li class="nav-item px-1 bg-transparent" role="presentation">
-                            <div 
-                                class="nav-link bg-transparent" 
-                                aria-selected="true" 
-                                role="tab" 
+                            <div
+                                class="nav-link bg-transparent"
+                                aria-selected="false"
+                                role="tab"
                                 data-bs-toggle="pill"
-                                id='新竹爵士大樂團-2023---至今-tab'
-                                data-bs-target='#pills-新竹爵士大樂團-2023---至今' 
-                                aria-controls='新竹爵士大樂團-2023---至今'
+                                id="experience-6-tab"
+                                data-bs-target="#experience-6"
+                                aria-controls="experience-6"
                             >
                                 新竹爵士大樂團
                             </div>
                         </li>
                         
                         
-                        
                         <li class="nav-item px-1 bg-transparent" role="presentation">
-                            <div 
-                                class="nav-link bg-transparent" 
-                                aria-selected="true" 
-                                role="tab" 
+                            <div
+                                class="nav-link bg-transparent"
+                                aria-selected="false"
+                                role="tab"
                                 data-bs-toggle="pill"
-                                id='烏梅爾醬-Fusion樂團-2023---2024-tab'
-                                data-bs-target='#pills-烏梅爾醬-Fusion樂團-2023---2024' 
-                                aria-controls='烏梅爾醬-Fusion樂團-2023---2024'
+                                id="experience-7-tab"
+                                data-bs-target="#experience-7"
+                                aria-controls="experience-7"
                             >
                                 烏梅爾醬 Fusion樂團
                             </div>
                         </li>
                         
                         
-                        
                         <li class="nav-item px-1 bg-transparent" role="presentation">
-                            <div 
-                                class="nav-link bg-transparent" 
-                                aria-selected="true" 
-                                role="tab" 
+                            <div
+                                class="nav-link bg-transparent"
+                                aria-selected="false"
+                                role="tab"
                                 data-bs-toggle="pill"
-                                id='巴洛克獨奏家樂團-2022-Aug-tab'
-                                data-bs-target='#pills-巴洛克獨奏家樂團-2022-Aug' 
-                                aria-controls='巴洛克獨奏家樂團-2022-Aug'
+                                id="experience-8-tab"
+                                data-bs-target="#experience-8"
+                                aria-controls="experience-8"
                             >
                                 巴洛克獨奏家樂團
                             </div>
                         </li>
                         
-                        
                     </ul>
                     <div class="tab-content pb-5 pt-2 bg-transparent primary-font" id="pills-tabContent">
                         
                         
-                        <div 
-                            class="tab-pane fade show active bg-transparent" 
+                        <div
+                            class="tab-pane fade show active bg-transparent"
                             role="tabpanel"
-                            id='pills-Long-Time-Don‘t-Jam-攏台東見-2024---至今'
-                            aria-labelledby='pills-Long-Time-Don‘t-Jam-攏台東見-2024---至今-tab'
+                            id="experience-0"
+                            aria-labelledby="experience-0-tab"
                         >
                             <div>
                                 <span class="h4">木笛樂手</span>
@@ -897,11 +1028,11 @@ Hsing-An&#39;s profile
                                     <small>2024 - 至今</small>
                                     
                                     <span class="p-2">
-                                        <span 
-                                            style="cursor: pointer;" 
-                                            data-bs-toggle="tooltip" 
-                                            data-bs-placement="top" 
-                                            data-bs-original-title=除了作為團員外，同時也是樂團共同創辦人
+                                        <span
+                                            style="cursor: pointer;"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-placement="top"
+                                            data-bs-original-title="除了作為團員外，同時也是樂團共同創辦人"
                                         >
                                             <i class="fas fa-info-circle fa-xs"></i>
                                         </span>
@@ -912,51 +1043,51 @@ Hsing-An&#39;s profile
                                 
                             </div>
 
-                            <p>Long Time Don&rsquo;t Jam 是我與夥伴 <a href="https://www.instagram.com/rcyln_93/">陳裕霖</a> 共同組成的雙人團體，主要編制為手指鼓(finger drumming)以及木笛。</p>
+                            <div class="">
+                                <p>Long Time Don&rsquo;t Jam 是我與夥伴 <a href="https://www.instagram.com/rcyln_93/">陳裕霖</a> 共同組成的雙人團體，主要編制為手指鼓(finger drumming)以及木笛。</p>
 <p>曲風上，融合了電子舞曲、爵士、R&amp;B等較現代的曲風，並以Live performance的形式搭配自行創作的樂曲進行演出。</p>
 <p>曾參與的歷年演出:</p>
 <ul>
-<li>2024 8月 <a href="https://www.facebook.com/twrecorderfestival/?locale=zh_TW">臺灣國際直笛音樂節</a> Fringe concert演出 <a href="https://www.opentix.life/event/1815794800281317377?srsltid=AfmBOooHnWstInIf8t-YgFxm0kzsZUXOCyZZ1Pl4B0Juc1wKPpJcS4lL">初次jam面 First jam men</a>。</li>
-<li>2025 10月 <a href="events/vaga">2025 浪人祭</a></li>
+<li>2024 8月 <a href="https://www.facebook.com/twrecorderfestival/?locale=zh_TW">臺灣國際直笛音樂節</a> Fringe Concert 演出 <a href="https://www.opentix.life/event/1815794800281317377?srsltid=AfmBOooHnWstInIf8t-YgFxm0kzsZUXOCyZZ1Pl4B0Juc1wKPpJcS4lL">初次jam面 First jam men</a>。</li>
+<li>2025 10月 <a href="/events/vaga/">2025 浪人祭</a></li>
 </ul>
 
+                            </div>
                         </div>
                         
                         
-                        
-                        <div 
-                            class="tab-pane fade bg-transparent" 
+                        <div
+                            class="tab-pane fade bg-transparent"
                             role="tabpanel"
-                            id='pills-新竹直笛合奏團-2022---至今'
-                            aria-labelledby='pills-新竹直笛合奏團-2022---至今-tab'
+                            id="experience-1"
+                            aria-labelledby="experience-1-tab"
                         >
                             <div>
                                 <span class="h4">改編者、團員</span>
                                 <small>-</small>
                                 <a href="https://www.facebook.com/hsinchurecorder/?locale=zh_TW" target="_blank">新竹直笛合奏團</a>
-                                
                                 <div class="pb-1">
                                     <small>2022 - 至今</small>
                                     
                                     <span class="p-2">
-                                        <span 
-                                            style="cursor: pointer;" 
-                                            data-bs-toggle="tooltip" 
-                                            data-bs-placement="top" 
-                                            data-bs-original-title=在內除了作為木笛樂手演奏外，多次受委託改編/創作樂曲。
-                                        > 
+                                        <span
+                                            style="cursor: pointer;"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-placement="top"
+                                            data-bs-original-title="在團內除了作為木笛樂手演奏外，多次受委託改編/創作樂曲。"
+                                        >
                                             <i class="fas fa-info-circle fa-xs"></i>
                                         </span>
                                     </span>
                                     
                                 </div>
-                                
+
                                 
                             </div>
 
                             <div class="pt-2">
                                 <p>大學期間參與了 <a href="https://www.facebook.com/hsinchurecorder/?locale=zh_TW">新竹直笛合奏團</a> ，多次以團員的身份跟著樂團一同演出。</p>
-<p>同時也會以改編者的角度，為樂團譜改編作品。</p>
+<p>同時也會以改編者的角度，為樂團編寫改編作品。</p>
 <p>曾參與的歷年演出：</p>
 <ul>
 <li>2022 11月<a href="https://www.opentix.life/event/1574602497174462466">《七世紀的永恆樂章》2022新竹直笛合奏團年度公演</a></li>
@@ -981,34 +1112,32 @@ Hsing-An&#39;s profile
                         </div>
                         
                         
-                        
-                        <div 
-                            class="tab-pane fade bg-transparent" 
+                        <div
+                            class="tab-pane fade bg-transparent"
                             role="tabpanel"
-                            id='pills-清華大學木笛樂團-2022---至今'
-                            aria-labelledby='pills-清華大學木笛樂團-2022---至今-tab'
+                            id="experience-2"
+                            aria-labelledby="experience-2-tab"
                         >
                             <div>
                                 <span class="h4">作曲家、團員</span>
                                 <small>-</small>
                                 <a href="https://www.facebook.com/profile.php?id=100063718667029" target="_blank">清華大學木笛樂團</a>
-                                
                                 <div class="pb-1">
                                     <small>2022 - 至今</small>
                                     
                                     <span class="p-2">
-                                        <span 
-                                            style="cursor: pointer;" 
-                                            data-bs-toggle="tooltip" 
-                                            data-bs-placement="top" 
-                                            data-bs-original-title=在內除了作為木笛樂手演奏外，多次受委託改編/創作樂曲。
-                                        > 
+                                        <span
+                                            style="cursor: pointer;"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-placement="top"
+                                            data-bs-original-title="在內除了作為木笛樂手演奏外，多次受委託改編/創作樂曲。"
+                                        >
                                             <i class="fas fa-info-circle fa-xs"></i>
                                         </span>
                                     </span>
                                     
                                 </div>
-                                
+
                                 
                             </div>
 
@@ -1038,23 +1167,61 @@ Hsing-An&#39;s profile
                         </div>
                         
                         
-                        
-                        <div 
-                            class="tab-pane fade bg-transparent" 
+                        <div
+                            class="tab-pane fade bg-transparent"
                             role="tabpanel"
-                            id='pills-台東高中管樂團-2019---至今'
-                            aria-labelledby='pills-台東高中管樂團-2019---至今-tab'
+                            id="experience-3"
+                            aria-labelledby="experience-3-tab"
+                        >
+                            <div>
+                                <span class="h4">團員、作曲家</span>
+                                <small>-</small>
+                                <a href="https://www.facebook.com/profile.php?id=61566565385076" target="_blank">沐聲木笛四重奏</a>
+                                <div class="pb-1">
+                                    <small>2023 Oct - 至今</small>
+                                    
+                                    <span class="p-2">
+                                        <span
+                                            style="cursor: pointer;"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-placement="top"
+                                            data-bs-original-title="Working as a 團員、作曲家 at 沐聲木笛四重奏"
+                                        >
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <p>在樂團內擔團員，並曾為樂團創作原創作品。</p>
+<ul>
+<li>2024 4月 《午後沙龍音樂會》</li>
+<li>2024 5月 《沐然回首-沐聲木笛四重奏音樂會》</li>
+<li>2024 8月 聽音樂的樹-《沐然回首-沐聲木笛四重奏音樂會》 <strong>本場包涵本人委託創作《墓聲 MournSound》世界首演</strong></li>
+</ul>
+                            </div>
+                        </div>
+                        
+                        
+                        <div
+                            class="tab-pane fade bg-transparent"
+                            role="tabpanel"
+                            id="experience-4"
+                            aria-labelledby="experience-4-tab"
                         >
                             <div>
                                 <span class="h4">指揮、作曲家、團員</span>
                                 <small>-</small>
                                 <a href="https://www.tsawo2022.com" target="_blank">台東高中管樂團</a>
-                                
                                 <div class="pb-1">
                                     <small>2019 - 至今</small>
                                     
                                 </div>
-                                
+
                                 
                             </div>
 
@@ -1066,81 +1233,77 @@ Hsing-An&#39;s profile
 <ul>
 <li>2022 8月 <a href="https://www.facebook.com/101575002041367/photos/pb.100066549430349.-2207520000/404572345074963/?type=3">《日昇東中 • 共享樂音》 音樂會</a></li>
 <li>2023 8月 <a href="https://www.facebook.com/photo.php?fbid=628363906058585&amp;set=pb.100066549430349.-2207520000&amp;type=3">《日昇東中 • 夏日傳奇》 音樂會</a></li>
-<li>2025 9月 <a href="https://www.instagram.com/p/DNnjORLyqOl/">《日昇東中 • 川之方至》 音樂會</a> *<strong>本場包涵本人委託創作《Kyrie Ventorum》世界首演，且以指揮身分參與演出。</strong></li>
+<li>2025 9月 <a href="https://www.instagram.com/p/DNnjORLyqOl/">《日昇東中 • 川之方至》 音樂會</a> ***本場包涵本人委託創作《Kyrie Ventorum》世界首演，且以指揮身分參與演出。</li>
 </ul>
 
                             </div>
                         </div>
                         
                         
-                        
-                        <div 
-                            class="tab-pane fade bg-transparent" 
+                        <div
+                            class="tab-pane fade bg-transparent"
                             role="tabpanel"
-                            id='pills-台中室內合唱團-2025-Dec'
-                            aria-labelledby='pills-台中室內合唱團-2025-Dec-tab'
+                            id="experience-5"
+                            aria-labelledby="experience-5-tab"
                         >
                             <div>
                                 <span class="h4">木笛合作演出者</span>
                                 <small>-</small>
                                 <a href="https://taichungchamberchoir.org/" target="_blank">台中室內合唱團</a>
-                                
                                 <div class="pb-1">
                                     <small>2025 Dec</small>
                                     
                                     <span class="p-2">
-                                        <span 
-                                            style="cursor: pointer;" 
-                                            data-bs-toggle="tooltip" 
-                                            data-bs-placement="top" 
-                                            data-bs-original-title=Worked&#32;as&#32;a&#32;木笛合作演出者&#32;at&#32;台中室內合唱團
-                                        > 
+                                        <span
+                                            style="cursor: pointer;"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-placement="top"
+                                            data-bs-original-title="Working as a 木笛合作演出者 at 台中室內合唱團"
+                                        >
                                             <i class="fas fa-info-circle fa-xs"></i>
                                         </span>
                                     </span>
                                     
                                 </div>
-                                
+
                                 
                             </div>
 
                             <div class="pt-2">
                                 <p>在2025年受到台中市內合唱團的邀請，以木笛合作演出者的身分參加他們的年度演出。</p>
 <ul>
-<li>2025 12月 參與<a href="https://www.opentix.life/event/1979090497352003584">《文藝聖誕畫人聲》</a> 木笛合作演出者</li>
+<li>2025 12月 參與<a href="https://www.opentix.life/event/1979090497352003584">《文藝聖誕畫人聲》</a> 擔任<strong>木笛獨奏者</strong></li>
 </ul>
                             </div>
                         </div>
                         
                         
-                        
-                        <div 
-                            class="tab-pane fade bg-transparent" 
+                        <div
+                            class="tab-pane fade bg-transparent"
                             role="tabpanel"
-                            id='pills-新竹爵士大樂團-2023---至今'
-                            aria-labelledby='pills-新竹爵士大樂團-2023---至今-tab'
+                            id="experience-6"
+                            aria-labelledby="experience-6-tab"
                         >
                             <div>
                                 <span class="h4">薩克斯風手</span>
                                 <small>-</small>
                                 <a href="https://www.facebook.com/p/HJO-%e6%96%b0%e7%ab%b9%e7%88%b5%e5%a3%ab%e5%a4%a7%e6%a8%82%e5%9c%98-100066811428103/?locale=zh_TW" target="_blank">新竹爵士大樂團</a>
-                                
                                 <div class="pb-1">
                                     <small>2023 - 至今</small>
                                     
                                     <span class="p-2">
-                                        <span 
-                                            style="cursor: pointer;" 
-                                            data-bs-toggle="tooltip" 
-                                            data-bs-placement="top" 
-                                            data-bs-original-title=在內擔任中音薩克斯風手，2024年後從大樂團轉為青年團團員。
-                                        > 
+                                        <span
+                                            style="cursor: pointer;"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-placement="top"
+                                            data-bs-original-title="在內擔任中音薩克斯風手，2024年後從大樂團轉為青年團團員。"
+                                        >
                                             <i class="fas fa-info-circle fa-xs"></i>
                                         </span>
                                     </span>
                                     
                                 </div>
-                                
+
                                 
                             </div>
 
@@ -1159,34 +1322,32 @@ Hsing-An&#39;s profile
                         </div>
                         
                         
-                        
-                        <div 
-                            class="tab-pane fade bg-transparent" 
+                        <div
+                            class="tab-pane fade bg-transparent"
                             role="tabpanel"
-                            id='pills-烏梅爾醬-Fusion樂團-2023---2024'
-                            aria-labelledby='pills-烏梅爾醬-Fusion樂團-2023---2024-tab'
+                            id="experience-7"
+                            aria-labelledby="experience-7-tab"
                         >
                             <div>
                                 <span class="h4">薩克斯風手</span>
                                 <small>-</small>
                                 <a href="" target="_blank">烏梅爾醬 Fusion樂團</a>
-                                
                                 <div class="pb-1">
                                     <small>2023 - 2024</small>
                                     
                                     <span class="p-2">
-                                        <span 
-                                            style="cursor: pointer;" 
-                                            data-bs-toggle="tooltip" 
-                                            data-bs-placement="top" 
-                                            data-bs-original-title=在Fusion樂團內當薩克斯風手。
-                                        > 
+                                        <span
+                                            style="cursor: pointer;"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-placement="top"
+                                            data-bs-original-title="在Fusion樂團內當薩克斯風手。"
+                                        >
                                             <i class="fas fa-info-circle fa-xs"></i>
                                         </span>
                                     </span>
                                     
                                 </div>
-                                
+
                                 
                             </div>
 
@@ -1200,34 +1361,32 @@ Hsing-An&#39;s profile
                         </div>
                         
                         
-                        
-                        <div 
-                            class="tab-pane fade bg-transparent" 
+                        <div
+                            class="tab-pane fade bg-transparent"
                             role="tabpanel"
-                            id='pills-巴洛克獨奏家樂團-2022-Aug'
-                            aria-labelledby='pills-巴洛克獨奏家樂團-2022-Aug-tab'
+                            id="experience-8"
+                            aria-labelledby="experience-8-tab"
                         >
                             <div>
                                 <span class="h4">木笛合作演出者</span>
                                 <small>-</small>
                                 <a href="https://www.baroque-camerata.org" target="_blank">巴洛克獨奏家樂團</a>
-                                
                                 <div class="pb-1">
                                     <small>2022 Aug</small>
                                     
                                     <span class="p-2">
-                                        <span 
-                                            style="cursor: pointer;" 
-                                            data-bs-toggle="tooltip" 
-                                            data-bs-placement="top" 
-                                            data-bs-original-title=Worked&#32;as&#32;a&#32;木笛合作演出者&#32;at&#32;巴洛克獨奏家樂團
-                                        > 
+                                        <span
+                                            style="cursor: pointer;"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-placement="top"
+                                            data-bs-original-title="Working as a 木笛合作演出者 at 巴洛克獨奏家樂團"
+                                        >
                                             <i class="fas fa-info-circle fa-xs"></i>
                                         </span>
                                     </span>
                                     
                                 </div>
-                                
+
                                 
                             </div>
 
@@ -1238,7 +1397,6 @@ Hsing-An&#39;s profile
 
                             </div>
                         </div>
-                        
                         
                     </div>
                 </div>
@@ -1297,59 +1455,21 @@ Hsing-An&#39;s profile
     </div>
 </section>
 
-<section id="upcoming-events" class="section container mt-5 p-4">
-  <h3 class="section-title text-center mb-4">
-    近期演出
-  </h3>
 
-  <ul class="list-unstyled mt-3">
-    
-    
-    
-    
-    
-      <p class="text-muted text-center">目前沒有近期演出。</p>
-    
-  </ul>
-</section>
 
-<style>
-   
-  #upcoming-events {
-    background-color: #ffffff !important;  
-    border: 1px solid rgba(0,0,0,0.05);
-    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.08);
-    border-radius: 1rem;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-  }
 
-  #upcoming-events:hover {
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.12);
-    transform: translateY(-3px);
-  }
 
-   
-  #upcoming-events h3.section-title {
-    color: black;
-  }
 
-  #upcoming-events .event-title {
-    color: black;  
-    font-weight: bold;
-  }
 
-  body.dark #upcoming-events {
-    background-color: var(--secondary-background-color-dark) !important;  
-  }
 
-  body.dark #upcoming-events h3.section-title {
-    color: white;
-  }
 
-  body.dark #upcoming-events .event-title {
-    color: white;  
-  }
-</style>
+
+
+
+
+
+
+
 <section id="projects" class="py-5">
     <div class="container">
         <h3 class="text-center">作品</h3>
@@ -1589,93 +1709,119 @@ function copyEmail() {
     </div>
     <div class="row justify-content-center">
         
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/blogs/posts/2026time/">
-                        <img src="/images/shawn.webp" class="card-img-top" alt="Time的重要性">
-                    </a>
-                </div>
+        <div class="col-lg-3 col-md-5 col-sm-8 pt-2 recent-post-col">
+            <div class="card h-100 recent-post-card">
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/posts/2026time/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Time的重要性">Time的重要性</h5>
+                    <a href="/blogs/notes/others/breath/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="3.3秒呼吸的奧秘">3.3秒呼吸的奧秘</h5>
                     </a>
-                    <div class="card-text secondary-font">
-                        <p><p>我學習爵士其實已經一段時間了，但是我其實總是覺得我的即興一直不太行，
-<strong>直到最近我發現了一個秘密––</strong></p>
-<h2 id="原來我的問題出在time">原來我的問題出在Time!</h2>
-<p>其實一直以來我就有發現我的Time(節奏感)不是很好，之前也<a href="https://soelir.com/blog/notes/rythmn-stable/">跟好友討論過類似的問題</a>，不過大致上的討論也僅止於此，我也沒有找到好的<a href="/content/blogs/notes/others/peak.md">練習方法</a>，因此就這樣不了了之。</p>
-<p>雖然在大部分 …</p></p>
+                    <div class="card-text secondary-font card-summary">
+                        
+                        《3.3秒呼吸的奧秘》讀書筆記
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Jul 14, 2026</span>
-                    <a href="/blogs/posts/2026time/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    <span class="float-start">Aug 4, 2026</span>
+                    <a href="/blogs/notes/others/breath/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
         
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/blogs/practice/202607prac/">
-                        <img src="/images/202607prac.webp" class="card-img-top" alt="2026七月練習分享">
-                    </a>
-                </div>
+        <div class="col-lg-3 col-md-5 col-sm-8 pt-2 recent-post-col">
+            <div class="card h-100 recent-post-card">
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/practice/202607prac/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="2026七月練習分享">2026七月練習分享</h5>
+                    <a href="/blogs/notes/others/denkens/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="思考的藝術">思考的藝術</h5>
                     </a>
-                    <div class="card-text secondary-font">
-                        <p><h1 id="畢業後終於有重大突破">畢業後終於有重大突破!</h1>
-<p>這個月終於結束了我的大學生涯，下個月就要入伍了，在這中間的期間沒有什麼壓力，終於有時間好好重新審視自己的演奏了!</p>
-<p>此外，我也看了幾本不同的書，其中<a href="/content/blogs/notes/others/peak.md">刻意練習</a>也幫助了我許多，雖然比較少提到<a href="https://www.youtube.com/watch?v=CJd1Qiz8QDQ">興趣</a>的重要性，但還是有很多我覺得值得參考的事情的。<br>
-它也改良了很多我的練習方式。</p>
-<h2 id="time的練習"><a href="/content/blogs/posts/2026time.md">Time的 …</a></h2></p>
+                    <div class="card-text secondary-font card-summary">
+                        
+                        《思考的藝術》讀書筆記
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Jul 7, 2026</span>
-                    <a href="/blogs/practice/202607prac/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    <span class="float-start">Aug 1, 2026</span>
+                    <a href="/blogs/notes/others/denkens/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
         
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
+        <div class="col-lg-3 col-md-5 col-sm-8 pt-2 recent-post-col">
+            <div class="card h-100 recent-post-card">
                 
                 <div class="card-header">
-                    <a href="/blogs/notes/others/20hours/">
-                        <img src="/images/learning.webp" class="card-img-top" alt="如何在20小時內學會新事物?">
+                    <a href="/blogs/notes/jazz/secret_forest/">
+                        <img src="/images/secret_forest.webp" class="card-img-top" alt="Chrono Trigger - Secret of the Forest 分析">
                     </a>
                 </div>
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/notes/others/20hours/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="如何在20小時內學會新事物?">如何在20小時內學會新事物?</h5>
+                    <a href="/blogs/notes/jazz/secret_forest/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Chrono Trigger - Secret of the Forest 分析">Chrono Trigger - Secret …</h5>
                     </a>
-                    <div class="card-text secondary-font">
-                        <p><h1 id="如何在20小時內學會新事物"><a href="https://www.youtube.com/watch?v=5MgBikgcWnY">如何在20小時內學會新事物?</a></h1>
-<h2 id="10000小時法則">10000小時法則?</h2>
-<p>很多人會引用這個概念來說明「學會一件事需要的時間」，而10000小時大約是一份全職工作5年。</p>
-<p><strong>但在我們的經驗中似乎不需要這麼久?</strong></p>
-<p>這價數字是引用的是心理學家K. Anders Ericsson的研究。
-在《異數：超凡與平凡的界線在哪裡？》內被廣泛流 …</p></p>
+                    <div class="card-text secondary-font card-summary">
+                        
+                        Secret of the Forest 分析筆記
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Jul 5, 2026</span>
-                    <a href="/blogs/notes/others/20hours/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    <span class="float-start">Jul 16, 2026</span>
+                    <a href="/blogs/notes/jazz/secret_forest/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
         
     </div>
 </div>
+<style>
+    footer #recent-posts .recent-post-col {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    footer #recent-posts .recent-post-card > .card-header .card-img-top {
+        height: 160px;
+    }
+
+    footer #recent-posts .recent-post-card h5.card-title {
+        font-size: 2rem;
+        line-height: 1.15;
+    }
+
+    footer #recent-posts .recent-post-card .card-summary {
+        font-size: 100%;
+        line-height: 1.6;
+    }
+
+    footer #recent-posts .recent-post-card .card-summary .summary-heading {
+        display: block;
+        font-size: 1.4em;
+        line-height: 1.35;
+        margin: 0.35rem 0;
+        font-weight: 700;
+    }
+
+    footer #recent-posts .recent-post-card .card-summary .summary-heading::before {
+        content: "# ";
+        color: var(--primary-color);
+        font-weight: 700;
+    }
+
+    @media (max-width: 991.98px) {
+        footer #recent-posts .recent-post-col {
+            flex: 0 0 41.666667%;
+            max-width: 41.666667%;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        footer #recent-posts .recent-post-col {
+            flex: 0 0 80%;
+            max-width: 80%;
+        }
+    }
+</style>
 
 <div class="text-center pt-2">
     
@@ -1751,30 +1897,32 @@ function copyEmail() {
     </a>
     
 </div><div class="container py-4">
-    <div class="row justify-content-center">
-        <div class="col-md-4 text-center">
-            
-                <div class="pb-2">
-                    <a href="https://hsinganlee.com/" title="Hsing-An&#39;s profile">
-                        <img alt="Footer logo" src="/fav.png"
-                            height="40px" width="40px">
-                    </a>
-                </div>
-            
-            &copy; 2026  All rights reserved
-            <div class="text-secondary">
-                Made with
-                <span class="text-danger">
-                    &#10084;
-                </span>
-                and
-                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
-                    title="Designed and developed by gurusabarish">
-                    Hugo Profile
-                </a>
-            </div>
-        </div>
+  <div class="row justify-content-center">
+    <div class="col-md-4 text-center">
+      <div class="pb-2">
+        <a href="https://hsinganlee.com/" title="Hsing-An Lee">
+          <img class="footer-logo" alt="Footer logo" src="/images/logo.webp" height="56" width="56">
+        </a>
+      </div>
+      &copy; 2026  All rights reserved
+      <div class="text-secondary">
+        Made with
+        <span class="text-danger">
+          &#10084;
+        </span>
+        and
+        <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+          title="Designed and developed by gurusabarish">
+          Hugo Profile
+        </a>
+      </div>
+      <div class="text-secondary mt-2">
+        <a href="/index.xml" title="RSS">
+          歡迎訂閱我的RSS
+        </a>
+      </div>
     </div>
+  </div>
 </div>
 </footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script>
@@ -1816,6 +1964,30 @@ function copyEmail() {
 
 
 
+
+<script>
+  (() => {
+    const lightLogo = "/images/logo.webp";
+    const darkLogo = "/images/logo-white.webp";
+
+    const updateThemeAssets = () => {
+      const currentLogo = document.body.classList.contains("dark") ? darkLogo : lightLogo;
+      document
+        .querySelectorAll(".navbar-brand img, .footer-logo")
+        .forEach((logo) => {
+          logo.src = currentLogo;
+        });
+    };
+
+    document.addEventListener("DOMContentLoaded", () => {
+      updateThemeAssets();
+      new MutationObserver(updateThemeAssets).observe(document.body, {
+        attributes: true,
+        attributeFilter: ["class"]
+      });
+    });
+  })();
+</script>
 
 
   <section id="search-content" class="py-2">

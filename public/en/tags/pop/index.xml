@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>POP on Hsing-An Lee</title>
+    <link>https://hsinganlee.com/en/tags/pop/</link>
+    <description>Hsing-An Lee is a recorder player and composer.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+    <lastBuildDate>Sat, 02 Mar 2019 00:00:00 &#43;0000</lastBuildDate>
+    <atom:link href="https://hsinganlee.com/en/tags/pop/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+    <item>
+      <title>Lady of the Pier (arranged for recorder quartet)</title>
+      <link>https://hsinganlee.com/en/composition/devotion/</link>
+      <pubDate>Sat, 02 Mar 2019 00:00:00 &#43;0000</pubDate>
+      <guid>https://hsinganlee.com/en/composition/devotion/</guid>
+      <description> &amp;amp;ldquo;Lady of the Pier&amp;amp;rdquo; is a song from the game Devotion, arranged here for recorder quartet.&amp;#xA;With its strong retro popular-song character and dramatic atmosphere, this version keeps the original melody and nostalgic tone while redistributing the harmony and rhythmic functions among the four recorder parts.&amp;#xA;In the arrangement, I focused on the recorder&amp;amp;rsquo;s plain, singing quality, hoping to use a relatively pure recorder ensemble texture to present the tenderness and slight melancholy of the original song.&amp;#xA;</description>
+      <content:encoded><![CDATA[<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/OvK7NOY7FsE" title="gurenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p><strong>&ldquo;Lady of the Pier&rdquo; is a song from the game <em>Devotion</em>, arranged here for recorder quartet.</strong></p>
+<p>With its strong <strong>retro popular-song character</strong> and dramatic atmosphere, this version keeps the <strong>original melody</strong> and <strong>nostalgic tone</strong> while redistributing the harmony and rhythmic functions among the four recorder parts.</p>
+<p>In the arrangement, I focused on the recorder&rsquo;s plain, <strong>singing quality</strong>, hoping to use a relatively pure recorder ensemble texture to present the tenderness and slight melancholy of the original song.</p>
+<pre tabindex="0"><code> Recorder: Hsing-An Lee
+ Composer: Hsing-An Lee
+</code></pre>]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>
