@@ -260,7 +260,7 @@ ivm-subV7-ii-V7
 > 減少配器的同時，可以強化每個聲部的旋律進行。
 
 ### 和弦 {#e-harmony}
-
+![forestE1](/images/forestE0.webp "forestE1")
 這段的和弦可以先簡略理解成以三度為主的平行移動：
 
 * 33小節：`B♭ minor11`，也就是`i`
@@ -274,10 +274,18 @@ ivm-subV7-ii-V7
 
 前八小節很像是Nonfunctional Harmony 與功能和聲的融合：表面上是平行移動的聲響，但仍能看見`i–♮vi–iv–v`的調式輪廓，也能隱約感受到前進方向；直到最後的`ii–V`，和聲才真正建立出明確的終止感。
 
+同時，這裡的`ii-V`是`iim`而不是`iim7♭5`，因此可以推斷這首不是B♭ minor，**而是B♭ Dorian**。
+
 > Nonfunctional Harmony 的平移，與調性和聲都有出現3度下行，差別只在於和弦性質的不同。可以利用這點結合功能與 Nonfunctional Harmony。
 
-### Bass 寫作 {#e-bass}
+### 鋼琴的upper sturcture
+![forestE2](/images/forestE2.webp "forestE2")
 
+41小節的鋼琴出現了一個`E♭Major`，但底下的Bass則是`D♭`，這裡可以當作是一個`D♭ Major`的經過和弦，從642到531的經過。  
+接著就會接到整個`ii-V`，在`V`的時候鋼琴也有個4-3的inner voice。
+
+### Bass 寫作 {#e-bass}
+![forestE3](/images/forestE2.webp "forestE3")
 如同前面提到的，這裡的配器只剩下鋼琴與 Bass，而鋼琴又以重複的八分音符為主，因此 Bass 反而寫得更加活躍。
 
 除了加入更多細碎的十六分音符外，這裡也使用了相當豐富的 Articulation，讓 Bass 幾乎自成一條旋律。其中反覆出現的十六分音符節奏，也可以看成前面 Bass 動機的延續。
@@ -314,5 +322,3 @@ E段也有相同的特徵。它可以單純聽成三度平移的和弦，也可�
 >- mM7 放在完5可以變成dominant9#11
 >- sus7 放在完4可以變成m11
 >- 把上面的sus7解決，並把 Bass 也換成相同根音，能夠變成ii-V
-
-## 重點筆記 {#quick-notes}
