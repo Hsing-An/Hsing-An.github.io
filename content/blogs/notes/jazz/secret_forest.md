@@ -1,7 +1,7 @@
 ---
 title: "Chrono Trigger - Secret of the Forest 分析"
 date: 2026-07-16
-draft: True
+draft: False
 author: "Hsing-An Lee"
 tags:
   - 分析
