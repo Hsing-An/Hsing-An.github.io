@@ -17,15 +17,33 @@ description: "Secret of the Forest 分析筆記"
 遊戲以跨越時空、改變歷史為核心，兼具緊湊敘事、創新的戰鬥設計與多重結局；而他的音樂，特別是這首**Secret of the Forest**不知道在什麼時候，完全深植在我的心中，以往創作的好多作品根本就是這首的翻版，但其實我只聽過一兩次。
 
 總之，這次決定花時間好好分析一下這個作品。
+
+首先讓我們來聽一次這首曲子：
+<div class="audio-player" style="max-width:900px; margin: 1.2rem 0;">
+  <audio controls preload="metadata" src="/audio/forest.mp3" type="audio/mpeg" style="width:100%; display:block;">
+    您的瀏覽器不支援音訊播放。
+  </audio>
+</div>
+
 <div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
   <iframe width="100%" height="250" src="https://www.youtube.com/embed/fKex3QoPc8A" title="2-25" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-(樂譜PDF)
-(forest.mp3)
+<div class="pdf-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe src="/pdf/Secret%20of%20the%20Forest%20analysis.pdf" width="100%" height="1120" title="Secret of the Forest analysis PDF"></iframe>
+  <p><a href="/pdf/Secret%20of%20the%20Forest%20analysis.pdf" target="_blank" rel="noopener">開啟樂譜 PDF</a></p>
+</div>
+
+
+
 ## A段 前奏
 
-(forestA.mp3)
+<div class="audio-player" style="max-width:900px; margin: 1.2rem 0;">
+  <audio controls preload="metadata" src="/audio/forestA.mp3" type="audio/mpeg" style="width:100%; display:block;">
+    您的瀏覽器不支援音訊播放。
+  </audio>
+</div>
+
 ![A段 前奏](/images/forestA0.webp "A段 前奏")
 
 ### 非功能和聲（Nonfunctional Harmony） {#a-nonfunctional-harmony}
@@ -65,7 +83,11 @@ description: "Secret of the Forest 分析筆記"
 >Voice Leading 處理好可以保留聲部的流暢性，每個聲部獨立起來好聽會很不錯。
 
 ## B段 旋律
-(forestB.mp3)
+<div class="audio-player" style="max-width:900px; margin: 1.2rem 0;">
+  <audio controls preload="metadata" src="/audio/forestB.mp3" type="audio/mpeg" style="width:100%; display:block;">
+    您的瀏覽器不支援音訊播放。
+  </audio>
+</div>
 
 這段是在A段的和聲進行上，再加上長笛的主旋律，以及弦樂的和聲襯底（Pads）。
 還有一些小小的打擊樂，因為主要討論的是音高，就不另外記打擊譜了。
@@ -126,7 +148,12 @@ description: "Secret of the Forest 分析筆記"
 >Voicing 開一點會比較乾淨，Pads 可以主要用 Guide Tone 就好，把 Tension 留給主要樂器。
 
 ## C段 弱一點的旋律
-(forestC.mp3)
+<div class="audio-player" style="max-width:900px; margin: 1.2rem 0;">
+  <audio controls preload="metadata" src="/audio/forestC.mp3" type="audio/mpeg" style="width:100%; display:block;">
+    您的瀏覽器不支援音訊播放。
+  </audio>
+</div>
+
 在整首曲子裡，這一段算是要進入高潮前弱下的段落，不僅在配器上、音高的選擇上、節奏以及旋律都有所改變。
 ![forestC0](/images/forestC0.webp "forestC0")
 ![forestC01](/images/forestC01.webp "forestC01")
@@ -182,7 +209,12 @@ description: "Secret of the Forest 分析筆記"
 > 寫琶音時，可以先找出對應的和弦音階（Chord Scale），再挑選需要的音；音型不必始終相同，適時省略音或在低音區強調三和弦，效果會更好。
 
 ## D段 高潮
-(forestD.mp3)
+<div class="audio-player" style="max-width:900px; margin: 1.2rem 0;">
+  <audio controls preload="metadata" src="/audio/forestD.mp3" type="audio/mpeg" style="width:100%; display:block;">
+    您的瀏覽器不支援音訊播放。
+  </audio>
+</div>
+
 這個段落是我認為最精采的段落，除了在配器上更豐富、和弦移動的速度更快、豎琴的音型改變，甚至回收了主題的動機。  
 各種層面都更精彩，達到了整首的高潮（Climax）。
 
@@ -253,7 +285,12 @@ ivm-subV7-ii-V7
 >Voicing 的改變可以帶來聲響上的差異
 
 ## E段 結尾
-(forestE.mp3)
+<div class="audio-player" style="max-width:900px; margin: 1.2rem 0;">
+  <audio controls preload="metadata" src="/audio/forestE.mp3" type="audio/mpeg" style="width:100%; display:block;">
+    您的瀏覽器不支援音訊播放。
+  </audio>
+</div>
+
 這一段是整首曲子的尾聲，也是將前一段的高潮慢慢收回來的段落。無論在配器、和聲或Bass的寫法上，都明顯減少了整體密度，讓音樂重新回到比較內斂的狀態。
 
 ![forestE0](/images/forestE0.webp "forestE0")
@@ -329,3 +366,12 @@ E段也有相同的特徵。它可以單純聽成三度平移的和弦，也可�
 >- mM7 放在完5可以變成dominant9#11
 >- sus7 放在完4可以變成m11
 >- 把上面的sus7解決，並把 Bass 也換成相同根音，能夠變成ii-V
+
+
+# 最後附上我的木笛重奏改編版!
+
+<div class="youtube-embed" style="max-width:900px; margin: 1.2rem 0;">
+  <iframe width="100%" height="250" src="https://www.youtube.com/embed/mtOOw3GC85M" title="2-25" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+有任何意見交流歡迎寄信到<a href="mailto:930529antonio@gmail.com" onclick="navigator.clipboard.writeText('930529antonio@gmail.com'); alert('已複製 Gmail 地址！');">我的信箱</a>!
