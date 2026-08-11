@@ -21,7 +21,11 @@ description: "Secret of the Forest 分析筆記"
   <iframe width="100%" height="250" src="https://www.youtube.com/embed/fKex3QoPc8A" title="2-25" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+(樂譜PDF)
+(forest.mp3)
 ## A段 前奏
+
+(forestA.mp3)
 ![A段 前奏](/images/forestA0.webp "A段 前奏")
 
 ### 非功能和聲（Nonfunctional Harmony） {#a-nonfunctional-harmony}
@@ -61,6 +65,7 @@ description: "Secret of the Forest 分析筆記"
 >Voice Leading 處理好可以保留聲部的流暢性，每個聲部獨立起來好聽會很不錯。
 
 ## B段 旋律
+(forestB.mp3)
 
 這段是在A段的和聲進行上，再加上長笛的主旋律，以及弦樂的和聲襯底（Pads）。
 還有一些小小的打擊樂，因為主要討論的是音高，就不另外記打擊譜了。
@@ -121,6 +126,7 @@ description: "Secret of the Forest 分析筆記"
 >Voicing 開一點會比較乾淨，Pads 可以主要用 Guide Tone 就好，把 Tension 留給主要樂器。
 
 ## C段 弱一點的旋律
+(forestC.mp3)
 在整首曲子裡，這一段算是要進入高潮前弱下的段落，不僅在配器上、音高的選擇上、節奏以及旋律都有所改變。
 ![forestC0](/images/forestC0.webp "forestC0")
 ![forestC01](/images/forestC01.webp "forestC01")
@@ -176,6 +182,7 @@ description: "Secret of the Forest 分析筆記"
 > 寫琶音時，可以先找出對應的和弦音階（Chord Scale），再挑選需要的音；音型不必始終相同，適時省略音或在低音區強調三和弦，效果會更好。
 
 ## D段 高潮
+(forestD.mp3)
 這個段落是我認為最精采的段落，除了在配器上更豐富、和弦移動的速度更快、豎琴的音型改變，甚至回收了主題的動機。  
 各種層面都更精彩，達到了整首的高潮（Climax）。
 
@@ -246,7 +253,7 @@ ivm-subV7-ii-V7
 >Voicing 的改變可以帶來聲響上的差異
 
 ## E段 結尾
-
+(forestE.mp3)
 這一段是整首曲子的尾聲，也是將前一段的高潮慢慢收回來的段落。無論在配器、和聲或Bass的寫法上，都明顯減少了整體密度，讓音樂重新回到比較內斂的狀態。
 
 ![forestE0](/images/forestE0.webp "forestE0")
